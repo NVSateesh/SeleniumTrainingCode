@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppConfig>
+	<Configuration Name="Adapt_Dev_Login">
+		<HostField value="fc8devm07"/>
+		<PortNumber value="1100"/>
+		<UserName value="pmadiset"/>
+		<Pwd value="QWxsaWFuY2UxMjM="/>
+	</Configuration>
+	<Configuration Name="Adapt_QA_Login">
+		<HostField value="fc8armm04"/>
+		<PortNumber value="1100"/>
+		<UserName value="pmadiset"/>
+		<Pwd value="QWxsaWFuY2UxMjM="/>
+	</Configuration>
+	<Configuration Name="ARMOR_QA_Login">
+		<HostField value="fc8armm04"/>
+		<PortNumber value="1100"/>
+		<UserName value="pmadiset"/>
+		<Pwd value="QWxsaWFuY2UxMjM="/>
+		</Configuration>
+	
+	<Configuration Name="FABGUI_MTQA">
+    <UserName value="vvattak1"/>
+    <Pwd value="saibaba@08"/>
+    <Version value="11.10"/>
+	<LoadPropertiesPath value="./resource/GlobalFoundries/fabgui.properties"/>
+	<VamosConfigDataTableRowCount value=""/>
+	<MaxValue value="60000"/>
+	<MidValue1 value="15000"/>
+	<MidValue2 value="10000"/>
+	<MinValue value="5000"/>
+	<MinValue1 value="2000"/>
+	<TooltipMsg value="special characters (such as |'&amp;#176;^&amp;#180;`~) are not allowed"/>
+	<UserName1 value="skatroju"/>
+	<Pwd1 value="Alliance1234$"/>
+	<MaxWaitTime value="60000"/>
+	<LoadJnlpPath value=".\\jnlp.xml"/>
+	<OperationId value="DEMO_01"/>
+	<MaxValue1 value="300000"/>
+	<MaxVal value="120000"/>
+	<MaxValue2 value="50000"/>
+	<FabGUILog value = "/local/logs/fabgui/service/mqsoap.log"/>
+	<YMSLogPath value="/customdata/fabgui/shipping.ymsdatatransfer"/>
+	<RubyPath value="V:/MTQA/Siview_RubyScripts/testconsole"/>
+    <RubyEnvPath value="load ./ruby/mainExe.rb;set_paths(env:mtqa8)"/>
+  </Configuration>
+  <Configuration Name="FABGUI_MTQA_R10">
+    <UserName value="vvattak1"/>
+    <Pwd value="saibaba@08"/>
+    <Version value="11.10"/>
+	<LoadPropertiesPath value="./resource/GlobalFoundries/fabgui_R10.properties"/>
+	<VamosConfigDataTableRowCount value=""/>
+	<MaxValue value="60000"/>
+	<MidValue1 value="15000"/>
+	<MidValue2 value="10000"/>
+	<MinValue value="5000"/>
+	<MinValue1 value="2000"/>
+	<TooltipMsg value="special characters (such as |'&amp;#176;^&amp;#180;`~) are not allowed"/>
+	<UserName1 value="skatroju"/>
+	<Pwd1 value="Alliance1234$"/>
+	<MaxWaitTime value="60000"/>
+	<LoadJnlpPath value=".\\jnlp.xml"/>
+	<OperationId value="DEMO_01"/>
+	<MaxValue1 value="300000"/>
+	<MaxVal value="120000"/>
+	<MaxValue2 value="50000"/>
+	<FabGUILog value = "/local/logs/fabgui/service/mqsoap.log"/>
+	<YMSLogPath value="/customdata/fabgui/shipping.ymsdatatransfer"/>
+	<RubyPath value="V:/MTQA/Siview_RubyScripts/testconsole"/>
+    <RubyEnvPath value="load ./ruby/mainExe.rb;set_paths(env:mtqa)"/>
+  </Configuration>
+
+
+	<Configuration Name="FABGUI_MTQA_Login2">
+		<UserName value="cGJ1ZGRhcmE=" />
+		<Pwd value="UmVsZUBzZTQ=" />
+		<LoadPropertiesPath value="./resource/GlobalFoundries/fabgui.properties" />
+		<VamosConfigDataTableRowCount value="" />
+		<UserName value="sbheeman" />
+		<Pwd value="Welcome02" />
+	</Configuration>
+
+	<Configuration Name="CommonConfig">    
+	</Configuration>
+
+	<Configuration Name="ETest">
+		<LotID value="UXYK52001.000"/>
+		<LDSName value="Automation/Auto01"/>
+		<ETParserDataFilePath value="/customdata/espace7/etparser1/etparser_data/data/*.dis"/>
+		<ETParserLimitFilePath value="/customdata/espace7/etparser1/etparser_data/limit/*.dis"/>
+		<DISDataFilePath value="/customdata/espace7/etparser1/etl_input/data/*.dis"/>
+		<DISLimitFilePath value="/customdata/espace7/etparser1/etl_input/limit/*.dis"/>
+		<LoadPropertiesPath value="./resource/GlobalFoundries/ETEST/etest.properties"/>
+		<LoadParserPath value="./resource/GlobalFoundries/ETEST/parserPath.xml"/>
+		<LoadAQLPath value="./resource/GlobalFoundries/ETEST/AQLMaverick.properties"/>
+		<LoadDISPropPath value="./resource/GlobalFoundries/ETEST/DISFilter.properties.unix"/>
+		<LoadDISRouterPath value="./resource/GlobalFoundries/ETEST/router.properties.unix"/>
+		<DISFilterProperties value="/customapps/espace/mtqa/space7/DISFilter/config/DISFilter.properties.unix"/>
+		<DISRouterProperties value="/customapps/espace/mtqa/space7/DISFilter/config/router.properties.unix"/>
+		<DISFilterConfigPath value="/customapps/espace/mtqa/space7/DISFilter/config"/>
+		<DISFilterRollingLog value="/local/logs/disfilter/log/DISFilter.rolling.log"/>
+		<DISFilterRollingLog1 value="/local/logs/disfilter/log/DISFilter.rolling.log.1"/>
+		<DISFilterDailyLog value="/local/logs/disfilter/log/DISFilter.daily.log"/>
+		<DISFilterInput value="/customdata/espace7/etparser1/etl_input"/>
+		<DISFilterOutput value="/customdata/espace7/etparser1/etparser_data"/>
+		<ETParserAQLMProp value="/customapps/espace/mtqa/space7/igate/iGate-spisepp/products/spisepp/plugin_custom/setting/AQLMaverick.properties"/>
+		<ETParserSettingPath value="/customapps/espace/mtqa/space7/igate/iGate-spisepp/products/spisepp/plugin_custom/setting"/>
+		<ETParserPath value="/customapps/espace/mtqa/space7/igate/iGate-spisepp/products/spisepp/plugin_custom/xml/parserPath.xml"/>
+		<ETParserXMLPath value="/customapps/espace/mtqa/space7/igate/iGate-spisepp/products/spisepp/plugin_custom/xml"/>
+		<ETParserLog value="/local/logs/espace/igatespisepp/spisepp.log"/>
+		<ETParserOutput value="/customdata/espace7/etparser1/etparser_data/out"/>
+		<ETParserOutMNC value="/customdata/espace7/etparser1/etparser_data/out/*.mnc"/>
+		<ETParserOutNC value="/customdata/espace7/etparser1/etparser_data/out/*.nc"/>
+		<ETRetest value="/customdata/espace7/etparser1/etparser_data/retest/*.*"/>
+		<SILLog value="/local/logs/sil/log/server.log"/>
+		<ETPSearchStr value="UPLOAD STATUS      =  PASS"/>
+		<LotWetDispo value="B1 WET Disposition"/>
+		<LotTestShip value="WET test ship"/>
+		<!--RestartDISFilter value="nohup //customapps/espace_dev/DISFilter/bin/disfilter.sh > disfilterRunLog.txt"/>
+		<RestartETParser value="cd /customapps/espace_dev/igate/iGate-spisepp/bin;igate.restart"/-->	
+	</Configuration>
+
+	<Configuration Name="SIL_Space7">
+		<SpecLimitsPath value="./resource/GlobalFoundries/SIL_SPACE7/SpecLimitsFormat.GF_SIL.xlsx"/>
+		<ResponsiblePDPath value="./resource/GlobalFoundries/SIL_SPACE7/PDSetup.GF_SIL.xlsx"/>
+		<ChamberFilterPath value="./resource/GlobalFoundries/SIL_SPACE7/ChamberFilter.GF_SIL.xlsx"/>
+		<GenericKeysPath value="./resource/GlobalFoundries/SIL_SPACE7/GenericKeys.GF_SIL.xlsx"/>
+		<ProcessDCRPath value="./resource/GlobalFoundries/SIL_SPACE7/GF_SIL_SC_MC_p1.xml"/>
+		<ChannelName value="GF_AUT_PARAM_100"/>
+		<SPCPath value="AUTOCHART/MODULE"/>
+		<ChannelFolder value="AutoCreated_QA"/>
+		<SILLog value="/local/logs/sil/log/server.log"/>
+		<!-- Destination folder on Linux box.-->
+		<SILConfPath value="/customapps/ispace/mtqa/space7/sil/sil/conf"/>
+		<!-- Property Source file path.-->
+		<LoadPropertiesPath value="./resource/GlobalFoundries/SIL_SPACE7/sil.properties"/>
+		<LoadAdvancedProperties value="./resource/GlobalFoundries/SIL_SPACE7/advanced.properties"/>
+		<LoadDerdackProperties value="./resource/GlobalFoundries/SIL_SPACE7/derdack.properties"/>
+		<LoadSpiseppProperties value="./resource/GlobalFoundries/SIL_SPACE7/spisepp.properties"/>
+		<LoadSiviewProperties value="./resource/GlobalFoundries/SIL_SPACE7/siview.properties"/>
+		<CAAttributesFilePath value="./resource/GlobalFoundries/SIL_SPACE7/sil_ca_attributes.properties"/>
+		<!-- Property file paths to modify property dynamically.-->
+		<SILSiviewPropertiesPath value="/customapps/ispace/mtqa/space7/sil/sil/conf/siview.properties"/>
+		<SILSpiseppPropertiesPath value="/customapps/ispace/mtqa/space7/sil/sil/conf/spisepp.properties"/>
+		<SILAdvancedPropertiesPath value="/customapps/ispace/mtqa/space7/sil/sil/conf/advanced.properties"/>
+		<SILDerdackPropertiesPath value="/customapps/ispace/mtqa/space7/sil/sil/conf/derdack.properties"/>
+		<!-- Test data related to SiView-->
+		<!--LotID value="T100JP1.00"/-->
+		<LotID value="U401U.01"/>
+		<EquipmentId1 value="UTC001"/>
+		<EquipmentId2 value="UTC003"/>
+		<RouteId1 value="SIL-0001.01"/>
+		<ReticleId1 value="myreticleid"/>
+		<RecipeId1 value="EI-TEST.PSX100-1.01"/>
+		<RecipeId2 value="P.UTMR000.01"/>
+		<SILString value="Finished saving SPCRunResult, and SpcSummary to database."/>
+		<LoadPropertyLog value="Loading properties from file: /3rd_party/jboss/jboss-eap-5.1.1/jboss-as/server/sil_qa7/./conf/wmq.properties"/>
+	</Configuration>
+
+	<Configuration Name="SIL_Space6">
+		<SpecLimitsPath value="./resource/GlobalFoundries/SIL/SpecLimitsFormat.GF_SIL.xlsx"/>
+		<ResponsiblePDPath value="./resource/GlobalFoundries/SIL/PDSetup.GF_SIL.xlsx"/>
+		<ChamberFilterPath value="./resource/GlobalFoundries/SIL/ChamberFilter.GF_SIL.xlsx"/>
+		<GenericKeysPath value="./resource/GlobalFoundries/SIL/GenericKeys.GF_SIL.xlsx"/>
+		<ProcessDCRPath value="./resource/GlobalFoundries/SIL/GF_SIL_SC_MC_p1.xml"/>
+		<ChannelName value="GF_AUT_PARAM_100"/>
+		<SPCPath value="AUTOCHART/MODULE"/>
+		<ChannelFolder value="AutoCreated_QA"/>
+		<SILLog value="/local/logs/sil/log/server.log"/>
+		<!-- Destination folder on Linux box.-->
+		<SILConfPath value="/customapps/camline_dev/sil/sil/conf"/>
+		<!-- Property Source file path.-->
+		<LoadPropertiesPath value="./resource/GlobalFoundries/SIL/sil.properties"/>
+		<LoadAdvancedProperties value="./resource/GlobalFoundries/SIL/advanced.properties"/>
+		<LoadDerdackProperties value="./resource/GlobalFoundries/SIL/derdack.properties"/>
+		<LoadSpiseppProperties value="./resource/GlobalFoundries/SIL/spisepp.properties"/>
+		<!-- Property file paths to modify property dynamically.-->
+		<SILSpiseppPropertiesPath value="/customapps/camline_dev/sil/sil/conf/spisepp.properties"/>
+		<SILAdvancedPropertiesPath value="/customapps/camline_dev/sil/sil/conf/advanced.properties"/>
+		<SILDerdackPropertiesPath value="/customapps/camline_dev/sil/sil/conf/derdack.properties"/>
+		<!-- Test data related to SiView-->
+		<!--LotID value="T100JP1.00"/-->
+		<LotID value="U401U.01"/>
+		<EquipmentId1 value="UTC001"/>
+		<EquipmentId2 value="UTC002"/>
+		<RouteId1 value="SIL-0001.01"/>
+		<ReticleId1 value="myreticleid"/>
+		<RecipeId1 value="EI-TEST.PSX100-1.01"/>
+		<RecipeId2 value="P.UTMR000.01"/>
+		<SILString value="Finished saving SPCRunResult, and SpcSummary to database."/>
+		<LoadPropertyLog value="Loading properties from file: /3rd_party/jboss/jboss-eap-5.1.1/jboss-as/server/sil_mtqa/./conf/wmq.properties"/>
+	</Configuration>
+	
+	<Configuration Name="JCAL">
+		<JCALProperties value="/customapps/espace_dev/DISFilter/ECPHelper/config/ECPHelper.properties"/>
+		<JCALInput value="/customapps/espace_dev/DISFilter/ECPHelper/JCAL_M14"/>	
+	</Configuration>
+
+	<Configuration Name="FabView">
+    <Username value="sbehera1"/>
+	<Password value="YXVndXN0XzA4MQ=="/>
+	<LotID value="UX-00000A.000"/>
+	<LotID2 value="UXYL25030.002"/>
+	<WaferID value="WWHWNEN4Q601"/>
+	<EquipmentID value="ACS2101"/>
+	<EquipmentID2 value="THK2150"/>
+	<EquipmentID1 value="FVX2400"/>
+	<ChamberID1 value="CH1"/>
+	<InhStartTimeXpath value="//*[@id='inhibitHistory:richTable:tb']/tr/td[5]"/>
+	<MinWait value="10000"/>
+	<MaxWait value="30000"/>
+	<LongWait value="150000"/>
+	<LoadPropertiesPath value = "./resource/GlobalFoundries/fabview.properties"/>
+	<FabViewLog value = "/local/logs/fabview_automation/server.log"/>
+	<WaferCount value = "5"/>
+	<LotOpeTimeStampXpath value = "//*[@id='lotHistory:richTable:0:opView:opRichTable:tb']/tr/td[2]"/>
+	<WaitTime value = "60000"/>
+	<InhExcelExportImageId value="[id='inhibitHistory:ih_excelSummaryExport']"/>
+	<InhCsvExportImageId value="[id='inhibitHistory:lh_csvSummaryExport']"/>
+	<InhExcelExportedFilePath value="./testData/inhibitHistory.xls"/>
+	<InhCsvExportedFilePath value="./testData/inhibitHistory.csv"/>
+	<EHClaimTimeXpath value = "//table[@id='equipmentHistory:richTable']/tbody/tr/td[11]"/>
+	<WHEventTypeXpath value = "//tbody[@id='waferHistory:richTable:tb']/tr/td[2]/span"/>
+	<WHEventXpath value = "//tbody[@id='waferHistory:richTable:tb']/tr/td[1]/span"/>
+	<WHTableHeaderXpath value = "//tr/th[contains(@id,'waferHistory:richTable') and not(contains(@id,'loadingStatus'))]"/>
+	<InhibitColumnsXpath value="//table[@id='inhibitHistory:richTable']/thead/tr[2]/th"/>
+	<LotExcelEventExportLink value="[id='lotHistory:l_excelEventExport']"/>
+	<LotCsvEventExportLink value="[id='lotHistory:l_csvEventExport']"/>
+	<LotExcelExportedFilePath value="./testData/lotEventHistory.xls"/>
+	<LotCsvExportedFilePath value="./testData/lotEventHistory.csv"/>
+	<LotColumnsXpath value="//table[@id='lotHistory:richTable:0:opView:opRichTable']/thead/tr/th"/>
+	<UserColumnInEqpXpath value="//td[contains(@id,'equipmentHistory:richTable') and contains(@id,'user')]"/>
+	<EventTypeColumnInEqpXpath value="//td[contains(@id,'equipmentHistory:richTable') and contains(@id,'eventType')]"/>
+	<UserColumnInReticleXpath value="//td[contains(@id,'reticleHistory:richTable') and contains(@id,'claimUser')]"/>
+	<ReticleColumnsXpath value="//table[@id='reticleHistory:richTable']/thead/tr[2]/th"/>
+	<ReticleExcelExportImg value="[id='reticleHistory:g_excelPic']"/>
+	<ReticleCsvExportImg value="[id='reticleHistory:g_csvPic']"/>
+	<ReticleExcelExportedFilePath value="./testData/reticleHistory.xls"/>
+	<ReticleCsvExportedFilePath value="./testData/reticleHistory.csv"/>
+	<EQPCsvExportImg value="[id='equipmentHistory:l_csvExport']"/>
+	<EQPExcelExportImg value="[id='equipmentHistory:l_excelExport']"/>
+	<UserColumnInCarrierXpath value="//tbody[contains(@id,'carrierHistory:richTable:tb')]/tr/td[5]"/>
+	<CarrierColumnsXpath value="//table[@id='carrierHistory:richTable']/thead/tr[2]/th"/>
+	<CarrierCsvExportImg value="[id='carrierHistory:g_csvPic']"/>
+	<CarrierCsvExportedFilePath value="./testData/carrierHistory.csv"/>
+	<CarrierHistoryExcelExportXapth value="//img[@id='carrierHistory:g_excelPic']"/>
+	<CrExcelExportedFilePath value="./testData/carrierHistory.xls"/>
+	<VendorInfoTabelHeader value = "//thead/tr[contains(@class,'rich-table-header ')]/th[not(contains(@id,'loadingStatus'))]"/>
+	<ReticleEventypeCol value="//tbody[@id='reticleHistory:richTable:tb']/tr/td[1]"/>
+	<ReticleEventCol value="//tbody[@id='reticleHistory:richTable:tb']/tr/td[2]"/>
+  </Configuration>
+
+	<Configuration Name="RVA">
+		<Username value="hannem"/>
+		<Password value="Today1234$"/>
+		<RemoteFilePath value="/workarea/local/fc8lnxwsm01/mtqa-test/hannem/ReportsLoc/"/>
+		<LoadPropertiesPath value="./resource/GlobalFoundries/rva.properties"/>
+		<SrcFilePath value="./testData/RVA/"/>	
+		<ResultFilePath value="/screenShots/RVA/"/>
+		<FileCompareHeader value="Severity"/>
+	</Configuration>
+
+	<Configuration Name="XSite">
+		<!-- Login information for Xsite-->
+		<AppPath value="D:\Program Files\Applied Materials\xsite\Console\Xsite Factory Modeling.msc"/>
+		<Username value="sbehera"/>
+		<Password value="c2JlaGVyYQ=="/>
+		<!-- Sikuli Images-->
+		<IMG_NewEquipment value="NewEquipment.png"/>
+		<IMG_NewChecklist value="NewChecklistTemplate.png"/>
+		<IMG_NewWorkOrder value="NewWorkOrder.png"/>
+		<IMG_NewEqpTemplate value="NewEqpTemplate.png"/>
+		<IMG_NewCmnt value="NewComments.png"/>
+		<IMG_NewWorkTemplate value="NewWorkTemplate.png"/>
+		<IMG_NewWorkRequest value="NewWorkRequest.png"/>
+		<IMG_NewEquipment value="NewEquipment.png"/>
+		<IMG_Properties value="Properties.png"/>
+		<IMG_Delete value="Delete.png"/>
+		<IMG_Refresh value="Refresh.png"/>
+		<IMG_Copy value="Copy.png"/>
+		<IMG_Paste value="Paste.png"/>
+		<IMG_ChecklistTab value="ChecklistsTab.png"/>
+		<IMG_QualChkBox value="QuqlChkBox.png"/>
+		<IMG_GeneralTab value="GeneralTab.png"/>
+		<IMG_TargetdatesTab value="TargetdatesTab.png"/>
+		<IMG_PlanningTab value="PlanningTab.png"/>
+		<IMG_QuickView value="QuickView.png"/>
+		<IMG_WorkView value="WorkView.png"/>
+		<IMG_EqpStateChng value="EqpStateChange.png"/>
+		<IMG_EqpHistoryLst value="EqpHistoryLst.png"/>
+		<IMG_View value="View.png"/>
+		<IMG_FindEqp value="FindEquipment.png"/>
+		<IMG_ChkBox value="CheckBox.png"/>
+		<!-- Siview Information-->
+		<SiViewEqpStatus value="Description"/>
+		<SiViewEqpInhibitStatus value="Inhibit"/>
+		<SiViewEqpOPMode value="Off-Line-1"/>
+		<CarrierId value= "A8XX"/>
+		<LotId value= "T207F2T.00"/>
+		<OpeNo value="1000.1500"/>
+		<!--Equipment id-->
+		<Equipment value="AMI2800"/>
+		<!-- Path of modules present in Xsite-->
+		<CLTemplatePath value="Console Root;Maintenance Modeling;Checklist Templates"/>
+		<WorkTemplatePath value="Console Root;Maintenance Modeling;Work Templates"/>
+		<EquipmentPath value="Console Root;Equipment Modeling;Equipment"/>
+		<MaintTrackngEquipmnetPath value="Console Root;Maintenance Tracking;Equipment"/>
+		<EqpTemplatePath value="Console Root;Equipment Modeling;Equipment Templates"/>
+		<MaintModlPath value="Console Root;Maintenance Modeling"/>
+		<EqpModlPath value="Console Root;Equipment Modeling"/>
+		<MaintTrackPath value="Console Root;Maintenance Tracking"/>
+		<!--Checklist information-->
+		<CLTitle value="GF_Auto_CL"/>
+		<CLNumberSeries value="Checklist Template"/>
+		<CLType value="PM"/>
+		<Shop value="CFM"/>
+		<!--Work Order,Work Request, Equipment template information-->
+		<WOTitle value="GF_Auto_WO"/>
+		<WRTitle value="GF_Auto_WR"/>
+		<WTTitle value="GF_Auto_WT"/>
+		<Eqptitle value="GF_Auto_Eqp"/>
+		<ETTitle value="GF_Auto_ET"/>
+		<WTNumberSeries value="PM Template"/>
+		<EngWOTitle value="GF_Auto_ENGWO"/>
+		<PMWOTitle value="GF_Auto_PMWO"/>
+		<!--Waiting information-->		
+		<ImgCycleCnt value="6"/>
+		<InhibitLoopCnt value="3"/>
+		<ImgWaitTime value="2000"/>
+		<ElementWaitTime value="10000"/>
+		<ElementCycleCnt value="5"/>
+		<!--FabView Information-->
+		<FabViewURL value="http://fc8devm02:8080/fabview/"/>
+		<FVUsername value="sbommala"/>
+		<FVPassword value="U2VydmVyMjAwOA=="/>
+		<TimeZone value="(GMT-05:00)Eastern Time"/>
+		<FVTimeFormat value="yyyy-MM-dd HH:mm:ss"/>
+	</Configuration>
+	
+	<Configuration Name="IWPA">
+	</Configuration>
+
+	<Configuration Name="LRMS">
+	<!-- <AppPath value="G:\rmsqa\guilauncher_JBOSS.bat"/>  changed during JBoss upgrade 
+		<AppPath4.5 value="D:\rmssc\RMClient4_5_2_RC_b2\guilauncher_JBOSS.bat"/>-->
+		<AppPath value="D:\softwares\RMClient5_1_0_RC_b1\guilauncher.bat"/>
+        <Username value="sbehera1"/>
+		<Password value="YXVndXN0XzA4MQ=="/> <!-- Change accordingly -->
+		<FolderName value="GF_Automation"/>
+		<RMSModuleName value="Recipe Management Services (RMS) (default)"/>
+		<KDMModuleName value="Key Definition Manager (KDM)"/>
+		<APMModuleName value="Approval Manager (APM)"/>
+		<!-- This is the path for exporting recipe from the RMS to local drive. Need to be changed when the project is being changed-->
+		<RecipePath value=".\testData\RMS\Recipe"/>
+		<!--This is the path where exported recipe file with extension will be stored. Need to be changed when the project is being changed-->
+		<ImportRecipePath value=".\testData\RMS\Recipe.rcp"/>
+		<!-- This is the path for exporting ROB from the RMS to local drive. Need to be changed when the project is being changed-->
+		<ROBPath value=".\testData\RMS\ROB"/>
+		<!-- This is the path where exported ROB file with extension will be stored. Need to be changed when the project is being changed-->
+		<ImportROBPath value=".\testData\RMS\ROB.xml"/>
+		<Recipe value="Recipe.rcp"/>
+		<RecipeName value="d:\Lam\data\Flows\PM4-E-Q-SCRATCH-TEST.flw"/>
+		<WorkableState value="WORKABLE"/>
+		<ApprovedState value="APPROVED"/>
+		<ApprovalPendingState value="APPROVAL_PENDING"/>
+		<CompareResult value="Comparison Results"/>
+		<RcpPayload value="Recipe Payload"/>
+		<ROBDEFMainRecipe value="Automation-MainRecipe"/>
+		<ROBDEFSubRecipe value="Automation-SubRecipe"/>
+		<ApprovedROBDEF value="Automation-Approved"/>
+		<RNSID value="Automation_MTQA"/>
+		<TimeZone value="(GMT) Greenwich Mean Time"/>
+		<TimeFormat value="yyyy-MM-dd HH:mm:ss.SSS"/>
+		<UserPath value="Fab8-MTQA|Users"/>
+		<FolderPath value="Fab8-MTQA|Users|GF_Automation"/>
+		<BoardPath value="Notification Manager|Boards"/>
+		<ACDPath value="Notification Manager|Approval|Approval Cycle Definitions"/>
+		<iGateUser value="pkumari"/>
+		<iGatePwd value="UGtAT2N0QDIwMTQ="/>
+		<!-- Internet explorer path. need to be changed when project is being changed-->
+		<ExplorePath value="C:\Program Files\Internet Explorer\IEXPLORE.EXE"/>
+		<!-- iGate URL has been changed during JBOSS release -->
+		<!--iGateURL value="http://fc8lwrm01:50030/iGate/"/-->
+		<iGateURL value="http://fc8rmsm01:50030/iGate"/>
+		<ROBDEFModuleRecipe value="Automation-ModuleRecipe"/>
+		<MinWait value="10000"/>
+		<LoadPropertiesPath value="./resource/GlobalFoundries/RMS.properties"/>
+		<ROBDEFVerifyExpressions value="Automation_VerifyExpressions"/>
+		<OperationMode value = "RecipeDownload"/>
+		<PreferenceROBPath value="Recipe Management Services|ROB / ROBDEF"/>
+		<ROBDEFSharedParamRecipe value="Automation-SharedParameter"/>
+		<ROBDEFSharedParamRecipeNoVariant value="Automation-SharedParameter-NoVariant"/>
+		<MaxWait value="120000"/>
+		<ROBDEFMainRcpRVCAC value="Automation-MainRVCAC"/>
+		<ROBDEFModuleRecipeWizardWindow value="Automation-ModuleRecipeWizardWindow"/>		
+		<ROBDEFMultiAttributes value="Automation_MultiAttributesValidation"/>
+		<NFMModuleName value="Notification Manager (NFM)"/>
+		<EVTModuleName value="Event Dispatcher (EVT)"/>
+		<ROBDEFAutoLink value="Automation-AutoLinkMainRecipe"/>
+		<AllMustApprove value="All must approve"/>
+		<AtleastOneMustApprove value ="At least one must approve"/>
+		<RMSwebURL value="http://fc8lwrm01:8767/iGate"/>
+		<OtherUsername value = "vrajapan"/>
+		<OtherPassword value ="Vmlub2RAMTE="/>
+		<ThirdUsername value="sorampat"/>
+		<ThirdPassword value="U2FpcmFtQDE0MzE0Mw=="/>
+		<FourthUsername value="rdasari1"/>
+		<FourthPassword value="cmFqYUBnZjI="/>
+		<!-- This is the path where log file is present to validate the errors. Need to be changed when the project is being changed
+		<AppLogFilePath value="G:\rmsqa\RMClient5_1_0_RC_b1\workspace\.metadata\.plugins\org.eclipse.ui.workbench\log"/>-->
+		<AppLogFilePath value="D:\softwares\RMClient5_1_0_RC_b1\workspace\.metadata\.plugins\org.eclipse.ui.workbench\log"/>
+	</Configuration>
+
+	<Configuration Name="LRMS_OLD">
+		<AppPath value="G:\rmsqa\guilauncher_JBOSS.bat"/> <!-- changed during JBoss upgrade -->
+		<Username value="sbehera1"/>
+		<Password value="RGVjZW1iZXJfMDE3"/> <!-- Change accordingly -->
+		<FolderName value="GF_Automation"/>
+		<RMSModuleName value="Recipe Management Services (RMS) (default)"/>
+		<KDMModuleName value="Key Definition Manager (KDM)"/>
+		<APMModuleName value="Approval Manager (APM)"/>
+		<!-- This is the path for exporting recipe from the RMS to local drive. Need to be changed when the project is being changed-->
+		<RecipePath value="D:\MTQA\xAFT Framework_RMS\testData\RMS\Recipe"/>
+		<!--This is the path where exported recipe file with extension will be stored. Need to be changed when the project is being changed-->
+		<ImportRecipePath value="D:\MTQA\xAFT Framework_RMS\testData\RMS\Recipe.rcp"/>
+		<!-- This is the path for exporting ROB from the RMS to local drive. Need to be changed when the project is being changed-->
+		<ROBPath value="D:\MTQA\xAFT Framework_RMS\testData\RMS\ROB"/>
+		<!-- This is the path where exported ROB file with extension will be stored. Need to be changed when the project is being changed-->
+		<ImportROBPath value="D:\MTQA\xAFT Framework_RMS\testData\RMS\ROB.xml"/>
+		<Recipe value="Recipe.rcp"/>
+		<RecipeName value="d:\Lam\data\Flows\PM4-E-Q-SCRATCH-TEST.flw"/>
+		<WorkableState value="WORKABLE"/>
+		<ApprovedState value="APPROVED"/>
+		<ApprovalPendingState value="APPROVAL_PENDING"/>
+		<CompareResult value="Comparison Results"/>
+		<RcpPayload value="Recipe Payload"/>
+		<ROBDEFMainRecipe value="Automation-MainRecipe"/>
+		<ROBDEFSubRecipe value="Automation-SubRecipe"/>
+		<ApprovedROBDEF value="Automation-Approved"/>
+		<RNSID value="Automation_MTQA"/>
+		<TimeZone value="(GMT) Greenwich Mean Time"/>
+		<TimeFormat value="yyyy-MM-dd HH:mm:ss.SSS"/>
+		<UserPath value="Fab8-MTQA|Users"/>
+		<FolderPath value="Fab8-MTQA|Users|GF_Automation"/>
+		<BoardPath value="Notification Manager|Boards"/>
+		<ACDPath value="Notification Manager|Approval|Approval Cycle Definitions"/>
+		<iGateUser value="pkumari"/>
+		<iGatePwd value="UGtAT2N0QDIwMTQ="/>
+		<!-- Internet explorer path. need to be changed when project is being changed-->
+		<ExplorePath value="C:\Program Files\Internet Explorer\IEXPLORE.EXE"/>
+		<!-- iGate URL has been changed during JBOSS release -->
+		<!--iGateURL value="http://fc8lwrm01:50030/iGate/"/-->
+		<iGateURL value="http://fc8rmsm01:50030/iGate"/>
+	</Configuration>
+
+ <Configuration Name="UCS">
+    <Username value="sramanat"/>
+	<Password value="TGV0dHlMYW5nMDE"/>
+	<MinWait value="5000"/>
+	<MidWait value="8000"/>
+	<DefaultWait value="10000"/>
+	<MaxWait value="12000"/>
+	<LongWait value="450000"/>
+	<LoadPropertiesPath value="./resource/GlobalFoundries/ucs.properties"/>
+	<AppURL value="http://fc8sphwbm04:8080/ucs"/>
+	<SumryUrl value="http://fc8sphwbm04:8080/ucs/#Summary"/>
+	<InfoUrl value="http://fc8sphwbm04:8080/ucs/#Info"/>
+	<RetclUrl value="http://fc8sphwbm04:8080/ucs/#Reticle"/>
+	<RgnFlshUrl value="http://fc8sphwbm04:8080/ucs/#RegionFlash"/>
+	<RgndiUrl value="http://fc8sphwbm04:8080/ucs/#RegionDie"/>
+	<WetUrl value="http://fc8sphwbm04:8080/ucs/#WET"/>
+	<SortUrl value="http://fc8sphwbm04:8080/ucs/#Sort"/>
+	<LthoUrl value="http://fc8sphwbm04:8080/ucs/#Litho-Layer"/>
+	<HlpUrl value="http://fc8sphwbm04:8080/ucs/help/index.html"/>
+	<DownloadFilePath value="C:/Users/marukala/Downloads"/>
+  </Configuration>  
+  
+  <Configuration Name="MRA">
+		<Username value="sbommala"/>
+		<Password value="T2N0b2JlckAyMDE1"/>
+		<MinWait value="10000"/>
+		<DefaultWait value="20000"/>
+		<MaxWait value="30000"/>
+		<WaitLong value="90000"/>
+		<OneMinute value="60000"/>
+		<TwoMinutes value="120000"/>
+		<ThreeMinutes value="180000"/>
+		<Vendor value="CDSEM-Verity4i"/>
+		<Vendor1 value="Scanner"/>
+		<LoadPropertiesPath value="./resource/GlobalFoundries/mra.properties"/>
+		<OCDRecipePath value="/mra_mtqa/mra_output/dev/ocd/DINO1-1F/"/>
+		<OCDFileLocation value="ls /mra_mtqa/mra_output/dev/ocd/DINO1-1S/"/>
+		<lnkStartWizardOverlay value="//div[contains(text(),'Overlay/OCD/THK')]/../following-sibling::ul/li/a[contains(text(),'Start Wizard')]"/>
+		<lnkSpecbookStartWizard value="//div[contains(text(),'Specbook')]/../following-sibling::ul/li/a[contains(text(),'Start Wizard')]"/>
+		<lnkBatchModeSettings value="//a[contains(text(),'Batch Mode')]"/>
+		<File value="* | wc -l"/>
+        <FileExt value=".batch"/>
+        <FICDFirst value="ls /proj/mra/data_dev/mra_output/dev/FICD/7130A/RX/"/>
+		<FICDLast value="* | wc -l"/>
+		<DICDFirst value="ls /proj/mra/data_dev/mra_output/dev/DICD/7130A/RX/"/>
+		<DICDLast value="* | wc -l"/>
+		<SaveFile value="./objectRepository/images/1402910993256.png"/>
+		<THKRcpPath value="\\Vdrsfgrp1\drs_gs$\MRA_Recipes\dev\THK\ALE\"/>
+		<EditBatchFileTxtXpath value="//textarea[@id='batchfileTxt']"/>
+		<THK_DINO_OPFolPath value = "/mra_mtqa/mra_output/dev/THK/ALE/28LP1QGT/DINO1-1F/"/>
+		<SPStartWizard value="//div[contains(text(),'Specbook')]/../following-sibling::ul/li/a[contains(text(),'Start Wizard')]"/>
+		<OverlayStartWizard value="//div[contains(text(),'Overlay/OCD/THK')]/../following-sibling::ul/li/a[contains(text(),'Start Wizard')]"/>
+		<TemplateSetting value = "//div[contains(text(),'Others ')]/../following-sibling::ul/li/a[contains(text(),'Settings')]"/>
+		<OCD_SHERE10_OPFolPath value = "/mra_mtqa/mra_output/dev/ocd/SHERE10-1F/"/>
+		<DownloadFilePath value="C:/Users/sbehera1/Downloads/"/>		
+		<AMID_DINO_Path value = "/mra_mtqa/mra_output/dev/overlay-aimid/DINO1-1F/"/>
+		<DBQueryEyePtVectorLoc_SHERE10 value = "Select DISTINCT eyppointvector FROM (Select DISTINCT lpad(ff.layer,3,0) layer,'('||cd_x||','||cd_y||')' as eyppointvector From reticle.MASK_DATA_PREP mdp, reticle.fab_features ff, reticle.fab_cd_locations fcl Where mdp.MASK_DATA_PREP_SK=ff.MASK_DATA_PREP_SK and ff.FAB_FEATURES_SK=fcl.fab_features_sk and mdp.product_id='SHERE10' and metrology_type like '%EYEP%' order by layer)"/>
+		<Overlay_DINO1_OPFolPath value = "/mra_mtqa/mra_output/dev/overlay/DINO1-1F/"/>
+		<LoadingMaskXpath value="//div[@id='loaderArea']"/>
+		<LinkCancel value="//a[contains(text(),'Cancel')]"/>
+		<lnkFindRequestsOverlay value="//div[contains(text(),'Overlay/OCD/THK')]/../following-sibling::ul/li/a[contains(text(),'Find Requests')]"/>
+	</Configuration>
+
+	<Configuration Name="MRA_OLD">
+		<Username value="sramanat"/>
+		<Password value=""/>
+		<Password1 value="Q2FybGFKYWtlMDE="/>
+		<MinWait value="10000"/>
+		<DefaultWait value="20000"/>
+		<MaxWait value="30000"/>
+		<WaitLong value="90000"/>
+		<OneMinute value="60000"/>
+		<TwoMinutes value="120000"/>
+		<ThreeMinutes value="180000"/>
+		<TextfileUpload value="./testData/MRA/GeneralTextFile.txt"/>
+		<WrongFormatFile value="./testData/MRA/SPECBOOK_settings_2014-04-25.xlsx"/>
+		<DownloadFilePath value="C:/Users/sramanat/Downloads/"/> <!--Change it based on logged in user-->
+		<FileExt value=".batch"/>
+		<ModifiedFile value="./testData/MRA/Verity4i.settings.2014-04-22.xlsx"/>
+		<Vendor value="CDSEM-Verity4i"/>
+		<Vendor1 value="Scanner"/>
+		<RecipeType value="FICD"/>
+		<Technology value="28BK"/>
+		<LocationSelect value="PreferCenter"/>
+		<SelectedLayer value="0AD"/>
+		<SelectedLayer1 value="0B1"/>
+		<SelectedLayer2 value="0H1"/>
+		<SelectedLayer3 value="0RX"/>
+		<SelectedLayer4 value="0PC"/>
+		<SelectedLayer5 value="0KA"/>
+		<WrongReticle value="ABCD123WTI"/>
+		<AvailableLayersBox value="Available Layers"/>
+		<SelectedLayersBox value="Selected Layers"/>
+		<AvailableLayersID value="availableLayers"/>
+		<SelectedLayersID value="LayerSelection"/>
+		<LoadPropertiesPath value="./resource/GlobalFoundries/mra.properties"/>
+		<FilePathLocal value=".\testData\MRA"/>
+		<PatternFilePath value=".\testData\MRA\site-list-2.txt"/>
+		<FICDFirst value="ls /proj/mra/data_dev/mra_output/dev/FICD/7130A/RX/"/>
+		<FICDLast value="* | wc -l"/>
+		<DICDFirst value="ls /proj/mra/data_dev/mra_output/dev/DICD/7130A/RX/"/>
+		<DICDLast value="* | wc -l"/>
+		<SaveFile value="./objectRepository/images/1402910993256.png"/>
+		<OCDFileLocation value="ls /proj/mra/data_dev/mra_output/dev/"/>
+		<File value="* | wc -l"/>	
+	</Configuration>
+
+	<Configuration Name="EMSPLUS_FAB8">
+    <UserName value="userreq2"/>
+    <Pwd value="userreq2"/>
+	<UserName1 value="sbheeman"/>
+    <Pwd1 value="Welcome11"/>
+	<Exception value="Exception"/>
+	<SpecName value="AutomationTesting"/>
+	<RequestorName value="userappr1"/>
+	<RequestorID value="userappr1"/>	
+	<ApproveUser value="userreq2"/>
+	<TaskState value="APPROVED"/>			
+	<VamosConfigDataTableRowCount value=""/>
+	<MaxValue value="35000"/>
+	<MidValue value="15000"/>
+	<MidValue1 value="15000"/>
+	<MidValue2 value="10000"/>
+	<MinValue value="6000"/>
+	<MinValue1 value="2000"/>
+	<TCID_1775_MainPD_CSVFile valur="./testData/EMS_SM_CSV_Verification/TCID_1775_MainPD.csv"/>
+	<LoadPropertiesPath value="./resource/GlobalFoundries/ems.properties"/>
+	<LinuxServerAutosetupLogpath value="/local/logs/fabgui/ems/server-ems-autosetup.log"/>
+  </Configuration>
+
+  <Configuration Name="EMSPLUS_FAB8">
+ <UserName value="userreq2"/>
+    <Pwd value="userreq2"/>
+	<UserName1 value="sbheeman"/>
+    <Pwd1 value="Welcome11"/>
+	<Exception value="Exception"/>
+	<SpecName value="AutomationTesting"/>
+	<RequestorName value="userappr1"/>
+	<RequestorID value="userappr1"/>	
+	<ApproveUser value="userreq2"/>
+	<TaskState value="APPROVED"/>			
+	<VamosConfigDataTableRowCount value=""/>
+	<MaxValue1 value="60000"/>
+	<MaxValue value="35000"/>
+	<MidValue value="15000"/>
+	<MidValue1 value="15000"/>
+	<MidValue2 value="10000"/>
+	<MinValue value="6000"/>
+	<MinValue1 value="2000"/>
+	<LoadPropertiesPath value="./resource/GlobalFoundries/ems.properties"/>
+  </Configuration>
+  <Configuration Name="FAB8_EFFECTIVE">
+    <UserName value="sbommala"/>
+    <Pwd value="October@2015"/>
+	<Exception value="Exception"/>
+	<SpecName value="AutomationTesting"/>
+	<RequestorName value="userappr1"/>
+	<RequestorID value="userappr1"/>
+	<ApproveUser value="userreq2"/>
+	<TaskState value="APPROVED"/>		
+	<VamosConfigDataTableRowCount value=""/>
+	<LogWaitValue value="45000"/>
+	<MaxValue value="30000"/>
+	<MidValue value="20000"/>
+	<MinValue value="5000"/>
+	<TCID_1775_MainPD_CSVFile value="./testData/EMS_SM_CSV_Verification/TCID_1775_MainPD.csv"/>
+	<LoadPropertiesPath value="./resource/GlobalFoundries/ems.properties"/>
+	<LinuxServerAutosetupLogpath value="/local/logs/fabgui/ems/server-ems-autosetup.log"/>
+  </Configuration>
+  
+  <Configuration Name="FAB8_Filter">
+    <UserName value="marukala"/>
+    <Pwd value="Madhu123123"/>
+	<Exception value="Exception"/>
+	<SpecName value="AutomationTesting"/>
+	<RequestorName value="userappr1"/>
+	<RequestorID value="userappr1"/>
+	<ApproveUser value="userreq2"/>
+	<TaskState value="APPROVED"/>
+	<MaxValue1 value="60000"/>
+	<MaxValue value="20000"/>
+	<MidValue value="10000"/>
+	<MinValue value="5000"/>
+	<MinValue1 value="2000"/>
+  </Configuration> 
+  
+	<Configuration Name="EMSPLUS_FAB1">
+    <UserName value="userreq2"/>
+    <Pwd value="userreq2"/>
+	<Exception value="Exception"/>
+	<SpecName value="AutomationTesting"/>
+	<RequestorName value="userappr1"/>
+	<RequestorID value="userappr1"/>	
+	<ApproveUser value="userreq2"/>
+	<TaskState value="APPROVED"/>			
+	<LoadPropertiesPath value="./resource/GlobalFoundries/fabgui.properties"/>
+	<VamosConfigDataTableRowCount value=""/>
+	<MaxValue value="30000"/>
+	<MidValue value="15000"/>
+	<MidValue1 value="15000"/>
+	<MidValue2 value="10000"/>
+	<MinValue value="6000"/>
+	<MinValue1 value="2000"/>
+  </Configuration>
+  
+   <Configuration Name="FAB1_EFFECTIVE">
+    <UserName value="sbommala"/>
+    <Pwd value="October@2015"/>
+	<Exception value="Exception"/>
+	<SpecName value="AutomationTesting"/>
+	<RequestorName value="userappr1"/>
+	<RequestorID value="userappr1"/>
+	<ApproveUser value="userreq2"/>
+	<TaskState value="APPROVED"/>		
+	<VamosConfigDataTableRowCount value=""/>
+	<LogWaitValue value="45000"/>
+	<MaxValue value="30000"/>
+	<MidValue value="20000"/>
+	<MinValue value="3000"/>
+	<MinValue1 value="2000"/>
+	<TCID_1775_MainPD_CSVFile value="./testData/EMS_SM_CSV_Verification/TCID_1775_MainPD.csv"/>
+	<LoadPropertiesPath value="./resource/GlobalFoundries/ems.properties"/>
+	<LinuxServerAutosetupLogpath value="/local/logs/fabgui/ems/server-ems-autosetup.log"/>
+  </Configuration>
+  <Configuration Name="FAB1_Filter">
+    <UserName value="sbommala"/>
+    <Pwd value="july@2015"/>
+	<Exception value="Exception"/>
+	<SpecName value="AutomationTesting"/>
+	<RequestorName value="userappr1"/>
+	<RequestorID value="userappr1"/>
+	<ApproveUser value="userreq2"/>
+	<TaskState value="APPROVED"/>
+	<MaxValue1 value="60000"/>
+	<MaxValue value="20000"/>
+	<MidValue value="10000"/>
+	<MinValue value="5000"/>
+	<MinValue1 value="2000"/>
+  </Configuration> 
+
+	<Configuration Name="FABGUI_EFFECTIVE">
+    <UserName value="sbommala"/>
+    <Pwd value="july@2015"/>
+	<Exception value="Exception"/>
+	<SpecName value="AutomationTesting"/>
+	<RequestorName value="userappr1"/>
+	<RequestorID value="userappr1"/>
+	<ApproveUser value="userreq2"/>
+	<TaskState value="APPROVED"/>		
+	<LoadPropertiesPath value="./resource/GlobalFoundries/fabgui.properties"/>
+	<VamosConfigDataTableRowCount value=""/>
+	<LogWaitValue value="45000"/>
+	<MaxValue value="30000"/>
+	<MidValue value="20000"/>
+	<MinValue value="5000"/>
+  </Configuration>
+  
+	<Configuration Name="FABGUI_EMS">
+		<UserName value="userreq2"/>
+		<Pwd value="userreq2"/>
+		<Exception value="Exception"/>
+		<SpecName value="AutomationTesting"/>
+		<RequestorName value="userappr1"/>
+		<RequestorID value="userappr1"/>	
+		<ApproveUser value="userreq2"/>
+		<TaskState value="APPROVED"/>		
+		<LoadPropertiesPath value="./resource/GlobalFoundries/fabgui.properties"/>
+		<VamosConfigDataTableRowCount value=""/>
+		<MaxValue1 value="60000"/>
+		<MaxValue value="50000"/>
+		<MidValue value="10000"/>
+		<MinValue value="5000"/>
+		<MinValue1 value="2000"/>
+	</Configuration>
+
+	<Configuration Name="ECM">
+    <ECMProperties value="./resource/GlobalFoundries/ecm.properties"/>
+	<CompareECMDBValues value="./resource/GlobalFoundries/CompareECMDBValues.properties"/>
+    <SheetName value="ECM_Request"/>
+	<EC_Sanity value="Sanity_TestConditions"/>
+	<EC_Regression value="Regression_TestConditions"/>
+	<EC_TestConditions value="TestConditions"/>
+	<approver1 value="56674982d7bc3f678ef53d3b"/>
+	<approver2 value="5667497bc708c98f9cce7291"/>
+	<approver3 value="56674982d7bc3f678ef53d3d"/>
+	<approver4 value="56674981d7bc3f678ef53d05"/>
+	<approver5 value="56674982d7bc3f678ef53d39"/><!--Approver Name: Sokya Martin-->
+	<approver1_Fab1 value="56fada13a8d1a26e5b7b5f97"/><!--Approver Name: Lakshmi Maddali in Fab1 environment-->
+	<DBUrl Value="jdbc:oracle:thin:@fc8orag02:1521/smds1adc.gfoundries.com"/>
+	<DBUserName Value="smds_reader"/>
+	<DBPassword Value="smds_reader"/>
+	<Results value="[]"/>
+  </Configuration>
+
+	<Configuration Name="SMPLUS">
+		<UserName value="pkumari"/>
+		<Passwd value="Pk@Feb@2015"/>	
+		<MaxValue value="20000"/>
+		<MidValue value="10000"/>
+		<MinValue value="8000"/>	
+		<Basic-Log value="D:/MTQA/0.9.6a/Tables/xAFT_Basic-Log"/>
+		<DHFVXPC_Table value="D:/MTQA/0.9.6a/Tables/xAFT_DH-FVX-PC_Table"/>
+		<Eqp_RelaReport value="D:/MTQA/0.9.6a/Tables/xAFT_Eqp_RelaReport_Table"/>
+		<Equipment-Long	value="D:/MTQA/0.9.6a/Tables/xAFT_Equipment-Long"/>
+		<FF-RIPCORD1 value="D:/MTQA/0.9.6a/Tables/xAFT_FF-RIPCORD1_Table"/>
+		<Fss-STD value="D:/MTQA/0.9.6a/Tables/xAFT_Fss-STD"/>
+		<LSubRoute_CP value="D:/MTQA/0.9.6a/Tables/xAFT_LinkedSubRoute_CPTable"/> 	
+		<LSubRoute_C value="D:/MTQA/0.9.6a/Tables/xAFT_LinkedSubRoute_CTable"/>
+		<LSubRoute_MainPD value="D:/MTQA/0.9.6a/Tables/xAFT_LSubRoute_MainPD"/>
+		<LSubRoute_Module value="D:/MTQA/0.9.6a/Tables/xAFT_LSubRoute_Module"/>
+		<LSubRoute_Module_MPD value="D:/MTQA/0.9.6a/Tables/xAFT_LSubRoute_Module_MPD"/>
+		<PDLRAssociation value="D:/MTQA/0.9.6a/Tables/xAFT_PDLRAssociation-Table"/>
+		<PDLRReletion value="D:/MTQA/0.9.6a/Tables/xAFT_PDLRReletion-Table"/>
+		<ViewSummary_Check value="D:/MTQA/0.9.6a/Tables/xAFT_ViewSummary_Check"/>		
+	</Configuration>
+	
+</AppConfig>

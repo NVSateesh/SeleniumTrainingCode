@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AFT" default="aft">
+	<property name="project.path" value="./source" />
+	<property name="class.path" value="${project.path}/bin" />
+	<property name="aftJarFile.path" value="./library/aft.jar" />
+	<property name="jararchive.path" value="./archive" />
+
+	<!-- Set class path libraries to be used for compilation -->
+	<path id="aftcpath">
+		<pathelement location="lib" path="./library/commons-io-2.4.jar" />
+		<pathelement location="lib" path="./library/aftcommon.jar" />
+		<pathelement location="lib" path="./library/log4j-1.2.17.jar" />
+		<pathelement location="lib" path="./library/selenium-java-2.33.0.jar" />
+		<pathelement location="lib"
+			path="./library/selenium-server-standalone-2.33.0.jar" />
+		<pathelement location="lib" path="./library/dblibs/ojdbc6.jar" />
+		<pathelement location="lib"
+			path="./library/dblibs/mysql-connector.jar" />
+		<pathelement location="lib" path="./library/jna-3.4.0.jar" />
+		<pathelement location="lib" path="./library/jdom.jar" />
+		<pathelement location="lib" path="./library/jdom-2.0.4.jar" />
+		<pathelement location="lib" path="./library/jna-platform-3.4.0.jar" />
+		<pathelement location="lib" path="./library/xbean.jar" />
+		<pathelement location="lib" path="./library/groovy-1.8.4.jar" />
+		<pathelement location="lib" path="./library/asm-3.2.jar" />
+		<pathelement location="lib" path="./library/asm-commons-3.2.jar" />
+		<pathelement location="lib" path="./library/asm-tree-3.2.jar" />
+		<pathelement location="lib" path="./library/asm-util-3.2.jar" />
+		<pathelement location="lib" path="./library/antlr-2.7.7.jar" />
+		<pathelement location="lib" path="./library/jruby-engine.jar" />
+		<pathelement location="lib" path="./library/jruby.jar" />
+		<pathelement location="lib" path="./library/jython-engine.jar" />
+		<pathelement location="lib" path="./library/jython.jar" />
+		<pathelement location="lib" path="./library/rt.jar" />
+		<pathelement location="lib" path="./library/jsse.jar" />
+		<pathelement location="lib" path="./library/pdfbox-app-1.6.0.jar" />
+		<pathelement location="lib" path="./library/sqljdbc4.jar" />
+		<pathelement location="lib"
+			path="./library/twin-client-standalone-1.0.jar" />
+		<pathelement location="lib" path="./library/velocity-1.4-dev.jar" />
+		<pathelement location="lib" path="./library/jacob-1.14.3.jar" />
+		<pathelement location="lib" path="./library/jsoup-1.7.1.jar" />
+		<pathelement location="lib" path="./library/sikuli-script.jar" />
+		<pathelement location="lib" path="./library/commons-codec-1.6.jar" />
+		<pathelement location="lib"
+			path="./library/commons-collections-3.2.1.jar" />
+		<pathelement location="lib" path="./library/commons-lang3-3.1.jar" />
+		<pathelement location="lib"
+			path="./library/commons-logging-1.1.1.jar" />
+		<pathelement location="lib"
+			path="./library/commons-httpclient-3.1.jar" />
+		<pathelement location="lib" path="./library/hamcrest-core-1.2.1.jar" />
+		<pathelement location="lib"
+			path="./library/hamcrest-library-1.2.1.jar" />
+		<pathelement location="lib" path="./library/httpclient-4.2.1.jar" />
+		<pathelement location="lib" path="./library/httpcore-4.2.1.jar" />
+		<pathelement location="lib" path="./library/httpmime-4.2.1.jar" />
+		<pathelement location="lib" path="./library/jersey-core-1.8.jar" />
+		<pathelement location="lib" path="./library/jersey-json-1.8.jar" />
+		<pathelement location="lib" path="./library/jersey-server-1.8.jar" />
+		<pathelement location="lib" path="./library/rest-assured-1.7.2.jar" />
+		<pathelement location="lib"
+			path="./library/signpost-commonshttp4-1.2.1.1.jar" />
+		<pathelement location="lib"
+			path="./library/signpost-core-1.2.1.1.jar" />
+		<pathelement location="lib" path="./library/json_simple-1.1.jar" />
+		<pathelement location="lib" path="./library/mail.jar" />
+		<pathelement location="lib" path="./library/poi-3.8-20120326.jar" />
+		<pathelement location="lib"
+			path="./library/poi-ooxml-3.8-20120326.jar" />
+		<pathelement location="lib"
+			path="./library/poi-ooxml-schemas-3.8-20120326.jar" />
+		<pathelement location="lib"
+			path="./library/poi-excelant-3.8-20120326.jar" />
+		<pathelement location="lib"
+			path="./library/languagetool\LanguageTool.jar" />
+		<pathelement location="lib"
+			path="./library/webDriverEnginePlugin.jar" />
+		<pathelement location="lib" path="./library/qtpEnginePlugin.jar" />
+		<pathelement location="lib" path="./library/twinEnginePlugin.jar" />
+		<pathelement location="lib" path="./library/frankensteinPlugin.jar" />
+		<pathelement location="lib" path="./library/etlPlugin.jar" />
+
+		<pathelement location="lib" path="./library/common.jar" />
+		<pathelement location="lib" path="./library/sdklib.jar" />
+		<pathelement location="lib" path="./library/jruby.jar" />
+		<pathelement location="lib" path="./library/jruby-complete-1.7.5.jar" />
+		<pathelement location="lib" path="./library/jruby-embed-0.1.2.jar" />
+		<pathelement location="lib" path="./library/jruby-engine.jar" />
+
+	</path>
+
+	<!-- Compile targets -->
+	<target name="aft">
+		<echo message="Compiling AFT Source..." />
+		<mkdir dir="${class.path}" />
+		<javac classpathref="aftcpath" destdir="${class.path}" encoding="UTF-8"
+			optimize="off" debug="on" failonerror="true" srcdir="${project.path}/core" />
+		<antcall target="revision" />
+		<jar destfile="${aftJarFile.path}" basedir="${class.path}" />
+		<antcall target="archive" />
+	</target>
+
+	<!-- Build revision incement -->
+	<target name="revision">
+		<propertyfile file="build_info.properties">
+			<entry key="build.revision.number" type="int" operation="+"
+				value="1" />
+		</propertyfile>
+	</target>
+
+	<!-- Build revision incement -->
+	<target name="archive">
+		<property file="build_info.properties" />
+		<jar
+			destfile="${jararchive.path}/aft-${build.initial.number}.${build.major.number}.${build.minor.number}.${build.revision.number}.jar"
+			basedir="${class.path}" />
+	</target>
+
+</project>

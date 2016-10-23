@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qtp>
+<object xAFTObject="Text Box">
+	<action xAFTAction="click" toolAction="Click" toolObject="WebEdit;WinEdit;OracleEdit" parameterDelimiter=",">
+		<parameter name = "X" datatype="int" mandatory="no"/>
+		<parameter name = "Y" datatype="int" mandatory="no"/>
+	</action> 
+	<action xAFTAction="Dblclick" toolAction="DblClick" toolObject="WebEdit" parameterDelimiter=",">
+		<parameter name = "X" datatype="int" mandatory="no"/>
+		<parameter name = "Y" datatype="int" mandatory="no"/>
+	</action> 
+	<action xAFTAction="type" toolAction="type" toolObject="WebEdit" parameterDelimiter=",">
+		<parameter name = "Value" datatype="String" mandatory="Yes" default=""/>
+	</action> 
+	<action xAFTAction="test" toolAction="test" toolObject="WebEdit;WinEdit;OracleEdit" parameterDelimiter=",">
+		<parameter name = "X" datatype="String" mandatory="Yes"/>
+		<parameter name = "as" datatype="int" mandatory="no"/>
+		<parameter name = "asa" datatype="int" mandatory="no"/>
+		<parameter name = "Y" datatype="int" mandatory="yes" default="1212"/>
+	</action>
+	<action xAFTAction="waitUntilStateChange" toolAction="waitUntilStateChange" toolObject="JavaEdit" parameterDelimiter="">
+		<parameter name = "State" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="isResultValid" toolAction="isResultValid" toolObject="JavaEdit" parameterDelimiter="">		
+	</action>
+	<action xAFTAction="verifyForTextPresence" toolAction="verifyForTextPresence" toolObject="JavaEdit;JavaStaticText" parameterDelimiter="">
+		<parameter name = "SearchString" datatype="String" mandatory="Yes"/>
+	</action>
+</object>
+
+<!--Button Actions-->
+<object xAFTObject="Button">
+	<action xAFTAction="waitProperty" toolAction="waitProperty" toolObject="JavaButton,JavaTab,JavaTable,JavaEdit" parameterDelimiter=",">
+		<parameter name = "Property" datatype="String" mandatory="Yes"/>
+		<parameter name = "Value" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="SetTOProperty" toolAction="SetTOProperty" toolObject="JavaButton" parameterDelimiter=",">
+		<parameter name = "Property" datatype="String" mandatory="Yes" default=""/>
+		<parameter name = "Value" datatype="String" mandatory="Yes" default=""/>
+	</action> 
+</object>
+
+<!--Window Actions-->
+<object xAFTObject="Window">
+	<action xAFTAction="waitForPopup" toolAction="waitForPopup" toolObject="JavaWindow;Window,wpfWindow,vbWindow,Dialog" parameterDelimiter="">
+	</action>
+	<action xAFTAction="close" toolAction="close" toolObject="JavaWindow" parameterDelimiter="">
+	</action>
+	<action xAFTAction="maximize" toolAction="maximize" toolObject="JavaWindow" parameterDelimiter="">
+	</action>
+	<action xAFTAction="verifyErrorForNoLinkedRecipe" toolAction="verifyErrorForNoLinkedRecipe" toolObject="JavaWindow" parameterDelimiter="">
+		<parameter name = "ErrorMsg" datatype="String" mandatory="Yes" default=""/>
+	</action>
+</object>
+
+<!--Tree Actions-->
+<object xAFTObject="Tree">
+	<action xAFTAction="retriveTableHeader" toolAction="retriveTableHeader" toolObject="JavaTree" parameterDelimiter="">		
+		<parameter name = "ColNumber" datatype="int" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="expand" toolAction="expand" toolObject="JavaTree" parameterDelimiter="">
+		<parameter name = "Path" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="collapse" toolAction="collapse" toolObject="JavaTree" parameterDelimiter="">
+		<parameter name = "Path" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="activate" toolAction="activate" toolObject="JavaTree" parameterDelimiter="">
+		<parameter name = "Path" datatype="String" mandatory="Yes"/>
+	</action> 
+	<action xAFTAction="isTreeNodePresent" toolAction="isTreeNodePresent" toolObject="JavaTree" parameterDelimiter="">
+		<parameter name = "sNodeName" datatype="String" mandatory="Yes" default=""/>
+	</action> 
+	<action xAFTAction="isKeyPresent" toolAction="isKeyPresent" toolObject="JavaTree" parameterDelimiter=",">
+		<parameter name = "sNodeName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchVersionPath" toolAction="fetchVersionPath" toolObject="JavaTree" parameterDelimiter=",">
+		<parameter name = "targetBranch" datatype="String" mandatory="Yes"/>
+		<parameter name = "Version" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="rightClick" toolAction="rightClick" toolObject="JavaTree,JavaTable" parameterDelimiter=",">
+	</action>
+	<action xAFTAction="leftClick" toolAction="leftClick" toolObject="JavaTree,JavaObject" parameterDelimiter=",">
+	</action>
+	<action xAFTAction="fetchColumnValue" toolAction="fetchColumnValue" toolObject="JavaTree" parameterDelimiter=",">
+		<parameter name = "item" datatype="String" mandatory="Yes"/>
+		<parameter name = "col" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchACName" toolAction="fetchACName" toolObject="JavaTree" parameterDelimiter="">
+		<parameter name = "initiatorcmnt" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="DblclickOffset" toolAction="DblclickOffset" toolObject="JavaTable;JavaTree" parameterDelimiter=",">
+		<parameter name = "xOffset" datatype="int" mandatory="Yes"/>
+		<parameter name = "clickType" datatype="String" mandatory="Yes" default="LEFT"/>
+	</action>
+	<action xAFTAction="ClickTreeOffset" toolAction="ClickTreeOffset" toolObject="JavaTree" parameterDelimiter=",">
+		<parameter name = "xOffset" datatype="int" mandatory="Yes"/>
+		<parameter name = "clickType" datatype="String" mandatory="Yes" default="LEFT"/>
+	</action>
+	<action xAFTAction="ClickRight" toolAction="ClickRight" toolObject="JavaTree" parameterDelimiter=",">
+		<parameter name = "x" datatype="int" mandatory="Yes"/>
+		<parameter name = "y" datatype="int" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="ExtendSelectInTree" toolAction="ExtendSelect" toolObject="JavaTree" parameterDelimiter="">
+		<parameter name = "treeItem" datatype="String" mandatory="Yes" default=""/>
+	</action>
+	<action xAFTAction="fetchCurrentVersion" toolAction="fetchCurrentVersion" toolObject="JavaTree" parameterDelimiter="">
+	</action>
+</object>
+
+
+<!--Table Actions-->
+<object xAFTObject="Table">
+	<action xAFTAction="verifyROBDEFTableAttribute" toolAction="verifyROBDEFTableAttribute" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "jTabItem" datatype="String" mandatory="Yes"/>
+		<parameter name = "jRecipe" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyROBDEFTableParameter" toolAction="verifyROBDEFTableParameter" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "jTabItem" datatype="String" mandatory="Yes"/>
+		<parameter name = "jRecipe" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyROBTableParameter" toolAction="verifyROBTableParameter" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "jTabItem" datatype="String" mandatory="Yes"/>
+		<parameter name = "jRecipe" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyROBTableAttributes" toolAction="verifyROBTableAttributes" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "jTabItem" datatype="String" mandatory="Yes"/>
+		<parameter name = "jRecipe" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="moveDownInContextTbl" toolAction="moveDownInContextTbl" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "colName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setParamData" toolAction="setParamData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyTTCmdsInTTWizard" toolAction="verifyTTCmdsInTTWizard" toolObject="JavaTable" parameterDelimiter=",">
+	</action>
+	<action xAFTAction="selectMultipleItemsFromTable" toolAction="selectMultipleItemsFromTable" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "Module" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="openLatestObject" toolAction="openLatestObject" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ObjectName" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="optParameterFromTTWindow" toolAction="optParameterFromTTWindow" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="validateTableRowsCount" toolAction="validateTableRowsCount" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "ExpectedCount" datatype="int" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="optParameter" toolAction="optParameter" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="SelectRow" toolAction="SelectRow" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "RowNumber" datatype="int" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="ClickCell" toolAction="ClickCell" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "RowNum" datatype="int" mandatory="Yes"/>
+		<parameter name = "ColNum" datatype="int" mandatory="Yes"/>
+		<parameter name = "clickType" datatype="String" mandatory="No"/>
+		<parameter name = "keyToBePressed" datatype="String" mandatory="No"/>
+	</action>
+	<action xAFTAction="clickOffset" toolAction="clickOffset" toolObject="JavaTable;JavaObject;JavaTree" parameterDelimiter=",">
+		<parameter name = "xOffset" datatype="int" mandatory="Yes"/>
+		<parameter name = "clickType" datatype="String" mandatory="Yes" default="LEFT"/>
+	</action>
+	<action xAFTAction="selectChkBox" toolAction="selectChkBox" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "Key" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectFromTable" toolAction="selectFromTable" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "Module" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="GetColumnName" toolAction="GetColumnName" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "jIndex" datatype="int" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchTableData" toolAction="fetchTableData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setTableData" toolAction="setTableData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setCellData" toolAction="setCellData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "row" datatype="int" mandatory="Yes"/>
+		<parameter name = "col" datatype="string" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchLastColIndex" toolAction="fetchLastColIndex" toolObject="JavaTable" parameterDelimiter="">
+	</action>
+	<action xAFTAction="verifyROBDEFTableContent" toolAction="verifyROBDEFTableContent" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "jTabItem" datatype="String" mandatory="Yes"/>
+		<parameter name = "ROBname" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyROBTableContent" toolAction="verifyROBTableContent" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "jTabItem" datatype="String" mandatory="Yes"/>
+		<parameter name = "jRecipe" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verrifyContextForROBDEF" toolAction="verrifyContextForROBDEF" toolObject="JavaTable" parameterDelimiter=",">
+	</action>
+	<action xAFTAction="openObject" toolAction="openObject" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ObjectName" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyTriggerTransferCmds" toolAction="verifyTriggerTransferCmds" toolObject="JavaTable" parameterDelimiter=",">
+	</action>
+	<action xAFTAction="selectToolRecipe" toolAction="selectToolRecipe" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "Recipe" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectCell" toolAction="selectCell" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "rowNum" datatype="int" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="activateCell" toolAction="ActivateCell" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "rowNum" datatype="int" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="SplClick" toolAction="SplClick" toolObject="JavaTable;JavaTree" parameterDelimiter=",">
+		<parameter name = "clickType" datatype="String" mandatory="Yes"/>
+		<parameter name = "whereToClick" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setContextForROBDEF" toolAction="setContextForROBDEF" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyTableData" toolAction="verifyTableData" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectRowsRange" toolAction="selectRowsRange" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "start" datatype="int" mandatory="Yes"/>
+		<parameter name = "end" datatype="int" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifySelection" toolAction="verifySelection" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchUploadRcpCnt" toolAction="fetchUploadRcpCnt" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+		<parameter name = "col" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectAllRecipe" toolAction="selectAllRecipe" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "row" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyProductID" toolAction="verifyProductID" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "colName" datatype="String" mandatory="Yes"/>
+		<parameter name = "rcpCnt" datatype="int" mandatory="Yes"/>
+		<parameter name = "pid" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectRecipe" toolAction="selectRecipe" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "Recipename" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchDataFromiGate" toolAction="fetchDataFromiGate" toolObject="WebTable" parameterDelimiter="">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setEqpCEIContext" toolAction="setEqpCEIContext" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchParameterData" toolAction="fetchParameterData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectProductID" toolAction="selectProductID" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "PIDName" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyInTable" toolAction="verifyInTable" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyRecipeLink" toolAction="verifyRecipeLink" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "objName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setDataItemDefinitionData" toolAction="setDataItemDefinition" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="rightClickOnLinkTable" toolAction="rightClickOnLinkTable" toolObject="JavaTable" parameterDelimiter="">
+	</action>
+	<action xAFTAction="enterExpression" toolAction="enterExpression" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "rowNumber" datatype="int" mandatory="Yes"/>
+		<parameter name = "colNumber" datatype="int" mandatory="Yes"/>
+		<parameter name = "expression" datatype="String" mandatory="Yes"/>
+	</action>
+		<action xAFTAction="validateCsvWithRegviewTable" toolAction="validateCsvWithRegviewTable" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectTableColumnHeader" toolAction="selectTableColumnHeader" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="Shortstring" toolAction="Shortstring" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "columIndex" datatype="int" mandatory="Yes"/>
+		<parameter name = "ColumnType" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColumnName" datatype="String" mandatory="Yes"/>
+	</action>
+		<action xAFTAction="rightClickOnRow" toolAction="rightClickOnRow" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ObjectName" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>	
+	<action xAFTAction="rightClickOnCell" toolAction="rightClickOnCell" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ObjectName" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColIndex" datatype="int" mandatory="Yes"/>
+	</action>
+	
+	<action xAFTAction="selectTableChkBoxInDialog" toolAction="selectTableChkBoxInDialog" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyColumnHeader" toolAction="verifyColumnHeader" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+		<action xAFTAction="ShortColmnstring" toolAction="ShortColmnstring" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "columIndex" datatype="int" mandatory="Yes"/>
+		<parameter name = "ColumnType" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColumnName" datatype="String" mandatory="Yes"/>
+	</action>	
+	<action xAFTAction="openObjectInLinkTable" toolAction="openObjectInLinkTable" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ObjectName" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setParamDataForSPRcp" toolAction="setParamDataForSPRcp" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchAliasParamName" toolAction="fetchAliasParamName" toolObject="JavaTable" parameterDelimiter="">
+	</action>
+	<action xAFTAction="setTTTableData" toolAction="setTTTableData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "Searchkey" datatype="String" mandatory="Yes"/>
+		<parameter name = "SearchCol" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyCol" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setTTTableData1" toolAction="setTTTableData1" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "Searchkey" datatype="String" mandatory="Yes"/>
+		<parameter name = "SearchCol" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyCol" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>	
+	<action xAFTAction="verifyTTDialogData" toolAction="verifyTTDialogData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="String" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>	
+	<action xAFTAction="optAttribute" toolAction="optAttribute" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="optAttributeFromTTWindow" toolAction="optAttributeFromTTWindow" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setTableDataByRowCol" toolAction="setTableDataByRowCol" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "rowValue" datatype="int" mandatory="Yes"/>
+		<parameter name = "colValue" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setTTTableDataByRowCol" toolAction="setTTTableDataByRowCol" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "rowValue" datatype="int" mandatory="Yes"/>
+		<parameter name = "colValue" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="validateTwoColumnsInTable" toolAction="validateTwoColumnsInTable" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "firstColIndex" datatype="int" mandatory="Yes"/>
+		<parameter name = "secondColIndex" datatype="int" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="validateTableRows" toolAction="validateTableRows" toolObject="JavaTable" parameterDelimiter="">
+	</action>
+	<action xAFTAction="RetriveTableData" toolAction="RetriveTableData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "searchkey" datatype="String" mandatory="Yes"/>
+		<parameter name = "searchColNo" datatype="int" mandatory="Yes"/>
+		<parameter name = "columnNo" datatype="int" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setParameterLimit" toolAction="setParameterLimit" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "colNumber" datatype="int" mandatory="Yes"/>
+		<parameter name = "expression" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchAutoLinkParamValue" toolAction="fetchAutoLinkParamValue" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "ParameterName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchAutoLinkParamName" toolAction="fetchAutoLinkParamName" toolObject="JavaTable" parameterDelimiter="">
+	</action>
+	<action xAFTAction="retrieveLinkTableData" toolAction="retrieveLinkTableData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "paramName" datatype="String" mandatory="Yes"/>
+		<parameter name = "colName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchColIndex" toolAction="fetchColIndex" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "ColumnName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setREGKeyData" toolAction="setREGKeyData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchRecipePayloadContextKey" toolAction="fetchRecipePayloadContextKey" toolObject="WebTable" parameterDelimiter="">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectMultipleObjects" toolAction="selectMultipleObjects" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ObjectNames" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchComparisonResult" toolAction="fetchComparisonResult" toolObject="WebTable" parameterDelimiter="">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="deleteAttribute" toolAction="deleteAttribute" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "attribute" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchTTStatusTableData" toolAction="fetchTTStatusTableData" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "rowNum" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="moveRightInLinkTab" toolAction="moveRightInLinkTab" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "colName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setREGNameInLinkTable" toolAction="setREGNameInLinkTable" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="moveDownInREGKeyTbl" toolAction="moveDownInREGKeyTbl" toolObject="JavaTable" parameterDelimiter="">
+		<parameter name = "colName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="OpenRecipe" toolAction="OpenRecipe" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ObjectName1" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName1" datatype="String" mandatory="Yes"/>
+		<parameter name = "ObjectName2" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName2" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="fetchRowIndex" toolAction="fetchRowIndex" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "Data" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColumnName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyROBDEFTableData" toolAction="verifyROBDEFTableData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "jTabItem" datatype="String" mandatory="Yes"/>
+		<parameter name = "jRecipe" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setACDPrecondition" toolAction="setACDPrecondition" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "Searchkey" datatype="String" mandatory="Yes"/>
+		<parameter name = "SearchCol" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyCol" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectObjectInRegView" toolAction="selectObjectInRegView" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ObjectName" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setMultiplePrecondition" toolAction="setMultiplePrecondition" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data1" datatype="String" mandatory="Yes"/>
+		<parameter name = "data2" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectPreconditionOperator" toolAction="selectPreconditionOperator" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "key" datatype="String" mandatory="Yes"/>
+		<parameter name = "srchColName" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="SelectReviewOrBoardIcons" toolAction="SelectReviewOrBoardIcons" toolObject="WebTable" parameterDelimiter=",">
+		<parameter name = "ColumnName" datatype="String" mandatory="Yes"/>
+		<parameter name = "Comment" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="VerifyROBExists" toolAction="VerifyROBExists" toolObject="WebTable" parameterDelimiter="">		
+		<parameter name = "Comment" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyBoardMemberExist" toolAction="verifyBoardMemberExist" toolObject="WebTable" parameterDelimiter="">		
+		<parameter name = "SrchString" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="SearchTextinTable" toolAction="SearchTextinTable" toolObject="WebTable" parameterDelimiter="">		
+		<parameter name = "KeyValue" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="ClickLastPage" toolAction="ClickLastPage" toolObject="WebTable" parameterDelimiter="">		
+		<parameter name = "KeyValue" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="SelectIconInCompareApprove" toolAction="SelectIconInCompareApprove" toolObject="WebTable" parameterDelimiter=",">
+		<parameter name = "ColumnName" datatype="String" mandatory="Yes"/>
+		<parameter name = "RecipeName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setTTTableDataInParameterAndCI" toolAction="setTTTableDataInParameterAndCI" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "Searchkey" datatype="String" mandatory="Yes"/>
+		<parameter name = "SearchCol" datatype="int" mandatory="Yes"/>
+		<parameter name = "modifyCol" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="selectChangeROBs" toolAction="selectChangeROBs" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ObjectNames" datatype="String" mandatory="Yes"/>
+		<parameter name = "ColName" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="verifyColumnData" toolAction="verifyColumnData" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "ColumnName" datatype="String" mandatory="Yes"/>
+		<parameter name = "value" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="ClickonTableElement" toolAction="ClickonTableElement" toolObject="WebTable" parameterDelimiter=",">
+		<parameter name = "Text" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="setTableDataChangeROB" toolAction="setTableDataChangeROB" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "rowValue" datatype="int" mandatory="Yes"/>
+		<parameter name = "colValue" datatype="int" mandatory="Yes"/>
+		<parameter name = "data" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="VerifySortingValues" toolAction="VerifySortingValues" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "Order" datatype="String" mandatory="Yes"/>
+	</action>
+	<action xAFTAction="CompareTableWithFile" toolAction="CompareTableWithFile" toolObject="JavaTable" parameterDelimiter=",">
+		<parameter name = "filepath" datatype="String" mandatory="Yes"/>
+	</action>
+</object>
+
+<!--Tab Actions-->
+<object xAFTObject="Tab">
+	<action xAFTAction="CloseTab" toolAction="CloseTab" toolObject="JavaTab" parameterDelimiter=",">
+		<parameter name = "TabName" datatype="string" mandatory="Yes"/>
+	</action>
+</object>
+
+<!--Menu Actions-->
+<object xAFTObject="Menu">
+	<action xAFTAction="selectMenu" toolAction="selectMenu" toolObject="JavaMenu" parameterDelimiter="">
+	</action>
+	<action xAFTAction="isModuleSelected" toolAction="isModuleSelected" toolObject="JavaMenu" parameterDelimiter="">
+	</action>
+	
+</object>
+
+<!--Object Actions-->
+<object xAFTObject="Object">
+	<action xAFTAction="clickOnObject" toolAction="clickOnObject" toolObject="JavaObject" parameterDelimiter=",">
+		<parameter name = "x" datatype="int" mandatory="Yes" default="1"/>
+		<parameter name = "y" datatype="int" mandatory="Yes" default="1"/>
+	</action>
+	<action xAFTAction="Presskey" toolAction="Presskey" toolObject="JavaObject" parameterDelimiter="">
+		<parameter name = "Data" datatype="String" mandatory="Yes" default=""/>
+	</action>
+	<action xAFTAction="DblClick" toolAction="DblClick" toolObject="JavaObject" parameterDelimiter=",">
+		<parameter name = "x" datatype="int" mandatory="Yes" default="1"/>
+		<parameter name = "y" datatype="int" mandatory="Yes" default="1"/>
+	</action>
+</object>
+
+<!--ToolBar Actions-->
+<object xAFTObject="ToolBar">
+	<action xAFTAction="Press" toolAction="Press" toolObject="JavaToolBar" parameterDelimiter="">
+		<parameter name = "toolBarItem" datatype="String" mandatory="Yes" default=""/>
+	</action>
+		<action xAFTAction="pressToolBarItem" toolAction="pressToolBarItem" toolObject="JavaToolBar" parameterDelimiter="">
+		<parameter name = "toolBarItem" datatype="String" mandatory="Yes" default=""/>
+	</action>
+	<action xAFTAction="isCorrectProspevitve" toolAction="isCorrectProspevitve" toolObject="JavaToolBar" parameterDelimiter=",">
+		<parameter name = "prospectiveName" datatype="String" mandatory="Yes" />		
+	</action>
+
+</object>
+
+<!--List Actions-->
+<object xAFTObject="List">
+	<action xAFTAction="selectList" toolAction="selectList" toolObject="JavaList" parameterDelimiter="">
+		<parameter name = "listItem" datatype="int" mandatory="Yes" default=""/>
+	</action>
+	<action xAFTAction="ExtendSelect" toolAction="ExtendSelect" toolObject="JavaList" parameterDelimiter="">
+		<parameter name = "listItem" datatype="String" mandatory="Yes" default=""/>
+	</action>
+	<action xAFTAction="verifyKeyValueExist" toolAction="verifyKeyValueExist" toolObject="JavaList" parameterDelimiter="">
+		<parameter name = "keyValue" datatype="String" mandatory="Yes" default=""/>
+	</action>
+	<action xAFTAction="selectModule" toolAction="selectModule" toolObject="JavaList" parameterDelimiter="">
+		<parameter name = "listVal" datatype="String" mandatory="Yes" default=""/>
+	</action>
+	<action xAFTAction="SetDataInAdvancedFilter" toolAction="SetDataInAdvancedFilter" toolObject="JavaList;JavaObject" parameterDelimiter="">
+		<parameter name = "data" datatype="String" mandatory="Yes" default=""/>
+	</action>
+</object>
+
+<!--Link Actions-->
+<object xAFTObject="Link">
+	<action xAFTAction="SetTOProperty" toolAction="SetTOProperty" toolObject="Link" parameterDelimiter=",">
+		<parameter name = "Property" datatype="String" mandatory="Yes" default=""/>
+		<parameter name = "Value" datatype="String" mandatory="Yes" default=""/>
+	</action>
+	<action xAFTAction="advanceFilterClick" toolAction="advanceFilterClick" toolObject="JavaLink" parameterDelimiter="">
+	</action>
+</object>
+
+<!--Browser Actions-->
+<object xAFTObject="Browser">
+	<action xAFTAction="CloseAllTabs" toolAction="CloseAllTabs" toolObject="Browser" parameterDelimiter="">
+	</action>
+</object>
+
+
+
+</qtp>
+ 

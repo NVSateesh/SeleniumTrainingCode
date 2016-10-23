@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository>
+<FeatureSet name="Login">   
+	<Element name="txtUserName" type="Textbox">
+     <xpath>//input[@id='login-username']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtPassword" type="Textbox">
+     <xpath>//input[@id='login-password']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLogin" type="Button">
+     <xpath>//button[@type='submit']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInvalidLogin" type="Label">
+     <xpath>//div[contains(text(),'Username or Password is incorrect')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLogout" type="Button">
+     <xpath>//a[contains(@class,'button logout fRight')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblMessage" type="Label">
+     <xpath>//h1[contains(text(),'Welcome to Metrology Request Automation')]/..</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblUserImage" type="Label">
+     <xpath>//div[@class="userImage-testEnv"]/following-sibling::div</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblMRALogo" type="Label">
+     <xpath>//a[@href='#welcome']/div[contains(text(),'MRA')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>	
+</FeatureSet>
+
+<FeatureSet name="Overlay/OCD/THK">
+	<Element name="lblRecipeResult" type="Lable">
+     <xpath>//label/strong[contains(text(),'Recipe Result')]/..</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkRecipeResult" type="Link">
+		<xpath>//a[@class='ng-binding']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRefLayer" type="TextBox">
+		<name>outerLayer</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkTHKRecipePath" type="Link">
+		<xpath>//a[contains(text(),'.xrc') or contains(text(),'.xml')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboTemplateTarget1" type="ComboBox">
+		<xpath>//div[@id='startWizardOverlayTable']/table/tbody/tr[contains(@class,'rowSelected')][</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboTemplateTarget" type="ComboBox">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboTemplateTarget2" type="ComboBox">
+		<xpath>]/td[contains(@data-title,'Template Targets')]/div/select</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkEditRecipeBtn" type="Link">
+		<id>editRecipeBtn</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnOverlayGenerateRecipeEBF" type="Button">
+		<xpath>//a[@id="editRecipeBtn"]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboLocationSelectionRule" type="ComboBox">
+		 <id>LocRuleSelct:1</id>
+		 <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkCancel" type="Link">
+		 <xpath>//a[contains(text(),'Cancel')]</xpath>
+		 <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkEditBatchFile" type="Link">
+		<id>editBatchFileFromSearch</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<!-- -->
+	<Element name="lnkPrefillSpecBook" type="Link">
+		<xpath>//a[contains(text(),'Pre-fill Specbook from Settings')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="lnkOverlayOCDTHK" type="Link">
+     <xpath>//div[contains(text(),'Overlay/OCD/THK')]/../../a</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkOCDMRNumber" type="Link">
+     <xpath>//div[@id="findOverlayTable"]/table/tbody/tr[1]/td[1]/a</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkFindRequestsOCD" type="Link">
+     <xpath>//div[contains(text(),'Overlay/OCD/THK')]/../following-sibling::ul/li/a[contains(text(),'Find Requests')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkBatchModeOCD" type="Link">
+     <xpath>//div[contains(text(),'Others')]/../following-sibling::ul/li/a[contains(text(),'Batch Mode')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtmrRequestNumberOCD" type="TextBox">
+     <xpath>//input[@id="mrRequestNumber"]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnOCDGenerateRecipe" type="Button">
+     <xpath>//a[contains(text(),'Generate Recipe')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboOCDdeviceId" type="ComboBox">
+     <xpath>//select[@id='deviceId']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+    <Element name="lnkStartWizardOverlay" type="Link">
+     <xpath>//div[contains(text(),'Overlay/OCD/THK')]/../following-sibling::ul/li/a[contains(text(),'Start Wizard')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboOverlayRecipeType" type="ComboBox">
+     <xpath>//select[@id='recipeType']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboOverlayProduct" type="ComboBox">
+     <xpath>//select[@id='product']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboOCDtoolType" type="ComboBox">
+     <xpath>//select[@id='toolType']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboOverlayToolName" type="ComboBox">
+     <xpath>//select[@id='toolName']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnOCDSearchRequests" type="Button">
+     <xpath>//html/body/div[4]/div/div/div/div[1]/form/div[3]/a</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnOverlaySearch" type="Button">
+     <xpath>//a[contains(text(),'Search')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="tblOverlay" type="Table">
+     <xpath>//div[@id='startWizardOverlayTable']/table</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblOCD" type="Table">
+     <xpath>//div[@id='startWizardOverlayTable']/table/tbody/tr</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblOverlayRowIndex" type="Table">
+     <xpath>//div[@id='startWizardOverlayTable']/table/tbody/tr[1]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="tblOverlayColumnHeader" type="Table">
+     <xpath>//div[@id='startWizardOverlayTable']/table/thead/tr[1]/th</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblOverlayRows" type="WebTable">
+     <xpath>//div[@id='startWizardOverlayTable']/table/tbody/tr</xpath>
+     <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtOverlayPhotoLayer" type="TextBox">
+     <xpath>//input[@name='innerLayer' and @type='text']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="radOCDCombine" type="RadioButton">
+     <xpath>//input[@id='recipeModeCombinedRadio2']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOverlayStructure" type="TextBox">
+     <xpath>//input[@name='strucType' and @type='text']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOverlayphotoLayer" type="TextBox">
+		<xpath>//input[@id="photoLayer"]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOverlayreferenceLayer" type="TextBox">
+		<xpath>//input[@id="referenceLayer"]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkOverlayAimidFeature" type="CheckBox">
+		<xpath>//*[@id="startWizardOverlayTable"]/table/tbody/tr[3]/td[1]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOverlayPD" type="TextBox">
+		<xpath>(//input[@name='pdName' and @type='text'])[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+   
+	<Element name="cboWaferSamplingPlan" type="ComboBox">
+     <xpath>//select[@name='selSamplingPlanfilter']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkMetrologyFeature" type="CheckBox">
+		<xpath>(//input[@name='cdsemInfoTableCheckGroup'])[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkOverlayFeature" type="CheckBox">
+     <xpath></xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkOverlayFeature1" type="CheckBox">
+     <xpath>(//input[@name='cdsemInfoTableCheckGroup'])[</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkOverlayFeature2" type="CheckBox">
+     <xpath>]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="chkOCDFeature" type="CheckBox">
+     <xpath></xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkOCDFeature1" type="CheckBox">
+     <xpath>//div[@id='startWizardOverlayTable']/table/tbody/tr[</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkOCDFeature2" type="CheckBox">
+     <xpath>]/td[1]/input</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	
+	
+	<Element name="txtOCDPD" type="TextBox">
+	<xpath>//td[@data-title-text='PD Name']/div/input[@name='pdName']</xpath>
+	<PageTitle> </PageTitle>
+	</Element>	
+	<Element name="txtOCDPDName" type="TextBox">
+		<xpath>//tr[contains(@class,'hightlightRow ng-scope rowSelected')]/td[contains(@data-title,'PD Name')]/div/input[@name='pdName']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOCDPDName1" type="TextBox">
+		<xpath>//div[@id="startWizardOverlayTable"]/table/tbody/tr[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOCDPDName2" type="TextBox">
+		<xpath>]/td[contains(@data-title,'PD Name')]/div/input[@name='pdName']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+	
+	
+	<Element name="txtOCDProcessDef" type="TextBox">
+	 <xpath></xpath>
+	 <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOCDProcessDef1" type="TextBox">
+	 <xpath>//div[@id='startWizardOverlayTable']/table/tbody/tr[</xpath>
+	 <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOCDProcessDef2" type="TextBox">
+	 <xpath>]/td[</xpath>
+	 <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOCDProcessDef3" type="TextBox">
+	 <xpath>]/div/input</xpath>
+	 <PageTitle> </PageTitle>
+    </Element>
+	
+	
+	
+	<Element name="btnOverlayGenerateRecipe" type="Button">
+     <xpath>//a[@id="generateOverlayRecipe"]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnOverlayEditBatchFile" type="Button">
+     <xpath>//a[@id="editBatchFile"]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="cboSelectedWSPlanCell" type="ComboBox">
+		<xpath>//tr[contains(@class,'hightlightRow ng-scope rowSelected')]/td[contains(@data-title,'Wafer Sampling Plan')]/div/select[@name='selSamplingPlan']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedWSPlanCell1" type="ComboBox">
+		<xpath>//div[@id="startWizardOverlayTable"]/table/tbody/tr[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedWSPlanCell2" type="ComboBox">
+		<xpath>]/td[contains(@data-title,'Wafer Sampling Plan')]/div/select[@name='selSamplingPlan']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedLocationRule" type="ComboBox">
+		<xpath>//tr[contains(@class,'hightlightRow ng-scope rowSelected')]/td[contains(@data-title,'Location Selection Rule')]/div/select</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedLocationRule1" type="ComboBox">
+		<xpath>(//tr[contains(@class,'hightlightRow ng-scope rowSelected')])[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedLocationRule2" type="ComboBox">
+		<xpath>]/td[contains(@data-title,'Location Selection Rule')]/div/select</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboSelectedWSPlan2Cell" type="ComboBox">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedWSPlan2Cell1" type="ComboBox">
+		<xpath>((//tr[contains(@class,'hightlightRow ng-scope rowSelected')])[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedWSPlan2Cell2" type="ComboBox">
+		<xpath>]/td[contains(@data-title,'Wafer Sampling Plan')])[2]/div/select</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMrNumber" type="TextBox">
+		<xpath>//input[@id='mrNumber']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtDevice" type="TextBox">
+		<xpath>//input[@id='photoLayer']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTechnology" type="TextBox">
+		<xpath>//input[@id='deviceId']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRcpType" type="TextBox">
+		<xpath>//input[@id='recipe']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="txtCreatedBy" type="TextBox">
+		<xpath>//input[@id='fabName']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="nontxtFailedReason" type="Non-Editable Textbox">
+		<id>comment</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSaveNgenerateRcp" type="Button">
+		<id>editRecipeBtn</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtCreatedDate" type="TextBox">
+		<id>createdBy</id>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="txtToolName" type="TextBox">
+		<xpath>//label[contains(text(),'Tool Name')]/following-sibling::div/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="btnEditBatchFile" type="Button">
+		<xpath>//a[contains(text(),'Edit Batch File')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	 <Element name="btnRetrieveOR" type="Button">
+		<xpath>//a[contains(text(),'Retrieve OR')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="txtStatus" type="TextBox">
+		<xpath>//input[@id='status']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblRecipePath" type="Label">
+		<xpath>//label/strong[contains(text(),'Recipe File Location')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkRecipeFilePath" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="lnkRecipeFilePath1" type="Link">
+		<xpath>//a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="lnkRecipeFilePath2" type="Link">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="txtEditBatchFile" type="Non-Editable Textbox">
+		<xpath>//textarea[@id='batchfileTxt']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="txtORNumber" type="TextBox">
+		<id>mrNumber</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEditBatchFileClose" type="Button">
+		<xpath>//a[@class='popup-close']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLinked" type="Label">
+		<xpath>//label[contains(text(),'Linked')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblMultiLocation" type="Label">
+		<xpath>//label[contains(text(),'Multilocation')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblAllSites" type="Label">
+		<xpath>//label[contains(text(),'All Sites')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<!--Sprint-2 -raja-->
+	<Element name = "radMultiLocation" type="RadioButton">
+	 <xpath>html/body/div[4]/div/div/div/div[2]/div/div/div[3]/div[2]/label</xpath>
+	 <PageTitle></PageTitle>
+	</Element>
+	
+	<Element name = "radLinked" type="RadioButton">
+	 <xpath>html/body/div[4]/div/div/div/div[2]/div/div/div[3]/div[1]/label</xpath>
+	 <PageTitle></PageTitle>
+	</Element>
+	<Element name="chkAllSites" type="CheckBox">
+		<xpath>html/body/div[4]/div/div/div/div[2]/div/div/div[3]/div[3]/div/label</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="cboSecondWaferSPlan" type="ComboBox">
+     <xpath></xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSecondWaferSPlan1" type="ComboBox">
+     <xpath>//div[@id="startWizardOverlayTable"]/table/tbody/tr[</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSecondWaferSPlan2" type="ComboBox">
+     <xpath>]/td[contains(@data-title,'Wafer Sampling Plan')]/div/select[@name='selSamplingPlan2']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRequestNumber" type="TextBox">
+     <xpath>.//*[@id='mrRequestNumber']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="tblFindMRResults" type="Table">
+     <xpath>.//*[@id='findOverlayTable']/table</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="lnkMRNumber" type="Link">
+     <xpath></xpath>
+     <PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkMRNumber1" type="Link">
+     <xpath>.//*[@id='findOverlayTable']/table/tbody/tr/td/a[contains(text(),'</xpath>
+     <PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkMRNumber2" type="Link">
+     <xpath>')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>
+<FeatureSet name="SpecBook">
+	<Element name="lnkSpecbook" type="Link">
+		<xpath>//div[contains(text(),'Specbook')]/..</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkSpecbookStartWizard" type="Link">
+		<xpath>//div[contains(text(),'Specbook')]/../following-sibling::ul/li/a[contains(text(),'Start Wizard')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSBRecipeApplication" type="ComboBox">
+		<xpath>//select[@id='spRecipeApplication']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSBDevice" type="ComboBox">
+		<xpath>//select[@id='deviceId']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSBProductGroup" type="ComboBox">
+		<xpath>//select[@id='spProductGroup']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkApplyFilter" type="Link">
+		<xpath>//a[contains(text(),'Apply')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+    <Element name="tblSpecBookStartWizard" type="WebTable">
+		<xpath>//div[@id='specbookStartWizerdTableInternal']/table</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+   <Element name="txtSpecBkStructure" type="Textbox">
+		<xpath>//input[@st-search='Structure']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="txtSpecBkTechnology" type="Textbox">
+		<xpath>//input[@st-search='Technology']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtSpecWaferSampPlan" type="Textbox">
+		<xpath>//input[@st-search='Wafer_Sampling_Plan']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="tblSpecBookCol" type="Table">
+		<xpath>//div[@id="specbookStartWizerdTableInternal"]/table/thead/tr[1]/th</xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+    <Element name="tblSpecBookEyePointVec" type="TextBox">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+    <Element name="tblSpecBookEyePointVec1" type="TextBox">
+		<xpath>//div[@id="specbookStartWizerdTableInternal"]/table/tbody/tr/td[</xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+    <Element name="tblSpecBookEyePointVec2" type="TextBox">
+		<xpath>]</xpath>
+		<PageTitle> </PageTitle>  
+    </Element>	
+	<Element name="tblSpecBookCellVal" type="TextBox">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+    <Element name="tblSpecBookCellVal1" type="TextBox">
+		<xpath>//div[@id="specbookStartWizerdTableInternal"]/table/tbody/tr[</xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+    <Element name="tblSpecBookCellVal2" type="TextBox">
+		<xpath>]/td[</xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+    <Element name="tblSpecBookCellVal3" type="TextBox">
+		<xpath>]</xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+	<Element name="tblSelectedMFRows" type="Table">
+		<xpath>//tr[contains(@class,'hightlightRow ng-scope rowSelected')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblSelectedPDCell" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblSelectedPDCell1" type="Label">
+		<xpath>(//tr[contains(@class,'hightlightRow ng-scope rowSelected')])[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblSelectedPDCell2" type="Label">
+		<xpath>]/td[contains(@data-title,'Process Definition')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblSelectedStructureCell" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblSelectedStructureCell1" type="Label">
+		<xpath>(//tr[contains(@class,'hightlightRow ng-scope rowSelected')])[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblSelectedStructureCell2" type="Label">
+		<xpath>]/td[contains(@data-title,'Structure')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedLSRuleCell" type="ComboBox">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedLSRuleCell1" type="ComboBox">
+		<xpath>(//tr[contains(@class,'hightlightRow ng-scope rowSelected')])[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSelectedLSRuleCell2" type="ComboBox">
+		<xpath>]/td[contains(@data-title,'Location Selection Rule')]/div/select</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="nontxtEditBatchFile" type="Non-Editable Textbox">
+		<id>batchfileTxt</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkCloseEditBatchFile" type="Link">
+		<xpath>//a[@class='popup-close' and @href='#MetrologyInfo']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSamplingPlan" type="ComboBox">
+		<name>selSamplingPlan</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtPhotoLayer" type="TextBox">
+		<name>innerLayer</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+</FeatureSet>  
+<FeatureSet name="TemplateSettings">
+    <Element name="lnkOthers" type="Link">
+     <xpath>//a/div[contains(text(),'Others')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkOthersSettings" type="Link">
+     <xpath>//div[contains(text(),'Others')]/../following-sibling::ul/li[7]/a[contains(text(),'Settings')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblTemplateSettings" type="Lable">
+     <xpath>//h1[contains(text(),'Template Settings')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboTempSetVendor" type="ComboBox">
+     <xpath>//select[@id="vendor"]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboTempSetRecipe" type="ComboBox">
+     <xpath>//select[@id="recipeApplication"]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnTempSetSearch" type="Button">
+     <xpath>//a[contains(text(),'Find Settings')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTempSetStructure" type="Textbox">
+		<xpath>//input[@st-search='Structure']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTempSetLayer" type="Textbox">
+		<xpath>//input[@st-search='layer']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTempSetTech" type="Textbox">
+		<xpath>//input[@st-search='Technology']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblTemplateSetCellVal" type="TextBox">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+    <Element name="tblTemplateSetCellVal1" type="Table">
+		<xpath>//div[@id="settingsTableInternal"]/table/tbody/tr/td[</xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+    <Element name="tblTemplateSetCellVal2" type="Table">
+		<xpath>]</xpath>
+		<PageTitle> </PageTitle>  
+    </Element>
+    <Element name="tblTemplateSetCol" type="Table">
+		<xpath>//div[@id="settingsTableInternal"]/table/thead/tr[1]/th</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtTemplateTechnology" type="TextBox">
+		<xpath>//*[@id="settingsTableInternal"]/table/thead/tr[2]/th[3]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+</FeatureSet> 
+<FeatureSet name="BatchModeSettings">
+   <Element name="lnkBatchModeSettings" type="Link">
+     <xpath>//a[contains(text(),'Batch Mode')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element> 
+	<Element name="cboBatchRecipeType" type="ComboBox">
+     <xpath>//select[@id='recipeType']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+    <Element name="cboBatchProductGrp" type="ComboBox">
+     <xpath>//select[@id='deviceId']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	 <Element name="cboBatchToolType" type="ComboBox">
+     <xpath>//select[@id='toolType']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	 <Element name="cboBatchGenRecipe" type="Button">
+     <xpath>//a[contains(text(),'Generate Recipe')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+     <Element name="lnkBatchRecipePath" type="Link">
+		<xpath>//a[contains(text(),'.xrc')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOverlayPDifinition" type="TextBox">
+     <xpath>//th[contains(@*,'Process Definition')]/div/div/input[@name='pdName' and @type='text']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="chkMFTableRow" type="CheckBox">
+		<xpath>//div[@id='startWizardOverlayTable']/table/tbody/tr[2]/td/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTSTechnologyDevice" type="TextBox">
+		<xpath>//input[@st-search='Technology']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkRecipeResult" type="Link">
+		<xpath>//a[@class='ng-binding']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+</FeatureSet> 
+<FeatureSet name="Specbook"> 
+	<Element name="lnkSpecBook" type="Link">
+		<xpath>//a/div[contains(text(),'Specbook ')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkStartWizardSpecBook" type="Link">
+		<xpath>//div[contains(text(),'Specbook ')]/../following-sibling::ul/li/a[contains(text(),'Start Wizard')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSpebookRecipeType" type="ComboBox">
+		<id>spRecipeApplication</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSpebookDevice" type="ComboBox">
+		<id>deviceId</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnApplyFilterSpecbook" type="Link">
+		<xpath>//a[@class='button filterbtn']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblSpecbook" type="Table">
+		<xpath>//div[@id='specbookStartWizerdTableInternal']/table</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSpecbookStructure" type="TextBox">
+		<xpath>//input[@st-search='Structure']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSpecbookPD" type="TextBox">
+		<xpath>//input[@st-search='ProcessDefinition']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblSpecBookStartWizerdHeader" type="Table">
+		<xpath>//div[@id='specbookStartWizerdTableInternal']/table/thead/tr[1]/th</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblSpecBookStartWizerd" type="WebTable">
+		<xpath>//div[@id='specbookStartWizerdTableInternal']/table/tbody/tr</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name = "radCombined" type="RadioButton">
+	 <xpath>//div[4]/div/div/div/div[2]/div/div/div[2]/div[2]/label</xpath>
+	 <PageTitle></PageTitle>
+	</Element>
+	<Element name="tblAllElementsRowElement" type="WebTable"> 
+	 <xpath>//table[@id='allelementswebtable']/tbody/tr[2]</xpath> 
+	 <PageTitle> </PageTitle> 
+	</Element> 
+	<Element name="tblAllElementsWebColumnHeader" type="WebTable"> 
+	 <xpath>//table[@id='allelementswebtable']/tbody/tr[1]/th</xpath> 
+	 <PageTitle> </PageTitle> 
+	</Element> 
+	<Element name="tblAllElementsWebTable" type="WebTable"> 
+	 <xpath>//table[@id='allelementswebtable']/tbody/tr</xpath> 
+	 <PageTitle> </PageTitle> 
+	</Element>
+	<Element name="tblOverlayRowIndex" type="Table">
+     <xpath>//div[@id='startWizardOverlayTable']/table/tbody/tr[1]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtStaticOCDPDName" type="TextBox">
+		<xpath>//tr[contains(@class,'hightlightRow ng-scope rowSelected')]/td[contains(@data-title,'PD Name')]/div/input[@name='pdName']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblOverlayColumnHeader" type="Table">
+     <xpath>//div[@id='startWizardOverlayTable']/table/thead/tr[1]/th</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOCDPDNames" type="TextBox">
+	 <xpath></xpath>
+	 <PageTitle> </PageTitle>
+    </Element>0
+	<Element name="txtOCDPDNames1" type="TextBox">
+	 <xpath>//div[@id='startWizardOverlayTable']/table/tbody/tr[</xpath>
+	 <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOCDPDNames2" type="TextBox">
+	 <xpath>]/td[</xpath>
+	 <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtOCDPDNames3" type="TextBox">
+	 <xpath>]/div/input</xpath>
+	 <PageTitle> </PageTitle>
+    </Element>
+
+</FeatureSet>
+<FeatureSet name="Others">
+<Element name="cboTSVendor" type="ComboBox">
+		<id>vendor</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboTSRcpApplication" type="ComboBox">
+		<id>recipeApplication</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnFindSettings" type="Button">
+		<xpath>//a[contains(text(),'Find Settings')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblTemplateSetting" type="WebTable">
+		<xpath>//div[@id='settingsTableInternal']/table/tbody/tr</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTSToolType" type="TextBox">
+		<xpath>//input[@st-search='ToolType']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTSLayer" type="TextBox">
+		<xpath>//input[@st-search='layer']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTSDevice" type="TextBox">
+		<xpath>//input[@st-search='Device']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblTempSettingHeader" type="WebTable">
+		<xpath>//div[@id='settingsTableInternal']/table/thead/tr[1]/th[not(contains(text(),'Recipe Application'))]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblTempSet" type="WebTable">
+		<xpath>//div[@id='settingsTableInternal']/table</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+</FeatureSet>
+</ObjectRepository>

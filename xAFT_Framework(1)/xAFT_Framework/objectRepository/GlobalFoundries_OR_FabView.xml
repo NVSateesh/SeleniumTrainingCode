@@ -1,0 +1,1790 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository>
+  
+<FeatureSet name="Login">
+	<Element name="txtUname" type="Textbox">
+		<id>loginForm:username</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtPassword" type="Textbox">
+		<id>loginForm:password</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLogin" type="Button">
+		<name>loginForm:submit</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+	
+	  <Element name="lblExpectedRelease" type="Label">
+		<xpath>(//th[starts-with(text(),'Expected Release')]/../following-sibling::tr[1]/td[4])[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="tblInhibitHistoryWithExceptionForLogicalRecipe" type="Table">
+		<xpath>//*[@id="inhibitHistory:richTable:tb"]/tr[contains(@class,'XInhibitException')]/td[text()='Logical Recipe']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblInhibitHistoryWithExceptionForFixture" type="Table">
+		<xpath>//*[@id="inhibitHistory:richTable:tb"]/tr[contains(@class,'XInhibitException')]/td[text()='Fixture']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+		<Element name="tblInhibitHistoryWithExceptionForModulePD" type="Table">
+		<xpath>//*[@id="inhibitHistory:richTable:tb"]/tr[contains(@class,'XInhibitException')]/td[text()='Module Process Definition']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+</FeatureSet>
+ 
+<FeatureSet name="Logout">
+	<Element name="lnkLogout" type="Link">
+		<id>loginout:menuLogoutId</id>
+		<PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>
+
+<FeatureSet name="Lot">
+	<Element name="txtLotHisFromDate" type="TextBox">
+		<id>calFromInputDate</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtLotHisToDate" type="TextBox">
+		<id>calToInputDate</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblLotCurrentWaferID1Start" type="Table">
+		<xpath>(//td[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLotCurrentWaferID1End" type="Table">
+		<xpath>')]/following-sibling::td[1])[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLotCurrentWaferID" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLotWaferHeader" type="Label">
+		<xpath>//div[@id='p_content']/div/h1</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblLHSTBEventType" type="Table">
+		<xpath>((//th[starts-with(text(),'EventType')])[1]/../../following-sibling::node()/tr/td[contains(text(),'STB')])[2]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkInBankOpeNo" type="Link">
+		<xpath>//a[contains(text(),'IN BANK')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblVendorLotReceiveUserID" type="Table">
+		<xpath>(//th[starts-with(text(),'User ID')])[1]/../../following-sibling::node()/tr/td[contains(text(),'X-UNITTEST')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblVendorLotReturnEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'VendorLotReturn')]</xpath>
+	<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkWaferEventsDetails" type="Link">
+		<xpath>(//th[starts-with(text(),'Details')])[1]/../../following-sibling::node()/tr/td/div/a/b[contains(text(),'Wafer Events')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHOpeCompEvent1" type="Table">
+		<xpath>((//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblLHOpeCompEvent" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblLHOpeCompEvent2" type="Table">
+		<xpath>')])[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkDetailsEqp1" type="Link">
+	   <xpath>(//th[starts-with(text(),'Details')]/../../following-sibling::node()/tr/td/div/a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkDetailsEqp" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkDetailsEqp2" type="Link">
+		<xpath>')])[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkEqpExpand1" type="Link">
+		<xpath>//a[starts-with(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkEqpExpand" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkEqpExpand2" type="Link">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblPageHeader" type="Label">
+		<xpath>//div[@id='p_content']/div/h1</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblExcpLot" type="Label">
+		<xpath>(//th[contains(text(),'Exceptions')]/../following-sibling::tr[2]/td[4]/a)[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblExcpEvent" type="Label">
+		<xpath>(//th[contains(text(),'Exceptions')]/../following-sibling::tr[2]/td[2])[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkModalPanelClose" type="Link">
+		<xpath>//div[contains(@id,'myModalPanelContentDiv')]/div/a</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblLHHeader" type="Label">
+		<xpath>//div[@id='p_content_body']/h1</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkModalPanelLotID1" type="Link">
+		<xpath>//a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkModalPanelLotID" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkModalPanelLotID2" type="Link">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkModalPanelWaferID" type="Link">
+		<xpath>//a[@id='j_id580:j_id584:0:j_id586']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblModalPanelRows" type="WebTable">
+		<xpath>//div[@id='j_id580:myModalDiv']/table/tbody/tr</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblModalPanelHeader" type="WebTable">
+		<xpath>//div[@id='j_id580:myModalDiv']/table/tbody/tr/th</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblModalPanel" type="WebTable">
+		<xpath>//table[contains(@id,'myModalPanelContentTable')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkLHWaferEvent" type="Link">
+		<xpath>//b[contains(text(),'Wafer Events')]/..</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkBankInOpe" type="Link">
+		<xpath>//*[contains(text(),'IN BANK')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkLHExpand1" type="Link">
+		<xpath>//*[@id='lotHistory:richTable:0:opView:opRichTable']/tbody/tr[1]/*[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkLHExpand" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkLHExpand2" type="Link">
+		<xpath>')]/preceding-sibling::td/a</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkChildLotID" type="Link">
+		<xpath>//*[@id='lotHistory:richTable:0:opView:opRichTable:0:l_childLot']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkParentLotID" type="Link">
+		<xpath>//*[@id='lotHistory:richTable:0:opView:opRichTable:0:l_parentLot']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblLotOpeRows" type="WebTable">
+		<xpath>//tbody[@id='lotHistory:richTable:0:opView:opRichTable:tb']/tr</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblLotOpeCols" type="WebTable">
+		<xpath>//table[@id='lotHistory:richTable:0:opView:opRichTable']/thead/tr/th</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkLotHistory" type="Link">
+		<xpath>//*[@href='/fabview/search?search=Lot']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHome" type="Link">
+		<id>menubar:l_home</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtLot" type="Textbox">
+		<name>lot</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSince" type="Combobox">
+		<id>since</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnViewHistory" type="Submit">
+		<xpath>//form[@id='searchForm']/div[1]/input[2]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnResetDefaults" type="Button">
+		<xpath>//input[@id='userPrefsForm:userPrefsResetButton']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkChangeCriteria" type="Link">
+		<xpath>//a[contains(text(),'Change Criteria')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHLoadingStatus" type="Label">
+		<xpath>//th[@id='lotHistory:richTable:loadingStatus']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+	<Element name="lnkOpeNo" type="Link">
+		<xpath>//a[@id='lotHistory:richTable:0:l_opeNoExpand']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="tblLotHistory" type="WebTable">
+		<xpath>//*[@id='lotHistory:richTable:tb']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkEquipment" type="Link">
+		<xpath>//a[@id='lotHistory:richTable:0:j_id125:0:j_id126']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="tblOperation" type="WebTable">
+		<xpath>//table[@id='lotHistory:richTable:0:opView:opRichTable']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHOpeEvents1" type="Label">
+		<xpath>//table[@id='lotHistory:richTable:0:opView:opRichTable']/tbody/tr/td[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHOpeEvents2" type="Label">
+		<xpath>') or contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHOpeEvents3" type="Label">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHOpeEvents" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="radUsersOpIncl" type="Radiobutton">
+		<xpath>//input[@id='usersOperatorIncl']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="radUsersOpExcl" type="Radiobutton">
+		<xpath>//input[@id='usersOperatorExcl']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="radEventsOpIncl" type="Radiobutton">
+		<xpath>//input[@id='eventsOperatorIncl']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="radEventsOpExcl" type="Radiobutton">
+		<xpath>//input[@id='eventsOperatorExcl']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboEvents" type="Combobox">
+		<xpath>//select[@id='chooseEvent']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEventsAdd" type="Button">
+		<xpath>//form[@id='searchForm']/.//td/input[@id='eventsOperatorIncl']/../following-sibling::td/input[contains(@value,'>')]</xpath>	  
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lstEventsSelected" type="List">
+		<xpath>//select[@id='selectEvents']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+    <Element name="tblLotHistory" type="WebTable">
+		<xpath>//table[@id='lotHistory:richTable']/tbody/tr</xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+    <Element name="tblLHPath" type="WebTable">
+		<xpath>lotHistory:richTable</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="tblLotHistoryColumn" type="WebTable">
+		<xpath>//table[@id='lotHistory:richTable']/thead/tr[2]/th</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="tblLotHistoryRow" type="WebTable">
+		<xpath>//table[@id='lotHistory:richTable']/tbody/tr[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+	<Element name="lnkOpeNo1" type="Link">
+		<xpath>//a[@id='lotHistory:richTable:</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lnkOpeNo2" type="Link">
+		<xpath>:l_opeNoExpand']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lnkDynOpe" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+	<Element name="lnkEqpt1" type="Link">
+		<xpath>//table[@id='lotHistory:richTable:</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lnkEqpt2" type="Link">
+		<xpath>:opView:opRichTable']/tbody/tr[1]/td[6]/div/a</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lnkDynEqpt" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtUsers" type="Textbox">
+		<id>chooseUserField</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnUsersAdd" type="Button">
+		<xpath>//form[@id='searchForm']/.//td/input[@id='usersOperatorIncl']/../following-sibling::td/input[contains(@value,'>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lstUsersSelected" type="List">
+		<xpath>//select[@id='selectUsers']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblUserID" type="Label">
+		<xpath>//td[@id='lotHistory:richTable:0:opView:opRichTable:0:user']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lstPageSize" type="List">
+		<xpath>//select[@id='pageSize']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblPageSize" type="Label">
+		<xpath>//td[@id='history']/.//div[contains(text(),'Page Size:')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="btnHistoryTab" type="Button">
+		<id>history_lbl</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnStbTab" type="Button">
+		<id>stb_lbl</id>
+		<PageTitle> </PageTitle> 
+    </Element>
+	<Element name="btnCurrentLotState" type="Button">
+		<id>current_lbl</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnCurrentWaferState" type="Button">
+		<id>wafer_lbl</id>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lnkCurrentCarrier" type="Link">
+		<xpath>//td[@id='current']/.//table[2]/tbody/tr[3]/td[1]/a</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblCarrierHisLoadStatus" type="Label">
+		<xpath>//th[@id='carrierHistory:richTable:loadingStatus']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+	<Element name="lnkCurrentEquipment" type="Link">
+		<xpath>//td[@id='current']/.//td/a</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEventEntryDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Entry')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEventCancelDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Cancel')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkEventEntryFutureHoldHistory" type="Link">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Entry')]/following-sibling::td/div/a[contains(text(),'Future Hold History')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkEventCancelFutureHoldHistory" type="Link">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Cancel')]/following-sibling::td/div/a[contains(text(),'Future Hold History')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="radEventOnlyInclude" type="Radiobutton">
+		<xpath>//input[@id='eventsOperatorIncl']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventCancel" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Cancel')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventEntry" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Entry')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventCancel" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Cancel')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblFutureHoldEventCancelLotID1" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Cancel')]/preceding-sibling::node()/a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblFutureHoldEventCancelLotID2" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldLotID" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventCancelHoldType" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Cancel')]/following-sibling::node()[contains(text(),'FutureHold')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblFutureHoldEventCancelStart" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Cancel')]/following-sibling::node()[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblFutureHoldEventCancelEnd" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventCancelRegisterReasonCode" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblFutureHoldEventCancelReleaseReasonCode" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventCancelRouteID" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventCancelOpeNo" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventCancelClaimUser" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventCancelClaimMemo" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventEntryLotID1" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Entry')]/preceding-sibling::node()/a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblFutureHoldEventEntryLotID2" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEntryLotID" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventEntryHoldType" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Entry')]/following-sibling::node()[contains(text(),'FutureHold')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventEntryStart" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Entry')]/following-sibling::node()[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblFutureHoldEventEntryEnd" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventEntryRegisterReasonCode" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblFutureHoldEventEntryRouteID" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventEntryOpeNo" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventEntryClaimUser" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblFutureHoldEventEntryClaimMemo" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLotIDStart" type="Table">
+		<xpath>//td[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLotIDEnd" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblcommonLotID" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblOperation" type="WebTable">
+		<xpath>//table[@id='lotHistory:richTable:0:opView:opRichTable']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkInBankOpeNo" type="Link">
+		<xpath>//a[contains(text(),'IN BANK')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+		<Element name="lblVendorLotReceiveUserID" type="Table">
+		<xpath>(//th[starts-with(text(),'User ID')])[1]/../../following-sibling::node()/tr/td[contains(text(),'X-UNITTEST')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblVendorLotReceiveEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'VendorLotReceive')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblVendorLotReceiveEventDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'VendorLotReceive')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblRouteInhibitHistoryWithException" type="WebTable">
+		<xpath>//*[@id="inhibitHistory:richTable:tb"]/tr[contains(@class,'XInhibitException')]/td[text()='Route']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblExceptionClaimUser1" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Claim User']/../following-sibling::tr/td[text()='Add']/following-sibling::td[text()='</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblExceptionClaimUser2" type="Table">
+		<xpath>']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblExceptionClaimUser" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblExceptionLotID1" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Lot']/../following-sibling::tr/td[text()='Apply']/following-sibling::td/a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblExceptionLotID2" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblExceptionLotID" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="LnkExceptionControlJobID1" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Control Job']/../following-sibling::tr/td[text()='Apply']/following-sibling::td/a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="LnkExceptionControlJobID2" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="LnkExceptionControlJobID" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEqpHistoryuPageLoadingStatus" type="Label">
+		<xpath>//th[@id='equipmentHistory:richTable:loadingStatus']</xpath>		     
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblEquipmentInhibitHistoryWithException" type="WebTable">
+		<xpath>//*[@id="inhibitHistory:richTable:tb"]/tr[contains(@class,'XInhibitException')]/td[text()='Equipment']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHForceCompEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'ForceComp')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHOperationEventType" type="Table">
+		<xpath>(//th[starts-with(text(),'EventType')])[1]/../../following-sibling::node()/tr/td[contains(text(),'OPERATION')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblPlusSymbol" type="Table">
+		<xpath>//a[text()="+"]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+	<Element name="lblLHEventInfoEventForceComplete" type="Table">
+		<xpath>(//th[starts-with(text(),'Event Info')])[1]/../following-sibling::node()/th[text()='Event']/following-sibling::node()[text()='ForceComp']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHEventInfoProductID1" type="Table">
+		<xpath>(//th[starts-with(text(),'Event Info')])[1]/../following-sibling::node()/th[text()='Product ID']/following-sibling::node()[text()='</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHEventInfoProductID2" type="Table">
+		<xpath>']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHEventInfoProductID" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHLotInfoLotID1" type="Table">
+		<xpath>(//th[starts-with(text(),'Lot Info')])[1]/../following-sibling::node()/th[text()='Lot ID']/following-sibling::node()[text()='</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHLotInfoLotID2" type="Table">
+		<xpath>']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHLotInfoLotID" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHRouteInfoRouteID1" type="Table">
+		<xpath>(//th[starts-with(text(),'Route Info')])[1]/../following-sibling::node()/th[text()='Route']/following-sibling::node()[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHRouteInfoRouteID2" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHRouteInfoRouteID" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblForceCompEventDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'ForceComp')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHBranchEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Branch')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHBranchEventType" type="Table">
+		<xpath>(//th[starts-with(text(),'EventType')])[1]/../../following-sibling::node()/tr/td[contains(text(),'BRANCH')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblBranchEventDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Branch')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tbl2ndLevelDetailsEventValue" type="WebTable">
+		<xpath>//td[@id='lotHistory:richTable:0:opView:opRichTable:0:eventDetails']/div/span/table[1]/tbody/tr[2]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tbl2ndLevelDetailsLotValue" type="WebTable">
+		<xpath>//td[@id='lotHistory:richTable:0:opView:opRichTable:0:eventDetails']/div/span/table[2]/tbody/tr[2]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkRecipeParameters" type="Link">
+		<xpath>(//a/b[contains(text(),'Recipe Parameters')])[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblRecipeParametersPopUp" type="WebTable">
+		<xpath>//div[contains(@id,'recipeModalDiv')]/table</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkCloseRecipeParamPopUp" type="Link">
+		<xpath>//div[contains(@id,'recipeModalPanelContentDiv')]/div/a</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<!-- Vinod Sprint4-->
+	<Element name="lblProcessEndEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'ProcessEnd')]/following-sibling::node()[contains(text(),'OPERATION')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProcesStartEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'ProcessStart')]/following-sibling::node()[contains(text(),'OPERATION')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProcesEndEventDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'ProcessEnd')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProcesStartEventDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'ProcessStart')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProcesEndEventDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'ProcessEnd')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProcesStartEventPlusSymbol" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'ProcessStart')]/preceding-sibling::td/a[contains(text(),'+')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblProcesEndEventPlusSymbol" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'ProcessEnd')]/preceding-sibling::td/a[contains(text(),'+')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHEventInfoEventProcessStart" type="Table">
+		<xpath>(//th[starts-with(text(),'Event Info')])/../following-sibling::node()/th[text()='Event']/following-sibling::node()[contains(text(),'ProcessStart')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHEventInfoEventProcessEnd" type="Table">
+		<xpath>(//th[starts-with(text(),'Event Info')])/../following-sibling::node()/th[text()='Event']/following-sibling::node()[contains(text(),'ProcessEnd')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblNoteEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Note')]/following-sibling::node()[contains(text(),'OPERATION NOTE')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblNoteEventDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Note')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHEventInfoEventNote" type="Table">
+		<xpath>(//th[starts-with(text(),'Event Info')])/../following-sibling::node()/th[text()='Event']/following-sibling::node()[contains(text(),'Note')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHEventInfoEventType" type="Table">
+		<xpath>(//th[starts-with(text(),'Event Info')])/../following-sibling::node()/th[text()='Event Type']/following-sibling::node()[contains(text(),'OPERATION NOTE')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblEHEventRegistration" type="Table">
+		<xpath>((//th[starts-with(text(),'EventType')])[1]/../../following-sibling::node()/tr/td[contains(text(),'INHIBIT')]/preceding-sibling::node()/a[contains(text(),'Registration: PENG')])[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblIHColumnInhType" type="Table">
+		<xpath>//th[starts-with(text(),'Inh.Type')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblIHInhValues" type="Table">
+		<xpath>((//th[starts-with(text(),'Inh.Type')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Equipment / Machine Recipe')]/following-sibling::td)[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkOpeNo1000400" type="Link">
+		<xpath>//a[contains(text(),'1000.400')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHBankInCancelEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])/../../following-sibling::node()/tr/td[(text()='BankInCancel')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHBankInEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])/../../following-sibling::node()/tr/td[(text()='BankIn')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHUserID" type="Table">
+		<xpath>(//th[starts-with(text(),'User ID')])[1]/../../following-sibling::node()/tr/td[contains(text(),'X-UNITTEST')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHPageSizeFor200" type="Table">
+		<xpath>//table[@id='lotHistory:filterBar']//div[starts-with(text(),'Page Size: 200')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+  </FeatureSet>
+    	
+<FeatureSet name="Wafer">
+	<Element name="tblWaferHistoryRows" type="WebTable">
+		<xpath>//tbody[@id='waferHistory:richTable:tb']/tr</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkWHCarrierID1" type="Link">
+		<xpath>//*[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkWHCarrierID2" type="Link">
+		<xpath>')]/../preceding-sibling::td/a/span[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkWHCarrierID" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkWHCarrierID3" type="Link">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblWaferHistory" type="WebTable">
+		<xpath>//*[@id='waferHistory:richTable:tb']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkWaferHistory" type="Link">
+		<xpath>//*[@href='/fabview/search?search=Wafer' and text()='Wafer History']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtWafer" type="Textbox">
+		<name>wafer</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWHLoadingStatus" type="Label">
+		<xpath>//th[@id='waferHistory:richTable:loadingStatus']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWHUser" type="Label">
+		<xpath>//span[@id='waferHistory:richTable:0:ot_user']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWHUserDynamic" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWHUserDynamic1" type="Label">
+		<xpath>//span[@id='waferHistory:richTable:0:ot_user' and text()='</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+   <Element name="lblWHUserDynamic2" type="Label">
+		<xpath>']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblWHEvent" type="Label">
+		<xpath>//span[@id='waferHistory:richTable:0:ot_event']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblWHEventType" type="Label">
+		<xpath>//span[@id='waferHistory:richTable:0:ot_eventType']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="radEventTypesOpIncl" type="Radiobutton">
+		<xpath>//input[@id='eventTypesOperatorIncl']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="radEventTypesOpExcl" type="Radiobutton">
+		<xpath>//input[@id='eventTypesOperatorExcl']</xpath>
+		<PageTitle> </PageTitle> 
+    </Element>
+	<Element name="cboEventTypes" type="Combobox">
+		<xpath>//select[@id='chooseEventType']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEventTypesAdd" type="Button">
+		<xpath>//form[@id='searchForm']/.//td/input[@id='eventTypesOperatorIncl']/../following-sibling::td/input[contains(@value,'>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lstEventTypesSelected" type="List">
+		<xpath>//select[@id='selectEventTypes']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+	<Element name="lnkWHEventOnlyFilter" type="Link">
+		<xpath>//div[@id='waferHistory:eventFilter_span']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkWHonlyEventFilterfolder" type="Link">
+		<xpath>//div[@id='waferHistory:hideEventFilter:folder']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkWHOnlyEventFilter" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+	<Element name="lnkWHOnlyEventFilter1" type="Link">
+		<xpath>//div[@id='waferHistory:hideEventFilter_menu']/.//a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+	<Element name="lnkWHOnlyEventFilter2" type="Link">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>		
+	<Element name="tblWaferHistory" type="Webtable">
+		<xpath>//tbody[@id='waferHistory:richTable:tb']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<!--Sprint-4 Raja-->
+	<Element name="lnkPrevLotId" type="Link">
+		<xpath>//a[contains(@id,'prevLotId')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkLotId" type="Link">
+		<xpath>//tbody[@id='waferHistory:richTable:tb']/tr/td/a[contains(@id,'lot')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="imgLotDetailsExcelExport" type="Image">
+		<id>lotHistory:g_lotExcelPic</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="imgLotDetailsCsvExport" type="Image">
+		<id>lotHistory:g_lotCsvPic</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblLHMergeEvent" type="Table">
+        <xpath>//th[starts-with(text(),'Event')]/../../following-sibling::node()/tr/td/span[contains(text(),'Merge')]</xpath> 
+        <PageTitle /> 
+    </Element>
+        <Element name="tblLHMergeEventType" type="Table">
+        <xpath>//th[starts-with(text(),'EventType')]/../../following-sibling::node()/tr/td/span[text()='MERGE']</xpath> 
+       <PageTitle /> 
+    </Element>
+         <Element name="tblLHLot" type="Table">
+         <xpath>//th[starts-with(text(),'Details')]/../../following-sibling::node()/tr/td[4]/a/span</xpath> 
+         <PageTitle /> 
+    </Element>
+        <Element name="tblLhDetails" type="Table">
+    	<xpath>//th[starts-with(text(),'Details')]/../../following-sibling::node()/tr/td[12]/span[1]/a/span</xpath> 
+  	<PageTitle /> 
+	</Element>
+        <Element name="tblLHReworkEvent" type="Table">
+    	<xpath>//th[starts-with(text(),'Event')]/../../following-sibling::node()/tr/td/span[text()='Rework']</xpath> 
+  	<PageTitle /> 
+    </Element>
+	<Element name="tblLHReworkCancelEvent" type="Table">
+    	<xpath>//th[starts-with(text(),'Event')]/../../following-sibling::node()/tr/td/span[text()='ReworkCancel']</xpath> 
+  	<PageTitle /> 
+    </Element>
+   <Element name="tblLHSplitEvent" type="Table">
+        <xpath>//th[starts-with(text(),'Event')]/../../following-sibling::node()/tr/td/span[contains(text(),'Split')]</xpath> 
+        <PageTitle /> 
+    </Element>	
+	<Element name="tblLHProductEvent" type="Table">
+        <xpath>//th[starts-with(text(),'Product')]/../../following-sibling::node()/tr[1]/td/span[text()='Auto-PRD.01']</xpath> 
+        <PageTitle /> 
+    </Element>
+	<Element name="lblWHUserID" type="Table">
+		<xpath>(//th[starts-with(text(),'Claim User')])[1]/../../following-sibling::node()/tr/td/span[(text()='X-UNITTEST')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWHPageSizeFor200" type="Table">
+		<xpath>//table[@id='waferHistory:filterBar']//div[starts-with(text(),'Page Size: 200')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="tblWHRows" type="WebTable">
+		<xpath>//table[@id='waferHistory:richTable']/tbody/tr</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>
+    				
+<FeatureSet name="Equiptment">
+ 	<Element name="tblEqpHistoryCols" type="WebTable">
+		<xpath>//table[@id='equipmentHistory:richTable']/thead/tr[2]/th</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblEqpHistoryRows" type="WebTable">
+		<xpath>//tbody[@id='equipmentHistory:richTable:tb']/tr</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblEqpHistory" type="WebTable">
+		<xpath>//*[@id='equipmentHistory:richTable:tb']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<!-- Sprint-1: Raja-->
+	<Element name="tblEqpHistory1" type="WebTable">
+		<xpath>//*[@id='equipmentHistory:richTable']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkEqpHistoryRegistrationLink" type="Table">
+		<xpath>(//*[@id='equipmentHistory:richTable:tb']/tr[1]/td/a[contains(text(),'Registration:')])[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkEqpHistory" type="Link">
+		<xpath>//*[@href="/fabview/search?search=Equipment"]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>  
+	<Element name="txtEqpt" type="Textbox">
+		<name>equipment</name>
+		<PageTitle> </PageTitle>
+	</Element> 
+	<Element name="txtChamber" type="Textbox">
+		<name>chamber</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="chkInclChamber" type="Checkbox">
+		<name>includeChamber</name>
+		<PageTitle> </PageTitle>
+	</Element>	
+	<Element name="lblEHLoadStatus" type="Label">
+		<xpath>//th[@id='equipmentHistory:richTable:loadingStatus']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblEHUser" type="Label">
+		<xpath>//td[@id='equipmentHistory:richTable:0:user']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblEHEvent" type="Label">
+		<xpath>//td[@id='equipmentHistory:richTable:0:event']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>	
+	<Element name="lblEHEventType" type="Label">
+		<xpath>//td[@id='equipmentHistory:richTable:0:eventType']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>	
+	<Element name="lnkEHChamber" type="Link">
+		<xpath>//td[@id='equipmentHistory:richTable:0:chamberId']/a</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblEHEventDetails" type="WebTable">
+		<xpath>//td[@id='equipmentHistory:richTable:0:eventDetails']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblEHEvent" type="Label">
+		<xpath>//a[@id='equipmentHistory:richTable:0:l_eventDetails']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>		
+	<Element name="lblEventName" type="Label">
+		<xpath>//td[@id='equipmentHistory:richTable:0:eventDetails']/.//th[contains(text(),'Event')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblPassCount" type="Label">
+		<xpath>//td[@id='equipmentHistory:richTable:0:eventDetails']/.//th[contains(text(),'PassCount')]/following-sibling::td</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnExpandable" type="Button">
+		<xpath>//*[@id='toggleButton' and @value='∨']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<!-- Sprint-4 Raja Added-->
+	<Element name="tblEqpHistoryRows" type="Webtable">
+		<xpath>//table[@id='equipmentHistory:richTable']/tbody/tr</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>
+
+<FeatureSet name="Inhibit">
+	<Element name="lnkExcpLotID" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkExcpLotID1" type="Link">
+		<xpath>//a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkExcpLotID2" type="Link">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkOnlyInhException" type="Link">
+		<xpath>//span[contains(text(),'Display only Events with Inhibit Exception...')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkInhException" type="Link">
+		<xpath>//div[contains(text(),'Inhibit Exception: ')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkInhExcptnFilterMenu" type="Link">
+		<xpath>//div[@id='inhibitHistory:onlyInhExFilter_menu']/div/div/a</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtRecipe" type="Textbox">
+		<id>onlyMachineReceipe</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSaveAsDefaults" type="Button">
+		<id>userPrefsForm:userPrefsSaveButton</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSavedUserPrefs" type="Button">
+		<id>userPrefsForm:b_savedUserPrefs</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="imgInhDetailsExcelExport" type="Image">
+		<id>inhibitHistory:g_inhibitExcelPic</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<!--Sprint-4 below tag modified Raja-->
+	<Element name="imgInhDetailsCsvExport" type="Image">
+		<id>inhibitHistory:g_inhibtCsvPic</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitFixture" type="Textbox">
+      <id>onlyFixture</id>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtInhibitFixtureGroup" type="Textbox">
+      <id>onlyFixturegroup</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitProductGroup" type="Textbox">
+      <id>onlyProductgroup</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhReticle" type="TextBox">
+		<id>onlyReticle</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhFixture" type="TextBox">
+		<id>onlyFixture</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhModPD" type="TextBox">
+		<id>onlyModulePd</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhFixtureGrp" type="TextBox">
+		<id>onlyFixturegroup</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhPrdGrp" type="TextBox">
+		<id>onlyProductgroup</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhOpeNum" type="TextBox">
+		<id>onlyOperationnumber</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhPD" type="TextBox">
+		<id>onlyOperation</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhRecipe" type="TextBox">
+		<id>onlyMachineReceipe</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhChamber" type="TextBox">
+		<id>onlyChamber</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhRCDesc" type="TextBox">
+		<id>onlyReasonCode</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboInhReasonCode" type="Combobox">
+		<id>choosereasoncodes</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkRegisterEndTime" type="CheckBox">
+		<name>regTimeToCb</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkInhibitStartTime" type="CheckBox">
+		<name>activeTimeFromCb</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkInhibitEndTime" type="CheckBox">
+		<name>activeTimeToCb</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhRegTimeAfter" type="TextBox">
+		<id>calregTimeFromInputDate</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhRegTimeBefore" type="TextBox">
+		<id>calregTimeToInputDate</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkInhibitHistory" type="Link">
+		<xpath>//a[@id='menubar:l_inhibitHistory']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnViewInhibitHistory" type="Submit">
+		<xpath>//input[@value='View Inhibit History']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInhibitSrch" type="Label">
+		<xpath>//h1[contains(text(),'Inhibit Search')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element> 
+	<Element name="cboActiveInhibitRange" type="Combobox">
+		<name>inhibitActiveSince</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboInhibitRegSince" type="Combobox">
+		<name>inhibitRegSince</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhClaimUser" type="TextBox">
+		<name>onlyUsers</name>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblInhHistory" type="WebTable">
+		<xpath>//table[@id='inhibitHistory:richTable']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblInhHistoryRows" type="WebTable">
+		<xpath>//tbody[@id="inhibitHistory:richTable:tb"]/tr</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblInhHistoryCols" type="WebTable">
+		<xpath>//*[@id='inhibitHistory:richTable']/thead/tr[2]/th</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhibitEquipment" type="Textbox">
+      <id>onlyEquipment</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkInhExpand1" type="Link">
+		<xpath>//*[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkInhExpand" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkInhExpand2" type="Link">
+		<xpath>')]/preceding-sibling::td/a</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblREClaimTime1" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblREClaimTime" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblREClaimTime2" type="Label">
+		<xpath>:DetailTable']/table/tbody/tr/th[contains(text(),'Register Event')]/../following-sibling::tr[2]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRESubLotType1" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRESubLotType" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRESubLotType2" type="Label">
+		<xpath>:DetailTable']/table/tbody/tr/th[contains(text(),'Register Event')]/../following-sibling::tr[2]/td[4]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEClaimTime1" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEClaimTime" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEClaimTime2" type="Label">
+		<xpath>:DetailTable']/table/tbody/tr/th[contains(text(),'Cancel Event')]/../following-sibling::tr[2]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEClaimUser1" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEClaimUser" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEClaimUser2" type="Label">
+		<xpath>:DetailTable']/table/tbody/tr/th[contains(text(),'Cancel Event')]/../following-sibling::tr[2]/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEReasonCode1" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEReasonCode" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEReasonCode2" type="Label">
+		<xpath>:DetailTable']/table/tbody/tr/th[contains(text(),'Cancel Event')]/../following-sibling::tr[2]/td[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+		<Element name="lblCEReasonCodeDesc1" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEReasonCodeDesc" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCEReasonCodeDesc2" type="Label">
+		<xpath>:DetailTable']/table/tbody/tr/th[contains(text(),'Cancel Event')]/../following-sibling::tr[2]/td[4]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<!-- Raja-->
+   <Element name="lblUPOwner1" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblUPOwner" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblUPOwner2" type="Label">
+		<xpath>:DetailTable']/table/tbody/tr/th[contains(text(),'Updates')]/../following-sibling::tr[2]/td[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtActiveInhibitStartTime" type="TextBox">
+		<id>calactiveTimeFromInputDate</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtActiveInhibitEndTime" type="TextBox">
+		<id>calactiveTimeToInputDate</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkRegisterTime" type="Checkbox">
+		<id>regTimeFromCb</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtInhibitOwner" type="TextBox">
+		<id>onlyOwner</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTechnology" type="TextBox">
+		<id>onlytechnolgy</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtLogicalRecipe" type="TextBox">
+		<id>onlylogicalRecipe</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRoute" type="TextBox">
+		<id>onlyRoute</id>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtInhibitReticalGroupID" type="Textbox">
+		<id>onlyReticleGroup</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblInhibitHistory" type="WebTable">
+		<xpath>//*[@id="inhibitHistory:richTable:tb"]/tr/td[text()='Equipment']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkFilterWafer" type="Link">
+	    <xpath>//*[@id='waferHistory:ddm_selectEntityId_span']</xpath>		
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblInhibitHistoryWithException" type="WebTable">
+		<xpath>//*[@id="inhibitHistory:richTable:tb"]/tr[contains(@class,'XInhibitException')]/td[text()='Equipment']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblInhibitHistoryWithExceptionImage" type="WebTable">
+		<xpath>//table [@id="inhibitHistory:richTable"]/tbody/tr/td/img[@title="Inhibit has exceptions."]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkInhibitShowOnlyInhibitsWithException" type="Checkbox">
+		<name>exceptionsOnly</name>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="tblInhibitHistoryWithExceptionForEquipmentReticleGroup" type="WebTable">
+		<xpath>//*[@id="inhibitHistory:richTable:tb"]/tr[contains(@class,'XInhibitException')]/td[text()='Equipment / Reticle Group']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblInhibitHistoryWithExceptionExpand" type="Link">
+		<xpath>//a[@id="inhibitHistory:richTable:0:detail_Expand"]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblInhibitExceptions123" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:0:DetailTable']/p/table/tbody/tr/th[contains(text(),'Exceptions')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblInhibitExceptions" type="Label">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblInhibitExceptionsColClaimTime" type="Table">	
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Claim Time']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInhibitExceptionsColEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Event']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInhibitExceptionsColClaimUser" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Claim User']</xpath>	  
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInhibitExceptionsColLot" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Lot']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInhibitExceptionsColControlJob" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Control Job']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInhibitExceptionsColMemo" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Memo']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInhibitExceptionsEventAdd" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Event']/../following-sibling::tr/td[text()='Add']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInhibitExceptionsEventCancel" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Event']/../following-sibling::tr/td[text()='Cancel']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblMemoForCancelEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Event']/../following-sibling::tr/td[text()='Cancel']/following-sibling::td[text()='Inhibit Cancel']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblMemoForAddEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../following-sibling::tr/th[text()='Event']/../following-sibling::tr/td[text()='Add']/following-sibling::td[text()='Register Exception']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitProduct" type="Textbox">
+		<id>onlyProduct</id>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="cboPageSize" type="Combobox">
+		<xpath>//select[@id='pageSize']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblPageSizeFilter" type="Table">
+		<xpath>//table[@id='inhibitHistory:filterBar']//div[starts-with(text(),'Page Size')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblPageSizeFor200" type="Table">
+		<xpath>//table[@id='inhibitHistory:filterBar']//div[starts-with(text(),'Page Size: 200')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+	<!-- RK-->
+	<Element name="lblLHOperationStartCancelEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'OperationStartCancel')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+		<Element name="lblLHEventInfoEventOperationStartCancel" type="Table">
+		<xpath>(//th[starts-with(text(),'Event Info')])[1]/../following-sibling::node()/th[text()='Event']/following-sibling::node()[text()='OperationStartCancel']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblOperationStartCanceEventDetails" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'OperationStartCancel')]/following-sibling::td/div</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+	<!-- Vinod Sprint4-->	
+	<Element name="lblEHEventPortMode1" type="Table">
+		<xpath>(//tbody[@id='equipmentHistory:richTable:tb']/tr/td/a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEHEventPortMode2" type="Table">
+		<xpath>')])[2]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEHEventPortMode" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblEHEventPortMode1DetailsEvent1" type="Table">
+		<xpath>//span[contains(@id,'equipmentHistory:richTable:0')]/span/table/tbody/tr/th[contains(text(),'Event')]/following-sibling::node()[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEHEventPortMode1DetailsEvent2" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEHEventPortMode1DetailsEvent" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEHEventPortMode1DetailsEquipment1" type="Table">
+		<xpath>//span[contains(@id,'equipmentHistory:richTable:0')]/span/table/tbody/tr/th[contains(text(),'Equipment')]/following-sibling::node()[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEHEventPortMode1DetailsEquipment2" type="Table">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEHEventPortMode1DetailsEquipment" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblEHEventPortMode1DetailsUser" type="Table">
+		<xpath>//span[contains(@id,'equipmentHistory:richTable:0')]/span/table/tbody/tr/th[contains(text(),'Claim User')]/following-sibling::node()[contains(text(),'X-UNITTEST')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkOpeNo1000100" type="Link">
+		<xpath>//a[contains(text(),'1000.100')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lnkOpeNo1000200" type="Link">
+		<xpath>//a[contains(text(),'1000.200')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHSplitEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Split')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHMergeEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Merge')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLHReworkCancelEvent" type="Table">
+		<xpath>//th[starts-with(text(),'Event')]/../../following-sibling::node()/tr/td[(text()='ReworkCancel')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHReworkEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])/../../following-sibling::node()/tr/td[(text()='Rework')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="tblEqpHistory2" type="Table">
+		<xpath>//*[@id='equipmentHistory:richTable:tb']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="lblEHPushEvent" type="Table">
+		<xpath>((//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td/a[contains(text(),'Push')])[2]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblEHSCRIPTPARAMETEREventType" type="Table">
+		<xpath>(//th[starts-with(text(),'EventType')])[1]/../../following-sibling::node()/tr/td[contains(text(),'SCRIPT PARAMETER')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+<Element name="tblEqpHistoryRows" type="WebTable">
+		<xpath>//tbody[@id="equipmentHistory:richTable:tb"]/tr</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblEHChamber1" type="Label">
+		<xpath>//*[@id='equipmentHistory:richTable:tb']/tr[1]/td/a[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblEHChamber" type="Label">
+		<xpath></xpath> 
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblEHChamber2" type="Label">
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="lblLHSecNoteEveTimeStamp" type="Table">
+		<xpath>((//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(@id,'claimTime')])[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblLHFirNoteEveTimeStamp" type="Table">
+		<xpath>((//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(@id,'claimTime')])[2]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblNoteEvent" type="Table">
+		<xpath>(//th[starts-with(text(),'Event')])[1]/../../following-sibling::node()/tr/td[contains(text(),'Note')]/following-sibling::node()[contains(text(),'OPERATION NOTE')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="tblEqpHistoryAllRows" type="Table">
+		<xpath>//*[@id="equipmentHistory:richTable:tb"]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblEHEventtypeEvent" type="Table">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEHEventtypeEvent1" type="Table">
+		<xpath>(//tbody[@id='equipmentHistory:richTable:tb']/tr/td[text()='</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblEHEventtypeEvent2" type="Table">
+		<xpath>'])[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<!-- Madhu sprint4 -->
+	<Element name="lblWaferHistoryCol1" type="Label">
+		<xpath>//tbody[@id='waferHistory:richTable:tb']/tr[1]/td[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWaferHistoryCol2" type="Label">
+		<xpath>]/span</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWaferHistoryCol" type="Label">
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWaferHistoryLotCol1" type="Label">
+		<xpath>//tbody[@id='waferHistory:richTable:tb']/tr[1]/td[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWaferHistoryLotCol2" type="Label">
+		<xpath>]/a/span</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWaferHistoryLotCol" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWaferHistoryLot" type="Label">
+		<xpath>//tbody[@id='waferHistory:richTable:tb']/tr[2]/td/a/span[contains(@id,'ot_lot')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblVendorInfoTab" type="Label">
+		<id>vendor_lbl</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblWHDetailsCel" type="Label">
+		<xpath>//tbody[@id='waferHistory:richTable:tb']/tr[1]/td[12]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblVendorInfoTabelHeader" type="Label">
+		<xpath>//thead/tr[contains(@class,'rich-table-header ')]/th[not(contains(@id,'loadingStatus'))]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblReceivedLot1" type="Label">
+		<xpath>//thead/following-sibling::tbody[not(contains(@id,'waferHistory'))]/tr/td[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblReceivedLot2" type="Label">
+		<xpath>]/a/span</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblReceivedLot" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblVenderClainTime1" type="Label">
+		<xpath>//thead/following-sibling::tbody[not(contains(@id,'waferHistory'))]/tr/td[</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblVenderClainTime2" type="Label">
+		<xpath>]/span</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblVenderClainTime" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblVendorInfoTabelRows" type="Label">
+		<xpath>//thead/following-sibling::tbody[not(contains(@id,'waferHistory'))]/tr[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+
+</FeatureSet>   
+<FeatureSet name="Retcal">
+	<Element name="btnEventTypesRemoveAll" type="Button">
+		<xpath>//form[@id='searchForm']/.//td/input[@id='eventTypesOperatorIncl']/../following-sibling::td/input[contains(@title,"Remove All EventType")]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblInhibitException" type="WebTable">
+		<xpath>(//th[starts-with(text(),'Exceptions')])[1]/../../tr</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblReticleEventType" type="Label">
+		<xpath>//td[@id='reticleHistory:richTable:0:eventType']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkReticleEvent" type="link">
+		<xpath>//td[@id='reticleHistory:richTable:0:event']/a</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lstEventSelected" type="List">
+		<xpath>//select[@id='selectEvents']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnAddEvent" type="Button">
+		<xpath>//input[@title='Add Event']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboEventExclude" type="Combobox">
+		<xpath>//input[@id='eventsOperatorExcl']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboEventInclude" type="Combobox">
+		<xpath>//input[@id='eventsOperatorIncl']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEventRemoveAll" type="Button">
+		<xpath>//input[contains(@title,"Remove All Event(s)")]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtChooseManualEvent" type="TextBox">
+		<xpath>//input[@id='chooseManualEvent']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtReticleID" type="TextBox">
+		<id>reticle</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblCarrierHistoryTableRow" type="Label">
+		<xpath>//tbody[@id='carrierHistory:richTable:tb']/tr[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkReticleHistory" type="Link">
+		<xpath>//a[contains(text(),'Reticle History')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element> 
+	<Element name="txtReticle" type="Textbox">
+		<name>reticle</name>
+		<PageTitle> </PageTitle>
+	</Element> 
+	<Element name="radUserExclude" type="Radiobutton">
+		<xpath>//*[@id='usersOperatorExcl']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	 <Element name="tblReticleHistory" type="Table">
+		<xpath>//*[@id='reticleHistory:richTable:tb']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblReticleHistoryTableRow" type="Label">
+		<xpath>//tbody[@id='reticleHistory:richTable:tb']/tr[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblLHINHIBITEventType" type="Table">
+        <xpath>//th[starts-with(text(),EventType)]/../../following-sibling::node()/tr[1]/td[1]</xpath> 
+        <PageTitle /> 
+    </Element>
+	<Element name="imgEquipmentCsvExport" type="Image">
+		<id>equipmentHistory:g_csvPic</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkReticleHistory" type="Link">
+	    <xpath>//a[@id='menubar:l_reticleHistory']</xpath>		
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkRegistration" type="Link">
+	    <xpath>//th[starts-with(text(),Event)]/../../following-sibling::node()/tr[1]/td[2]</xpath>		
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name="lblEquipment" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:0:inhvalues']/b[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblReticle" type="Label">
+		<xpath>//*[@id='inhibitHistory:richTable:0:inhvalues']/b[2]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblinhibitHistory" type="Table">
+		<xpath>//*[@id='inhibitHistory:richTable:tb']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<!-- Sandhya Sprint5-->
+	<Element name="lblIHExcpCancelEvent" type="Label">
+		<xpath>(//th[contains(text(),'Exceptions')]/../following-sibling::tr[2]/td[2])[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblIHExcpAddEvent" type="Label">
+		<xpath>(//th[contains(text(),'Exceptions')]/../following-sibling::tr[3]/td[2])[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblIHExcpCancelEveTimeStamp" type="Table">
+		<xpath>(//th[contains(text(),'Exceptions')]/../following-sibling::tr[2]/td[1])[1] </xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="lblIHExcpAddEveTimeStamp" type="Table">
+		<xpath>(//th[contains(text(),'Exceptions')]/../following-sibling::tr[3]/td[1])[1] </xpath>
+		<PageTitle> </PageTitle>
+    </Element>	
+	<Element name="imgIHWithExceptionImage" type="Image">
+		<xpath>(//table [@id="inhibitHistory:richTable"]/tbody/tr/td/img[@title="Inhibit has exceptions."])[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblIHExcpCol" type="Table">
+		<xpath>//th[contains(text(),'Inh. Exceptions')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<!--Sprint-5 Raja-->
+	<Element name="tblReticleHistory" type="WebTable">
+		<xpath>//table[@id='reticleHistory:richTable']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="imgReticleCsvExport" type="Image">
+		<id>reticleHistory:g_csvPic</id>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="imgReticleExcelExport" type="Image">
+		<id>reticleHistory:g_excelPic</id>
+		<PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>
+<!--Sprint-5 Raja-->
+<FeatureSet name="Carrier">
+	<Element name="lnkCarrierHistory" type="Link">
+		<id>menubar:l_carrierHistory</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCarrier" type="Textbox">
+		<name>carrier</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblCarrierHistory" type="WebTable">
+		<id>carrierHistory:richTable</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblCarrierHistoryTableRow" type="WebTable">
+		<xpath>//tbody[@id='carrierHistory:richTable:tb']/tr[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblCarrierHistoryRows" type="Webtable">
+		<xpath>//table[@id='carrierHistory:richTable']/tbody/tr</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblCHDetailsCol" type="Table">
+		<xpath>//th[contains(text(),'Details')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkCassetteInventory" type="Link">
+		<xpath>//a/b[contains(text(),'Cassette Inventory')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+</FeatureSet> 
+   
+</ObjectRepository>

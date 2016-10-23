@@ -1,0 +1,230 @@
+2016/06/01 12:18:32.21; INFO;(Driver.java:107);-----------------------------------------------------------------------------------------------------------------------
+2016/06/01 12:18:32.21; WARN;(Version.java:66);build_info.properties file not available
+2016/06/01 12:18:32.21; INFO;(Driver.java:108);Started Automated Functional Tester (AFT) version [] at [2016-06-01 12:18:31]
+2016/06/01 12:18:32.21; INFO;(Driver.java:111);-----------------------------------------------------------------------------------------------------------------------
+2016/06/01 12:18:32.21;DEBUG;(ReportGenerator.java:67);Creating new ReportGenerator object for reporting
+2016/06/01 12:18:32.21;DEBUG;(TCMReportGenerator.java:44);Creating new TCMReportGenerator object for reporting
+2016/06/01 12:18:32.21;DEBUG;(Variable.java:295);Value [06-01-2016] has been stored in variable [AFT_TESTSTARTDATE]
+2016/06/01 12:18:32.21;DEBUG;(Helper.java:463);Action value string [#AFT_TESTSTARTDATE#] after substituting for variables/test data is [06-01-2016]
+2016/06/01 12:18:32.21;DEBUG;(Variable.java:295);Value [2:18:31] has been stored in variable [AFT_TESTSTARTTIME]
+2016/06/01 12:18:32.21;DEBUG;(Helper.java:463);Action value string [#AFT_TESTSTARTTIME#] after substituting for variables/test data is [2:18:31]
+2016/06/01 12:18:32.36;DEBUG;(Helper.java:463);Action value string [#AFT_BROWSERVERSION#] after substituting for variables/test data is []
+2016/06/01 12:18:32.36;DEBUG;(Variable.java:295);Value [Windows 7] has been stored in variable [AFT_OSVERSION]
+2016/06/01 12:18:32.36;DEBUG;(Helper.java:463);Action value string [#AFT_OSVERSION#] after substituting for variables/test data is [Windows 7]
+2016/06/01 12:18:32.36;DEBUG;(TestBatchRunner.java:861);Value for system variable [AFT_OSVersion] set to [Windows 7]
+2016/06/01 12:18:32.36;DEBUG;(Variable.java:295);Value [./configuration/] has been stored in variable [AFT_TESTBATCHPATH]
+2016/06/01 12:18:32.36;DEBUG;(Helper.java:463);Action value string [#AFT_TESTBATCHPATH#] after substituting for variables/test data is [./configuration/]
+2016/06/01 12:18:32.36;DEBUG;(Variable.java:295);Value [AFTTestBatch.xml] has been stored in variable [AFT_TESTBATCHFILENAME]
+2016/06/01 12:18:32.36;DEBUG;(Helper.java:463);Action value string [#AFT_TESTBATCHFILENAME#] after substituting for variables/test data is [AFTTestBatch.xml]
+2016/06/01 12:18:32.36;DEBUG;(Variable.java:295);Value [0] has been stored in variable [AFT_TOTALTESTSCENARIOS]
+2016/06/01 12:18:32.36;DEBUG;(Variable.java:295);Value [0] has been stored in variable [AFT_TOTALTESTCASES]
+2016/06/01 12:18:32.36; INFO;(Driver.java:145);Checking report file retention policy...
+2016/06/01 12:18:32.36; INFO;(FileUtil.java:174);LogFileRetentionPeriod [30], ServiceRequestsRetentionPeriod [30], ScreenShotsRetentionPeriod [30], ReportFileRetentionPeriod [30]
+2016/06/01 12:18:32.36; INFO;(FileUtil.java:181);0 files found to delete older than the retention period.
+2016/06/01 12:18:32.36; INFO;(TestBatchRunner.java:122);Starting execution of test batch...
+2016/06/01 12:18:32.36; INFO;(TestBatchRunner.java:163);Reading test batch set file [./configuration/AFTTestBatch.xml]
+2016/06/01 12:18:32.36;DEBUG;(XMLParser.java:846);XML file found
+2016/06/01 12:18:32.36;DEBUG;(XMLParser.java:939);Reading the XML file [.\configuration\AFTTestBatch.xml]
+2016/06/01 12:18:32.36;DEBUG;(XMLParser.java:948);Creating XML Document Object
+2016/06/01 12:18:32.52;DEBUG;(XMLParser.java:951);Parsing the XML file [.\configuration\AFTTestBatch.xml]
+2016/06/01 12:18:32.83; INFO;(XMLParser.java:966);Completed reading the XML file [.\configuration\AFTTestBatch.xml]
+2016/06/01 12:18:32.83;DEBUG;(XMLParser.java:770);Converting XML Document object to String
+2016/06/01 12:18:32.83;DEBUG;(XMLParser.java:175);Fetching the Attribute list for the node [TestSet]
+2016/06/01 12:18:32.83;DEBUG;(XMLParser.java:184);Total Nodes found [1]
+2016/06/01 12:18:32.83;DEBUG;(XMLParser.java:196);Total attributes count for node [TestSet] is [1]
+2016/06/01 12:18:32.83;DEBUG;(XMLParser.java:210);Total child nodes count for node [TestSet] is [47]
+2016/06/01 12:18:32.83;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [TestSet] and its child nodes
+2016/06/01 12:18:32.83; INFO;(XMLParser.java:497);Fetching the attribute value for attribute [Name] in node [TestSet]
+2016/06/01 12:18:32.99;DEBUG;(XMLParser.java:506);Total Nodes found [1]
+2016/06/01 12:18:32.99; INFO;(TestBatchRunner.java:173);Starting execution of test batch...
+2016/06/01 12:18:32.99; INFO;(TestBatchRunner.java:193);Total test batch sets read from testbatch file are [1]
+2016/06/01 12:18:32.99; INFO;(TestBatchRunner.java:559);Read test batch set: test set name [ECM], BrowserType[], ApplicationUrl[], ApplicationName[ECM], TestSuitePath[.\testScripts\GlobalFoundries_TestSuite_ECM.xls], ScenariosSheetName[Functional_Scenarios], TestStepsSheetName[Test_Steps], ObjectRepositoryPath[], TestDataTablePath[.\testData\GlobalFoundries_TestData_ECM.xls], ReusableTestSuitePath[.\testScripts\GlobalFoundries_Reusable_ECM.xls], ReusableScenariosSheetName[Reusable_Scenarios], ReusableTestStepsSheetName[Reusable_Steps], AppConfigFilePath[null], AppExecutionConfiguration[ECM], TCMIntegrationConfigFilePath[], Category[ECM], ExecutionEngine[Core], ScenarioInitializationIDs[], ScenarioCleanupIDs[], TestSetInitializationIDs[RS_LoadProperties], TestSetCleanupIDs[RS_CloseConnection], CustomDictionaryPath[], SpellCheckLanguage[American_English], SpellCheckSuggestion[No]
+2016/06/01 12:18:32.99;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_APPLICATIONURL]
+2016/06/01 12:18:32.99;DEBUG;(Helper.java:463);Action value string [#AFT_APPLICATIONURL#] after substituting for variables/test data is []
+2016/06/01 12:18:32.99;DEBUG;(TestBatchRunner.java:628);Starting execution of AFT test suite [.\testScripts\GlobalFoundries_TestSuite_ECM.xls] for application [ECM] on url [
+2016/06/01 12:18:32.99; INFO;(TestBatchRunner.java:636);User has specified the Configuration [ECM]
+2016/06/01 12:18:32.99; INFO;(TestBatchRunner.java:639);Loading App Config file [./configuration/AppConfig.xml], execution configuration [ECM]
+2016/06/01 12:18:32.99; INFO;(AppConfigProperties.java:86);Loading App Config file [./configuration/AppConfig.xml]
+2016/06/01 12:18:32.99;DEBUG;(AppConfigProperties.java:90);Creating file stream object to load app configuration properties file [./configuration/AppConfig.xml]
+2016/06/01 12:18:32.99; INFO;(AppConfigProperties.java:92);Reading app config file [./configuration/AppConfig.xml]
+2016/06/01 12:18:32.99;DEBUG;(XMLParser.java:846);XML file found
+2016/06/01 12:18:32.99;DEBUG;(XMLParser.java:939);Reading the XML file [E:\xAFTFramework\xAFT_Framework\.\configuration\AppConfig.xml]
+2016/06/01 12:18:32.99;DEBUG;(XMLParser.java:948);Creating XML Document Object
+2016/06/01 12:18:32.99;DEBUG;(XMLParser.java:951);Parsing the XML file [E:\xAFTFramework\xAFT_Framework\.\configuration\AppConfig.xml]
+2016/06/01 12:18:32.114; INFO;(XMLParser.java:966);Completed reading the XML file [E:\xAFTFramework\xAFT_Framework\.\configuration\AppConfig.xml]
+2016/06/01 12:18:32.114;DEBUG;(XMLParser.java:770);Converting XML Document object to String
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:175);Fetching the Attribute list for the node [Configuration]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:184);Total Nodes found [31]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [9]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [9]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [9]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [47]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [47]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [13]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [67]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [69]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [63]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [5]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [103]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [15]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [149]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [135]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [83]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [39]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [77]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [85]
+2016/06/01 12:18:32.130;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [41]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [39]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [33]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [27]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [33]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [35]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [27]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [29]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [31]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [35]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [39]
+2016/06/01 12:18:32.146;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/06/01 12:18:32.146;DEBUG;(AppConfigProperties.java:101);Reading execution configuration [ECM] from app config file [./configuration/AppConfig.xml]
+2016/06/01 12:18:32.146;DEBUG;(Helper.java:463);Action value string [#AFT_BROWSERVERSION#] after substituting for variables/test data is []
+2016/06/01 12:18:32.146;DEBUG;(ReportGenerator.java:235);Adding a new testSuite [ECM] for reporting
+2016/06/01 12:18:32.146;DEBUG;(Helper.java:463);Action value string [#AFT_BROWSERVERSION#] after substituting for variables/test data is []
+2016/06/01 12:18:32.146;DEBUG;(TCMReportGenerator.java:94);Adding a new testSuite [ECM] for reporting
+2016/06/01 12:18:32.146; INFO;(TestBatchRunner.java:394);Create & Init Test Suite Object
+2016/06/01 12:18:32.146;DEBUG;(Variable.java:295);Value [.\testScripts\] has been stored in variable [AFT_TESTSUITEPATH]
+2016/06/01 12:18:32.146;DEBUG;(Helper.java:463);Action value string [#AFT_TESTSUITEPATH#] after substituting for variables/test data is [.\testScripts]
+2016/06/01 12:18:32.146;DEBUG;(Variable.java:295);Value [GlobalFoundries_TestSuite_ECM.xls] has been stored in variable [AFT_TESTSUITEFILENAME]
+2016/06/01 12:18:32.146;DEBUG;(Helper.java:463);Action value string [#AFT_TESTSUITEFILENAME#] after substituting for variables/test data is [GlobalFoundries_TestSuite_ECM.xls]
+2016/06/01 12:18:32.146;DEBUG;(Variable.java:295);Value [.\testData\GlobalFoundries_TestData_ECM.xls] has been stored in variable [AFT_TESTDATAFILEPATH]
+2016/06/01 12:18:32.146;DEBUG;(Variable.java:295);Value [-1] has been stored in variable [AFT_TESTDATASHEETCOUNT]
+2016/06/01 12:18:32.146;DEBUG;(Variable.java:295);Value [true] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/06/01 12:18:32.146;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTSCENARIO]
+2016/06/01 12:18:32.146;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTSUITE]
+2016/06/01 12:18:32.146;DEBUG;(Variable.java:295);Value [E:\xAFTFramework\xAFT_Framework] has been stored in variable [AFT_ROOTPATH]
+2016/06/01 12:18:32.146;DEBUG;(Helper.java:463);Action value string [#AFT_ROOTPATH#] after substituting for variables/test data is [E:\xAFTFramework\xAFT_Framework]
+2016/06/01 12:18:32.146;DEBUG;(TestSuiteRunner.java:1645);Value for system variable [AFT_RootPath] set to [E:\xAFTFramework\xAFT_Framework]
+2016/06/01 12:18:32.224;DEBUG;(TestSuiteRunner.java:345);initializing scenarioIDs and testSteps list objects
+2016/06/01 12:18:32.442;DEBUG;(ExcelRead.java:134);[Step_Values_Delimiter_Character] property value is [~]
+2016/06/01 12:18:32.458;DEBUG;(TestSuiteRunner.java:356);Reading business scenarios...
+2016/06/01 12:18:32.458;DEBUG;(ExcelRead.java:158);Reading tests from sheet [Functional_Scenarios]
+2016/06/01 12:18:32.840;ERROR;(ExcelRead.java:293);Expected column [Step ElementPath/Name (Visible)] is not available
+2016/06/01 12:18:32.840;ERROR;(ExcelRead.java:295);System can not proceed further without above expected data
+2016/06/01 12:18:32.840;ERROR;(ExcelRead.java:304);Exception ::
+com.ags.aft.exception.AFTException: Expected columns data not available
+	at com.ags.aft.imports.ExcelRead.readSheetData(ExcelRead.java:296)
+	at com.ags.aft.runners.TestSuiteRunner.loadTestSuite(TestSuiteRunner.java:357)
+	at com.ags.aft.runners.TestSuiteRunner.initializeTestSuite(TestSuiteRunner.java:286)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:400)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/06/01 12:18:32.856;ERROR;(TestSuiteRunner.java:380);Exception::
+com.ags.aft.exception.AFTException: Expected columns data not available
+	at com.ags.aft.imports.ExcelRead.readSheetData(ExcelRead.java:305)
+	at com.ags.aft.runners.TestSuiteRunner.loadTestSuite(TestSuiteRunner.java:357)
+	at com.ags.aft.runners.TestSuiteRunner.initializeTestSuite(TestSuiteRunner.java:286)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:400)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/06/01 12:18:32.856;ERROR;(TestBatchRunner.java:404);Exception::
+com.ags.aft.exception.AFTException: Expected columns data not available
+	at com.ags.aft.runners.TestSuiteRunner.loadTestSuite(TestSuiteRunner.java:381)
+	at com.ags.aft.runners.TestSuiteRunner.initializeTestSuite(TestSuiteRunner.java:286)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:400)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/06/01 12:18:32.856; INFO;(TestBatchRunner.java:974);----------------------------------------------------------------------------------
+2016/06/01 12:18:32.856; INFO;(TestBatchRunner.java:975);Test Set Name=[ECM], Test Suite Path=[.\testScripts\GlobalFoundries_TestSuite_ECM.xls]
+2016/06/01 12:18:32.856; INFO;(ReportGenerator.java:279);
+2016/06/01 12:18:32.856; INFO;(ReportGenerator.java:280);--------------Total Executed [0], Total Passed [0], Total Failed [0]--------------
+2016/06/01 12:18:32.856; INFO;(TestBatchRunner.java:979);----------------------------------------------------------------------------------
+2016/06/01 12:18:32.856; INFO;(TestBatchRunner.java:982);calling teardown for execution engine
+2016/06/01 12:18:33.870;ERROR;(PageErrors.java:393);Exception::
+java.lang.NullPointerException
+	at java.io.File.<init>(File.java:277)
+	at com.ags.aft.Reporting.PageErrors.constructFileName(PageErrors.java:388)
+	at com.ags.aft.Reporting.PageErrors.generateFinalXml(PageErrors.java:933)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:144)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/06/01 12:18:33.870;ERROR;(PageErrors.java:1007);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.Reporting.PageErrors.constructFileName(PageErrors.java:394)
+	at com.ags.aft.Reporting.PageErrors.generateFinalXml(PageErrors.java:933)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:144)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/06/01 12:18:33.870;ERROR;(Driver.java:158);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.Reporting.PageErrors.generateFinalXml(PageErrors.java:1008)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:144)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/06/01 12:18:33.870; INFO;(Driver.java:181);------------------------------------------------------------------------------------------
+2016/06/01 12:18:33.870; INFO;(Driver.java:182);Completed execution of Automated Functional Tester (AFT) of test run at : 2016-06-01 12:18:33
+2016/06/01 12:18:33.886; INFO;(Driver.java:184);Total execution time for this test run was : 0:0:2:4083
+2016/06/01 12:18:33.886; INFO;(Driver.java:186);------------------------------------------------------------------------------------------

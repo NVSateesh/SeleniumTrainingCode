@@ -1,0 +1,123 @@
+# DISFilter application properties MTQA
+#
+
+#Frequency of input listener scans
+# Minimum=10 seconds, maximum=600 seconds
+DIS.inputListener.interval.secs=30
+
+# trace levels:
+#   TRC_NONE    =  0;
+#   TRC_BASIC   =  1;
+#   TRC_MEDIUM  =  2;
+#   TRC_VERBOSE =  3;
+#   TRC_DEBUG   =  4;
+DIS.trace.level=2
+
+#Sorting NC jobs on tag or attribute
+#filter.lot.nc.timestamp=LotSTTI
+filter.lot.nc.timestamp=LotENTI
+
+#Filter based on limit file parameter count
+#Set to true for if you want to trigger filtering based on number of limit file parms
+DIS.Use.limit.file=true
+
+#Create slim limit/data files When number of limit files exceeds this number. 0 means always filter
+DIS.limit.filter_if_parm_count_exceeds=0
+#DIS.limit.filter_if_parm_count_exceeds=0
+
+# ECP file properties
+#Set to true if you are supplying any parameter names via an ECP file
+DIS.Use.ECP.file=false
+DIS.ECP.directory=/customdata/espace7/etparser1/etl_input/ECP     
+DIS.ECP.file.name=FAB8_ECP_Testing.csv
+#FAB8_ECP_Testing.csv
+#Specify number of ECP header lines must be skipped to get to first parameter line 
+DIS.ECP.headerlines=1
+#Specify offset index to the parameter name column in your ECP spreadsheet. 0 means 1st column
+DIS.ECP.parameterNameIndex=1
+
+
+#SIL DB properties - if ECP has been loaded into SIL DB SPEC_LIMITS
+# Note, DISMain will securely prompt for pw at startup if pw not specified below
+DIS.sil.db.enabled=false
+DIS.sil.db.drivername=oracle.jdbc.driver.OracleDriver
+DIS.sil.db.url=jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = fc8oram07)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = esil7qa.fc8oram07.gfoundries.com))) 
+DIS.sil.db.schema=sil_user
+DIS.sil.db.userid=sil_user
+DIS.sil.db.pw=sil_user
+DIS.sil.db.filter_on_active=true
+DIS.sil.db.filter_on_criticality=true
+DIS.sil.db.filter_on_prodgroup=true
+DIS.sil.db.filter_on_product=true
+DIS.sil.db.filter_on_pd=true
+
+#Copying errors and unfiltered files to ETParser
+#Set to true to copy error nc files to etparser, to trigger CA Fail msgs and NFM emails
+DIS.copy_rejects_to_etparser=false
+
+#Set to true to copy original unfilterd files to etparser
+DIS.copy_unfiltered_to_etparser=false
+
+#MSR740542
+DIS.archive_files=false
+
+
+# Adapter cmd_prompts
+#True means DISMain will prompt user for runtime commands, e.g. start, stop, graceful shutdown
+#False means DISMain will run silently, without prompting user  for run commands
+DIS.adapter.cmd_prompts=false
+
+# Adapter autoStart
+# True means automatically start the adapter and start listening when program starts
+# False means DISMain will start and then wait for user input to start processing
+DIS.adapter.autoStart=true
+
+#ETEST data folder locations - adjust as needed
+#MSR681347 - Pre-filter output location
+
+#RegressionTest
+#DIS.base.directory.input=/customdata/espace7/etparser1/accepted#
+#DIS.base.directory.staging=/customdata/espace7/etparser1/staging*&
+#DIS.base.directory.processing=/customdata/espace7/etparser1/processing.)
+#DIS.base.directory.archived=/customdata/espace7/etparser1/backup
+#DIS.base.directory.rejected=/customdata/espace7/etparser1/not val;id
+#DIS.base.directory.published=/customdata/espace7/etparser1.?data
+
+#RegressionTest-Backup
+DIS.base.directory.input=/customdata/espace7/etparser1/accepted
+#DIS.base.directory.input=/export/wet8/ym/space
+DIS.base.directory.staging=/customdata/espace7/etparser1/staging
+DIS.base.directory.processing=/customdata/espace7/etparser1/processing
+DIS.base.directory.archived=/customdata/espace7/etparser1/archived
+DIS.base.directory.rejected=/customdata/espace7/etparser1/rejected
+DIS.base.directory.published=/customdata/espace7/etparser1/filtered
+#DIS.base.directory.published=/customdata/espace7/etparser1/published
+
+#Worker thread pool - should not need to change
+#  Recommend setting min pool size == max pool size, to avoid memory growth
+#  If minimum pool size not specified, it will default to be same as max (recommended)
+#  Min allowed pool size=1 Max allowed pool size=20
+DIS.minimum.pool.size=10
+DIS.maximum.pool.size=10
+
+#  Min allowed job queue size=20 Max allowed queue size=500
+DIS.minimum.queue.size=20
+DIS.maximum.queue.size=500
+
+#File extensions - do not change these unless ETL & ETPARSER change file extension names
+DIS.file.extension.mnc=mnc
+DIS.file.extension.nc=nc
+DIS.file.extension.data=data.dis
+DIS.file.extension.limit=limit.dis
+DIS.file.extension.slim.limit=limit.dis
+DIS.file.extension.slim.data=data.dis
+
+#Platform dependent - these are for unix, do not change... 
+DIS.CUR_DIR=.
+DIS.SEP=/
+
+#
+nc.allowed.types=LOT,WAFER
+mnc.allowed.types=JOB,MASTER
+
+

@@ -1,0 +1,5 @@
+Column#	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24	25
+Proposed	ProductModule	OperationNumber	MeasurementRecipe	MeasurementPD	ParameterName	ParameterDescription	SpecialParameter	Criticality	LSL	Target	USL	Unit	Spec Symmetry	SpecLimitAggregationLevel	Sanity & Control Limits	Insanity Limits	MinLotFrequency	Min Wafers / Lot	Min Sites / Wafer	Test Dispo Percent	TSGLink	Failure	AutochartTemplate	Owner	JCALPARA
+	TST	6460.472	TD-WETDISPO_OBANSK.01	TD-WET_OBANSK.01	WAC_FBDIOD_0.370x21x30_LT_Ideality	1995D;WAC_FBDIOD_0.370x21x30_LT_Ideality	Y	CRITICAL	1.004	1.01	1.016	AorR	L,T,U	site	SL|SU|CL|CU	IL|IU	100%	20	25		empty	50%	empty	empty	<FORMULA>
+	TST	6460.472	TD-WETDISPO_OBANSK.01	TD-WET_OBANSK.01	WAC_FBDIOD_0.370x21x30_LT_Ideality	191A;FBDIOD_0.370x21x30_LT_Ideality	Y	CRITICAL	1.004	1.01	1.016	AorR			-1E+99|1E+99|-1E+98|1E+98										<FORMULA>
+	

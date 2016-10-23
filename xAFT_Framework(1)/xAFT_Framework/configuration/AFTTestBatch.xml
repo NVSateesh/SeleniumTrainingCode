@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestBatch>
+
+  <TestSet Name="ECM">
+    <ApplicationName value="ECM"/>
+    <ApplicationUrl value=""/>
+    <BrowserType value=""/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_ECM.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=""/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_ECM.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_ECM.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="ECM"/>
+    <TCMIntegrationConfigFilePath value=""/>
+	<Category value="ECM"/>
+    <ExecutionEngine value="Core"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_LoadProperties"/> 
+	<TestSetCleanupIDs value="RS_CloseConnection"/>
+	<CustomDictionaryPath value=""/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="Yes"/>
+  </TestSet> 
+ <!-- 
+ <TestSet Name="EMSPLUS_LET_GroovyRules">
+    <ApplicationName value="EMSPLUS_LET_GroovyRules"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_EMSPLUS_LET.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_EMSPLUS_LET.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_EMSPLUS_LET.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_EMSPLUS.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="EMSPLUS_LET"/>	
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="GroovyRules"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value="RS_TSCleanUp"/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Close"/>
+    <ExecuteSuite value="No"/>
+  </TestSet> 
+  
+  <TestSet Name="EMSPLUS_LET_Approvals">
+    <ApplicationName value="EMSPLUS_LET_Approvals"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_EMSPLUS_LET.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_EMSPLUS_LET.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_EMSPLUS_LET.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_EMSPLUS.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_EMS"/>	
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Approvals"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value="RS_TSCleanUp"/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Close"/>
+    <ExecuteSuite value="No"/>
+  </TestSet> 
+  
+  <TestSet Name="EMSPLUS_LET_GUI">
+    <ApplicationName value="EMSPLUS_LET_GUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_EMSPLUS_LET.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_EMSPLUS_LET.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_EMSPLUS_LET.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_EMSPLUS.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_EMS"/>	
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="GUI"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value="RS_TSCleanUp"/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Close"/>
+    <ExecuteSuite value="No"/>
+  </TestSet> 
+  
+  
+  <TestSet Name="EMSPLUS_MTQA_GroovyRules">
+    <ApplicationName value="EMSPLUS_MTQA_GroovyRules"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_EMSPLUS_MTQA.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_EMSPLUS_MTQA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_EMSPLUS_MTQA.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_EMSPLUS.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="EMSPLUS_MTQA"/>	
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="GroovyRules"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value="RS_TSCleanUp"/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Close"/>
+    <ExecuteSuite value="No"/>
+  </TestSet> 
+  
+   <TestSet Name="EMSPLUS_MTQA_Approvals">
+    <ApplicationName value="EMSPLUS_MTQA_Approvals"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_EMSPLUS_MTQA.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_EMSPLUS_MTQA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_EMSPLUS_MTQA.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_EMSPLUS.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_EMS"/>	
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Approvals"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value="RS_TSCleanUp"/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Close"/>
+    <ExecuteSuite value="No"/>
+  </TestSet> 
+  
+   <TestSet Name="EMSPLUS_MTQA_GUI">
+    <ApplicationName value="EMSPLUS_MTQA_GUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_EMSPLUS_MTQA.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_EMSPLUS_MTQA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_EMSPLUS_MTQA.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_EMSPLUS.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_EMS"/>	
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="GUI"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value="RS_TSCleanUp"/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Close"/>
+    <ExecuteSuite value="No"/>
+  </TestSet> 
+  
+  <TestSet Name="GF_ETest">
+    <ApplicationName value="GF-ETest"/>
+    <ApplicationUrl value=""/>
+    <BrowserType value=""/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_ETest.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=""/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="ETest"/>
+    <TCMIntegrationConfigFilePath value=""/>
+	<Category value=""/>
+    <ExecutionEngine value="Core"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value=""/> 
+	<TestSetCleanupIDs value=""/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet> 
+  
+   <TestSet Name="GF_JCal">
+    <ApplicationName value="JCal"/>
+    <ApplicationUrl value=""/>
+    <BrowserType value=""/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_Jcal.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=""/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_Jcal.xls"/>
+    <ReusableTestSuitePath value=""/>
+    <ReusableScenariosSheetName value=""/>
+    <ReusableTestStepsSheetName value=""/>
+    <AppExecutionConfiguration value="JCAL"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="Core"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value=""/> 
+	<TestSetCleanupIDs value=""/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet> 
+  
+  <TestSet Name="GlobalFoundries_SIL">
+    <ApplicationName value="GF-SIL"/>
+    <ApplicationUrl value=""/>
+    <BrowserType value=""/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_SIL.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=""/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="SIL_Space7"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="Core"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value="RS_ScCleanUp"/>
+	<TestSetInitializationIDs value="RS_BatchStartUp"/> 
+	<TestSetCleanupIDs value="RS_CloseConnection"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="Yes"/>
+  </TestSet> 
+  
+  <TestSet Name="GlobalFoundries_FabView">
+    <ApplicationName value="GF-FabView"/>
+    <ApplicationUrl value="http://fc8devm02:8080/fabview/"/>
+    <BrowserType value="firefox"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_FabView.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FabView.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FabView.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_FabView.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="FabView"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_Login"/> 
+	<TestSetCleanupIDs value="RS_Logout"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="GlobalFoundries_RVA2">
+    <ApplicationName value="GF-RVA2"/>
+    <ApplicationUrl value="http://fc8lnxwsm01:8280/RVA2GUI/client.html"/>
+    <BrowserType value="googlechrome"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_RVA.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_RVA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_RVA.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_RVA.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="RVA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_Configuration,RS_Login"/> 
+	<TestSetCleanupIDs value="RS_Logout,RS_CloseConnection"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+    <TestSet Name="GlobalFoundries_XSite1">
+	<ApplicationName value="XSite1" />
+	<ApplicationUrl value="D:\Program Files\Applied Materials\xsite\Console\Xsite Factory Modeling.msc"/>
+	<BrowserType value="iexplore" />
+	<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_XSite.xls" />
+	<ScenariosSheetName value="Functional_Scenarios" />
+	<TestStepsSheetName value="Test_Steps" />
+	<ObjectRepositoryPath value=".\objectRepository\Xsite.xml" />
+	<TestDataTablePath value=".\testData\GlobalFoundries_TestData_XSite.xls" />
+	<ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_XSite.xls" />
+	<ReusableScenariosSheetName value="Reusable_Scenarios" />
+	<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+	<AppExecutionConfiguration value="XSite" />
+	<TCMIntegrationConfigFilePath value=".\objectRepository\images" />
+	<SikuliImagesPath value="./objectRepository/images" />
+	<Category value="Smoke1" />
+	<ExecutionEngine value="QTP" />
+	<TestSetInitializationIDs value="RS_Configuration"/>
+	<ScenarioInitializationIDs value="" />
+	<ScenarioCleanupIDs value="" />
+	<TestSetCleanupIDs value="RS_CloseApp"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+	<ExecuteSuite value="No" /> 
+    </TestSet>
+	
+    <TestSet Name="GlobalFoundries_XSite2">
+	<ApplicationName value="XSite2" />
+	<ApplicationUrl value="D:\Program Files\Applied Materials\xsite\Console\Xsite Factory Modeling.msc"/>
+	<BrowserType value="iexplore" />
+	<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_XSite.xls" />
+	<ScenariosSheetName value="Functional_Scenarios" />
+	<TestStepsSheetName value="Test_Steps" />
+	<ObjectRepositoryPath value=".\objectRepository\Xsite.xml" />
+	<TestDataTablePath value=".\testData\GlobalFoundries_TestData_XSite.xls" />
+	<ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_XSite.xls" />
+	<ReusableScenariosSheetName value="Reusable_Scenarios" />
+	<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+	<AppExecutionConfiguration value="XSite" />
+	<TCMIntegrationConfigFilePath value=".\objectRepository\images" />
+	<SikuliImagesPath value="./objectRepository/images" />
+	<Category value="Smoke2" />
+	<ExecutionEngine value="QTP" />
+	<TestSetInitializationIDs value="RS_Configuration"/>
+	<ScenarioInitializationIDs value="" />
+	<ScenarioCleanupIDs value="" />
+	<TestSetCleanupIDs value="RS_CloseApp"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+	<ExecuteSuite value="No" /> 
+    </TestSet>
+	
+  <TestSet Name="GlobalFoundries_IWPA">
+    <ApplicationName value="GF-IWPA"/>
+    <ApplicationUrl value="http://fc8ymsd01/fab8/iwpa/singlelot-analysis"/>
+    <BrowserType value="firefox"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_IWPA.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_IWPA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_IWPA.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_IWPA.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="IWPA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_Login"/> 
+	<TestSetCleanupIDs value="RS_Logout"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+	<TestSet Name="FABGUI-EIStatus">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="EIStatus" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+
+	<TestSet Name="FABGUI-ExtPriority">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="ExtPriority" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+
+	<TestSet Name="FABGUI-ToolEvents">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="ToolEvents" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+	<TestSet Name="FABGUI-VamosConfig">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="VamosConfig" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+	<TestSet Name="FABGUI-ScriptParameter">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="ScriptParameter" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+
+	<TestSet Name="FABGUI-EIConfig">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="EIConfig" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+	<TestSet Name="FABGUI-VamosDispatch">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="VamosDispatch" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+
+	<TestSet Name="FABGUI-Reticle">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="Reticle" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+
+	<TestSet Name="FABGUI-InterFabMove">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="InterFabMove" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+	<TestSet Name="FABGUI-ApprovedLocate">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="ApprovedLocate" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+	<TestSet Name="FABGUI-MultiHold">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="MultiHold" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+
+
+	<TestSet Name="FABGUI-LotInfoChange">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="LotInfoChange" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+	<TestSet Name="FABGUI-Shipping">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="NonShipping" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+
+	<TestSet Name="FABGUI-StandardShipping">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="StandardShipping" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+	<TestSet Name="FABGUI-Sampling">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="Sampling" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+
+	<TestSet Name="FABGUI-Inhibit">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="Inhibit" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="No" />
+	</TestSet>
+
+	<TestSet Name="FABGUI-Scheduler">
+		<ApplicationName value="FABGUI" />
+		<ApplicationUrl
+			value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication" />
+		<BrowserType value="Frankenstein" />
+		<TestSuitePath value=".\testScripts\FABGUI_Regression1.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath
+			value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls" />
+		<ReusableTestSuitePath
+			value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="FABGUI_MTQA" />
+		<TCMIntegrationConfigFilePath value="" />
+		<Category value="Scheduler" />
+		<ExecutionEngine value="Frankenstein" />
+		<ScenarioInitializationIDs value="" />
+		<ScenarioCleanupIDs value="" />
+		<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login" />
+		<TestSetCleanupIDs value="RS_FABGUI_Close" />
+		<ExecuteSuite value="Yes" />
+	</TestSet>
+
+ <TestSet Name="ARMOR_ChangeProject">
+    <ApplicationName value="ARMOR"/>
+    <ApplicationUrl value="com.amd.thor.client.THORClient"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_ARMOR.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_ARMOR.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_ARMOR.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_ARMOR.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="ARMOR_QA_Login"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value="RS_Connect_ARMOR_Login"/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_Configurations"/> 
+	<TestSetCleanupIDs value="RS_ARMOR_Close"/>
+    <SikuliImagesPath value=""/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+	<ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="GlobalFoundries_AFIRE_Setup">
+    <ApplicationName value="GF-AFIRE-Setup"/>
+	<ApplicationUrl value="http://fc8ymsd01/fab8/afire/setup"/>   
+    <BrowserType value="firefox"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_AFIRE.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_AFIRE.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_AFIRE.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_AFIRE.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="AFIRE"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value=""/> 
+	<TestSetCleanupIDs value=""/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet> 
+  
+  <TestSet Name="GlobalFoundries_AFIRE_Results">
+    <ApplicationName value="GF-AFIRE-Results"/>
+	<ApplicationUrl value="http://fc8ymsd01/fab8/afire/results"/>   
+    <BrowserType value="firefox"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_AFIRE.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_AFIRE.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_AFIRE.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_AFIRE.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="AFIRE"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value=""/> 
+	<TestSetCleanupIDs value=""/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  <TestSet Name="GF_RMS">
+		<ApplicationName value="LRMS" />
+		<ApplicationUrl value="G:\rmsqa\guilauncher.bat"/>
+		<BrowserType value="" />
+		<TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_LRMS.xls" />
+		<ScenariosSheetName value="Functional_Scenarios" />
+		<TestStepsSheetName value="Test_Steps" />
+		<ObjectRepositoryPath value=".\objectRepository\LRMS.tsr" />
+		<TestDataTablePath value=".\testData\GlobalFoundries_TestData_LRMS.xls" />
+		<ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_LRMS.xls" />
+		<ReusableScenariosSheetName value="Reusable_Scenarios" />
+		<ReusableTestStepsSheetName value="Reusable_TestSteps" />
+		<AppExecutionConfiguration value="LRMS" />
+		<TCMIntegrationConfigFilePath value=".\objectRepository\images" />
+		<SikuliImagesPath value="./objectRepository/images" />
+		<Category value="Regression" />
+		<ExecutionEngine value="QTP" />
+		<TestSetInitializationIDs value="RS_Configuration"/>
+		<ScenarioInitializationIDs value="RS_LaunchLRMS" />
+		<ScenarioCleanupIDs value="RS_CloseApp" />
+		<TestSetCleanupIDs value=""/>
+		<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+		<SpellCheckLanguage value="American_English"/>
+		<SpellCheckSuggestion value="No"/>
+		<ExecuteSuite value="No" /> 
+	</TestSet>
+ 
+ <TestSet Name="GlobalFoundries_UCS">
+    <ApplicationName value="GF-UCS"/>
+    <ApplicationUrl value="http://10.89.225.11:8080/ucs6plus/#Info/100?"/>
+    <BrowserType value="firefox"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_UCS.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_UCS.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_UCS.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_UCS.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="UCS"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_Login"/> 
+	<TestSetCleanupIDs value="RS_Logout"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+<<<<<<< .mine
+  <TestSet Name="GF_MRA">
+=======
+  <TestSet Name="UCS_Regression3">
+	    <ApplicationName value="GF-UCS"/>
+	    <ApplicationUrl value="http://fc8sphwbm04:8080/ucs/"/>
+	    <BrowserType value="iexplore"/>
+	    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_UCS.xls"/>
+	    <ScenariosSheetName value="Functional_Scenarios"/>
+	    <TestStepsSheetName value="Test_Steps"/>
+	    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_UCS.xml"/>
+	    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_UCS.xls"/>
+	    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_UCS.xls"/>
+	    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+	    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+	    <AppExecutionConfiguration value="UCS"/>
+	    <TCMIntegrationConfigFilePath value=""/>
+	    <Category value="Regression3"/>
+	    <ExecutionEngine value="WebDriver"/>
+	    <ScenarioInitializationIDs value=""/>
+	    <ScenarioCleanupIDs value=""/>
+	    <TestSetInitializationIDs value="RS_Login"/> 
+	    <TestSetCleanupIDs value="RS_Logout"/>
+	    <CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	    <SpellCheckLanguage value="American_English"/>
+	    <SpellCheckSuggestion value="No"/>
+	    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="GF_MRA">
+    <ApplicationName value="GF-MRA"/>
+    <ApplicationUrl value="http://fc8amram01:9080/mra/"/>
+    <BrowserType value="chrome"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_MRA.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_MRA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_MRA.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_MRA.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="MRA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Regression1"/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/>
+	<ScenarioCleanupIDs value="RS_Cleanup"/>
+	<TestSetInitializationIDs value="RS_Login"/> 
+	<TestSetCleanupIDs value="RS_DBCleanup,RS_Logout"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="GF_MRA_SKIP">
+    <ApplicationName value="GF-MRA"/>
+    <ApplicationUrl value="http://fc8amram01:9080/mra/"/>
+    <BrowserType value="chrome"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_MRA_SKIP.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_MRA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_MRA.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_MRA_SKIP.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="MRA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Regression1"/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/>
+	<ScenarioCleanupIDs value="RS_Cleanup"/>
+	<TestSetInitializationIDs value="RS_Login"/> 
+	<TestSetCleanupIDs value="RS_DBCleanup,RS_Logout"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="Yes"/>
+    <ExecuteSuite value="Yes"/>
+  </TestSet>
+  
+ <TestSet Name="GF_MRA_SKIP6.3">
+    <ApplicationName value="GF-MRA"/>
+    <ApplicationUrl value="http://fc8engmradev:8180/mra/"/>
+    <BrowserType value="chrome"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_MRA_SKIP.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_MRA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_MRA.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_MRA_SKIP.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="MRA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Regression1"/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/>
+	<ScenarioCleanupIDs value="RS_Cleanup"/>
+	<TestSetInitializationIDs value="RS_Login"/> 
+	<TestSetCleanupIDs value="RS_DBCleanup,RS_Logout"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="Yes"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+<TestSet Name="GF_MRA6.3">
+    <ApplicationName value="GF-MRA6.3"/>
+    <ApplicationUrl value="http://fc8engmradev:8180/mra/"/>
+    <BrowserType value="chrome"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_MRA1.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_MRA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_MRA_11.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_MRA.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="MRA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Regression1"/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/>
+	<ScenarioCleanupIDs value="RS_Cleanup"/>
+	<TestSetInitializationIDs value="RS_Login"/> 
+	<TestSetCleanupIDs value="RS_DBCleanup,RS_Logout"/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  
+  <TestSet Name="MRA_OLD">
+>>>>>>> .r1995
+    <ApplicationName value="GF-MRA"/>
+    <ApplicationUrl value="http://fc8engmradev:8380/mra/jsp/welcome.jsp"/>
+    <BrowserType value="iexplore"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_MRA.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_MRA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_MRA_1.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_MRA.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="MRA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Regression1"/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value="RS_Login"/>
+	<ScenarioCleanupIDs value="RS_Logout"/>
+	<TestSetInitializationIDs value=""/> 
+	<TestSetCleanupIDs value=""/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="GF_MRA_VerifyFileOnLinux">
+    <ApplicationName value="GF-MRA"/>
+    <ApplicationUrl value="http://fc8engmradev:8280/mra/jsp/welcome.jsp"/>
+    <BrowserType value="iexplore"/>
+    <TestSuitePath value=".\testScripts\GlobalFoundries_TestSuite_MRA.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_MRA.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_MRA_1.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_Reusable_MRA.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_Steps"/>
+    <AppExecutionConfiguration value="MRA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Regression2"/>
+    <ExecutionEngine value="WebDriver"/>
+    <ScenarioInitializationIDs value=""/>
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value=""/> 
+	<TestSetCleanupIDs value=""/>
+	<CustomDictionaryPath value=".\resource\customDict\one.log"/>
+	<SpellCheckLanguage value="American_English"/>
+	<SpellCheckSuggestion value="No"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-EIStatus">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="EIStatus"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 	
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-ExtPriority">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="ExtPriority"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-ToolEvents">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="ToolEvents"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-VamosConfig">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="VamosConfig"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-ScriptParameter">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="ScriptParameter"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-EIConfig">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="EIConfig"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-VamosDispatch">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="VamosDispatch"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+    
+  <TestSet Name="FABGUI-Reticle">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Reticle"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-InterFabMove">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="InterFabMove"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="Yes"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-ApprovedLocate">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="ApprovedLocate"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-MultiHold">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Multihold"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>Executing done up to here
+        
+  <TestSet Name="FABGUI-LotInfoChange">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="LotInfoChange"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  
+  <TestSet Name="FABGUI-StandardShipping">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="StandardShipping"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-Shipping">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="NonShipping"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+    
+  <TestSet Name="FABGUI-Sampling">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Sampling"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-Inhibit">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Inhibit"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  
+  <TestSet Name="FABGUI-Scheduler">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Scheduler"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+	<ExecuteSuite value="No"/>
+  </TestSet>
+   
+  <TestSet Name="FABGUI-QualityGate">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="QualityGate"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+	<ExecuteSuite value="No"/>
+  </TestSet>
+
+  <TestSet Name="FABGUI-Home">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+	<ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="Home"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>  
+
+  <TestSet Name="FabGUI-Set process hold">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+	<ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value=""/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+  <TestSet Name="FabGUI-DynamicBranch">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Testsuite.xls"/>
+	<ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="DynamicBranch"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="No"/>
+  </TestSet>
+
+  -->
+  </TestBatch>

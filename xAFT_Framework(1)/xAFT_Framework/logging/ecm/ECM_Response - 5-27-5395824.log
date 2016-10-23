@@ -1,0 +1,1 @@
+{"isComputed":true,"timestamp":"2016-05-27T12:09:05.600Z","approvers":[{"objectId":"574838d29ddb2e1e8a559fd6","state":"PENDING","requiredTags":[{"objectId":"56720528e6af3dbb58019ee2","label":"Quality"}],"mandatory":true},{"objectId":"574838d29ddb2e1e8a559fd7","state":"PENDING","requiredTags":[{"objectId":"56720528e6af3dbb58019ed9","label":"Automation"}],"mandatory":true}]}

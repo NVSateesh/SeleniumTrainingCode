@@ -1,0 +1,15 @@
+Expected Response is: -1<===>Execution Response is: 3Expected Response is: 2016-05-27T12:11:44.599Z<===>Execution Response is: Expected Response is: 0<===>Execution Response is: 4
+Expected: categories
+     but none found
+ ; 
+Expected: data
+     but none found
+ ; endIndex
+Expected: 3
+     got: -1
+ ; timestamp
+Expected: 
+     got: 2016-05-27T12:11:44.599Z
+ ; total
+Expected: 4
+     got: 0

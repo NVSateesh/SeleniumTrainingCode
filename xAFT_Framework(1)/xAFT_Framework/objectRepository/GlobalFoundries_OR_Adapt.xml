@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository> 
+  <FeatureSet name="Login">
+  
+	<Element name="dlgAdaptConnect" type="Dialog">
+      <name>Connect...</name>
+      <PageTitle> </PageTitle>
+    </Element>
+    <Element name="txtHost" type="Textbox">
+      <name>hostField</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtPort" type="Textbox">
+      <name>portField</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtUsername" type="Textbox">
+      <name>userField</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtPassword" type="Textbox">
+      <name>passField</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnok" type="Button">
+      <name>OkButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="Folder Creation">
+	<Element name="menucreatefolder" type="Menu">
+      <name>Create>Folder</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="txtNewFolder" type="Textbox">
+      <name>Name</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSaveFolderName" type="Button">
+      <name>SaveButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="About Help">
+	 <Element name="menuArmorHelp" type="Menu">
+      <name>Help>About ARMOR</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  
+	 <Element name="btnHelpArmorOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="Home">
+	<Element name="lblAdapLoginSucessMsg" type="Label">
+      <name>ARMOR - Default ARMOR Installation</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeRoot" type="Tree">
+      <name>THORTree_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="automationTreeNode" type="Tree">
+      <name>THORTree_1->Root->Adapt_Automation</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="winAdaptApp" type="Window">
+      <name>ARMOR - Default ARMOR Installation</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menuConnect" type="Menu">
+      <name>File>Connect...</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menuDisconnect" type="Menu">
+      <name>File>Disconnect</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menuExit" type="Menu">
+      <name>File>Exit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+
+<FeatureSet name="Component Chooser">
+	<Element name="dlgComponentChooser" type="Dialog">
+      <name>Component chooser</name>
+      <PageTitle>Component Chooser</PageTitle>
+    </Element>
+	<Element name="cboComponentType" type="Combobox">
+      <name>JComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboComponentArea" type="Combobox">
+      <name>JComboBox_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboComponentSubArea" type="Combobox">
+      <name>JComboBox_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnComponentChooserClose" type="Button">
+      <name>Close</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="TDM Integrity Checking">
+	<Element name="winIntegrityChecking1" type="Window">
+      <name>Integrity Checking /Adapt_Automation/</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="winIntegrityChecking2" type="Window">
+      <name>/TDMdata</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableIntegrityCheckDCPTable" type="Table">
+      <name>IntegrityCheckDCPTable_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnConvertSelectedDCPToNewToolModelandEdit" type="Button">
+      <name>ConvertselectedDCPtonewtoolmodelandedit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgEditExistingDCP" type="Dialog">
+      <name>Edit existing or create new DCP</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnCreateAndEditANewDCPVersion" type="Button">
+      <name>CreateandeditanewDCPversion</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblCreatedNewDCPVersion1" type="Label">
+      <name>2 - DCP Version - /Adapt_Automation/</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblExistingDCPVersion" type="Label">
+      <name>1 - DCP Version - /Adapt_Automation/</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblTDMVersion1" type="Label">
+      <name>1 - TDM Version - /Adapt_Automation/</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblTDMVersion" type="Label">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblDCPVersion" type="Label">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblDCCVersion1" type="Label">
+      <name>1 - DCC Version - /Adapt_Automation/</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblDCCVersion" type="Label">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnNewVersion" type="Button">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnCompareTo" type="Button">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgHtmlViewer" type="Dialog">
+      <name>HTML Viewer</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblTDMVersion2" type="Label">
+      <name>2 - TDM Version - /Adapt_Automation/</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblNavigatedDCPPath1" type="Label">
+      <name>1 - DCP Version - /Adapt_Automation/</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnShowall" type="Button">
+      <name>ToolAssignments.Showall</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tabPlanManagement" type="tab">
+      <name>PlanManagementTabbedPane_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableDCPStatus1" type="Table">
+      <name>DCPStatus.ScrollingTable_2</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="chkFilterListbySelectedDCP" type="Checkbox">
+      <name>FilterlistbyselectedDCP</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnSelectAll" type="Button">
+      <name>ToolAssignments.Selectall</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgCommunicatingWithServer" type="Dialog">
+      <name>Communicating with server</name>
+      <PageTitle>Save</PageTitle>
+    </Element>	
+	<Element name="btnRefreshList" type="Button">
+      <name>DCPStatus.Refreshlist</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnRefreshToolList" type="Button">
+      <name>ToolAssignments.Refreshtoollist</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnShowNone" type="Button">
+      <name>ToolAssignments.Shownone</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDeselectAll" type="Button">
+      <name>ToolAssignments.Deselectall</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnRefresh" type="Button">
+      <name>Refresh</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnCovertSelectedDCPtoNewToolModelAndEdit" type="Button">
+      <name>ConvertselectedDCPtonewtoolmodelandedit</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnEditExistingDCPVersion" type="Button">
+      <name>EditexistingDCPversion</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnGoBacktoTargetToolModel" type="Button">
+      <name>Gobacktotargettoolmodel</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnIntegrityCheckingExit" type="Button">
+      <name>Exit</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgApproveAll" type="Dialog">
+      <name>Approve All Dialog</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableApproveAllTDMSAndDCPS" type="Table">
+      <name>ScrollingTable_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnExitInApproveAllDialog" type="Button">
+      <name>Exit</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+ </FeatureSet>
+   
+ <FeatureSet name="Adapt-112">
+	<Element name="btnSaveAs" type="Button">
+      <name>ToolModelProperties.SaveAs...</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menucreateTDM" type="Menu">
+      <name>Templates>TDM</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtTDM" type="Textbox">
+      <name>VersionPointProperties.JTextField_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSaveTDM" type="Button">
+      <name>SaveButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLoadTDM" type="Button">
+      <name>ToolModelProperties.Load</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tabTDMContentSearch" type="tab">
+      <name>ToolModelContents.JTabbedPane_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSearch" type="Textbox">
+      <name>ToolModelContents.JTextFieldWithMouseClipboard_5</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtUnfilteredSearch" type="Textbox">
+      <name>ToolModelContents.JTextFieldWithMouseClipboard_23</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="btnFindNext" type="Button">
+      <name>ToolModelContents.Findnext</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRadFiltered" type="Radiobutton">
+      <name>ToolModelContents.Filtertype.Filtered</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRadUnFiltered" type="Radiobutton">
+      <name>ToolModelContents.Filtertype.Unfiltered</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboFilterType" type="Combobox">
+      <name>ToolModelContents.Filtertype.JComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboFilterValue" type="Combobox">
+      <name>ToolModelContents.Filtervalue.JComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtFilteredSearch" type="Textbox">
+      <name>ToolModelContents.Filtervalue.JTextFieldWithMouseClipboard_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnApply" type="Button">
+      <name>ToolModelContents.Filtervalue.Apply</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnReportingLevelRestrictions" type="Button">
+      <name>ToolModelProperties.Reportinglevelrestrictions</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableReportingLevelRestrictions" type="Table">
+      <name>JTable_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnReportingLevelRestrictionsClose" type="Button">
+      <name>Close</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnCompare" type="Button">
+      <name>CompareTo...</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnFindDiff" type="Button">
+      <name>FindDifferences</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnHTMLViewSaveAs" type="Button">
+      <name>SaveAs...</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnHtmlViewClose" type="Button">
+      <name>Close</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnToolmodelSelectionCancel" type="Button">
+      <name>Cancel</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="Reload Tool DCPS">
+	<Element name="menuReloadToolDCP" type="Menu">
+      <name>Commands>Reload Tool DCPs</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgReloadToolDCPS" type="Dialog">
+      <name>Reload Tool DCPs</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnReload" type="Button">
+      <name>Reload</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblToolIDS" type="Table">
+      <name>Multipletools.JTable_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkReload" type="Checkbox">
+      <name>Reload</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRadToolID" type="Radiobutton">
+      <name>Singletool.ToolID:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtToolID" type="Textbox">
+      <name>Singletool.JTextFieldWithMouseClipboard_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgToolIDConfirmation" type="Dialog">
+      <name>Message</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgRequestToolModelFromToolError" type="Dialog">
+      <name>Error</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnToolIDConfirmClose" type="Button">
+      <name>CloseButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnReloadToolIDDCPsClose" type="Button">
+      <name>Close</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>   
+ 
+ <FeatureSet name="Choose Tool Model">
+	<Element name="btnchooseToolmodel" type="Button">
+      <name>ToolModel.Choosetoolmodel</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgChooseToolModel" type="Dialog">
+      <name>Choose tool model</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tabToolModelTab" type="Tab">
+      <name>JTabbedPane_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboEquipmentType" type="Combobox">
+      <name>JComboBox_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtEquipmentID" type="Textbox">
+      <name>BasicComboBoxEditor$BorderlessTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableToolModel" type="Table">
+      <name>JTable_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRefreshToolModel" type="Button">
+      <name>RefreshToolModels</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="btnchooseToolmodelOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableInterfaceAToolAssignments" type="Table">
+      <name>JTable_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSaveToolAssignments" type="Button">
+      <name>SaveToolAssignments</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnIFAToolAssignmentExit" type="Button">
+      <name>Exit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+  
+ <FeatureSet name="Plan Management">
+	<Element name="btnPlanManagement" type="Button">
+      <name>PlanManagement</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableToolAssignmentInPlanMgmt" type="Table">
+      <name>ToolAssignments.JTable_5</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnActivateOnSelectedTools" type="Button">
+      <name>ToolAssignments.Activateonselectedtools</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnDeactivateFromSelectedTools" type="Button">
+      <name>ToolAssignments.Deactivatefromselectedtools</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnPlanManagementWindowExit" type="Button">
+      <name>Exit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="InterfaceA Data Collection Management">
+	<Element name="menuIFADataCollectionMgmt" type="Menu">
+      <name>Commands>Interface/A Data Collection Management</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtEquipmentTypeInIFA" type="Textbox">
+      <name>LocaterepositoryDCPs.BasicComboBoxEditor$BorderlessTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtEquipmentIDInIFA" type="Textbox">
+      <name>LocaterepositoryDCPs.BasicComboBoxEditor$BorderlessTextField_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnFindDCPSInIFA" type="Button">
+      <name>LocaterepositoryDCPs.FindDCPs</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableDCPSListInIFA" type="Table">
+      <name>LocaterepositoryDCPs.ScrollingTable_4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkUnapproved" type="Checkbox">
+      <name>Unapproved</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkOtherApporved" type="Checkbox">
+      <name>OtherApproved</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnGoToDCP" type="Button">
+      <name>LocaterepositoryDCPs.GoToDCP</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableToolAssignmentInIFA" type="Table">
+      <name>ToolAssignments.JTable_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnActivateOnSelectedToolsInIFA" type="Button">
+      <name>ToolAssignments.Activateonselectedtools</name>
+	  <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnDeactivateFromSelectedToolsInIFA" type="Button">
+      <name>ToolAssignments.Deactivatefromselectedtools</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnDeactivateSelectedPlanInIFA" type="Button">
+      <name>DCPStatus.Deactivateselectedplans</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="DCP Editor">
+	<Element name="menucreateDCP" type="Menu">
+      <name>Templates>DCP</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtDCP" type="Textbox">
+      <name>VersionPointProperties.JTextField_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtDCPDescription" type="Textbox">
+      <name>DataCollectionPlanProperties.JTextFieldWithMouseClipboard_7</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLoadDCP" type="Button">
+      <name>DataCollectionPlanProperties.Load</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSaveDCP" type="Button">
+      <name>SaveButton</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblExternalPathValue" type="Label">
+      <name>7 - TDM Version - /TDM/AMAT/Centura Enabler/Repository/TDMdata/7</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lblToolModelPathValue" type="Label">
+      <name>2 - DCC Version - /TDM/AMAT/Reflexion/Repository/ReflexionDCC/2</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lnkExternalPath" type="Link">
+      <name>Ext context path:</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lnkToolModelPath" type="Link">
+      <name>Tool model path:</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnShowLinkstoDCPS" type="Button">
+      <name>ToolModelProperties.ShowlinkstoDCPs</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="winDCPLinkstToTDMData" type="Window">
+      <name>DCP links to TDMdata</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lstDCPs" type="Listbox">
+      <name>JList_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="treeTDMModel1" type="Tree">
+      <name>ToolModelContents.ExpandableTree_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnToolmodelOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgDCPStatusError" type="Dialog">
+      <name>Already active</name>
+      <PageTitle>Open</PageTitle>
+    </Element>	
+ </FeatureSet>
+ 
+  <FeatureSet name="Edit Names">
+	<Element name="btnEditNamesDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEditNamesDialogCancel" type="Button">
+      <name>Cancel</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRemoveAllNameEdits" type="Button">
+      <name>Removeallnameedits</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="DCP Trace">
+	<Element name="btnAddTrace" type="Button">
+      <name>DataCollectionPlanComponents.AddTrace</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnToolAssignments" type="Button">
+      <name>DataCollectionPlanComponents.ToolAssignments</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSelectAllTools" type="Button">
+      <name>SelectAll</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnDeselectAllTools" type="Button">
+      <name>DeselectAll</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnExternalContext" type="Button">
+      <name>DataCollectionPlanComponents.ExternalContext</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkEnableForAllTools" type="Checkbox">
+      <name>Enableforalltoolsoftype:Etcher</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeTDMModel" type="Tree">
+      <name>THORTree_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgTraceRequest" type="Dialog">
+      <name>Add trace request</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgReportingPanelError" type="Dialog">
+      <name>Wonderware real-time window violation</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="winIFADCM" type="Window">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+	</Element>
+	<Element name="winPlanManagement" type="Window">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+	</Element>
+	<Element name="winPlanManagement1" type="Window">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+	</Element>
+	<Element name="winPlanManagement2" type="Window">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+	</Element>	
+	<Element name="Activate_ADAPT_TableName" type="Table">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+	</Element>
+	<Element name="Activate_ADAPT_TableName_1" type="Table">
+      <name>CurrentDCPis/GFAutomation/</name>
+      <PageTitle>Save</PageTitle>
+	</Element>
+	<Element name="Activate_ADAPT_TableName_2" type="Table">
+      <name>/1.ScrollingTable_3</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnPlanMgmtExit" type="Button">
+      <name>Exit</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgDCPError" type="Dialog">
+      <name>Message</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgDCPErrorAdditionalInformaton" type="Dialog">
+      <name>Additional Information</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnAdditionalInformationDialogClose" type="Button">
+      <name>CloseButton</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDCPErrorDialogClose" type="Button">
+      <name>CloseButton</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtTraceName" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnTraceNameOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnTraceEdit" type="Button">
+      <name>DataCollectionPlanComponents.Edit</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnEditStatus" type="Button">
+      <name>DataCollectionPlanComponents.Edit</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableParameterList" type="Table">
+      <name>ParameterList.ScrollingTable_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableDCPStatus" type="Table">
+      <name>DCPStatus.ScrollingTable_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tabletextParameterEditCell" type="Textbox">
+      <name>ParameterList.JTextFieldWithMouseClipboard_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDeleteAllParameters" type="Button">
+      <name>ParameterList.DeleteAll</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnAddParameter" type="Button">
+      <name>ParameterList.Add</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="chkCalculateInReportingPanel" type="Checkbox">
+      <name>Calculatevalue</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	
+	<Element name="btnChangeParameter" type="Button">
+      <name>ParameterList.Change</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDeleteParameter" type="Button">
+      <name>ParameterList.Delete</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tabDCPTrace" type="tab">
+      <name>JTabbedPane_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRadStartImmediately" type="Radiobutton">
+      <name>Start.Immediately</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRadStartOnEvent" type="Radiobutton">
+      <name>Start.Onevent</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRadAtTimeInStartPanel" type="Radiobutton">
+      <name>Start.Attime</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboCollectionFilterType" type="Combobox">
+      <name>ToolModelContents.Filtertype.JComboBox_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeCollectionTabToolModel" type="Tree">
+      <name>ToolModelContents.ExpandableTree_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnStartSetEvent" type="Button">
+      <name>Start.Setevent</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnSetEventInSamplingPanel" type="Button">
+      <name>Sampling.Setevent</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="chkStartPanelRetrigger" type="Checkbox">
+      <name>Retrigger</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtStartDelay" type="Textbox">
+      <name>Start.NoisyJFormattedTextField_18</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSetFilterInStartPanel" type="Button">
+      <name>Start.Setfilter...</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnSetFilterInSamplingPanel" type="Button">
+      <name>Sampling.Setfilter...</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgFilterSelection" type="Dialog">
+      <name>Filter Selection</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableFilterSelection" type="Table">
+      <name>ScrollingTable_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableReportingPanelDestination" type="Table">
+      <name>Reporting.JTable_2</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="chkReportingPanelWonderWareDestination" type="Checkbox">
+      <name>Wonderware</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="cboFilterSelection" type="Combobox">
+      <name>JComboBox_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="cboDCPType" type="Combobox">
+      <name>DataCollectionPlanProperties.JComboBox_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtFilterSelectionValue" type="Textbox">
+      <name>JTextField_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnFilterSelectionDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnRadOnEventInSamplingPanel" type="Radiobutton">
+      <name>Sampling.Onevent</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSamplingInterval" type="Textbox">
+      <name>Sampling.NoisyJFormattedTextField_11</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="chkNoOfSamplesInStopPanel" type="Checkbox">
+      <name>No.ofsamples</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSampleCountInStopPanel" type="Textbox">
+      <name>Stop.JSpinner_5.Stop.JSpinner_5.Stop.JFormattedTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkOnEventStopPanel" type="Checkbox">
+      <name>Onevent</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnStopSetEvent" type="Button">
+      <name>Stop.Setevent</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnSetFilterInStopPanel" type="Button">
+      <name>Stop.Setfilter...</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="chkAtTimeInStopPanel" type="Checkbox">
+      <name>Attime</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnCalenderInStartPanel" type="Button">
+      <name>Start.cal</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnCalenderInStopPanel" type="Button">
+      <name>Stop.cal</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDateInCalenderOfStartPanel" type="Button">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDateInCalenderOfStopPanel" type="Button">
+      <name></name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnClockInStartPanel" type="Button">
+      <name>Start.clk</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnClockInStopPanel" type="Button">
+      <name>Stop.clk</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtClockHourInStarPanel" type="Textbox">
+      <name>NumericalTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtClockMinuteInStarPanel" type="Textbox">
+      <name>NumericalTextField_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtClockSecondInStarPanel" type="Textbox">
+      <name>NumericalTextField_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtClockHourInStopPanel" type="Textbox">
+      <name>NumericalTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtClockMinuteInStopPanel" type="Textbox">
+      <name>NumericalTextField_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtClockSecondInStopPanel" type="Textbox">
+      <name>NumericalTextField_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnClockOkInStartPanel" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnClockOkInStopPanel" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="chkAfterIntervalInStopPanel" type="Checkbox">
+      <name>Afterinterval</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtHourInStopPanel" type="Textbox">
+      <name>Stop.JSpinner_1.Stop.JSpinner_1.Stop.JFormattedTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMinuteInStopPanel" type="Textbox">
+      <name>Stop.JSpinner_2.Stop.JSpinner_2.Stop.JFormattedTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSecondInStopPanel" type="Textbox">
+      <name>Stop.JSpinner_3.Stop.JSpinner_3.Stop.JFormattedTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtNoOfSamplesInReportingPanel" type="Textbox">
+      <name>Reporting.JSpinner_4.Reporting.JSpinner_4.Reporting.JFormattedTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkOnEventInReportingPanel" type="Checkbox">
+      <name>Onevent</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnReportingSetEvent" type="Button">
+      <name>Reporting.Setevent</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnSetFilterInReportingPanel" type="Button">
+      <name>Reporting.Setfilter...</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="cboEventFilterType" type="Combobox">
+      <name>ToolModelContents.Filtertype.JComboBox_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeEventTabToolModel" type="Tree">
+      <name>ToolModelContents.ExpandableTree_5</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnAddEventParameter" type="Button">
+      <name>EventList.Add</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableEventList" type="Table">
+      <name>EventList.ScrollingTable_3</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableExternalContextEventList" type="Table">
+      <name>EventList.ScrollingTable_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableExternalContextEventDataChoices" type="Table">
+      <name>EventDataChoices.ScrollingTable_3</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableExternalContextEventDataList" type="Table">
+      <name>EventDataList.ScrollingTable_2</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnExternalContextDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnChangeEvent" type="Button">
+      <name>EventList.Change</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableEventDataChoices" type="Table">
+      <name>EventDataChoices.ScrollingTable_5</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableEventDataList" type="Table">
+      <name>EventDataList.ScrollingTable_4</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnEventDataListAdd" type="Button">
+      <name>EventDataList.Add</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnEventDataListChange" type="Button">
+      <name>EventDataList.Change</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDeleteEventDataListVariable" type="Button">
+      <name>EventDataList.Delete</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDeleteAllEventDataListVariables" type="Button">
+      <name>EventDataList.DeleteAll</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDeleteEventFromEventList" type="Button">
+      <name>EventList.Delete</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDeleteAllEventsFromEventList" type="Button">
+      <name>EventList.DeleteAll</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableEventVariableEditCell" type="Textbox">
+      <name>Table.editor</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableEventEditCell" type="Textbox">
+      <name>Table.editor</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="DCP Exception">
+	<Element name="btnAddException" type="Button">
+      <name>DataCollectionPlanComponents.AddException</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtExceptionName" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgExceptionRequest" type="Dialog">
+      <name>Exception Request ex1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnExceptionRequestDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgExceptionRequestError" type="Dialog">
+      <name>No destination</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnEditException" type="Button">
+      <name>DataCollectionPlanComponents.Edit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="DCP Status">
+	<Element name="btnAddStatus" type="Button">
+      <name>DataCollectionPlanComponents.AddStatus</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnDeleteAll" type="Button">
+      <name>DataCollectionPlanComponents.DeleteAll</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnDelete" type="Button">
+      <name>DataCollectionPlanComponents.Delete</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnView" type="Button">
+      <name>DataCollectionPlanComponents.Edit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtStatusName" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgStatusRequestError" type="Dialog">
+      <name>No destination</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnStatusRequestDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+ </FeatureSet>
+ 
+ <FeatureSet name="DCP Event">
+	<Element name="btnAddEvent" type="Button">
+      <name>DataCollectionPlanComponents.AddEvent</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgEventRequest" type="Dialog">
+      <name>Event Request ev1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtEventName" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnEventRequestDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtEventReportingName" type="Textbox">
+      <name>JTextFieldWithMouseClipboard_3</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnReportingEventSectionDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tabEventParameterList" type="tab">
+      <name>ParameterList.JTabbedPane_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableValidationTabParameterList" type="Table">
+      <name>ParameterList.ScrollingTable_2</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="cboIndividualAlarmsTabReportOrIgnore" type="Combobox">
+      <name>ParameterList.JComboBox_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="cboValidationTabAutomatic" type="Combobox">
+      <name>ParameterList.JComboBox_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="treeDCPComponents" type="Tree">
+      <name>DataCollectionPlanComponents.JTree_2</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnEventEdit" type="Button">
+      <name>DataCollectionPlanComponents.Edit</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnAddPureEvent" type="Button">
+      <name>DataCollectionPlanComponents.AddPureEvent</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnPureEventEdit" type="Button">
+      <name>DataCollectionPlanComponents.Edit</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtPureEventName" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgPureEventError" type="Dialog">
+      <name>Destination missing</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="DCC Editor">
+	<Element name="btnViewXML" type="Button">
+      <name>ToolModelProperties.ViewXML</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgEditToolModelNames" type="Dialog">
+      <name>Edit Tool Model Names</name>	  
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnDCPViewXML" type="Button">
+      <name>ViewXML</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgXMLViewer" type="Dialog">
+      <name>XML Viewer</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgEditUnits" type="Dialog">
+      <name>Edit units</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgEditUnitsPleaseWait" type="Dialog">
+      <name>Please wait...</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableUnrecognizedUnitsSymbols" type="Table">
+      <name>UnrecognizedUnitSymbols.ScrollingTable_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnShowParameterswhichuseselectedunits" type="Button">
+      <name>UnrecognizedUnitSymbols.Showparameterswhichuseselectedunits...</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgParameterList" type="Dialog">
+      <name>Parameter List</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnParameterListOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnListSupportedprefixes" type="Button">
+      <name>AddAdditionalSupportedSymbols.Listsupportedprefixes</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgPrefixList" type="Dialog">
+      <name>Prefix List</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tablePrefixList" type="Table">
+      <name>JTable_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnPrefixListOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnTranslateUnitsManually" type="Button">
+      <name>UnrecognizedUnitSymbols.Translateunitsmanually...</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgManualE145UnitsEntry" type="Dialog">
+      <name>Manual E145 units entry</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtManualUnitsEntry" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnListCurrentAliases" type="Button">
+      <name>AddAdditionalSupportedSymbols.Listcurrentaliases</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgAliasList" type="Dialog">
+      <name>Alias List</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="tableAliasList" type="Table">
+      <name>JTable_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnAliasListOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="lstAddAdditionalSupportedSymbols" type="Listbox">
+      <name>AddAdditionalSupportedSymbols.JList_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnRadAddSymbolsasaNewRecognizedUnit" type="Radiobutton">
+      <name>AddAdditionalSupportedSymbols.SymbolAdditionType.Addsymbolasanewrecognizedunit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSymbolAdditonTypeName" type="Textbox">
+      <name>AddAdditionalSupportedSymbols.SymbolAdditionType.JTextFieldWithMouseClipboard_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtSymbolAdditonTypeDescription" type="Textbox">
+      <name>AddAdditionalSupportedSymbols.SymbolAdditionType.JTextFieldWithMouseClipboard_2</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnAddSymbolAdditionalTypes" type="Button">
+      <name>AddAdditionalSupportedSymbols.Add</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnRadAddSymbolsasanaliastoanexistingone" type="Radiobutton">
+      <name>AddAdditionalSupportedSymbols.SymbolAdditionType.Addsymbolasanaliastoanexistingone</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboAddSymbolstoanexistingOne" type="Combobox">
+      <name>AddAdditionalSupportedSymbols.SymbolAdditionType.JComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnCancelEditUnitsDialog" type="Button">
+      <name>Cancel</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtViewXMLSearch" type="Textbox">
+      <name>JTextField_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnViewXMLSearch" type="Button">
+      <name>Search</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgXMLSearchStringError" type="Dialog">
+      <name>Message</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="dlgSaveToolAssignmentComplete" type="Dialog">
+      <name>Message</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnViewXMLDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnViewXMLDownArrow" type="Button">
+      <name>nextButton</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnLoadDCC" type="Button">
+      <name>ToolModelProperties.Load</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkDisableSchemaTransforms" type="Checkbox">
+      <name>Disableschematransforms</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtDCCDescription" type="Textbox">
+      <name>ToolModelProperties.JTextFieldWithMouseClipboard_8</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRequestModel" type="Button">
+      <name>ToolModelProperties.RequestModel</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	<Element name="btnRequestTool" type="Button">
+      <name>Requestmodel</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	
+	<Element name="dlgRequestModel" type="Dialog">
+      <name>Request tool model from tool</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="cboToolType" type="Combobox">
+      <name>JComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lstToolIDS" type="Listbox">
+      <name>ToolChoices.JList_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRequestModelDlgClose" type="Button">
+      <name>Closewindow</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	<Element name="btnSubmit" type="Button">
+      <name>Submit</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	<Element name="btnApprove" type="Button">
+      <name>Approve</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	<Element name="btnReject" type="Button">
+      <name>Reject</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	<Element name="btnThaw" type="Button">
+      <name>Thaw</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	<Element name="btnUnapprove" type="Button">
+      <name>Unapprove</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	<Element name="txtComponentName" type="Textbox">
+      <name>JTextFieldWithMouseClipboard_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="txtExpandTree" type="Tree">
+      <name>ExpandableTree_1</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnMoveBranchOK" type="Button">
+      <name>OK</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	<Element name="txtMaxParams" type="Textbox">
+      <name>ToolModelProperties.Trace.JTextFieldWithMouseClipboard_7</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+	<Element name="btnDiscard" type="Button">
+      <name>DiscardButton</name>
+      <PageTitle>RequestModel</PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ 
+ <FeatureSet name="SaveAs Dialog">
+	<Element name="txtSaveFileName" type="Textbox">
+      <name>MetalFileChooserUI$3_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSave" type="Button">
+      <name>Save</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="btnDCPSaveAs" type="Button">
+      <name>DataCollectionPlanProperties.SaveAs...</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="Open Dialog">
+	<Element name="txtopenfilename" type="Textbox">
+      <name>MetalFileChooserUI$3_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnopen" type="Button">
+      <name>Open</name>
+      <PageTitle>Open</PageTitle>
+    </Element>
+	<Element name="chkLoadATMContent" type="Checkbox">
+      <name>LoadATMcontent</name>
+      <PageTitle>Open</PageTitle>
+    </Element>
+	<Element name="dlgAdaptSchemaError" type="Dialog">
+      <name>XML Migration Error</name>
+      <PageTitle>Open</PageTitle>
+    </Element>
+	<Element name="dlgAdaptToolModelError" type="Dialog">
+      <name>Error</name>
+      <PageTitle>Open</PageTitle>
+    </Element>
+	
+ </FeatureSet>
+ 
+ 
+ <FeatureSet name="Adapt-130">
+	<Element name="cboSchemaVersion" type="Combobox">
+      <name>JComboBox_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkSaveATMContent" type="Checkbox">
+      <name>SaveATMcontent</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSaveDCC" type="Button">
+      <name>SaveButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="Adapt-131">
+	<Element name="treeToolModelContents" type="Tree">
+      <name>ToolModelContents.ExpandableTree_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menuChangeContextID" type="Menu">
+      <name>Rename</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboContextID" type="Combobox">
+      <name>JComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboRename" type="Combobox">
+      <name>JComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRename" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnContextIDWindowOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRenameWindowOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnUndoRenameYes" type="Button">
+      <name>Yes</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableContextProperties" type="Table">
+      <name>Properties.JTable_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menucreateDCC" type="Menu">
+      <name>Templates>DCC</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtDCC" type="Textbox">
+      <name>VersionPointProperties.JTextField_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ </ObjectRepository>

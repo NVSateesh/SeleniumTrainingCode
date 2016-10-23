@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AFT" default="etlPlugIn">
+	<property name="project.path" value="./source" />
+	<property name="class.path" value="${project.path}/bin" />
+	<property name="aftCommonJarFile.path" value="./library/aftcommon.jar" />
+	<property name="webDriverPluginJarFile.path" value="./library/webDriverEnginePlugin.jar" />
+	<property name="twinPluginJarFile.path" value="./library/twinEnginePlugin.jar" />
+	<property name="qtpPluginJarFile.path" value="./library/qtpEnginePlugin.jar" />
+	<property name="FrankensteinPluginJarFile.path" value="./library/frankensteinPlugin.jar" />
+	<property name="EtlPluginJarFile.path" value="./library/etlPlugin.jar" />
+
+	<ant antfile="aftBuild.xml" target="aft" />
+
+	<!-- Set class path libraries to be used for compilation -->
+	<path id="twincpath">
+		<pathelement location="lib" path="./library/log4j-1.2.17.jar" />
+		<pathelement location="lib" path="./library/jacob-1.14.3.jar" />
+		<pathelement location="lib"
+			path="./library/twin-client-standalone-1.0.jar" />
+		<pathelement location="lib" path="./library/velocity-1.4-dev.jar" />
+	</path>
+
+	<path id="qtpcpath">
+		<pathelement location="lib" path="./library/log4j-1.2.17.jar" />
+		<pathelement location="lib" path="./library/jacob-1.14.3.jar" />
+	</path>
+
+	<path id="frankensteincpath">
+		<pathelement location="lib" path="./library/log4j-1.2.17.jar" />
+		<pathelement location="lib" path="./library/commons-lang3-3.1.jar" />
+		<pathelement location="lib" path="./library/ognl-2.6.9.jar" />
+		<pathelement location="lib" path="./library/picocontainer-1.2.jar" />
+		<pathelement location="lib" path="./library/frankenstein.jar" />
+	</path>
+
+	<path id="webDrivercpath">
+		<pathelement location="lib" path="./library/aft.jar" />
+		<pathelement location="lib" path="./library/commons-io-2.0.1.jar" />
+		<pathelement location="lib" path="./library/sikuli-java.jar" />
+		<pathelement location="lib" path="./library/log4j-1.2.17.jar" />
+		<pathelement location="lib"
+			path="./library/languagetool/commons-lang-2.4.jar" />
+		<pathelement location="lib" path="./library/selenium-java-2.33.0.jar" />
+		<pathelement location="lib"
+			path="./library/selenium-server-standalone-2.33.0.jar" />
+		<pathelement location="lib" path="./library/dblibs/ojdbc6.jar" />
+		<pathelement location="lib"
+			path="./library/dblibs/mysql-connector.jar" />
+		<pathelement location="lib" path="./library/mail.jar" />
+		<pathelement location="lib" path="./library/jdom.jar" />
+		<pathelement location="lib"
+			path="./library/commons-httpclient-3.1.jar" />
+		<pathelement location="lib" path="./library/httpclient-4.2.1.jar" />
+		<pathelement location="lib" path="./library/asm-3.2.jar" />
+		<pathelement location="lib" path="./library/groovy-1.8.4.jar" />
+		<pathelement location="lib" path="./library/antlr-2.7.7.jar" />
+		<pathelement location="lib" path="./library/jruby-engine.jar" />
+		<pathelement location="lib" path="./library/jruby.jar" />
+		<pathelement location="lib" path="./library/jython-engine.jar" />
+		<pathelement location="lib" path="./library/jython.jar" />
+		<pathelement location="lib" path="./library/sqljdbc4.jar" />
+		<pathelement location="lib" path="./library/rt.jar" />
+		<pathelement location="lib" path="./library/jsse.jar" />
+		<pathelement location="lib" path="./library/pdfbox-app-1.6.0.jar" />
+		<pathelement location="lib" path="./library/sikuli-script.jar" />
+		<pathelement location="lib" path="./library/asm-commons-3.2.jar" />
+		<pathelement location="lib" path="./library/asm-tree-3.2.jar" />
+		<pathelement location="lib" path="./library/asm-util-3.2.jar" />
+		<pathelement location="lib" path="./library/commons-codec-1.6.jar" />
+		<pathelement location="lib"
+			path="./library/commons-collections-3.2.1.jar" />
+		<pathelement location="lib" path="./library/commons-lang3-3.1.jar" />
+		<pathelement location="lib"
+			path="./library/commons-logging-1.1.1.jar" />
+		<pathelement location="lib" path="./library/hamcrest-core-1.2.1.jar" />
+		<pathelement location="lib"
+			path="./library/hamcrest-library-1.2.1.jar" />
+		<pathelement location="lib" path="./library/httpcore-4.2.1.jar" />
+		<pathelement location="lib" path="./library/httpmime-4.2.1.jar" />
+		<pathelement location="lib" path="./library/jersey-core-1.8.jar" />
+		<pathelement location="lib" path="./library/jersey-json-1.8.jar" />
+		<pathelement location="lib" path="./library/jersey-server-1.8.jar" />
+		<pathelement location="lib" path="./library/rest-assured-1.7.2.jar" />
+		<pathelement location="lib"
+			path="./library/signpost-commonshttp4-1.2.1.1.jar" />
+		<pathelement location="lib"
+			path="./library/signpost-core-1.2.1.1.jar" />
+		<pathelement location="lib" path="./library/json_simple-1.1.jar" />
+	</path>
+	<path id="ETLcpath">
+		<pathelement location="lib" path="./library/aft.jar" />
+		<pathelement location="lib" path="./library/aftcommon.jar" />
+		<pathelement location="lib"
+			path="./library/commons-beanutils-core-1.8.3.jar" />
+		<pathelement location="lib" path="./library/commons-io-2.4.jar" />
+		<pathelement location="lib" path="./library/commons-lang3-3.1.jar" />
+		<pathelement location="lib" path="./library/log4j-1.2.17.jar" />
+		<pathelement location="lib" path="./library/commons-cli-1.2.jar" />
+		<pathelement location="lib"
+			path="./library/commons-collections-3.2.1.jar" />
+		<pathelement location="lib" path="./library/mysql-connector.jar" />
+		<pathelement location="lib" path="./library/diffkit.jar" />
+		<pathelement location="lib" path="./library/gson-2.2.4.jar" />
+		<pathelement location="lib" path="./library/guava-15.0.jar" />
+		<pathelement location="lib" path="./library/json-20131018.jar" />
+		<pathelement location="lib"
+			path="./library/logback-classic-0.9.18.jar" />
+		<pathelement location="lib" path="./library/logback-core-0.9.18.jar" />
+		<pathelement location="lib" path="./library/paranamer-2.2.jar" />
+		<pathelement location="lib" path="./library/ojdbc14.jar" />
+		<pathelement location="lib" path="./library/slf4j-api-1.5.10.jar" />
+		<pathelement location="lib" path="./library/sqljdbc4.jar" />
+	</path>
+
+	<!-- Compile targets -->
+	<target name="aftcommon">
+		<echo message="Compiling AFT common source..." />
+		<mkdir dir="${class.path}" />
+		<javac classpathref="webDrivercpath" destdir="${class.path}"
+			encoding="UTF-8" optimize="off" debug="on" failonerror="true"
+			srcdir="${project.path}/common" />
+		<jar destfile="${aftCommonJarFile.path}" basedir="${class.path}" />
+	</target>
+
+	<target name="webDriverPlugIn" depends="aftcommon">
+		<echo message="Compiling WebDriver plugin source..." />
+		<mkdir dir="${class.path}" />
+		<javac classpathref="webDrivercpath" destdir="${class.path}"
+			encoding="UTF-8" optimize="off" debug="on" failonerror="true"
+			srcdir="${project.path}/plugins/webdriver" />
+		<jar destfile="${webDriverPluginJarFile.path}" basedir="${class.path}" />
+	</target>
+
+	<target name="qtpPlugIn" depends="webDriverPlugIn">
+		<echo message="Compiling qtp plugin source..." />
+		<mkdir dir="${class.path}" />
+		<javac classpathref="qtpcpath" destdir="${class.path}" encoding="UTF-8"
+			optimize="off" debug="on" failonerror="true"
+			srcdir="${project.path}/plugins/qtp/plugin/src" />
+		<jar destfile="${qtpPluginJarFile.path}" basedir="${class.path}" />
+	</target>
+
+	<target name="twinPlugIn" depends="qtpPlugIn">
+		<echo message="Compiling TWIN plugin source..." />
+		<mkdir dir="${class.path}" />
+		<javac classpathref="twincpath" destdir="${class.path}"
+			encoding="UTF-8" optimize="off" debug="on" failonerror="true"
+			srcdir="${project.path}/plugins/twin" />
+		<jar destfile="${twinPluginJarFile.path}" basedir="${class.path}" />
+	</target>
+	<target name="frankensteinPlugIn" depends="twinPlugIn">
+		<echo message="Compiling Frankenstein Plugin source..." />
+		<mkdir dir="${class.path}" />
+		<javac classpathref="frankensteincpath" destdir="${class.path}"
+			encoding="UTF-8" optimize="off" debug="on" failonerror="true"
+			srcdir="${project.path}/plugins/frankenstein" />
+		<jar destfile="${FrankensteinPluginJarFile.path}" basedir="${class.path}" />
+	</target>
+	<target name="etlPlugIn" depends="aftcommon">
+		<echo message="Compiling ETL Plugin source..." />
+		<mkdir dir="${class.path}" />
+		<javac classpathref="ETLcpath" destdir="${class.path}" encoding="UTF-8"
+			optimize="off" debug="on" failonerror="true" srcdir="${project.path}/plugins/etl" />
+		<jar destfile="${EtlPluginJarFile.path}" basedir="${class.path}" />
+	</target>
+
+</project>

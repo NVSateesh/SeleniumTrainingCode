@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameworkConfig>
+	<TestEnvironment Name="default">
+		<TestBatch_Path value="./configuration/AFTTestBatch.xml" />
+		<Log4JPropertiesFilePath value="./configuration" />
+		<TestResultPath value="./testReports/xml" />
+		<LogFilePath value="./logging" />
+		<ScreenShotPath value="./screenShots" />
+		<ServiceRequestPath value="./serviceRequests" />
+		<RandomDataResourcesFilePath value="./resource/RandomData/" />
+		<AppConfigFilePath value="./configuration/AppConfig.xml" />
+		<Step_Values_Delimiter_Character
+			value="~" />
+		<Test_Data_Column_Delimiter value="||" />
+		<CaptureScreenShot value="No" />
+		<OnError value="ResumeNextTestStep" />
+		<OnError_DB_Connection value="ResumeNextTestStep" />
+		<TCMIntegration value="No" />
+		<TCMIntegrationJarPath value="./library/AFTQmetryIntegration.jar" />
+		<TCMIntegrationClassName
+			value="com.ags.integration.qmetry.AFTQMetryConnector" />
+		<TCMIntegrationAttachEvidence value="No" />
+		<Email_Server_Addr value="mail.allianceglobalservices.com" />
+		<Email_Server_Port value="25" />
+		<Email_Server_Auth value="false" />
+		<Email_Server_StartTLS value="false" />
+		<Email_userName value="" />
+		<Email_password value="" />
+		<Email_Notif_FromAddr value="ags-aft@allianceglobalservices.com" />
+		<Email_Notif_ToAddr value="" />
+		<Email_Notif_CCAddr value="" />
+		<TestExecutionResultEmailNotif value="No" />
+		<AttachExecutionLogFile value="No" />
+		<TestFailureEmailNotification value="No" />
+		<ShowScrollableTestScenarioFrame
+			value="No" />
+		<ScrollableTestScenarioFrame_RefreshTime
+			value="200" />
+		<ScrollableTestScenarioFrame_FontSize
+			value="18" />
+		<LogFile_RetentionPeriod_Days value="30" />
+		<ServiceRequests_RetentionPeriod_Days
+			value="30" />
+		<Screenshots_RetentionPeriod_Days
+			value="30" />
+		<ReportFile_RetentionPeriod_Days
+			value="30" />
+		<Sikuli_ImagesPath value="./objectRepository/images" />
+		<Sikuli_MoveMouseDelay value="0.5" />
+		<Sikuli_RecognitionEfficiency value="18" />
+		<LinkCheckerThreadCount value="10" />
+		<LinkCheckerPageTimeOut_ms value="10000" />
+		<LinkCheckerUserAgent value="Mozilla/5.0" /><!-- Do 
+			not modify this. For all browsers this is the default value -->
+		<LinkCheckerProxy value="" />
+		<ExternalScriptMethodPrefix value="##" />
+		<DisableStandardReporting value="No" />
+		<EnlaceEndPointURL value="" />
+		<RemoteExecutionPollTime_ms value="500" />
+		<IOSExecutionPath value="/Users/kiran/Documents/kiran/XAFT9.7.1/MAC/9.7.1" />
+	</TestEnvironment>
+</FrameworkConfig>

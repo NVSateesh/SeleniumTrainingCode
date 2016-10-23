@@ -1,0 +1,58 @@
+# DISRouter properties (Unix)
+#
+
+# <Lot> tags that define unique context
+router.xml.lot.context.fields=TechCode,ProductGroup,ProcessDef,InsertionName,SubLotType
+# Dynamic properties -- can grab map for any field. The lookup "$KEY" can be part of the whole key attribute. 
+# Format is: xml-file;element1/element2 KeyAttr=prefix1.$KEY ValueAttr
+router.xml.lot.context.mapfile.SubLotType=/customapps/espace/mtqa/space7/igate/iGate-spisepp/products/spisepp/plugin_custom/xml/parserPath.xml;parserTypes/parserProperty name=sublottypecat.$KEY value
+router.xml.lot.context.mapfile.ProcessDef=/customapps/espace/mtqa/space7/igate/iGate-spisepp/products/spisepp/plugin_custom/xml/parserPath.xml;parserTypes/parserProperty name=wetstep.$KEY value
+
+
+#Frequency of Router input (DISFilter published output)
+# Minimum=10 seconds, maximum=600 seconds
+router.inputListener.interval.secs=10
+
+# trace levels:
+#   TRC_NONE    =  0;
+#   TRC_BASIC   =  1;
+#   TRC_MEDIUM  =  2;
+#   TRC_VERBOSE =  3;
+#   TRC_DEBUG   =  4;
+router.trace.level=2
+router.adapter.autoStart=true
+# MSR716046
+nc.tag.ignore=(SubLotType = 'ZZZ' )
+#(SubLotType != 'E*' AND ProductGroup != '3150C') OR \
+#		 (InsertionName != 'SWET' AND InsertionName != 'SWET_D' AND InsertionName != 'SWET_L' AND \
+#		InsertionName != 'FWET' AND InsertionName != 'FWET_D' AND InsertionName != 'FWET_L') OR \
+#		(SitePattern != 'S*') OR \
+#		(ProcessDef != 'TB-WET*' AND ProcessDef != 'M1-SWET*' AND ProcessDef != 'M4-SWET*' AND ProcessDef != 'FINA*')
+	
+# MSR681437 
+#nc.tag.ignore.ProductGroup=MPW*
+#nc.tag.ignore.ProcessDef=WFET*
+#nc.tag.ignore.SubLotType=E*,R*,PC
+#nc.tag.ignore.SubLotTypeCat=PR*
+#nc.tag.ignore.SitePattern=!S*,!F*
+#nc.tag.ignore.InsertionName=WFET*
+# Option:
+mnc.split.ignored.accepted.allow=true
+# Where DISFilter used to point
+router.base.directory.prefilter.input=/customdata/espace7/etparser1/etl_input
+# DISFilter will now point here
+router.base.directory.prefilter.accepted=/customdata/espace7/etparser1/accepted
+router.base.directory.prefilter.ignored=/customdata/espace7/etparser1/ignored
+# End of MSR681437
+
+# Usually same as DISFilter published
+#router.base.directory.filtered.input=/customdata/espace/filter/disfilter_data/dis_published
+router.base.directory.filtered.input=/customdata/espace7/etparser1/filtered
+# Set property equal to nothing to disable Router:
+# Flexible list, can include subset
+router.base.directory.published.etp=1
+router.base.directory.published.etp.1=/customdata/espace7/etparser1/etparser_data
+#router.base.directory.published.etp.2=/customdata/espace7/etparser2/etparser_data
+#router.base.directory.published.etp.3=/customdata/espace7/etparser3/etparser_data
+# up to N
+

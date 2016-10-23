@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RobotiumConfig>
+	<TestEnvironment Name="default">
+		<RunOnEmulator value="No" /><!-- To run on Emulator, set 
+			value to 'Yes' to run on Device set value to 'No' default value is 'No' -->
+		<launchAndroidScreen value="Yes" /><!-- Set this param 
+			to yes if you want to launch the screen.For emulator Droid @ screen is not 
+			launched -->
+		<ElementWaitTime_ms value="3600000" />
+		<ResignAUT value="yes" /><!-- Set this to yes if you want to 
+			Resign your AUT -->
+		<ResignJarPath value="./library/re-sign.jar" /><!-- Path 
+			to the Resign JAR -->
+		<RebuildTestRunner value="Yes" /><!-- Set this to yes 
+			if your want to rebuild Robotium Test Runner -->
+		<AndroidSDKPath
+			value="D:\\AGS\\software\\adt-bundle-windows-x86_64-20130729\\adt-bundle-windows-x86_64-20130729\\sdk" /><!-- 
+			Path to Android SDK Home -->
+		<ANTHomePath
+			value="D:\\AGS\\software\\apache-ant-1.9.2-bin\\apache-ant-1.9.2" /><!-- 
+			Path to Apache Ant Home -->
+		<RobotiumTestRunnerHomePath value="C:\\RobotiumRC\\RobotiumTestRunner" /><!-- 
+			On installation of Robotium Test Runner. This folder is created -->
+		<AUTPath value="C:\\RobotiumRC\\SoloRemoteControl\\libs\\Amazon_Mobile.apk" /><!-- 
+			Location of Target AUT. Make sure APK file name does not contain any spaces -->
+		<InstrumentPackageName
+			value="com.jayway.android.robotium.remotecontrol.client/com.jayway.android.robotium.remotecontrol.client.RobotiumTestRunner" /><!-- 
+			Donot modify this -->
+		<EmulatorPath value="C:\\Users\\kkanumuri\\.android\\avd" />
+		<EmulatorName value="testAvd2" />
+	</TestEnvironment>
+</RobotiumConfig>

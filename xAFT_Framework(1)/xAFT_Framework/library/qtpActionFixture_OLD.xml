@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qtp>
+	<object xAFTObject="Text Box">
+		<action xAFTAction="click" toolAction="Click"
+			toolObject="WebEdit;WinEdit;OracleEdit" parameterDelimiter=";">
+			<parameter name="X" datatype="int" mandatory="no" />
+			<parameter name="Y" datatype="int" mandatory="no" />
+		</action>
+		<action xAFTAction="Dblclick" toolAction="DblClick" toolObject="WebEdit"
+			parameterDelimiter=";">
+			<parameter name="X" datatype="int" mandatory="no" />
+			<parameter name="Y" datatype="int" mandatory="no" />
+		</action>
+		<action xAFTAction="type" toolAction="type" toolObject="WebEdit"
+			parameterDelimiter=";">
+			<parameter name="Value" datatype="String" mandatory="Yes"
+				default="" />
+		</action>
+		<action xAFTAction="test" toolAction="test"
+			toolObject="WebEdit;WinEdit;OracleEdit" parameterDelimiter=";">
+			<parameter name="X" datatype="String" mandatory="Yes" />
+			<parameter name="as" datatype="int" mandatory="no" />
+			<parameter name="asa" datatype="int" mandatory="no" />
+			<parameter name="Y" datatype="int" mandatory="yes" default="1212" />
+		</action>
+	</object>
+</qtp>

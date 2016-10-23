@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestBatch>
+  <TestSet Name="FABGUI-EIConfig">
+    <ApplicationName value="FABGUI"/>
+    <ApplicationUrl value="com.globalfoundries.fabgui.webgui.application.WebGUIApplication"/>
+    <BrowserType value="Frankenstein"/>
+	<TestSuitePath value=".\testScripts\FABGUI_Regression_R10.xls"/>
+    <ScenariosSheetName value="Functional_Scenarios"/>
+    <TestStepsSheetName value="Test_Steps"/>
+    <ObjectRepositoryPath value=".\objectRepository\GlobalFoundries_OR_FABGUI.xml"/>
+    <TestDataTablePath value=".\testData\GlobalFoundries_TestData_FABGUI_R10.xls"/>
+    <ReusableTestSuitePath value=".\testScripts\GlobalFoundries_ReusableTestSuite_FABGUI.xls"/>
+    <ReusableScenariosSheetName value="Reusable_Scenarios"/>
+    <ReusableTestStepsSheetName value="Reusable_TestSteps"/>
+    <AppExecutionConfiguration value="FABGUI_MTQA_R10"/>
+    <TCMIntegrationConfigFilePath value=""/>
+    <Category value="EIConfig"/>
+    <ExecutionEngine value="Frankenstein"/>
+    <ScenarioInitializationIDs value=""/> 
+	<ScenarioCleanupIDs value=""/>
+	<TestSetInitializationIDs value="RS_FABGUI_Configurations_Login"/> 
+	<TestSetCleanupIDs value="RS_FABGUI_Quit"/>
+    <ExecuteSuite value="Yes"/>
+  </TestSet>
+ </TestBatch>

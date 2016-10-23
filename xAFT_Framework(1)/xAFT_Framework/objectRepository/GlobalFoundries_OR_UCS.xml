@@ -1,0 +1,1827 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ObjectRepository>
+  <FeatureSet name='Login'>
+  
+  <Element name='lblUCSVersion' type='Label'>
+      <xpath>//div/*[contains(text(),'UCS')]/span[contains(text(),'v')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+    <Element name='lblBrandNVersion' type='Label'>
+      <xpath>//div[@class='brand']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='labComponentID1' type='Label'>
+      <xpath>//span[contains(@data-bind,'component_id')][contains(text(),'</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='labComponentID2' type='Label'>
+      <xpath>')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='labComponentID' type='Label'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	 <Element name='imgGFLogo' type='Image'>
+      <xpath>//div/img[@src='img/GF_Logo_lowres_72dpi.jpg']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnLaunchLogin' type='Button'>
+		<xpath>//form[@class='navbar-form pull-right']/button[contains(text(),'Login')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+    <Element name='txtUname' type='Textbox'>
+      <xpath>//input[@id='username_input']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtPassword' type='Textbox'>
+      <xpath>//input[@type='password']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnLogin' type='Button'>
+      <xpath>//div/button[contains(text(),'Login')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnLoginFailed' type='Button'>
+      <xpath>//div[@class='alert alert-block'][contains(text(),'login failed')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCancelLogin' type='Button'>
+		<xpath>//div/button[contains(text(),'Login')]/following-sibling::button[contains(text(),'Cancel')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnSelectFAB' type='Button'>
+      <xpath>//div/button/span[contains(text(),'Select a Fab')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnFAB' type='Button'>
+      <xpath>//div[@class='left-pane']/div/button[@class='btn btn-mini dropdown-toggle']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnFabDRESDEN' type='Button'>
+      <xpath>//div/button/span[contains(text(),'FAB36 DRESDEN')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkFabDRESDEN' type='Link'>
+      <xpath>//div/ul/li/a[contains(text()='FAB36 DRESDEN')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkFabMALTA' type='Link'>
+      <xpath>//div/ul/li/a[contains(text(),'FAB8 MALTA')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cbxShowDisAprvd' type='Checkbox'>
+      <xpath>//label[contains(text(),'show disapproved and obsolete')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkReqPrevThrIT' type=''>
+      <xpath>//th[contains(text(),'Request privilege through')]/a[text()='IT ServiceNow']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblEditSort' type='Label'>
+      <xpath>//td[contains(text(),'Edit Sort')]/following-sibling::td/i[@class='icon-ok']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblEditWET' type='Label'>
+      <xpath>//td[contains(text(),'Edit WET')]/following-sibling::td/i[@class='icon-ok']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblApproveMetrology' type='Label'>
+      <xpath>//td[contains(text(),'Approve Metrology')]/following-sibling::td/i[@class='icon-ok']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblEditDefaultZone' type='Label'>
+      <xpath>//td[contains(text(),'Edit DefaultZone')]/following-sibling::td/i[@class='icon-ok']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblEditComponent' type='Label'>
+      <xpath>//td[contains(text(),'Edit Component')]/following-sibling::td/i[@class='icon-ok']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblEditMaskset' type='Label'>
+      <xpath>//td[contains(text(),'Edit Maskset')]/following-sibling::td/i[@class='icon-ok']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblEditCFM' type='Label'>
+      <xpath>//td[contains(text(),'Edit CFM')]/following-sibling::td/i[@class='icon-ok']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblEditCopyLayout' type='Label'>
+      <xpath>//td[contains(text(),'Edit Copy Layout')]/following-sibling::td/i[@class='icon-ok']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblPrivilege' type='Label'>
+      <xpath>//th[contains(text(),'Privilege')]/following-sibling::th[text()='DEV']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+ 
+  <FeatureSet name='Logout'>
+	<Element name='lnkUserName' type='Link'>
+      <xpath>//p[@class='navbar-text pull-right']/a</xpath>
+	  <!--<xpath>//div[@class='control-group']//input[@id='username_input']</xpath>-->
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkUNClose' type='Link'>
+      <xpath>//a[@class='close'][@href='#']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+    <Element name='lnkLogout' type='Link'>
+      <xpath>//a[contains(text(),'logout')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+
+  <FeatureSet name='WET'>
+	<Element name='lnkWET' type='Link'>
+      <xpath>//a[contains(text(),'WET')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDefault' type='Label'>
+      <xpath>//span[@data-bind='text: component_id' and contains(text(),'DEFAULT')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtFilterLaout' type='Textbox'>
+      <xpath>//div[@class='input-append']/input[@type='text']</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblSelectedLayout' type='Label'>
+      <xpath>(//div[@style='overflow:hidden' or @style='overflow: hidden;'])[1]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblSLEvent1' type='Label'>
+      <xpath>//div[@style='overflow:hidden']/span[contains(text(),'</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblSLEvent2' type='Label'>
+      <xpath>')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblSLEvent' type='Label'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnTAreaEvnt1' type='Button'>
+      <xpath>//td[contains(text(),'Test Area')]/following-sibling::td/div/button/../ul/li[</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnTAreaEvnt2' type='Button'>
+      <xpath>]/a</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnTAreaEvnt' type='Button'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblTestArea' type='Label'>
+      <xpath>//td[contains(text(),'Test Area')]/following-sibling::td/div/button/span[1]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnLNameEvnt1' type='Button'>
+      <xpath>//td[contains(text(),'Name') or contains(text(),'Layer Name')]/following-sibling::td/div/button/../ul/li[</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnLNameEvnt2' type='Button'>
+      <xpath>]/a</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnLNameEvnt' type='Button'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnLName' type='Button'>
+      <xpath>//td[contains(text(),'Name') or contains(text(),'Layer Name')]/following-sibling::td/div/button</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblLayoutName' type='Label'>
+      <xpath>//td[text()='Name']/following-sibling::td/div/button/span[1]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnLayoutRevision' type='Button'>
+      <xpath>//td[contains(text(),'Revision') or contains(text(),'Rev')]/following-sibling::td/div/button</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblLayerRevision' type='Label'>
+      <xpath>//td[contains(text(),'Revision') or contains(text(),'Rev')]/following-sibling::td/div/button/span</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkLRevEvnt' type='Link'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkLRevEvnt1' type='Link'>
+      <xpath>//td[contains(text(),'Revision') or contains(text(),'Rev')]/following-sibling::td/div/ul/li[</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkLRevEvnt2' type='Link'>
+      <xpath>]/a</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblLayoutStatus' type='Label'>
+      <xpath>//table/tbody/tr/td[contains(text(),'Status')]/../td[2]/span</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblPrimarySetup' type='Label'>
+      <xpath>//table//td[contains(text(),'Primary Setup')]/following-sibling::td</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblNotchPosition' type='Label'>
+      <xpath>//table//td[contains(text(),'Notch Position')]/following-sibling::td</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblOrientation' type='Label'>
+      <xpath>//table//td[contains(text(),'Orientation')]/following-sibling::td</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblShiftX' type='Label'>
+      <xpath>//table//td[contains(text(),'Shift X')]/following-sibling::td</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblShiftY' type='Label'>
+      <xpath>//table//td[contains(text(),'Shift Y')]/following-sibling::td</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblDescription' type='Label'>
+      <xpath>//h5[contains(text(),'Description')]/following-sibling::p</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cbxMatrixShift' type='checkbox'>
+      <xpath>//label[contains(text(),'Matrix Shift')]//input[@type='checkbox']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cbxUCSAxis' type='checkbox'>
+      <xpath>//label[contains(text(),'UCS Axis')]//input[@type='checkbox']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cbxSortMap' type='checkbox'>
+      <xpath>//input[contains(@data-bind,'show_sort_map')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name='cbxWETAxis' type='checkbox'>
+      <xpath>//label[contains(text(),'WET Axis')]//input[@type='checkbox']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cbxDies' type='checkbox'>
+      <xpath>//label[contains(text(),'Dies')]//input[@type='checkbox']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cmbxREV' type='combobox'>
+      <xpath>//p[contains(text(),'Map Name')]/../div</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnCrteNwWETMap' type='Button'>
+		<xpath>//i/../../button[contains(text(),'Create New WET Map')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	</FeatureSet>
+	
+	
+<FeatureSet name='Summary'>
+	
+	<Element name='lblProductName' type='Label'>
+      <xpath>(//td[@data-bind="text: maskset_id"])[1]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name='lblProductDesc' type='Label'>
+      <xpath>(//td[@data-bind="text: description"])[1]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name='lnkSummary' type='Link'>
+      <xpath>//li/a[contains(@href,'#Summary')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkSummary' type='Link'>
+      <xpath>//li/a[contains(@href,'#Summary')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtFilterLayout' type='Textbox'>
+      <xpath>//input[@placeholder='filter layout/product']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnFltrLoutClr' type='Button'>
+      <xpath>//div/input[@placeholder='filter layout/product']/../button</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtEntrLayout' type='Textbox'>
+      <xpath>//input[@placeholder='layout/product']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtVrfyLout' type='Textbox'>
+      <xpath>//table/tbody/tr/td[@data-bind='text: maskset_id']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnClrLout' type='Button'>
+      <xpath>//input[@placeholder='layout/product']/../button</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtDesc' type='Textbox'>
+      <!-- <xpath>//input[@data-bind='value: summary_description_filter, valueUpdate: ['afterkeydown', 'afterpaste', 'aftercut']']</xpath> -->
+	  <xpath>//button[@data-bind='click: reset_summary_description_filter']/../input</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtVrfyDesc' type='Textbox'>
+      <xpath>//table/tbody/tr/td[@data-bind='text: description']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnClearDesc' type='Textbox'>
+      <!-- <xpath>//input[@data-bind='value: summary_description_filter, valueUpdate: ['afterkeydown', 'afterpaste', 'aftercut']']/../button</xpath> -->
+	  <xpath>//button[@data-bind='click: reset_summary_description_filter']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtCalander1' type='Textbox'>
+      <xpath>(//table[@id='summary_header']//th//input[starts-with(@id,'dp')])[1]</xpath>
+      <PageTitle> </PageTitle>
+	  </Element>
+	  
+	<Element name='lblDate' type='Label'>
+		<xpath>(//td[contains(@data-bind,'text: (new Date(cdc_date))')])[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	  
+	  <Element name='txtVrfyClndr' type='Textbox'>
+      <xpath>(//table[@id='summary_header']//th//input[starts-with(@id,'dp')])[1]</xpath>
+      <PageTitle> </PageTitle>dp1408604006294,dp1408604006293
+	  </Element>
+	<Element name='btnClrCalander1' type='Button'>
+      <xpath>(//table[@id='summary_header']//th//input[starts-with(@id,'dp')])[1]/../button</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='tblDatepicker' type='Table'>
+      <xpath>//table[@class='ui-datepicker-calendar']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name='txtCalander2' type='Textbox'>
+      <xpath>(//table[@id='summary_header']//th//input[starts-with(@id,'dp')])[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnClrCalander2' type='Button'>
+      <xpath>(//table[@id='summary_header']//th//input[starts-with(@id,'dp')])[2]/../button</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='winRandom' type='Window' >
+      <xpath>//body</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtDate' type='Textbox'>
+      <xpath>//td[@data-bind='text: (new Date(cdc_date)).toString('yyyy-MM-dd')']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkWaferLayout' type='Link'>
+      <xpath>//th/a[contains(text(),'Wafer Layout')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkDescription' type='Link'>
+      <xpath>//th/a[contains(text(),'Description')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkLastModified' type='Link'>
+      <xpath>//th/a[contains(text(),'Last Modified')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkTotalDies' type='Link'>
+      <xpath>//th/a[contains(text(),'Total Dies')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkTestedDies' type='Link'>
+      <xpath>//th/a[contains(text(),'Tested Dies')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+  </FeatureSet>
+
+  <FeatureSet name='RegionDie'>
+	<Element name='lnkRegionDie' type='Link'>
+      <xpath>//a[contains(text(),'RegionDie')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnEdt' type='Button'>
+      <xpath>//button[contains(text(),'Edit')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+  </FeatureSet>
+  
+  <FeatureSet name='LithoLayer'>
+  
+	<Element name='lblLithoLayer' type='Label'>
+      <xpath>//div[contains(@class,'clearfix background-highlight')]/p/strong</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblLithoLayerRvn' type='Label'>
+      <xpath>//div[contains(@class,'clearfix background-highlight')]/p/strong/../following-sibling::div/button/span[1]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblLithoLayerFshName' type='Label'>
+      <xpath>//div[contains(@class,'clearfix background-highlight')]/p/strong/../following-sibling::p</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkLithoLayer' type='Link'>
+      <xpath>//a[contains(text(),'Litho-Layer')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name='lblFlshLblName' type='Link'>
+      <xpath>//tr/th[contains(text(),'Flash Label Names')]/../../following-sibling::tbody/tr/td[1]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblLayerName' type='Label'>
+      <xpath>//td[contains(text(),'Layer Name')]/../td/div/button/span[1]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblRevNumber' type='Label'>
+      <xpath>//td[contains(text(),'Revision') or contains(text(),'Rev')]/following-sibling::td/div/button/span[1]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnRevision' type='button'>
+      <xpath>//td[contains(text(),'Revision') or contains(text(),'Rev')]/following-sibling::td/div/button</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+  </FeatureSet>
+  
+  <FeatureSet name='Revision'>
+	<Element name='lnkRevEvnt1' type='Link'>
+      <xpath>//td[contains(text(),'Revision') or contains(text(),'Rev')]/following-sibling::td/div/ul/li[</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkRevEvnt2' type='Link'>
+      <xpath>]/a</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkRevEvnt' type='Link'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkRevCount' type='Link'>
+      <xpath>//td[contains(text(),'Revision') or contains(text(),'Rev')]/following-sibling::td/div/ul/li/a</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+   </FeatureSet>
+   
+      
+  <FeatureSet name='Info'>
+   <Element name='lnkInfo' type='Link'>
+      <xpath>//a[contains(text(),'Info')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='tblList' type='Table'>
+      <xpath>//table[@class='table-list' and @data-bind]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+   <Element name='lblWLoutName' type='Label'>
+      <xpath>//div/table/tbody/tr/td[contains(text(),'Wafer Layout')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name='lblMASKSET_SK' type='Label'>
+      <xpath>//div/table/tbody/tr/td[contains(text(),'MASKSET_SK')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblTechCode' type='Label'>
+      <xpath>//div/table/tbody/tr/td[contains(text(),'Tech')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblWDiameter' type='Label'>
+      <xpath>//div/table/tbody/tr/td[contains(text(),'Wafer Diameter')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblEdgeClrnc' type='Label'>
+      <xpath>//div/table/tbody/tr/td[contains(text(),'Edge Clearance')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblNtchClrnc' type='Label'>
+      <xpath>//div/table/tbody/tr/td[contains(text(),'Notch Clearance')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblShtClrnctxt' type='Label'>
+      <xpath>//div/table/tbody/tr/td[contains(text(),'Shot Clearance')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblStpSzeX' type='Label'>
+      <xpath>//tr/td[contains(text(),'Stepping Size') and contains(text(),'X')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblStpSzeY' type='Label'>
+      <xpath>//tr/td[contains(text(),'Stepping Size') and contains(text(),'Y')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblRtclSizX' type='Label'>
+      <xpath>//tr/td[contains(text(),'Reticle Size') and contains(text(),'X')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblRtclSizY' type='Label'>
+      <xpath>//tr/td[contains(text(),'Reticle Size') and contains(text(),'Y')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblMtrxSftX' type='Label'>
+      <xpath>//tr/td[contains(text(),'Matrix Shift') and contains(text(),'X')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblMtrxSftY' type='Label'>
+      <xpath>//tr/td[contains(text(),'Matrix Shift') and contains(text(),'Y')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblTtlShts' type='Label'>
+      <xpath>//tr/td[contains(text(),'Total Shots')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblDieShots' type='Label'>
+      <xpath>//tr/td[contains(text(),'Die Shots')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblEdgeShots' type='Label'>
+      <xpath>//tr/td[contains(text(),'Edge Shots')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblLBShot' type='Label'>
+      <xpath>//tr/td[contains(text(),'LB Shot')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkExportMergedData' type='Link'>
+      <xpath>//div/a[contains(text(),'Export Merged Data')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkEditEdge' type='Link'>
+      <xpath>//button[contains(text(),'Edit Edge') and contains(text(),'Flat Clearance')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblCnfrmEditing' type='Label'>
+      <xpath>//p/span[contains(text(),'Editing')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtEdgeClrnce' type='Textbox'>
+      <xpath>//td[contains(text(),'Edge Clearance')]/../td[2]/div/input</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtNtchClrnce' type='Textbox'>
+      <xpath>//td[contains(text(),'Notch Clearance')]/../td[2]/div/input</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnSaveEdit' type='Button'>
+      <xpath>//td[contains(text(),'Wafer Layout')]/../../../../button[text()='Save']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnCanclEdit' type='Button'>
+      <xpath>//td[contains(text(),'Notch Clearance')]/../../../../button[contains(text(),'Save')]/following-sibling::button[text()='Cancel']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkDisApproveMskt' type='Link'>
+      <xpath>//div/button[contains(text(),'Disapprove Maskset')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnDisApproveMskt' type='Button'>
+      <xpath>//button[contains(text(),'Disapprove Maskset')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnApprove' type='Button'>
+      <xpath>//button[text()='Approve']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkObsoleteMasket' type='Label'>
+      <xpath>//div/button[contains(text(),'Obsolete')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblFetchingMaske' type='Label'>
+      <xpath>//h3[contains(text(),'Fetching maskset:')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnObsoleteMasket' type='Button'>
+      <xpath>//button[contains(text(),'Obsolete Maskset')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkResetMskt' type='Link'>
+      <xpath>//div/button[contains(text(),'Reset Maskset state to NEW_LOAD')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnActions' type='Button'>
+		<xpath>//div/button[contains(text(),'Actions')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnActionDisApprv' type='Button'>
+		<xpath>//li/a[contains(text(),'Disapprove')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnActionObslte' type='Button'>
+		<xpath>//li/a[contains(text(),'Obsolete')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnNwComponent' type='Button'>
+		<xpath>//i/../../button[contains(text(),'Create New Component')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtEditColumns' type='Textbox'>
+		<xpath>//div/div/h4[contains(text(),'Dies Field')]/../div/span[contains(text(),'Columns')]/../input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtEditRows' type='Textbox'>
+		<xpath>//div/div/h4[contains(text(),'Dies Field')]/../div/span[contains(text(),'Rows')]/../input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDieSzeX' type='Label'>
+		<xpath>//div/div/h4[contains(text(),'Die Size')]/../div/span[text()='X']/../input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDieSzeY' type='Label'>
+		<xpath>//div/div/h4[contains(text(),'Die Size')]/../div/span[text()='Y']/../input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDfltCmpntInfo' type='Textbox'>
+		<xpath>//div/p/strong[contains(text(),'DEFAULT')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnDfltActions' type='Button'>
+		<xpath>//div/p/strong[contains(text(),'DEFAULT')]/../..//button</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkActnApprv' type='Link'>
+		<xpath>//div/p/strong[contains(text(),'DEFAULT')]/../..//button/../ul/li/a[contains(text(),'Approve')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkActnDisapprv' type='Link'>
+		<xpath>//div/p/strong[contains(text(),'DEFAULT')]/../..//button/../ul/li/a[contains(text(),'Disapprove')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkEdit' type='Link'>
+		<xpath>//div/p/strong[contains(text(),'DEFAULT')]/../..//button/../ul/li/a[contains(text(),'Edit')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkActnNewLoad' type='Link'>
+		<xpath>//div/p/strong[contains(text(),'DEFAULT')]/../..//button/../ul/li/a[contains(text(),'Reset state to NEW_LOAD')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkActnObsolete' type='Link'>
+		<xpath>//div/p/strong[contains(text(),'DEFAULT')]/../..//button/../ul/li/a[contains(text(),'Obsolete')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnNewActns' type='Button'>
+		<xpath>//div/p/span[contains(text(),'NEW_LOAD')]/../../div/button[contains(text(),'Actions')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkActnEditNew' type='Link'>
+		<xpath>//div/p/span[contains(text(),'NEW_LOAD')]/../..//button/../ul/li/a[contains(text(),'Edit')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkActnRenameNew' type='Link'>
+		<xpath>//div/p/span[contains(text(),'NEW_LOAD')]/../..//button/../ul/li/a[contains(text(),'Rename')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkActnApprvNew' type='Link'>
+		<xpath>//div/p/span[contains(text(),'NEW_LOAD')]/../../div/button/../ul/li/a[contains(text(),'Approve')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkMarkDefault' type='Link'>
+		<xpath>//div/p/span[contains(text(),'NEW_LOAD')]/../../div/button/../ul/li/a[contains(text(),'Mark as Default')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblNewLoadData' type='Label'>
+		<xpath>//div/p/span[contains(text(),'NEW_LOAD')]/../..</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnNewLoadActions' type='Button'>
+		<xpath>//div/p/span[contains(text(),'NEW_LOAD')]/../../div/button</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnSaveNewEdit' type='Button'>
+		<xpath>//button[contains(text(),'Cancel')]/preceding-sibling::button[contains(text(),'Save')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCancelNewEdit' type='Button'>
+		<xpath>//button[contains(text(),'Save')]/following-sibling::button[contains(text(),'Cancel')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+   <Element name='cboMockUpSort' type='Checkbox'>
+		<xpath>//span[contains(text(),' Mock-up Sort')]/preceding-sibling::input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='cboMetrology' type='Checkbox'>
+		<xpath>//label[contains(text(),'Metrology')]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtProductGroup' type='Text'>
+		<xpath>//th[contains(text(),'Product Group') or contains(text(),'Tech') ]/../../..</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtProductGroupName' type='Text'>
+		<xpath>//th[contains(text(),'Product Group')]/following-sibling::th</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name='txtDescription' type='Text'>
+		<xpath>//h4[contains(text(),'Description')]/following-sibling::p</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtProducts' type='Text'>
+		<xpath>//h4[contains(text(),'Products')]/following-sibling::ul</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtDefaultComponent' type='Label'>
+		<xpath>//span[@data-bind='text: U.YesNo[is_default] || is_default' and contains(text(),'Yes')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkInfoExprtMrgdData' type='Link'>
+		<xpath>//p/strong[text()='DEFAULT']/../following-sibling::a[contains(text(),'Export Merged Data')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCancelCreateComp' type='Button'>
+      <xpath>//div[2]/button[text()='Cancel']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnCancelRegionMap' type='Button'>
+      <xpath>//button[@class='btn btn-block']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+   </FeatureSet>
+   
+  <FeatureSet name='SortMap'>
+   <Element name='lnkSort' type='Link'>
+      <xpath>//a[contains(text(),'Sort')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnTestArea' type='Button'>
+      <xpath>//td[contains(text(),'Test Area')]/../td/div/button</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtShiftX' type='Textbox'>
+		<xpath>//tr/td[contains(text(),'Shift') and contains(text(),'X')]/../td[2]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtShiftY' type='Textbox'>
+		<xpath>//tr/td[contains(text(),'Shift') and contains(text(),'Y')]/../td[2]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblComponent' type='Label'>
+		<xpath>//td[contains(text(),'Component')]/following-sibling::td/span</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblTotalDieCount' type='Label'>
+		<xpath>//table//td[contains(text(),'Total Die Count')]/following-sibling::td</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblTestedDieCount' type='Label'>
+		<xpath>//table//td[contains(text(),'Tested Die Count')]/following-sibling::td</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDesc' type='Label'>
+		<xpath>//h5[contains(text(),'Description')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtVerifyDesc' type='Textarea'>
+		<xpath>//h5[contains(text(),'Description')]/../p</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnExportCSV' type='Button'>
+		<xpath>//a[contains(text(),'Export data in CSV')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCreateNewRvsn' type='Button'>
+		<xpath>//button[contains(text(),'Create New Revision')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtEntrDesc' type='Textbox'>
+		<xpath>//div/h5[contains(text(),'Description')]/../textarea</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCreateRvsn' type='Button'>
+		<!-- <xpath>//button[@class='btn btn-block btn-success' and contains(text(),'Create')]</xpath> -->
+		<xpath>//button[@class='btn btn-success' and contains(text(),'Create')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCancelRvsn' type='Button'>
+		<xpath>//button[contains(text(),'Create')]/following-sibling::button[contains(text(),'Cancel')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnEdit' type='Button'>
+		<xpath>//button[contains(text(),'EDIT')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnSaveModfEdit' type='Button'>
+		<xpath>//button[contains(text(),'Cancel')]/preceding-sibling::button[contains(text(),'Save Modification')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCancelEdit' type='Button'>
+		<xpath>//button[contains(text(),'Save Modification')]/following-sibling::button[contains(text(),'Cancel')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnApprvSrtMap' type='Button'>
+		<xpath>//button[contains(text(),'Approve') and contains(text(),'Map')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnDeleteMap' type='Button'>
+		<xpath>//button[text()='Delete']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCopyNCrteNwMap' type='Button'>
+		<xpath>//button[contains(text(),'Copy and Create New') and contains(text(),'Map')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCrteNwSortMap' type='Button'>
+		<xpath>//button[contains(text(),'Create New Sort Map') and not(contains(text(),'Copy'))]</xpath> 
+		<!-- <xpath>//button[@data-bind='click: create_new_sort']</xpath> -->
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnMarkPrimary' type='Button'>
+		<xpath>//button[contains(text(),'Mark as Primary Setup')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblMapStatusString' type='Label'>
+		<xpath>//div/*[contains(text(),'Not Editable')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblNewLoad' type='Label'>
+		<xpath>//p/span[contains(text(),'NEW_LOAD')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnRecrteZnMap' type='Button'>
+		<xpath>//button[contains(text(),'reCreate Default Zone Maps')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnMangZnDefntn' type='Button'>
+		<xpath>//button[contains(text(),'Manage Default Zone Definitions')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnNewDef' type='Button'>
+		<!--<xpath>//button[contains(text(),'New Def')]</xpath>-->
+		<xpath>//button[@class="btn btn-small btn-block btn-success"]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnNewZone' type='Button'>
+		<xpath>//button[contains(text(),'new zone')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtNewZone' type='Textbox'>
+		<xpath>//th[contains(text(),'From Angle')]/../../../tbody/tr/td[1]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='cmbxAnglFrm' type='Combobox'>
+		<!--<xpath>//th[contains(text(),'From Angle')]/../../../tbody/tr/td[3]/select</xpath>-->
+		<xpath>//th[contains(text(),'From Angle')]/../../../tbody/tr/td/select[@data-bind='value: from_angle, options: _.range(361)']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='cmbxAnglTo' type='Combobox'>
+		<!--<xpath>//th[contains(text(),'To Angle')]/../../../tbody/tr/td[4]/select</xpath>-->
+		<xpath>//th[contains(text(),'To Angle')]/../../../tbody/tr/td/select[@data-bind='value: to_angle, options: _.range(361)']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='cmbxRadusFrm' type='Combobox'>
+		<xpath>//th[contains(text(),'From Radius')]/../../../tbody/tr/td[5]/select</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='cmbxRadusTo' type='Combobox'>
+		<xpath>//th[contains(text(),'To Radius')]/../../../tbody/tr/td[6]/select</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<!--New-Vasudha-->
+	<Element name='txtRadusFrm' type='Textbox'>		
+		<xpath>//th[contains(text(),'To Angle')]/../../../tbody/tr/td/input[@data-bind='value: from_radius']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtRadusTo' type='Textbox'>		
+		<xpath>//th[contains(text(),'To Angle')]/../../../tbody/tr/td/input[@data-bind='value: to_radius']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkMngeDefClose' type='Button'>
+		<xpath>//div/a[@class='close']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='cbxSortAxis' type='Checkbox'>
+		<xpath>//label[contains(text(),'Sort Axis')]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='cbxInner' type='Checkbox'>
+		<xpath>//label[contains(text(),'Inner')]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='cbxPartial' type='Checkbox'>
+		<xpath>//label[contains(text(),'Partial')]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='cbxCoverage' type='Checkbox'>
+		<xpath>//label[contains(text(),'Coverage')]/input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	</FeatureSet>
+	
+  <FeatureSet name='Reticle'>
+	<Element name='lnkReticle' type='Link'>
+      <xpath>//a[contains(text(),'Reticle')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblWLout' type='Label'>
+      <xpath>//td[contains(text(),'Wafer Layout')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnCmpnnt' type='Button'>
+      <xpath>//td[contains(text(),'Component')]/following-sibling::td/div/button/span[1]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblIsDefault' type='Label'>
+      <xpath>//td[contains(text(),'Is Default')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblDSizeX' type='Label'>
+      <xpath>//td[contains(text(),'Die Size') and contains(text(),'X')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblDSizeY' type='Label'>
+      <xpath>//td[contains(text(),'Die Size') and contains(text(),'Y')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblGeometryID' type='Label'>
+      <xpath>//tr/th[contains(text(),'Geometry') and contains(text(),'ID')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblGeometryName' type='Label'>
+      <xpath>//tr/th[contains(text(),'Geometry')]/following-sibling::th[contains(text(),'Name')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblABSRtclLLX' type='Label'>
+      <xpath>//tr/th[contains(text(),'ABS') and contains(text(),'Reticle') and contains(text(),'LLX')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblABSRtclLLY' type='Label'>
+      <xpath>//tr/th[contains(text(),'ABS') and contains(text(),'Reticle') and contains(text(),'LLY')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblABSRtclURX' type='Label'>
+      <xpath>//tr/th[contains(text(),'ABS') and contains(text(),'Reticle') and contains(text(),'URX')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblABSRtclURY' type='Label'>
+      <xpath>//tr/th[contains(text(),'ABS') and contains(text(),'Reticle') and contains(text(),'URY')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblRtclWidth' type='Label'>
+      <xpath>//tr/th[contains(text(),'URY')]/following-sibling::th[contains(text(),'Width')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblRtclHeight' type='Label'>
+      <xpath>//tr/th[contains(text(),'URY')]/following-sibling::th[contains(text(),'Height')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	</FeatureSet>
+	
+  <FeatureSet name='RegionFlash'>
+	<Element name='lnkRegionFlash' type='Link'>
+      <xpath>//a[contains(text(),'RegionFlash')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnLayoutName' type='Button'>
+      <xpath>//td[contains(text(),'Name')]/following-sibling::td/div/button</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkSelectName' type='Link'>
+      <xpath>//td[contains(text(),'Name')]/following-sibling::td/div/ul/li/a</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkSlctRevision' type='Link'>
+      <xpath>//td[contains(text(),'Revision')]/following-sibling::td/div/ul/li/a</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblType' type='Label'>
+      <xpath>//tr/td[contains(text(),'Type')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnFitWafer' type='Label'>
+      <xpath>//div[@class='right-pane']// button[contains(text(),'Fit Wafer')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnZoomIn' type='Label'>
+      <xpath>//div[@class='right-pane']// button[contains(text(),'Zoom In')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnZoomOut' type='Label'>
+      <xpath>//div[@class='right-pane']// button[contains(text(),'Zoom Out')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblDragWafer' type='Label'>
+      <xpath>//h6[text()='Drag wafermap to move it around.']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnRename' type='Button'>
+      <xpath>//button[text()='Rename']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnCrteNwZoneMap' type='Button'>
+		<xpath>//button[contains(text(),'Create New Zone Map') and not(contains(text(),'Copy and'))]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblNwRvsnName' type='Label'>
+      <xpath>//div[@class='right-pane']//td[contains(text(),'Name')]/../td[2]/div/button/span</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnRmveRgnEvnt1' type='Button'>
+      <xpath>//td[text()='</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnRmveRgnEvnt2' type='Button'>
+      <xpath>']/following-sibling::td//a</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnRmveRgnEvnt' type='Button'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkAddRgnName' type='Link'>
+      <xpath>//a[contains(text(),'add region name')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblRegionName' type='Link'>
+      <xpath>//table[@class='table table-condensed']/tbody/tr</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cbxRegionNames' type='Checkbox'>
+      <xpath>//label[contains(text(),'Region Names')]/input</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtDefineRegion' type='Text'>
+      <xpath>//p[contains(text(),'You can also define ')]/span</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkRgnInPolrCrdnts' type='Link'>
+      <xpath>//div[contains(text(),'Select a region name from left side list.')]/p/button</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnImportFile' type='Button'>
+      <xpath>//span[text()='Import a csv or Excel file']/../../span</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnPolarCrdnats' type='Button'>
+      <xpath>//button[contains(text(),'Polar Coordinate')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cmbxAngleFrom' type='Combobox'>
+      <xpath>//div[@class='modal hide in']//h4/..//select[@data-bind='value: from_angle, options: _.range(361)']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cmbxAngleTo' type='Combobox'>
+      <xpath>//div[@class='modal hide in']//h4/..//select[@data-bind='value: to_angle, options: _.range(361)']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cmbxRadiusFrom' type='Combobox'>
+      <xpath>//div[@class='modal hide in']//h4/..//select[@data-bind='value: from_radius, options: U.options_for_percent, optionsText: 'text', optionsValue: 'value'']</xpath>
+	  <xpath>//div[@class='modal hide in']//h4/..//input[@data-bind='value: from_radius']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<!-- New Vasudha -->
+	<Element name='txtRadiusFrom' type='Textbox'>
+	  <xpath>//div[@class='modal hide in']//h4/..//input[@data-bind='value: from_radius']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<!-- New Vasudha -->
+	<Element name='txtRadiusTo' type='Textbox'>
+      <xpath>//div[@class='modal hide in']//h4/..//input[@data-bind='value: to_radius']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>	
+	<Element name='cmbxRadiusTo' type='Combobox'>
+      <xpath>//div[@class='modal hide in']//h4/..//select[@data-bind='value: to_radius, options: U.options_for_percent, optionsText: 'text', optionsValue: 'value'']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnUse' type='Button'>
+      <xpath>//button[@data-bind='click: use_die_polar_editing'][contains(text(),'Use')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnFlashUse' type='Button'>
+      <xpath>//button[@data-bind='click: use_flash_polar_editing'][contains(text(),'Use')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnCancel' type='Button'>
+      <xpath>//button[@data-bind='click: cancel_die_polar_editing'][contains(text(),'Cancel')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkMetrology17' type='Link'>
+      <xpath>//a[contains(text(),'METROLOGY17')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkExportDataInCSV' type='Link'>
+      <xpath>//a[contains(text(),'Export data in CSV')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblZone' type='Label'>
+      <xpath>//th[contains(text(),'From Angle')]/../../../tbody/tr[</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtZoneNew' type='Textbox'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblNewZonetext' type='Label'>
+      <xpath>]/td[1]/input</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtZoneRadiusFrom' type='Textbox'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblZoneRadiusFrom' type='Label'>
+      <xpath>]/td[6]/input</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtZoneRadiusTo' type='Textbox'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblZoneRadiusTo' type='Label'>
+      <xpath>]/td[7]/input</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cmbZoneAngleFrom' type='Combobox'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>	
+	<Element name='lblZoneAngleFrom' type='Label'>
+      <xpath>]/td[4]/select</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cmbZoneAngleTO' type='Combobox'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblZoneAngleTo' type='Label'>
+      <xpath>]/td[5]/select</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnDefZoneClose' type='Button'>
+      <xpath>.//div/a[@class="close"]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnRecreateDefZoneMap' type='Button'>
+      <xpath>//button[text()='reCreate Default Zone Maps']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='tblZone' type='Table'>
+      <xpath>//table[@class="table table-bordered table-condensed"]/tbody</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtZoneDummy' type='Text'>
+      <xpath>//table[@class="table table-bordered table-condensed"]/tbody/tr[</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtZoneDummyFrom' type='Text'>
+      <xpath>]/td[5]/span</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtZoneDummyRadFrm' type='Text'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtZoneDummyRadTo' type='Text'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtZoneDummyTo' type='Text'>
+      <xpath>]/td[6]/span</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btncreateDefZone' type='Button'>
+      <xpath>//button[text()='Create']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cmbZoneAngle' type='Combobox'>
+      <xpath>.//td[text()='To']/../td/select/option[text()='360']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtRadius1' type='Text'>
+      <xpath>//table[@class="table table-bordered table-condensed"]/tbody/tr[1]/td[5]/span</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtRadius2' type='Text'>
+      <xpath>//table[@class="table table-bordered table-condensed"]/tbody/tr[1]/td[6]/span</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	</FeatureSet>
+	
+  <FeatureSet name='Help'>
+	<Element name='lnkHelp' type='Link'>
+      <xpath>//a[@href='help/index.html']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtUCS6Help' type='Text'>
+      <xpath>//h1[contains(text(),'UCS6 Help')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkNavigationIndex' type='Link'>
+      <xpath>//a[@href='index.html' and contains(text(),'Navigation')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkNavigationCurrent' type='Link'>
+      <xpath>//a[(@href='#') and contains(text(),'Navigation')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkLoginHelp' type='Link'>
+      <xpath>//a[@href='help/index.html']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkNavigation' type='Link'>
+      <xpath>//a[@href='#navigation']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkIndicators' type='Link'>
+      <xpath>//a[@href='#indicators']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkSummaryPage' type='Link'>
+      <xpath>//a[@href='summary.html']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkSummaryCurrent' type='Link'>
+      <xpath>//a[@href='#' and contains(text(),'Summary Page')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkInfoPage' type='Link'>
+      <xpath>//a[(@href='info.html')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkInfoCurrent' type='Link'>
+      <xpath>//a[@href='#' and contains(text(),'Info Page')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkMaskset' type='Link'>
+      <xpath>//a[@href='#maskset']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkComponent' type='Link'>
+      <xpath>//a[@href='#component']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkReticlePage' type='Link'>
+      <xpath>//a[@href='reticle.html']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkReticlePageCurrent' type='Link'>
+      <xpath>//a[@href='#' and contains(text(),'Reticle Page')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkRegnflsPage' type='Link'>
+      <xpath>//a[@href='region_flash.html']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkRegnflsPageCurrent' type='Link'>
+      <xpath>//a[@href='#' and contains(text(),'RegionFlash Page')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkRegnDiePage' type='Link'>
+      <xpath>//a[(@href='region_die.html')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkRegnDiePageCurrent' type='Link'>
+      <xpath>//a[@href='#' and contains(text(),'RegionDie Page')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkDefaultZoneDef' type='Link'>
+      <xpath>//a[@href='default_zone_definition.html' and contains(text(),'Default Zone Def')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkDefaultZoneDefCurrent' type='Link'>
+      <xpath>//a[@href='#' and contains(text(),'Default Zone Def')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkWETPage' type='Link'>
+      <xpath>//a[(@href='wet.html')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkWETPageCurrent' type='Link'>
+      <xpath>//a[@href='#' and contains(text(),'WET Page')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkSortPage' type='Link'>
+      <xpath>//a[(@href='sort.html')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkSortPageCurrent' type='Link'>
+      <xpath>//a[@href='#' and contains(text(),'Sort Page')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkLithoLyrPage' type='Link'>
+      <xpath>//a[(@href='litho_layer.html')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkLithoLyrPgCurrent' type='Link'>
+      <xpath>//a[@href='#' and contains(text(),'Litho-Layer Page')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnDefltZoneVisible' type='Button'>
+      <xpath>//button[contains(text(),'reCreate Default Zone Maps')]/..</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnMnageDfltZoneDef' type='Button'>
+      <xpath>//button[contains(text(),'Manage Default Zone Definitions')]/..</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtRecrtZoneHelpTxt' type='Text'>
+      <xpath>//li[contains(text(),'there are some defined default zone definitions')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkDocmntDefltZoneDef' type='Link'>
+      <xpath>//a[contains(text(),'document for default zone definitions manager')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgDefltZoneEditor' type='Image'>
+      <xpath>//img[@src='img/ucs_default_zone_def_editor.png']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgDefltZoneDef' type='Image'>
+      <xpath>//img[@src='img/ucs_default_zone_def.png']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtDefltZoneDefManager' type='Text'>
+      <xpath>//h3[contains(text(),'Default Zone Definition Manager')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtCreateNewZoneDef' type='Text'>
+      <xpath>//h3[contains(text(),'Create new DEFAULT ZONE DEFINITION')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtManagerList' type='Text'>
+      <xpath>//p[contains(text(),'This manager list all UCS_DEFAULT_ZONE_DEFINITIONs with VALID_UNTIL is NULL.')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtValidUntil' type='Text'>
+      <xpath>//p[contains(text(),'VALID_UNTIL is designed to deactivate')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtNewDef' type='Text'>
+      <xpath>//p[contains(text(),'Click')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtInTheEditor' type='Text'>
+      <xpath>//p[contains(text(),'In the editor, define Zone name')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtNoEditingAllowed' type='Text'>
+      <xpath>//li[contains(text(),'Once created, NO editing is allowed!')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtMultipleSections' type='Text'>
+      <xpath>//li/strong[contains(text(),'You can define multiple sections for single zone name')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtNewlyDefinedZone' type='Text'>
+      <xpath>//li[contains(text(),'Newly defined default zone def')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtReCreateForOldMaskset' type='Text'>
+      <xpath>//li[contains(text(),'If user wants to bring new def to old maskset, use button')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgNavigation' type='Image'>
+      <xpath>//img[@src='img/ucs_navigation.png']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='ImgImageSummary' type='Image'>
+      <xpath>//img[@src='img/ucs_summary.png']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtNoMatrixShift' type='Text'>
+      <xpath>//h4[contains(text(),'Note on Matrix Shift')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtComponentSwitch' type='Text'>
+      <xpath>//h4[contains(text(),'Switch between Components')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtControlWafer' type='Text'>
+      <xpath>//h4[contains(text(),'Control wafermap appearance')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtMasksetEdit' type='Text'>
+      <xpath>//h4[contains(text(),'Maskset Edit Edge and Flat Clearance')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnEditEdgeFlat' type='Button'>
+      <xpath>//h4/button[contains(text(),'Edit Edge / Flat Clearance')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnApproveComponent' type='Button'>
+      <xpath>//h4/button[contains(text(),'Approve')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnDisapproveMaskset' type='Button'>
+      <xpath>//h4/button[contains(text(),'Disapprove Maskset')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnResetMaskset' type='Button'>
+      <xpath>//h4/button[contains(text(),'Reset Maskset')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnObsoleteMaskset' type='Button'>
+      <xpath>//h4/button[contains(text(),'Obsolete Maskset')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnObsolete' type='Button'>
+      <xpath>//button[contains(text(),'Obsolete')]/span</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtInEditMode' type='Text'>
+      <xpath>//h4[contains(text(),'In Edit mode, update the clearance values then click Save button.')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtSpecialWafer' type='Text'>
+      <xpath>//h4[contains(text(),'Special wafermap with component/geometry support')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtMskstApprvWrkFlow' type='Text'>
+      <xpath>//h4[contains(text(),'Maskset Approval Workflow')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtCreateNwCompnt' type='Text'>
+      <xpath>//h4[contains(text(),'Create new component')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtComponentActions' type='Text'>
+      <xpath>//h4[contains(text(),'Component Actions')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtCmpntExprtMrgdData' type='Text'>
+      <xpath>//h4[contains(text(),'Component Export Merged Data')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnExportMergedData' type='Button'>
+      <xpath>//h4/button[contains(text(),'Export Merged Data')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtEditingFunction' type='Text'>
+      <xpath>//h3[contains(text(),'Editing function')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtEditGeometry' type='Text'>
+      <xpath>//h3[contains(text(),'Edit Component/Geometry Mapping')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtGeometrySupport' type='Text'>
+      <xpath>//h3[contains(text(),'After you defined component')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtAvlblGeometry' type='Text'>
+      <xpath>//h4[contains(text(),'Reticle page display')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnGeometryMapping' type='Button'>
+      <xpath>//button[contains(text(),'Edit Component/Geometry Mapping')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtGeometry' type='Text'>
+      <xpath>//label/span[text()=' Geometry']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtWetToInfo' type='Text'>
+      <xpath>//h4[contains(text(),'Same kind of navigation')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnExportDataCSV' type='Button'>
+      <xpath>//button[contains(text(),'Export data in CSV')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnApproveWET' type='Button'>
+      <xpath>//button[contains(text(),'Approve this WET Map')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgSortPage' type='Image'>
+      <xpath>//img[@src='img/ucs_sort.png']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtSpecialView' type='Text'>
+      <xpath>//h4[contains(text(),'Special View options')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnApproveSortMap' type='Button'>
+      <xpath>//button[contains(text(),'Approve this Sort Map')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgLithoLyrPage' type='Text'>
+      <xpath>//img[@src='img/ucs_litho_layer.png']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='txtNoLithoEditing' type='Text'>
+      <xpath>//h4[contains(text(),'No editing functions')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	</FeatureSet>
+	
+  <FeatureSet name='Orientation'>
+	<Element name='imgLftOrnt0' type='Image'>
+      <xpath>//tbody/tr/td[contains(text(),'Left')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgLftOrnt90' type='Image'>
+      <xpath>//tbody/tr/td[contains(text(),'Left')]/../td[3]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgLftOrnt180' type='Image'>
+      <xpath>//tbody/tr/td[contains(text(),'Left')]/../td[4]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgLftOrnt270' type='Image'>
+      <xpath>//tbody/tr/td[contains(text(),'Left')]/../td[5]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgRightOrnt0' type='Image'>
+      <xpath>//tbody/tr/td[contains(text(),'Right')]/../td[2]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgRightOrnt90' type='Image'>
+      <xpath>//tbody/tr/td[contains(text(),'Right')]/../td[3]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgRightOrnt180' type='Image'>
+      <xpath>//tbody/tr/td[contains(text(),'Right')]/../td[4]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='imgRightOrnt270' type='Image'>
+      <xpath>//tbody/tr/td[contains(text(),'Right')]/../td[5]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	</FeatureSet>
+	
+	<FeatureSet name='New Component'>
+	<Element name='btnCreateNewCmpt' type='button'>
+      <xpath>//button[contains(text(),'Create New Component')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='cbxCreateCFMMap' type='Checkbox'>
+      <xpath>//input[contains(@data-bind,'create_cfm_map')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='btnCreate' type='button'>
+      <xpath>//button[text()='Create']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblDefaultCmpt' type='Label'>
+      <xpath>//strong[contains(@data-bind,'component_id')][text()='DEFAULT']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblDefaultMap' type='Label'>
+      <xpath>//div/div/p[contains(text(),'Map Name:')]/strong[text()='DEFAULT']</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblCreatedCmptName1' type='Label'>
+      <xpath>//strong[contains(@data-bind,'component_id')][contains(text(),'</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblCreatedCmptName2' type='Label'>
+      <xpath>')]</xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblCreatedCmptName' type='Label'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkCmptEdit1' type='Link'>
+		<xpath>//strong[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptEdit2' type='Link'>
+		<xpath>')]/../../div/ul/li/a[contains(text(),'Edit')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptEdit' type='link'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkCmptApprv1' type='Link'>
+		<xpath>//strong[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptApprv2' type='Link'>
+		<xpath>')]/../../div/ul/li/a[contains(text(),'Approve')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptApprv' type='link'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkCmptResetState1' type='Link'>
+		<xpath>//strong[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptResetState2' type='Link'>
+		<xpath>')]/../../div/ul/li/a[contains(text(),'Reset state to NEW_LOAD')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptResetState' type='link'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkCmptDisApprv1' type='Link'>
+		<xpath>//strong[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptDisApprv2' type='Link'>
+		<xpath>')]/../../div/ul/li/a[contains(text(),'Disapprove')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptDisApprv' type='link'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lnkCmptObsolete1' type='Link'>
+		<xpath>//strong[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptObsolete2' type='Link'>
+		<xpath>')]/../../div/ul/li/a[contains(text(),'Obsolete')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lnkCmptObsolete' type='link'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name='lblCmptObsolete1' type='label'>
+		<xpath>//strong[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblCmptObsolete2' type='label'>
+		<xpath>')]/../following-sibling::p/span</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblCmptObsolete' type='label'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name='btnCmptActions1' type='Button'>
+		<xpath>//strong[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCmptActions2' type='Button'>
+		<xpath>')]/../../div/button[contains(text(),'Actions')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnCmptActions' type='Button'>
+		<xpath> </xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name='txtDielFieldCol' type='textbox'>
+		<xpath>//span[contains(text(),'Columns')]/following-sibling::input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='txtDielFieldRow' type='textbox'>
+		<xpath>//span[contains(text(),'Rows')]/following-sibling::input</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblEditComponentPopup' type='Label'>
+		<xpath>//h3[contains(text(),'Edit Component')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='btnSave' type='Button'>
+		<xpath>//button[contains(@data-bind,'component_create')][text()='Save']</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDiesField' type='Label'>
+		<xpath>(//p[contains(text(),'Field:') and contains(text(),'')]/span)[1]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblComponentName1' type='Label'>
+		<xpath>//td[contains(text(),'Component')]/following-sibling::td/span[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblComponentName2' type='Label'>
+		<xpath>')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblComponentName' type='Label'>
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblCmptStatusAppr' type='Label'>
+		<xpath>//td[contains(text(),'Status')]/following-sibling::td/span[contains(text(),'APPROVED')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDisApprdStatus' type='Label'>
+		<xpath>//td[contains(text(),'Status')]/following-sibling::td/span[contains(text(),'DISAPPROVED')]</xpath>
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblApproved1' type='Label'>
+      <xpath>//strong[contains(text(),'</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblApproved2' type='Label'>
+      <xpath>')]/../following-sibling::p/span[contains(text(),'APPROVED')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblApproved' type='Label'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDisapproved1' type='Label'>
+      <xpath>//strong[contains(text(),'</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDisapproved2' type='Label'>
+      <xpath>')]/../following-sibling::p/span[contains(text(),'DISAPPROVED')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblDisapproved' type='Label'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblCmptNewLoad1' type='Label'>
+      <xpath>//strong[contains(text(),'</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblCmptNewLoad2' type='Label'>
+      <xpath>')]/../following-sibling::p/span[contains(text(),'NEW_LOAD')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblCmptNewLoad' type='Label'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblObsolete1' type='Label'>
+      <xpath>//strong[contains(text(),'</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblObsolete2' type='Label'>
+      <xpath>')]/../following-sibling::p/span[contains(text(),'OBSOLETE')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblObsolete' type='Label'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblNEW_LOAD1' type='Label'>
+      <xpath>//strong[contains(text(),'</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblNEW_LOAD2' type='Label'>
+      <xpath>')]/../following-sibling::p/span[contains(text(),'NEW_LOAD')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name='lblNEW_LOAD' type='Label'>
+      <xpath></xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name='btnClose' type='button'>
+      <xpath>//button[contains(text(),'Close')]</xpath>
+      <PageTitle> </PageTitle>
+    </Element>
+	</FeatureSet>
+	
+	<FeatureSet name='Defect Map Page'>
+		<Element name='lnkDefectPage' type='Link'>
+		  <xpath>//a[contains(text(),'Defect')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name='btnCrteNewCFMMap' type='Button'>
+			<xpath>//i/../../button[contains(text(),'Create New CFM Map')]</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='lblNokonOffsetX' type='Label'>
+			<xpath>//table//td[contains(text(),'1/4 Nikon Offset X')]/following-sibling::td</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='lblNokonOffsetY' type='Label'>
+			<xpath>//table//td[contains(text(),'1/4 Nikon Offset Y')]/following-sibling::td</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='btnEditQtrNikonOffset' type='Button'>
+			<xpath>//button[contains(text(),'Edit Quarter Nikon Offset')]</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='txtNikonX' type='textbox'>
+			<xpath>//input[contains(@data-bind,'offset_nikon_x')]</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='txtNikonY' type='textbox'>
+			<xpath>//input[contains(@data-bind,'offset_nikon_y')]</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='btnSaveQuartNikon' type='Button'>
+			<xpath>//button[contains(@data-bind,'save_quart_nikon_editing')]</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='btnApproveCFM' type='Button'>
+			<xpath>//button[contains(text(),'Approve this CFM Map')]</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='cbxCFMAxis' type='checkbox'>
+			<xpath>//label[contains(text(),'CFM Axis')]//input[@type='checkbox']</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='cbxCFM' type='checkbox'>
+			<xpath>//label[contains(text(),'CFM(')]//input[@type='checkbox']</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='lblCFMMapName1' type='Label'>
+			<xpath>//p[contains(text(),'Map Name')]/strong[contains(text(),'</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='lblCFMMapName2' type='Label'>
+			<xpath>')]</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		
+		<Element name='lblCFMMapName' type='Label'>
+			<xpath></xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name='lblApprlDate' type='Label'>
+			<xpath>//tr/td[contains(text(),'Approval Date')]/following-sibling::td</xpath>
+			<PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+	
+	
+</ObjectRepository>

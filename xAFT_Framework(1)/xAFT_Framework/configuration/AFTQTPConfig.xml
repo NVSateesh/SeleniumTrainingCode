@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<QTPConfig>
+  <TestEnvironment Name ="default">
+	<ObjectSyncTimeout_ms value="60000"/>
+    <PageLoadTimeout_ms value="60000"/>
+    <DisableSmartIdentification value="True"/>
+    <ListenerPort value="55581"/>
+	<AddinsList value="web,java"/>
+	<HideQTPWhileExecution value="No"/>
+	<ORPath value =".\ObjectRepository"/>
+    <HighlightObjects value="No"/>
+	<RecoveryScenarios value=".\Library\qtpdriver\RecoveryScenarios"/>
+	<AppSpecificLibraryPath value =".\Resource\ExternalScripts\"/>
+	<CloseQTPOnCompletion value="yes" />
+	<RunInFastMode value="Yes" />
+	<Driver value=".\library\qtpdriver\"/>
+    <LibraryPath value=".\Library\"/>
+  </TestEnvironment>
+</QTPConfig>

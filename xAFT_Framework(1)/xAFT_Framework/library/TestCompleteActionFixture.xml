@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testcomplete>
+	<object xAFTObject="TextBox">
+		<action xAFTAction="Type" toolAction="SetText"
+			toolObject="TextBox;WinEdit;OracleEdit" parameterDelimiter=",">
+			<parameter name="text" datatype="String" mandatory="yes"
+				default="" />
+		</action>
+	</object>
+	<!--Window Actions -->
+	<object xAFTObject="CheckBox">
+		<action xAFTAction="Check" toolAction="CheckItem"
+			toolObject="CheckBox;Window,wpfWindow,vbWindow" parameterDelimiter=",">
+			<parameter name="itemName" datatype="String" mandatory="Yes" />
+		</action>
+	</object>
+	<object xAFTObject="Generic">
+		<action xAFTAction="Click" toolAction="Click" toolObject="Button;CheckBox;"
+			parameterDelimiter=",">
+			<parameter name="x" datatype="Int" mandatory="No" />
+			<parameter name="y" datatype="Int" mandatory="No" />
+		</action>
+		<action xAFTAction="DblClick" toolAction="DblClick" toolObject="Button;CheckBox;"
+			parameterDelimiter=",">
+			<parameter name="x" datatype="Int" mandatory="No" />
+			<parameter name="y" datatype="Int" mandatory="No" />
+		</action>
+	</object>
+</testcomplete>

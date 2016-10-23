@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Path-mapping>
+
+	<!-- specify allowed location(s) on server for file selection -->
+	<serverPath pathname="/customapps/espace_dev/mtqa_etest_data/etparser_data" />
+
+	<uploadFilePath pathname="/local/tmp/espace/upload" />
+
+	<parserTypes parserid="ETestParser"
+		parserclass="com.camline.etest.parser.ETFileParser">
+		<!-- PROGRAM PROPERTIES -->
+		<parserProperty name="error.code.limit.high" value="1.00E+20" />
+		<parserProperty name="error.code.limit.low" value="-1.00E+20" />
+		<parserProperty name="out.folder.location"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/out" /> <!-- use full path -->
+		<parserProperty name="data.folder.location"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/data" /> <!-- use full path -->
+		<parserProperty name="limit.folder.location"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/limit" /> <!-- use full path -->
+		<parserProperty name="retest.folder.location"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/retest" /> <!-- use full path -->
+		<!-- AUTO-FLAG EXKEY, to separate between key use , (comma) -->
+		<parserProperty name="autoflag.exkey1" value="" />
+		<parserProperty name="autoflag.exkey2" value="" />
+		<parserProperty name="autoflag.exkey3" value="" />
+		<parserProperty name="autoflag.exkey4" value="" />
+		<parserProperty name="autoflag.exkey5" value="" />
+		<parserProperty name="autoflag.exkey6" value="" />
+		<parserProperty name="autoflag.exkey7" value="" />
+		<parserProperty name="autoflag.exkey8" value="" />
+		<parserProperty name="autoflag.exkey9" value="" />
+		<parserProperty name="autoflag.exkey10" value="" />
+		<parserProperty name="autoflag.exkey11" value="" />
+		<parserProperty name="autoflag.exkey12" value="" />
+		<parserProperty name="autoflag.exkey13" value="" />
+		<parserProperty name="autoflag.exkey14" value="" />
+		<parserProperty name="autoflag.exkey15" value="PQUL-QF,TQUL,PROD-PX" />
+		<parserProperty name="autoflag.exkey16" value="" />
+		<parserProperty name="autoflag.exkey17" value="" />
+		<parserProperty name="autoflag.exkey18" value="" />
+		<parserProperty name="autoflag.exkey19" value="" />
+		<parserProperty name="autoflag.exkey20" value="" />
+
+		<!-- AUTO-FLAG DAKEY, to separate between key use , (comma) -->
+		<parserProperty name="autoflag.dakey1" value="" />
+		<parserProperty name="autoflag.dakey2" value="" />
+		<parserProperty name="autoflag.exkey3" value="" />
+		<parserProperty name="autoflag.dakey4" value="" />
+		<parserProperty name="autoflag.dakey5" value="" />
+		<parserProperty name="autoflag.dakey6" value="" />
+		<parserProperty name="autoflag.dakey7" value="" />
+		<parserProperty name="autoflag.dakey8" value="" />
+		<parserProperty name="autoflag.dakey9" value="" /> <!-- no need to put "data.dis" behind -->
+		<parserProperty name="autoflag.dakey10" value="" /> <!-- no need to put "limit.dis" behind -->
+		<parserProperty name="autoflag.dakey11" value="" />
+		<parserProperty name="autoflag.dakey12" value="" />
+		<parserProperty name="autoflag.dakey13" value="" />
+		<parserProperty name="autoflag.dakey14" value="" />
+		<parserProperty name="autoflag.dakey15" value="" />
+		<parserProperty name="autoflag.dakey16" value="" />
+		<parserProperty name="autoflag.dakey17" value="" />
+		<parserProperty name="autoflag.dakey18" value="" />
+		<parserProperty name="autoflag.dakey19" value="" />
+		<parserProperty name="autoflag.dakey20" value="" />
+
+		<!-- AUTO-FLAG PROPERTIES -->
+		<parserProperty name="autoflag.exkey.mask" value="YNNYYYYNNNNYYNNNNNNN" />
+		<parserProperty name="autoflag.dakey.mask" value="NNNNNNNNNNYNNNNNNNNN" />
+		<parserProperty name="autoflag.parameter.name" value="Y" />
+		<parserProperty name="autoflag.sample.date" value="N" />
+		<parserProperty name="autoflag.comment" value="automatically flagged by parser" />
+		<parserProperty name="autoflag.sanity.check.limit"
+			value="1000000000000000000000" />
+
+		<!-- NFM PROPERTIES -->
+		<parserProperty name="nfm.iorfile"
+			value="/local/tmp/espace/nfm/var/nfm.ior" /> <!-- use full path -->
+		<parserProperty name="nfm.email.recipient.number"
+			value="4" />
+		<parserProperty name="nfm.email.recipient.0"
+			value="Richard.Krier@globalfoundries.com" />
+		<parserProperty name="nfm.email.recipient.1"
+			value="David.Caballero@globalfoundries.com" />
+		<parserProperty name="nfm.email.recipient.2"
+			value="Subbareddy.varra@globalfoundries.com" />
+		<parserProperty name="nfm.email.recipient.3"
+			value="Arunkumar.Mannepula@globalfoundries.com" />
+		<parserProperty name="nfm.templateudmap.space.ldsid"
+			value="100" />
+		<parserProperty name="nfm.phmap.ldsid" value="100" />
+		<parserProperty name="nfm.templateudmap.space.templatetype"
+			value="ET_PARSER" />
+		<parserProperty name="nfm.notification.templatetype"
+			value="SPACE" />
+		<parserProperty name="nfm.notification.templatename"
+			value="ET_ERROR" />
+
+
+		<!-- SUBLOTTYPECAT MAP -->
+		<parserProperty name="sublottypecat.PROD-PX" value="PROD" />
+		<parserProperty name="sublottypecat.PX" value="PROD" />
+		<parserProperty name="sublottypecat.PROD-PO" value="PROD" />
+		<parserProperty name="sublottypecat.PO" value="PROD" />
+		<parserProperty name="sublottypecat.PROD-PR" value="PROD" />
+		<parserProperty name="sublottypecat.PR" value="PROD" />
+		<parserProperty name="sublottypecat.PROD-PB" value="PROD" />
+		<parserProperty name="sublottypecat.PB" value="PROD" />
+
+		<parserProperty name="sublottypecat.PQUL-QF" value="QUAL" />
+		<parserProperty name="sublottypecat.QF" value="QUAL" />
+		<parserProperty name="sublottypecat.PQUL-QD" value="QUAL" />
+		<parserProperty name="sublottypecat.QD" value="QUAL" />
+		<parserProperty name="sublottypecat.PQUL-QE" value="QUAL" />
+		<parserProperty name="sublottypecat.QE" value="QUAL" />
+		<parserProperty name="sublottypecat.PQUL-MW" value="QUAL" />
+		<parserProperty name="sublottypecat.MW" value="QUAL" />
+		<parserProperty name="sublottypecat.PQUL-PX" value="QUAL" />
+		<parserProperty name="sublottypecat.QX" value="QUAL" />
+
+		<!-- abeschor added for testing -->
+		<parserProperty name="sublottypecat.Equipment Monitor"
+			value="QUAL" />
+		<parserProperty name="sublottypecat.ES" value="PROD" />
+		<parserProperty name="sublottypecat.EO" value="PROD" />
+		<parserProperty name="sublottypecat.EC" value="PROD" />
+
+		<!-- WETSTEP MAP -->
+		<parserProperty name="wetstep.M1-SWET.01" value="1st-SWET" />
+		<parserProperty name="wetstep.M2-SWET.01" value="1st-SWET" />
+		<parserProperty name="wetstep.M3-SWET.01" value="3st-SWET" />
+		<parserProperty name="wetstep.B1-SWET.01" value="MID-SWET" />
+		<parserProperty name="wetstep.C2-SWET.01" value="MID-SWET" />
+		<parserProperty name="wetstep.C3-SWET.01" value="MID-SWET" />
+		<parserProperty name="wetstep.FIN-FWET.01" value="FWET" />
+		<parserProperty name="wetstep.FIN-FWET.01_NO_ECP"
+			value="FWET_NO_ECP" />
+		<parserProperty name="wetstep.FINA-FWET.01" value="FWET" />
+		<!-- <parserProperty name="wetstep.FINA-FWET.01" value="FWET" /> -->
+
+
+		<!-- abeschor added for testing -->
+		<parserProperty name="wetstep.TB-MONITOR-ENG-WET.01"
+			value="TB-MONITOR-ENG-WET.01" />
+		<parserProperty name="wetstep.TB-WET-DTM1-OBANSK.01"
+			value="TB-WET-DTM1-OBANSK.01" />
+		<parserProperty name="wetstep.M1-WETOBANSK.01" value="M1-WETOBANSK.01" />
+		<parserProperty name="wetstep.M1-WET-OBANSK.01" value="M1-WET-OBANSK.01" />
+		<parserProperty name="wetstep.TD-WET-OBANSK.01" value="TD-WET-OBANSK.01" />
+
+		<!-- FOR V1.2 -->
+		<!-- ERROR HANDLING -->
+		<parserProperty name="error.id.count" value="36" />
+		<parserProperty name="error.id.0" value="101" />
+		<parserProperty name="error.id.1" value="102" />
+		<parserProperty name="error.id.2" value="103" />
+		<parserProperty name="error.id.3" value="104" />
+		<parserProperty name="error.id.4" value="105" />
+		<parserProperty name="error.id.5" value="106" />
+		<parserProperty name="error.id.6" value="107" />
+		<parserProperty name="error.id.7" value="108" />
+		<parserProperty name="error.id.8" value="109" />
+		<parserProperty name="error.id.9" value="110" />
+		<parserProperty name="error.id.10" value="201" />
+		<parserProperty name="error.id.11" value="202" />
+		<parserProperty name="error.id.12" value="203" />
+		<parserProperty name="error.id.13" value="204" />
+		<parserProperty name="error.id.14" value="301" />
+		<parserProperty name="error.id.15" value="302" />
+		<parserProperty name="error.id.16" value="303" />
+		<parserProperty name="error.id.17" value="304" />
+		<parserProperty name="error.id.18" value="305" />
+		<parserProperty name="error.id.19" value="306" />
+		<parserProperty name="error.id.20" value="307" />
+		<parserProperty name="error.id.21" value="308" />
+		<parserProperty name="error.id.22" value="309" />
+		<parserProperty name="error.id.23" value="310" />
+		<parserProperty name="error.id.24" value="311" />
+		<parserProperty name="error.id.25" value="401" />
+		<parserProperty name="error.id.26" value="402" />
+		<parserProperty name="error.id.27" value="403" />
+		<parserProperty name="error.id.28" value="404" />
+		<parserProperty name="error.id.29" value="405" />
+		<parserProperty name="error.id.30" value="312" />
+		<parserProperty name="error.id.31" value="313" />
+		<parserProperty name="error.id.32" value="205" />
+		<parserProperty name="error.id.33" value="206" />
+		<parserProperty name="error.id.34" value="314" />
+		<parserProperty name="error.id.35" value="111" />
+
+		<parserProperty name="error.101.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/101_ERROR_UPLOAD_RAW_SPACE" />
+		<parserProperty name="error.102.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/102_ERROR_AUTOCHART_RAW_SPACE" />
+		<parserProperty name="error.103.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/103_ERROR_FLAGGING_RAW_SPACE" />
+		<parserProperty name="error.104.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/104_ERROR_UPLOAD_ATTRIBUTE_SPACE" />
+		<parserProperty name="error.105.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/105_ERROR_AUTOCHART_ATTRIBUTE_SPACE" />
+		<parserProperty name="error.106.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/106_ERROR_FLAGGING_ATTRIBUTE_SPACE" />
+		<parserProperty name="error.107.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/107_ERROR_UPLOAD_SUMMARY_SPACE" />
+		<parserProperty name="error.108.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/108_ERROR_AUTOCHART_SUMMARY_SPACE" />
+		<parserProperty name="error.109.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/109_ERROR_FLAGGING_SUMMARY_SPACE" />
+		<parserProperty name="error.110.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/110_ERROR_TRIGGER_LISTENER_SPACE" />
+		<parserProperty name="error.201.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/201_ERROR_INVALID_NC_FILE" />
+		<parserProperty name="error.202.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/202_ERROR_INVALID_DATA_FILE" />
+		<parserProperty name="error.203.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/203_ERROR_INVALID_LIMIT_FILE" />
+		<parserProperty name="error.204.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/204_ERROR_INVALID_WAFER_FILE" />
+		<parserProperty name="error.205.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/205_ERROR_INCONSISTENT_DATA_IN_SESSIONS" />
+		<parserProperty name="error.206.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/206_ERROR_IN_NC_OR_MNC_FILE" />
+		<parserProperty name="error.301.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/301_ERROR_IQR_CALCULATION" />
+		<parserProperty name="error.302.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/302_ERROR_IQR_PROCESSING" />
+		<parserProperty name="error.303.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/303_ERROR_MISSING_DATA_SAMPLE" />
+		<parserProperty name="error.304.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/304_ERROR_RETEST_PROCESS" />
+		<parserProperty name="error.305.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/305_ERROR_MISMATCH_DATA_FILES" />
+		<parserProperty name="error.306.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/306_ERROR_SAMPLE_CREATION" />
+		<parserProperty name="error.307.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/307_ERROR_NO_MAPPING" />
+		<parserProperty name="error.308.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/308_ERROR_LIMIT_FILE_MISSING_DATA" />
+		<parserProperty name="error.309.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/309_ERROR_UNKNOWN_MEASUREMENT_DATA" />
+		<parserProperty name="error.310.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/310_ERROR_PROCESSING_IGNORE_LIST" />
+		<parserProperty name="error.311.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/311_ERROR_MISSING_DATA_SUMMARY_SAMPLE" />
+		<parserProperty name="error.312.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/312_ERROR_ALL_PARAM_MISSING_RAW_VALUE" />
+		<parserProperty name="error.313.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/313_ERROR_AQL_MAVERICK_ERROR_HANDLER" />
+		<parserProperty name="error.314.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/314_ERROR_MISSING_OR_INVALID_PROPERTIES" />
+		<parserProperty name="error.401.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/401_ERROR_UNKNOWN" />
+		<parserProperty name="error.402.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/402_ERROR_MISSING_FILE" />
+		<parserProperty name="error.403.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/403_ERROR_UNABLE_READ_FILE" />
+		<parserProperty name="error.404.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/404_ERROR_SENDING_EMAIL" />
+		<parserProperty name="error.405.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/405_ERROR_FAILED_GETTING_ERROR_CODE" />
+		<parserProperty name="error.111.folder"
+			value="/customapps/espace_dev/mtqa_etest_data/etparser_data/rejected/111_ERROR_ADJUSTING_CRITICALITY" />
+
+		<!-- CRITICALITY UPDATE properties -->
+		<!-- This is to decide if parser could update Criticality of parameter 
+			channel, if testDispoPct not match with current channel setting -->
+		<parserProperty name="update.criticality" value="Y" /> <!-- only Y/N value -->
+
+		<!-- AQL Filter detail properties by L Waetzold -->
+		<parserProperty name="AQLFilter.group.number" value="3" />
+		<parserProperty name="AQLFilter.group.0" value="SamsungSWET" />
+		<parserProperty name="AQLFilter.group.1" value="SamsungFWET" />
+		<parserProperty name="AQLFilter.group.2" value="TST-OBANSK-WET" />
+
+		<parserProperty name="AQLFilter.SamsungSWET.ProductID"
+			value="30*" />
+		<parserProperty name="AQLFilter.SamsungSWET.StepName"
+			value="M1-SWET.01,M3-SWET.01,M2-SWET.01,M4-SWET.01" />
+		<parserProperty name="AQLFilter.SamsungSWET.InsertionName"
+			value="SWET*" />
+		<parserProperty name="AQLFilter.SamsungFWET.ProductID"
+			value="30*,SHELBY2*" />
+		<parserProperty name="AQLFilter.SamsungFWET.StepName"
+			value="FINA-FWET.01,FINA-FWET.02" />
+		<parserProperty name="AQLFilter.SamsungFWET.InsertionName"
+			value="FWET*" />
+		<parserProperty name="AQLFilter.TST-OBANSK-WET.ProductID"
+			value="*OBANSK*,31*" />
+		<parserProperty name="AQLFilter.TST-OBANSK-WET.StepName"
+			value="*OBANSK*" />
+		<parserProperty name="AQLFilter.TST-OBANSK-WET.InsertionName"
+			value="*OBANSK*,insertion_name,SWET*,FWET*,HOL*" />
+
+
+		<!-- AQL Filter group properties FAB 8 <parserProperty name="AQLFilter.group.number" 
+			value="1" /> <parserProperty name="AQLFilter.group.0" value="ALL" /> <parserProperty 
+			name="AQLFilter.ALL.ProductID" value="*" /> <parserProperty name="AQLFilter.ALL.StepName" 
+			value="*" /> <parserProperty name="AQLFilter.ALL.InsertionName" value="*" 
+			/> -->
+
+
+		<!-- SPACE LISTENER PASS/FAIL properties -->
+
+		<parserProperty name="ca.pass.enabled" value="Y" />
+		<parserProperty name="ca.fail.enabled" value="Y" />
+		<parserProperty name="ca.reject.enabled" value="Y" />
+		<parserProperty name="ca.error.enabled" value="Y" />
+
+		<!-- Fab 8 -->
+		<parserProperty name="ca.pass.name" value="GatePass" />
+		<parserProperty name="ca.fail.name" value="HoldLotAtCurrent" />
+		<parserProperty name="ca.reject.name" value="GatePass" />
+		<parserProperty name="ca.error.name" value="HoldLotAtCurrent" />
+
+
+		<!-- fab 1 <parserProperty name="ca.pass.name" value="SpcCheckPass" /> 
+			<parserProperty name="ca.fail.name" value="SpcCheckFail" /> <parserProperty 
+			name="ca.reject.name" value="SpcCheckFail" /> <parserProperty name="ca.error.name" 
+			value="SpcCheckFail" /> -->
+
+		<parserProperty name="space.listener.properties.path"
+			value="/customapps/espace_dev/igate/igatespisepp/products/spisepp/plugin_custom/setting/SpaceListenerHelper.properties" />
+		<parserProperty name="abort.on.listener.communication.fail"
+			value="N" />
+		<!-- Y/N -->
+
+
+		<!-- ACTION FOR MAPPING -->
+		<parserProperty name="ActionOnMappingNotFound" value="IGNORE" />
+		<!-- fab 1 parserProperty name="ActionOnMappingNotFound" value="REJECTCA" -->
+
+		<parserProperty name="SendEmailOnReject" value="true" />
+		<!-- fab 1 parserProperty name="SendEmailOnReject" value="false" -->
+
+
+		<!-- IQR -->
+		<parserProperty name="iqr.file.location"
+			value="/customapps/espace_dev/igate/iGate-spisepp/products/spisepp/plugin_custom/xml/IQRsetting.xml" />
+
+	</parserTypes>
+</Path-mapping>

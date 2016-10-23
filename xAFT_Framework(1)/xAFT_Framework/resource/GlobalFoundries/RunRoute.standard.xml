@@ -1,0 +1,539 @@
+<!-- SPISE++ Run Route -->
+<!-- The original sequence and definition of actions in this XML should not 
+	be changed unless instructed so -->
+<!-- When merging this XML, the sequence and definition of actions should 
+	follow that of the later release -->
+<route>
+
+	<!-- Plugins can be added anywhere between actions. Since plugin classes/jars 
+		are store in a different location from webapp's library, the "RequestActionHandler" 
+		is required as a proxy. For maintainability/compatibility purpose, it is 
+		NOT recommended to load plugin classes/jars into SPISE++ webapp's library. 
+		An example on how a plugin action is defined is shown below: <action name="ExamplePluginRequestHandler1" 
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler" ignoreError="false"> 
+		<property key="IRequestHandler.class" value="com.company.spisepp.plugin.MyPluginClass"/> 
+		<property key="propKey1" value="propValue1"/> <property key="propKey2" value="propValue2"/> 
+		</action> -->
+
+	<!-- check if data throw in here contain exception already from parsing 
+		process -->
+	<action name="Check Exception Handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.CheckExceptionHandler" />
+	</action>
+
+	<!-- ensure there is at least one sample before proceeding -->
+	<action name="CheckSampleSize"
+		handler="com.anesoft.space.runroute.action.CheckSampleSizeHandler"
+		ignoreError="false">
+		<property key="check.sample.min" value="1" />
+	</action>
+
+	<!-- perform raw sample grouping according to SPISE++ config -->
+	<action name="Grouping" handler="com.anesoft.space.runroute.action.GroupingHandler"
+		ignoreError="false" init="com.anesoft.spisepp.runroute.action.SppAcfPropValue">
+		<property key="grouping.enable" value="spisepp.lds-${lds}.grouping.enable" />
+	</action>
+
+	<!-- perform attr sample grouping according to SPISE++ config -->
+	<action name="AttributiveGrouping"
+		handler="com.anesoft.space.runroute.action.AttributiveGroupingHandler"
+		ignoreError="false" init="com.anesoft.spisepp.runroute.action.SppAcfPropValue">
+		<property key="grouping.enable" value="spisepp.lds-${lds}.grouping.enable" />
+	</action>
+
+	<!-- search for samples to be flagged according to SPISE++ config -->
+	<action name="FlagSearch"
+		handler="com.anesoft.space.runroute.action.FlagSearchHandler"
+		ignoreError="false" init="com.anesoft.spisepp.runroute.action.SppAcfPropValue">
+		<property key="flagging.sample.keys" value="spisepp.lds-${lds}.flagging.keys" />
+		<property key="flagging.sample.timespan" value="spisepp.lds-${lds}.flagging.timespan" />
+		<property key="flagging.comment.required" value="spisepp.lds-${lds}.flagging.comment.new" />
+	</action>
+
+	<!-- validate the SpaceRequest object before proceeding -->
+	<action name="ValidateRequest"
+		handler="com.anesoft.space.runroute.action.ValidateRequestHandler"
+		ignoreError="false" />
+
+	<!-- Locate and Prepare SpaceRequestHook to be called if found -->
+	<action name="SpaceRequestHookEnvHandler"
+		handler="com.anesoft.spisepp.runroute.action.SpaceRequestHookEnvHandler"
+		ignoreError="false">
+		<!-- hook_classpath: use to specify the classpath used to locate the SpaceRequestHook -->
+		<!-- if left empty, System property "plugin_path" will be used followed 
+			by -->
+		<!-- plugin_custom classes and lib -->
+		<!-- hook_classname: use to specify the fully qualified classname for the 
+			SpaceRequestHook -->
+		<!-- mandatory only if hook_classpath and plugin_path are not specified -->
+		<!-- else the first class that implements SpaceRequestHook will be used -->
+		<!-- <property key="hook_classpath" value="" /> <property key="hook_classname" 
+			value="" /> -->
+	</action>
+
+	<!-- put flag info for SPCINP5 -->
+	<action name="Auto-flag handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.AutoFlagHandler" />
+	</action>
+
+	<!--######################################################################################################## 
+		RAW ########################################################################################################## -->
+
+	<!-- put external flag on sample that belong to retest session -->
+	<action name="Flagged outdated sample handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.FlaggedOutdatedSampleHandler" />
+	</action>
+
+	<!-- Invoke the Request, loading the samples into SPACE -->
+	<action name="InvokeRequest"
+		handler="com.anesoft.space.runroute.action.InvokeRequestHandler"
+		ignoreError="false">
+		<!-- timeout in milliseconds -->
+		<property key="invoke.timeout" value="2400000" />
+		<property key="maxUploadSampleSize" value="200" />
+	</action>
+
+	<!-- This to update customer field Criticality in SPC Channel -->
+	<action name="Update criticality"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.ChangeCriticalityHandler" />
+	</action>
+
+	<!-- This to update retest file with the latest data -->
+	<action name="Update retest file"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.UpdateRetestFileHandler" />
+	</action>
+
+	<!-- This to check if error occured during upload raw data to SPACE -->
+	<action name="Space error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.SpaceErrorHandler" />
+		<property key="errorhandler.module.name" value="UploadRawData" />
+		<property key="error.code" value="101" />
+	</action>
+
+	<!-- This to generate var summary chart -->
+	<action name="Var summary creator"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.summaryhandler.ETVarSummaryParser" />
+	</action>
+
+	<!-- This to resolve dispo value to determine which TEMPLATE is used -->
+	<action name="Dispo template handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.DispoTemplateHandler" />
+	</action>
+
+	<!-- Auto create SPC channels according to SPISE++ config -->
+	<action name="AutoChart"
+		handler="com.anesoft.space.runroute.action.AutoChartHandler"
+		ignoreError="true" init="com.anesoft.spisepp.runroute.action.SppAcfPropValue">
+		<property key="autochart.enable" value="spisepp.lds-${lds}.charting.enable" />
+		<property key="autochart.ldsfolder"
+			value="spisepp.lds-${lds}.charting.expression.ldsfolder.name" />
+		<property key="autochart.ldsfolder.template"
+			value="spisepp.lds-${lds}.charting.expression.ldsfolder.template" />
+		<property key="autochart.orgfolders"
+			value="spisepp.lds-${lds}.charting.expression.orgfolder.struc" />
+		<property key="autochart.spcchannel.template"
+			value="spisepp.lds-${lds}.charting.expression.spcchannel.template" />
+		<property key="maxUploadSampleSize" value="200" />
+	</action>
+
+	<!-- This to check if error occured during auto-charting raw data to SPACE -->
+	<action name="Space error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.SpaceErrorHandler" />
+		<property key="errorhandler.module.name" value="AutoChartingRawData" />
+		<property key="error.code" value="102" />
+	</action>
+
+	<!-- This to check if all sample have the SPC channel -->
+	<action name="Auto-charting handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.AutoChartingHandler" />
+		<property key="nfm.iorfile" value="/local/tmp/espace/nfm/var/nfm.ior" />  <!-- use full path -->
+		<property key="nfm.email.recipient.number" value="2" />
+		<property key="nfm.email.recipient.0" value="Richard.Krier@globalfoundries.com" />
+		<property key="nfm.email.recipient.1" value="david.caballero@globalfoundries.com" />
+		<property key="nfm.templateudmap.space.ldsid" value="100" />
+		<property key="nfm.templateudmap.space.templatetype" value="ET_PARSER" />
+		<property key="nfm.notification.templatetype" value="SPACE" />
+		<property key="nfm.notification.templatename" value="ET_ERROR" />
+		<property key="nfm.phmap.ldsid" value="100" />
+	</action>
+
+	<!-- Query Events (CA/Alarm/TSG/ECAP) for samples with violations -->
+	<action name="EventQuery"
+		handler="com.anesoft.space.runroute.action.EventQueryHandler"
+		ignoreError="false" />
+
+	<!-- This to get CA data from recently uploaded data -->
+	<action name="CA Plugin"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class" value="com.camline.runroute.plugin.CAPlugin" />
+	</action>
+
+	<!-- Flag away samples previously found by FlagSearch -->
+	<action name="FlagSamples"
+		handler="com.anesoft.space.runroute.action.FlagSampleHandler"
+		ignoreError="false" init="com.anesoft.spisepp.runroute.action.SppAcfPropValue">
+		<property key="flagging.enable" value="spisepp.lds-${lds}.flagging.enable" />
+		<property key="flagging.sample.comment" value="spisepp.lds-${lds}.flagging.comment.old" />
+		<property key="flagging.helper.workdir" value="spisepp.lds-${lds}.flagging.dir" />
+		<property key="flagging.helper.ports" value="spisepp.lds-${lds}.flagging.port" />
+		<property key="flagging.helper.sampleCount" value="spisepp.lds-${lds}.flagging.filesize" />
+		<property key="flagging.helper.sleeptime" value="spisepp.lds-${lds}.flagging.polltime" />
+	</action>
+
+	<!-- This to check if error occured during flagging raw data to SPACE -->
+	<action name="Space error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.SpaceErrorHandler" />
+		<property key="errorhandler.module.name" value="FlaggingRawData" />
+		<property key="error.code" value="103" />
+	</action>
+
+	<action name="SPCCheck"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class" value="com.camline.spc.SPCCheck" />
+		<property key="configuration"
+			value="/customapps/espace_dev/igate/iGate-spisepp/products/spisepp/plugin_custom/setting/AQLMaverick.properties" />
+	</action>
+
+	<!-- This to generate var summary chart -->
+	<action name="Calc summary creator"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.summaryhandler.ETCalcSummaryParser" />
+	</action>
+
+	<!--######################################################################################################## 
+		ATTRIBUTIVE ########################################################################################################## -->
+	<!-- Check if found error 312 first -->
+	<action name="Attributive Check Handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.AttributiveCheckerHandler" />
+		<property key="errorhandler.module.name" value="AQL Maverick error handler" />
+		<property key="error.code" value="313" />
+	</action>
+
+	<!-- Generate attributive data -->
+	<action name="ET Parser"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class" value="com.camline.etest.parser.ETAttrParser" />
+	</action>
+
+	<action name="InvokeRequest"
+		handler="com.anesoft.space.runroute.action.InvokeRequestHandler"
+		ignoreError="false">
+		<property key="invoke.timeout" value="10000" />
+		<property key="maxUploadSampleSize" value="200" />
+	</action>
+
+	<!-- This to check if error occured during upload attributive data to SPACE -->
+	<action name="Space error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.SpaceErrorHandler" />
+		<property key="errorhandler.module.name" value="UploadAttributiveData" />
+		<property key="error.code" value="104" />
+	</action>
+
+	<!-- This to generate var summary chart -->
+	<action name="Attr summary creator"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.summaryhandler.ETAttrSummaryParser" />
+	</action>
+
+	<!-- This to resolve dispo value to determine which TEMPLATE is used -->
+	<action name="Dispo template handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.DispoTemplateHandler" />
+	</action>
+
+	<action name="AutoChart"
+		handler="com.anesoft.space.runroute.action.AutoChartHandler"
+		ignoreError="true" init="com.anesoft.spisepp.runroute.action.SppAcfPropValue">
+		<property key="autochart.enable" value="spisepp.lds-${lds}.charting.enable" />
+		<property key="autochart.ldsfolder"
+			value="spisepp.lds-${lds}.charting.expression.ldsfolder.name" />
+		<property key="autochart.ldsfolder.template"
+			value="spisepp.lds-${lds}.charting.expression.ldsfolder.template" />
+		<property key="autochart.orgfolders"
+			value="spisepp.lds-${lds}.charting.expression.orgfolder.struc" />
+		<property key="autochart.spcchannel.template"
+			value="spisepp.lds-${lds}.charting.expression.spcchannel.template" />
+		<property key="maxUploadSampleSize" value="200" />
+	</action>
+
+	<!-- This to check if error occured during auto-charting attributive data 
+		to SPACE -->
+	<action name="Space error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.SpaceErrorHandler" />
+		<property key="errorhandler.module.name" value="AutoChartingAttributiveData" />
+		<property key="error.code" value="105" />
+	</action>
+
+	<!-- This to check if all sample have the SPC channel -->
+	<action name="Auto-charting handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.AutoChartingHandler" />
+		<property key="nfm.iorfile" value="/local/tmp/espace/nfm/var/nfm.ior" />  <!-- use full path -->
+		<property key="nfm.email.recipient.number" value="2" />
+		<property key="nfm.email.recipient.0" value="Richard.Krier@globalfoundries.com" />
+		<property key="nfm.email.recipient.1" value="david.caballero@globalfoundries.com" />
+		<property key="nfm.templateudmap.space.ldsid" value="100" />
+		<property key="nfm.templateudmap.space.templatetype" value="ET_PARSER" />
+		<property key="nfm.notification.templatetype" value="SPACE" />
+		<property key="nfm.notification.templatename" value="ET_ERROR" />
+		<property key="nfm.phmap.ldsid" value="100" />
+	</action>
+
+	<!-- Query Events (CA/Alarm/TSG/ECAP) for samples with violations -->
+	<action name="EventQuery"
+		handler="com.anesoft.space.runroute.action.EventQueryHandler"
+		ignoreError="false" />
+
+	<!-- This to get CA data from recentlu uploaded data -->
+	<action name="CA Plugin"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class" value="com.camline.runroute.plugin.CAPlugin" />
+	</action>
+
+	<action name="FlagSamples"
+		handler="com.anesoft.space.runroute.action.FlagSampleHandler"
+		ignoreError="false" init="com.anesoft.spisepp.runroute.action.SppAcfPropValue">
+		<property key="flagging.enable" value="spisepp.lds-${lds}.flagging.enable" />
+		<property key="flagging.sample.comment" value="spisepp.lds-${lds}.flagging.comment.old" />
+		<property key="flagging.helper.workdir" value="spisepp.lds-${lds}.flagging.dir" />
+		<property key="flagging.helper.ports" value="spisepp.lds-${lds}.flagging.port" />
+		<property key="flagging.helper.sampleCount" value="spisepp.lds-${lds}.flagging.filesize" />
+		<property key="flagging.helper.sleeptime" value="spisepp.lds-${lds}.flagging.polltime" />
+	</action>
+
+	<!-- This to check if error occured during flagging attributive data to 
+		SPACE -->
+	<action name="Space error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.SpaceErrorHandler" />
+		<property key="errorhandler.module.name" value="FlagSamplesAttributiveData" />
+		<property key="error.code" value="106" />
+	</action>
+
+	<!--######################################################################################################## 
+		SUMMARY ########################################################################################################## -->
+
+	<!-- This to generate fail summary chart -->
+	<action name="Fail summary creator"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.summaryhandler.ETFailSummaryParser" />
+	</action>
+
+	<!-- This to generate space sample to be uploaded -->
+	<action name="Summary sample creator"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.summaryhandler.ETSummaryParser" />
+	</action>
+
+	<action name="InvokeRequest"
+		handler="com.anesoft.space.runroute.action.InvokeRequestHandler"
+		ignoreError="false">
+		<property key="invoke.timeout" value="10000" />
+		<property key="maxUploadSampleSize" value="200" />
+	</action>
+
+	<!-- This to check if error occured during upload attributive data to SPACE -->
+	<action name="Space error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.SpaceErrorHandler" />
+		<property key="errorhandler.module.name" value="UploadSummaryData" />
+		<property key="error.code" value="107" />
+	</action>
+
+	<action name="AutoChart"
+		handler="com.anesoft.space.runroute.action.AutoChartHandler"
+		ignoreError="true" init="com.anesoft.spisepp.runroute.action.SppAcfPropValue">
+		<property key="autochart.enable" value="spisepp.lds-${lds}.charting.enable" />
+		<property key="autochart.ldsfolder"
+			value="spisepp.lds-${lds}.charting.expression.ldsfolder.name" />
+		<property key="autochart.ldsfolder.template"
+			value="spisepp.lds-${lds}.charting.expression.ldsfolder.template" />
+		<property key="autochart.orgfolders"
+			value="spisepp.lds-${lds}.charting.expression.orgfolder.struc" />
+		<property key="autochart.spcchannel.template"
+			value="spisepp.lds-${lds}.charting.expression.spcchannel.template" />
+		<property key="maxUploadSampleSize" value="200" />
+	</action>
+
+	<!-- This to check if error occured during auto-charting attributive data 
+		to SPACE -->
+	<action name="Space error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.SpaceErrorHandler" />
+		<property key="errorhandler.module.name" value="AutoChartingSummaryData" />
+		<property key="error.code" value="108" />
+	</action>
+
+	<!-- This to check if all sample have the SPC channel -->
+	<action name="Auto-charting handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.AutoChartingHandler" />
+		<property key="nfm.iorfile" value="/local/tmp/espace/nfm/var/nfm.ior" />  <!-- use full path -->
+		<property key="nfm.email.recipient.number" value="2" />
+		<property key="nfm.email.recipient.0" value="Richard.Krier@globalfoundries.com" />
+		<property key="nfm.email.recipient.1" value="david.caballero@globalfoundries.com" />
+		<property key="nfm.templateudmap.space.ldsid" value="100" />
+		<property key="nfm.templateudmap.space.templatetype" value="ET_PARSER" />
+		<property key="nfm.notification.templatetype" value="SPACE" />
+		<property key="nfm.notification.templatename" value="ET_ERROR" />
+		<property key="nfm.phmap.ldsid" value="100" />
+	</action>
+
+	<!-- Query Events (CA/Alarm/TSG/ECAP) for samples with violations -->
+	<action name="EventQuery"
+		handler="com.anesoft.space.runroute.action.EventQueryHandler"
+		ignoreError="false" />
+
+	<!-- This to get CA data from recentlu uploaded data -->
+	<action name="CA Plugin"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false">
+		<property key="IRequestHandler.class" value="com.camline.runroute.plugin.CAPlugin" />
+	</action>
+
+	<action name="FlagSamples"
+		handler="com.anesoft.space.runroute.action.FlagSampleHandler"
+		ignoreError="false" init="com.anesoft.spisepp.runroute.action.SppAcfPropValue">
+		<property key="flagging.enable" value="spisepp.lds-${lds}.flagging.enable" />
+		<property key="flagging.sample.comment" value="spisepp.lds-${lds}.flagging.comment.old" />
+		<property key="flagging.helper.workdir" value="spisepp.lds-${lds}.flagging.dir" />
+		<property key="flagging.helper.ports" value="spisepp.lds-${lds}.flagging.port" />
+		<property key="flagging.helper.sampleCount" value="spisepp.lds-${lds}.flagging.filesize" />
+		<property key="flagging.helper.sleeptime" value="spisepp.lds-${lds}.flagging.polltime" />
+	</action>
+
+	<!-- This to check if error occured during flagging attributive data to 
+		SPACE -->
+	<action name="Space error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.SpaceErrorHandler" />
+		<property key="errorhandler.module.name" value="FlagSamplesSummaryData" />
+		<property key="error.code" value="109" />
+	</action>
+
+	<!--######################################################################################################## 
+		SPACE LISTENER ########################################################################################################## -->
+
+	<!-- This route is the SPACE Listener trigger Added on July 27 for manual 
+		CA added to SPC Charts -->
+	<action name="SPACE Listener trigger"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.space.listener.SpaceListenerHandler" />
+		<property key="nfm.iorfile" value="/local/tmp/espace/nfm/var/nfm.ior" />  <!-- use full path -->
+		<property key="nfm.email.recipient.number" value="2" />
+		<property key="nfm.email.recipient.0" value="richard.krier@globalfoundries.com" />
+		<property key="nfm.email.recipient.1" value="david.caballero@globalfoundries.com" />
+		<property key="nfm.templateudmap.space.ldsid" value="100" />
+		<property key="nfm.templateudmap.space.templatetype" value="ET_PARSER" />
+		<property key="nfm.notification.templatetype" value="SPACE" />
+		<property key="nfm.notification.templatename" value="VARI_CHECK" />
+		<property key="nfm.phmap.ldsid" value="100" />
+	</action>
+
+	<!-- This route is the SPACE Listener trigger <action name="SPACE Listener 
+		trigger" handler="com.anesoft.spisepp.runroute.action.RequestActionHandler" 
+		ignoreError="false" catchError="true"> <property key="IRequestHandler.class" 
+		value="com.camline.etest.space.listener.SpaceListenerHandler"/> <property 
+		key="nfm.iorfile" value="/local/tmp/espace/nfm/var/nfm.ior" /> <property 
+		key="nfm.email.recipient.number" value="2" /> <property key="nfm.email.recipient.0" 
+		value="richard.krier@globalfoundries.com" /> <property key="nfm.email.recipient.1" 
+		value="david.caballero@globalfoundries.com" /> <property key="nfm.templateudmap.space.ldsid" 
+		value="100" /> <property key="nfm.templateudmap.space.templatetype" value="ET_PARSER" 
+		/> <property key="nfm.notification.templatetype" value="SPACE" /> <property 
+		key="nfm.notification.templatename" value="ET_ERROR" /> <property key="nfm.phmap.ldsid" 
+		value="100" /> </action> -->
+
+
+	<!--######################################################################################################## 
+		END OF ROUTE ########################################################################################################## -->
+
+	<!-- This to check if error occured during run route -->
+	<action name="Run route error handler"
+		handler="com.anesoft.spisepp.runroute.action.RequestActionHandler"
+		ignoreError="false" catchError="true">
+		<property key="IRequestHandler.class"
+			value="com.camline.etest.requesthandler.RunRouteErrorHandler" />
+		<property key="nfm.iorfile" value="/local/tmp/espace/nfm/var/nfm.ior" />  <!-- use full path -->
+		<property key="nfm.email.recipient.number" value="3" />
+		<property key="nfm.email.recipient.0" value="Richard.Krier@globalfoundries.com" />
+		<property key="nfm.email.recipient.1" value="david.caballero@globalfoundries.com" />
+		<property key="nfm.email.recipient.2" value="ChristianGiuseppe.Weller@globalfoundries.com" />
+		<property key="nfm.templateudmap.space.ldsid" value="100" />
+		<property key="nfm.templateudmap.space.templatetype" value="ET_PARSER" />
+		<!-- property key="nfm.templateudmap.space.templatetype" value="AQL_MAVERICK_CHECK" 
+			/ -->
+		<property key="nfm.notification.templatetype" value="SPACE" />
+		<property key="nfm.notification.templatename" value="ET_ERROR" />
+		<property key="nfm.phmap.ldsid" value="100" />
+	</action>
+</route>

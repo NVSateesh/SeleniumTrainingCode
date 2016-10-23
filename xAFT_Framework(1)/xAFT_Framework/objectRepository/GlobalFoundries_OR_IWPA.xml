@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository>
+	<FeatureSet name="Home Page">	
+		<Element name="lnkSingleLotAnalysis" type="Link">
+		  <xpath>//a[contains(text(),'Single Lot Analysis')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>	
+		<Element name="txtLotID" type="Textbox">
+		  <id>QueryForm_LotId</id>
+		  <PageTitle> </PageTitle>
+		</Element>		
+		<Element name="cboSortType" type="combobox">
+		  <id>QueryForm_SortType</id>
+		  <PageTitle> </PageTitle>
+		</Element> 
+		<Element name="cboBinType" type="combobox">
+		  <id>QueryForm_BinType</id>
+		  <PageTitle> </PageTitle>
+		</Element> 
+		<!--<Element name="radIndividualBins" type="Radiobutton">
+		  <id>QueryForm_BinAggregate</id>
+		  <PageTitle> </PageTitle>
+		</Element> -->
+		<Element name="radIndividualBins" type="Radiobutton">
+		  <xpath>//input[@value='I']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element> 
+		<Element name="raCombinedBins" type="Radiobutton"><!--(//input[@id='QueryForm_BinAggregate'])[2]-->
+		  <xpath>//input[@value='C']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element> 
+		<Element name="lstBinsList" type="listbox">
+		  <id>QueryForm_Bins</id>
+		  <PageTitle> </PageTitle>
+		</Element>	
+		<Element name="btnGetBins" type="button">
+		  <xpath>//a[contains(text(),'Get Bins')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>				
+		<Element name="btnUserDefinedData" type="button">
+		  <xpath>//a[contains(text(),'User Defined Data')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSubmit" type="button">
+		  <xpath>//input[@value='Submit']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>		
+		<Element name="lnkLotLists" type="Link">
+		  <xpath>//a[contains(text(),'Lot Lists')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkMultiWaferAnalysis" type="Link">
+		  <xpath>//a[contains(text(),'Multi Wafer Analysis')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkPatternLibrary" type="Link">
+		  <xpath>//a[contains(text(),'Pattern Library')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkLegacySingleLotAnalysis" type="Link">
+		  <xpath>//a[contains(text(),'Legacy Single Lot Analysis')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>		
+		<Element name="lnkWPAReport" type="Link">
+		  <xpath>//a[contains(text(),'WPA Report')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkSort" type="Link">
+		  <xpath>//a[contains(@href, '/Fab8/iWPA/singlelot-analysis/sort')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkParametrics" type="Link">
+		  <xpath>//a[contains(text(),'Parametrics')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkNeo" type="Link">
+		  <xpath>//a[contains(@href, '/Fab8/iWPA/singlelot-analysis/neo')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnksLotStory" type="Link">
+		  <xpath>//a[contains(@href, '/Fab8/iWPA/singlelot-analysis/slot-story')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblSelectPatterns" type="Label">
+		  <id>Select Patterns</id>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="imgIWPAHelp" type="Image">
+		  <xpath>//div[@id='outer-wrapper']/div[2]/ul[2]/li/a/img</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblUserGuidVersion" type="Label">
+		  <id>iWPA User Guide v6.3</id>
+		  <PageTitle> </PageTitle>
+		</Element>		
+		<Element name="winErrorPopUP" type="Button">
+		  <id>simplemodal-data</id>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="winErrorPopUPClose" type="Link">
+		  <xpath>//div[@id='simplemodal-container']/a</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkFabView" type="Link">
+		  <xpath>//li[contains(text(),'Fab View')]|//a[text()='Fab View']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkMatrixView" type="Link">
+		  <xpath>//li[contains(text(),'Matrix View')]|//a[text()='Matrix View']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkRandomBlockView" type="Link">
+		  <xpath>//li[contains(text(),'Random Block View')]|//a[text()='Random Block View']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkChamberView" type="Link">
+		  <xpath>//li[contains(text(),'Chamber View')]|//a[text()='Chamber View']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="imgFabView" type="Image">
+		  <id>FabView1</id>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkSORT01_H3" type="Link">
+		  <xpath>//area[@title='SORT01_H_3 - Matrix View']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkSORT01_S1" type="Link">
+		  <xpath>//area[@title='SORT01_S_1 - Matrix View']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="lnk" type="Link">
+		  <xpath>//a[contains(@href,'rblock=RX-FRNPADOX-28BK.01')]/img</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="lnkPatternFabView" type="Link">
+		  <xpath>//area[@title='SORT01_S_1 / 3IN-LTHIPS3-28BK.01']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="winRandom" type="Window">
+		  <xpath>//body</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>		
+		<Element name="lnkMFGNAME" type="Link">
+		  <xpath>//a[contains(text(),'3IN-LTHIPS3-28BK.01')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkMFGEQPT" type="Link">
+		  <xpath>//a[contains(text(),'ALC2401')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="imgMatrixViewPlot" type="Image">
+		  <xpath>//div[@id='content-wrapper']//ul[@class='chart-list clear-fix']/li[7]/div/a/img</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="imgRandomViewPlot" type="Image">
+		  <xpath>//div[@id='content-wrapper']//ul[@class='chart-list clear-fix']/li/div/a/img</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="imgExcelIcon" type="Image">
+		  <xpath>//div[@id='content-wrapper']/div/a/img</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+		
+		
+		
+		
+		
+		
+		<Element name="imgRandomViewImageCount" type="Image">
+		  <xpath>//div[@id='content-wrapper']//ul[@class='chart-list clear-fix']/li//img</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="imgChamberViewImageCount" type="Image">
+		  <xpath>//div[@id='content-wrapper']//ul[@class='step-chart-list']/li//img</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkRandomViewLinkCount" type="Link">
+		  <xpath>//div[@id='content-wrapper']//table[@class='operation-list']//td//a</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkRandomViewFirstLink" type="Link">
+		  <xpath>//div[@id='content-wrapper']//table[@class='operation-list']//td//a[1]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkRandomViewSecondLink" type="Link">
+		  <xpath>//div[@id='content-wrapper']//table[@class='operation-list']//tr[2]//td[5]//a</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+	</FeatureSet>
+	
+	<FeatureSet name="Parametrics">
+		<Element name="btnGetWETSteps" type="button">
+		  <xpath>//a[contains(text(),'Get WET Steps')]</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblStepName" type="Label">
+		  <xpath>//label[text()='Manufacturing step name']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>	
+		<Element name="lblStatistic" type="Label">
+		  <xpath>//label[text()='Statistic']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblTestName" type="Label">
+		  <xpath>//label[text()='Test Name']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>	
+		<Element name="cboManufacturingStepName" type="combobox">
+		  <id>QueryForm_StepName</id>
+		  <PageTitle> </PageTitle>
+		</Element> 
+		<Element name="cboStatistic" type="combobox">
+		  <id>QueryForm_Statistic</id>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtTestName" type="Textbox">
+		  <id>test-name-filter</id>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lstTestNames" type="listbox">
+		  <id>QueryForm_TestNames</id>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="imgFilter" type="Image">
+		  <xpath>//input[@type='image']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lstPatterns" type="listbox">
+		  <id>QueryForm_Patterns</id>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lnkTestName" type="Link">
+		  <xpath>//area[@title='LBWET28BK01_ACLV1_PHI_std_dev - Matrix View']</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+	
+	
+	</FeatureSet >
+	
+	
+</ObjectRepository>
+	

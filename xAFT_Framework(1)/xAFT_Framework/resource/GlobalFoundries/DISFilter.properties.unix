@@ -1,0 +1,90 @@
+# DISFilter application properties
+#
+
+# master nc support
+DIS.file.extension.mnc=mnc
+DIS.file.extension.nc=nc
+
+#Frequency of input listener scans
+# Minimum=10 seconds, maximum=600 seconds
+DIS.inputListener.interval.secs=30
+
+#Limit file parameters
+DIS.Use.limit.file=true
+DIS.copy_rejects_to_etparser=true
+DIS.copy_unfiltered_to_etparser=true
+
+#Create slim limit/data files When number of limit files exceeds this number. 0 means always filter
+DIS.limit.filter_if_parm_count_exceeds=0
+
+#SIL DB properties - if ECP has been loaded into SIL DB SPEC_LIMITS
+# Note, DISMain will securely prompt for pw at startup if pw not specified below
+DIS.sil.db.enabled=true
+DIS.sil.db.drivername=oracle.jdbc.driver.OracleDriver
+DIS.sil.db.url=jdbc:oracle:thin:@fc8oram02.gfoundries.com:1521:spaceid1
+DIS.sil.db.schema=sil_user14
+DIS.sil.db.userid=sil_user14
+DIS.sil.db.pw=sil1
+#DIS.sil.db.pw=incorrect_password
+DIS.sil.db.filter_on_active=true
+DIS.sil.db.filter_on_criticality=true
+DIS.sil.db.filter_on_prodgroup=true
+DIS.sil.db.filter_on_product=true
+DIS.sil.db.filter_on_pd=true 
+
+# ECP file properties - needed if obtaining ECP via a csv file rather than SIL DB
+DIS.Use.ECP.file=false
+DIS.ECP.directory=/customapps/espace_dev/mtqa_etest_data/etl_input/ECP     
+DIS.ECP.file.name=FAB8_ECP_32SOI_IBM_OBAN.csv
+DIS.ECP.headerlines=7
+DIS.ECP.parameterNameIndex=4
+
+# trace level - regulates granularity of the log file messages
+#   TRC_NONE    =  0;
+#   TRC_BASIC   =  1;
+#   TRC_MEDIUM  =  2;
+#   TRC_VERBOSE =  3;
+#   TRC_DEBUG   =  4;
+DIS.trace.level=4
+
+# Adapter autoStart
+# True means automatically start the adapter and start listening when program starts
+# False means DISMain will start and then wait for user input to start processing
+DIS.adapter.autoStart=true
+
+#ETEST data folder locations - adjust as needed
+DIS.base.directory.input=/customapps/espace_dev/mtqa_etest_data/etl_input
+DIS.base.directory.staging=/customapps/espace_dev/mtqa_etest_data/staging
+DIS.base.directory.processing=/customapps/espace_dev/mtqa_etest_data/processing
+DIS.base.directory.archived=/customapps/espace_dev/mtqa_etest_data/archived
+DIS.base.directory.rejected=/customapps/espace_dev/mtqa_etest_data/rejected
+DIS.base.directory.published=/customapps/espace_dev/mtqa_etest_data/etparser_data
+
+#Worker thread pool - should not need to change
+#  Recommend setting min pool size == max pool size, to avoid memory growth
+#  If minimum pool size not specified, it will default to be same as max (recommended)
+#  Min allowed pool size=1 Max allowed pool size=20
+DIS.minimum.pool.size=1
+DIS.maximum.pool.size=20
+
+#  Min allowed job queue size=20 Max allowed queue size=500
+DIS.minimum.queue.size=20
+DIS.maximum.queue.size=500
+
+#File extensions - do not change these unless ETL & ETPARSER change file extension names
+DIS.file.extension.nc=nc
+DIS.file.extension.data=data.dis
+DIS.file.extension.limit=limit.dis
+DIS.file.extension.slim.limit=limit.dis
+DIS.file.extension.slim.data=data.dis
+
+#Platform dependent - these are for unix, do not change... 
+DIS.CUR_DIR=.
+DIS.SEP=/
+
+# DISFilter background mode:
+DIS.adapter.cmd_prompts=true
+
+
+
+

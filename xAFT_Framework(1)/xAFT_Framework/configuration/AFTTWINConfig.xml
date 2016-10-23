@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TWIN>
+	<TestEnvironment Name="default">
+		<ElementWaitTime_ms value="30000" />
+		<ListenerPort value="4444" />
+		<RCPath value="./library/SharpClaws.exe" />
+		<RCServer value="http://localhost" />
+		<TwinRCConfigFilePath value="./library/sharpclaws.xml" />
+		<TwinRCTemplateFilePath value="./configuration/sharpclaws.vm" />
+	</TestEnvironment>
+</TWIN>

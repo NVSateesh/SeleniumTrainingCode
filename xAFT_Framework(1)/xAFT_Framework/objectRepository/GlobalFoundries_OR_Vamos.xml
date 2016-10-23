@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository> 
+  <FeatureSet name="FABGUI Login Window">
+	<Element name="winFABGUIPortalLogin" type="Window">
+      <name>FabGUI Portal</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="txtUserName" type="Textbox">
+      <name>TextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="txtUserName" type="Textbox">
+      <name>TextField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="txtPassword" type="Textbox">
+      <name>PasswordField_2</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="txtPassword" type="Textbox">
+      <name>PasswordField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLogin" type="Button">
+      <name>Login</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+  </FeatureSet>
+  
+  <FeatureSet name="FABGUI Home Window Links">
+	<Element name="winFABGUI" type="Window">
+      <name>FabGUI Portal</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHome" type="Button">
+      <name>Home</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHelp" type="Link">
+      <name>Help</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="lnkSiViewControl" type="Button">
+      <name>SiViewControl</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="btnSiViewControl" type="Button">
+      <name>SiViewControl</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnControlCenter" type="Button">
+      <name>ControlCenter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnShipping" type="Button">
+      <name>Shipping</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnReticle" type="Button">
+      <name>Reticle</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHelp" type="Link">
+      <name>Help</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+	<FeatureSet name="Control Center Buttons">
+		<Element name="btnVamosConfig" type="Button">
+		  <name>VamosConfig</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+	
+		<Element name="btnVamosDispatch" type="Button">
+		  <name>VamosDispatch</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+    
+	<FeatureSet name="VamosConfig Window">
+		<Element name="lblVamosConfigWindow" type="Label">
+		  <name>Vamos-Control</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblVamosConfigNewDisplay" type="Label">
+		  <name>New Display</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtVamosConfigDisplay" type="Textbox">
+		  <name>Display</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtVamosConfigEquipment" type="Textbox">
+		  <name>Equipment</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtVamosConfigNewDisplay" type="Textbox">
+		  <name>New Display</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigFilter" type="Button">
+		  <name>Filter</name>
+		  <PageTitle> </PageTitle>
+		</Element>	
+		<Element name="btnVamosConfigAdd" type="Button">
+		  <name>Add</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="tblVamosConfigDataTable" type="Table">
+		  <name>Table_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="tblVamosConfigDataTable" type="Table">
+		  <name>Table_-#4</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="dlgVamosConfigInformation" type="Dialog">
+		  <name> Information</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmVamosConfigInformation" type="Frame">
+		  <name>Information</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigInformationDlgOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigSave" type="Button">
+		  <name>Save</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtVamosConfigClaimMemo" type="Textbox">
+		  <name>Claim Memo</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigInformationFrameOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigDelete" type="Button">
+		  <name>Delete</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboVamosConfigLayout" type="Combobox">
+		  <name>ComboBox_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboVamosConfigLogLevel" type="Combobox">
+		  <name>ComboBox_-#3</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigNewByTemplate" type="Button">
+		  <name>NewByTemplate</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblVamosConfigDataTableRowCount" type="Label">
+		  <name></name>
+		  <PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet> 		
+	
+	<FeatureSet name="Vamous Dispatch Window">
+		<Element name="treeVamousDispatchTree" type="Tree">
+			<name>Tree_3</name>
+			<PageTitle> </PageTitle>
+		</Element>	
+		<Element name="treeVDFavoritesTree" type="Tree">
+			<name>Tree_2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="treeVDFavorites" type="Tree">
+			<name>Tree_2</name>
+			<PageTitle> </PageTitle>
+		</Element>			
+		<Element name="txtVamousDispatchEntity" type="Textbox">
+			<name>TextField_3</name>
+			<PageTitle> </PageTitle>
+		</Element>	
+		<Element name="lblVDFavoritesWindow" type="Label">
+			<name>Dispatch setup favorites</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblVDMachineWindow" type="Label">
+			<name>Dispatch-Setup Machine</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchAdd" type="Button">
+			<name>Add</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchRemove" type="Button">
+			<name>Remove</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchShow" type="Button">
+			<name>Show</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchRefresh" type="Button">
+			<name>Refresh</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchSave" type="Button">
+			<name>Save</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVDPushP1" type="Button">
+			<name>Pull-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVDPullP1" type="Button">
+			<name>Push-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>	
+		<Element name="tblVDDataTable" type="Table">
+			<name>Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblVDFavorites" type="Table">
+			<name>Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblToolVisible" type="Label">
+			<name>Tool: </name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblToolNameVerify" type="Label">
+			<name></name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblVDToolTable" type="Table">
+			<name>1</name>
+			 <PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+
+</ObjectRepository>

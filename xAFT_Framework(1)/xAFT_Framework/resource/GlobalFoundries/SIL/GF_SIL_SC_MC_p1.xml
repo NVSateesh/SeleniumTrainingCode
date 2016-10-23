@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns="http://www.amd.com/schemas/DataCollectionReport/DCR_2_2_0SPACE"
+	xmlns:SpaceSubmitRunPort="http://www.globalfoundries.com/space">
+	<SOAP-ENV:Body>
+		<SpaceSubmitRunPort:submitRun
+			SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+			<in0>
+				<Context baselineVersion="f36cei8.2. - patch 3"
+					dcpArmorPath="/Job DCP/DCP Repository/SEM-AMAT/C-ALL/SEM-YM/11"
+					dcpPlanName="SEM-YM-RespPD1" dcpPlanVersion="11"
+					description="DCC DCP Version AutoOnly" equipmentModelName="SEMVISIONG3"
+					equipmentModelVersion="1.0" eventReportingName="C-DR-SEM"
+					reportingTimeStamp="2012-04-12T11:39:38.773Z" schemaVersion="DCR_2_2_0SPACE">
+					<Equipment controlState="ONLINE-REMOTE" description="POLISHER"
+						equipmentReportedE10State="PRD" id="UTC001" modelNumber="POLPOL"
+						name="POLISHER" softwareRevision="1.0.10" type="PROCESS-CHAMBER">
+						<Port accessMode="AUTO" associationState="NOT ASSOCIATED"
+							equipmentPortID="1" id="P1" loadPortTransferState="READY TO LOAD"
+							locationType="PORT" occupiedState="NOT OCCUPIED"
+							reservationState="NOT RESERVED" siviewPortMode="Semi-Start-3"
+							siviewPortState="LoadReq" trackingLocation="11" type="INPUT OUTPUT" />
+						<ProcessingArea id="PM1" locationType="PROCESSINGAREA"
+							processingAreaE10State="2WPR" processState="IDLE"
+							trackingLocation="5" type="ProcessingArea">
+						</ProcessingArea>
+						<ProcessingArea id="PM2" locationType="PROCESSINGAREA"
+							processingAreaE10State="2WPR" processState="IDLE"
+							trackingLocation="7" type="ProcessingArea">
+						</ProcessingArea>
+						<Component id="LLK_OUT" location="4" trackingLocation="4"
+							type="OTHER" />
+						<Component id="LLK_OUT" location="3" trackingLocation="3"
+							type="OTHER" />
+						<Component id="LLK_OUT" location="2" trackingLocation="2"
+							type="OTHER" />
+					</Equipment>
+					<JobSetup>
+						<SiViewControlJob id="QAEqp1-xxxxx" siviewUserID="">
+							<FOUP carrierAccessingState="NOT ACCESSED" idStatusState="ID NOT READ"
+								location="P1" locationType="PORT" scheduledLoadPort="P1"
+								scheduledUnloadPort="P1" slotMapState="SLOT MAP NOT READ" id="DummyFoup">
+								<foupHistory enterTime="2012-04-12T11:37:58.757Z"
+									location="P1" locationType="PORT" trackingLocation="11" />
+								<Lot
+									armorPath="/Job Recipes/Recipe Repository/SEM-AMAT/C-P-SEM/4710B MGT-NMETDEPDR/2"
+									armorRecipeID="4710B MGT-NMETDEPDR" armorRecipeVersion="2"
+									department="QA" customer="Customer" id="8XYJ17005.009"
+									logicalRecipeID="C-P-4710B-MGT-NMETDEPDR.01"
+									engineeringRecipeSelect="false" lotType="Production"
+									machineRecipeID="C-P-SEM-G4.4710B-MGT-NMETDEPDR.01"
+									manufacturingLayer="B" monitorLotFlag="false" operationID="QA_MB-FTDEP.01"
+									operationName="DEFECT REVIEW" operationNumber="3200.1860"
+									passCount="1" photoLayer="DummyPL" physicalRecipeID="4710B-MGT-NMETDEPDR"
+									productGroupID="QAPG1" productID="SILPROD.01" productType="Wafer"
+									route="SIL-0001.01" subLotType="PO" technology="32NM">
+									<Wafer id="T5071.00.01">
+										<WaferHistory enterTime="2012-04-12T11:39:19.773Z"
+											location="1" locationType="FOUP" state="NEEDS PROCESSING">
+										</WaferHistory>
+										<WaferHistory exitTime="2012-04-12T11:39:20.773Z"
+											location="1" locationType="FOUP" state="NEEDS PROCESSING">
+										</WaferHistory>
+										<WaferHistory enterTime="2012-04-12T11:39:21.773Z"
+											location="PM1" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="5" />
+										<WaferHistory exitTime="2012-04-12T11:39:25.773Z"
+											location="PM1" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="5" />
+										<WaferHistory enterTime="2012-04-12T11:39:31.773Z"
+											location="PM2" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="7" />
+										<WaferHistory exitTime="2012-04-12T11:39:35.773Z"
+											location="PM2" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="7" />
+										<WaferHistory enterTime="2012-04-12T11:39:37.773Z"
+											location="1" locationType="FOUP" state="PROCESSED" />
+									</Wafer>
+									<Wafer id="T5071.00.02">
+										<WaferHistory enterTime="2012-04-12T11:39:19.773Z"
+											location="2" locationType="FOUP" state="NEEDS PROCESSING">
+										</WaferHistory>
+										<WaferHistory exitTime="2012-04-12T11:39:20.773Z"
+											location="2" locationType="FOUP" state="NEEDS PROCESSING">
+										</WaferHistory>
+										<WaferHistory enterTime="2012-04-12T11:39:21.773Z"
+											location="PM1" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="5" />
+										<WaferHistory exitTime="2012-04-12T11:39:25.773Z"
+											location="PM1" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="5" />
+										<WaferHistory enterTime="2012-04-12T11:39:31.773Z"
+											location="PM2" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="7" />
+										<WaferHistory exitTime="2012-04-12T11:39:35.773Z"
+											location="PM2" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="7" />
+										<WaferHistory enterTime="2012-04-12T11:39:37.773Z"
+											location="2" locationType="FOUP" state="PROCESSED" />
+									</Wafer>
+									<Wafer id="T5071.00.03">
+										<WaferHistory enterTime="2012-04-12T11:39:19.773Z"
+											location="3" locationType="FOUP" state="NEEDS PROCESSING">
+										</WaferHistory>
+										<WaferHistory exitTime="2012-04-12T11:39:20.773Z"
+											location="3" locationType="FOUP" state="NEEDS PROCESSING">
+										</WaferHistory>
+										<WaferHistory enterTime="2012-04-12T11:39:21.773Z"
+											location="PM1" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="5" />
+										<WaferHistory exitTime="2012-04-12T11:39:25.773Z"
+											location="PM1" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="5" />
+										<WaferHistory enterTime="2012-04-12T11:39:31.773Z"
+											location="PM2" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="7" />
+										<WaferHistory exitTime="2012-04-12T11:39:35.773Z"
+											location="PM2" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="7" />
+										<WaferHistory enterTime="2012-04-12T11:39:37.773Z"
+											location="3" locationType="FOUP" state="PROCESSED" />
+									</Wafer>
+									<Wafer id="T5071.00.04">
+										<WaferHistory enterTime="2012-04-12T11:39:19.773Z"
+											location="4" locationType="FOUP" state="NEEDS PROCESSING">
+										</WaferHistory>
+										<WaferHistory exitTime="2012-04-12T11:39:20.773Z"
+											location="4" locationType="FOUP" state="NEEDS PROCESSING">
+										</WaferHistory>
+										<WaferHistory enterTime="2012-04-12T11:39:21.773Z"
+											location="PM1" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="5" />
+										<WaferHistory exitTime="2012-04-12T11:39:25.773Z"
+											location="PM1" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="5" />
+										<WaferHistory enterTime="2012-04-12T11:39:31.773Z"
+											location="PM2" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="7" />
+										<WaferHistory exitTime="2012-04-12T11:39:35.773Z"
+											location="PM2" locationType="PROCESSINGAREA" state="IN PROCESS"
+											trackingLocation="7" />
+										<WaferHistory enterTime="2012-04-12T11:39:37.773Z"
+											location="4" locationType="FOUP" state="PROCESSED" />
+									</Wafer>
+								</Lot>
+							</FOUP>
+						</SiViewControlJob>
+					</JobSetup>
+				</Context>
+			</in0>
+		</SpaceSubmitRunPort:submitRun>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

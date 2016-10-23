@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository>
+<FeatureSet name="Xsite Login">
+	<Element name="winXsitetApp" type="Window">
+      <id>class:Window;name:Xsite Factory Modeling</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="winLogin" type="Window">
+      <id>class:Window;name:Login</id>
+      <PageTitle> </PageTitle>
+    </Element>
+
+
+
+
+
+	<Element name="UserName" type="TextBox">
+      <id>class:Edit;id:6</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="Password" type="TextBox">
+      <id>class:Edit;id:5</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="Ok" type="Button">
+      <id>class:Button;id:4</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="Cancel" type="Button">
+      <id>class:Button;id:3</id>
+      <PageTitle> </PageTitle>
+    </Element>
+  <FeatureSet name="NeatWorksMain">	
+<Element name="menuItemExit" type="MenuItem">
+      <id>class:MenuItem;name:Exit</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menuItemFile" type="MenuItem">
+      <id>class:MenuItem;name:File</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menuItemNewFolder" type="MenuItem">
+      <id>class:MenuItem;name:New Folder...</id>
+      <PageTitle> </PageTitle>
+    </Element>
+    <Element name="treeItemHomeFolder" type="TreeItem">
+      <id>class:TreeItem;name:Home</id>
+      <PageTitle> </PageTitle>
+    </Element>
+    <Element name="winNewFolder" type="Window">
+      <id>class:Window;name:New Folder</id>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  <FeatureSet name="NewFolderWindow">
+	<Element name="btnNewFolderOK" type="Button">
+      <id>class:Button;name:OK</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="editFolderDescription" type="Edit">
+      <id>class:Edit;id:textBox2</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="editFolderName" type="Edit">
+      <id>class:Edit;id:folderNameTextBox</id>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  <FeatureSet name="CopyingFolder">
+	<Element name="treeItemBussinessFolder" type="TreeItem">
+      <id>class:TreeItem;name:Business</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeItemCopyingFolder" type="TreeItem">
+      <id>class:TreeItem;name:NewFolder1</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeItemNewFolder" type="MenuItem">
+      <id>class:MenuItem;name:Copy 'NewFolder1'...</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="winCopyFolder" type="Window">
+      <id>class:Window;name:Copy Folder</id>
+      <PageTitle> </PageTitle>
+    </Element>
+   </FeatureSet> 
+  <FeatureSet name="EditFolder">
+	<Element name="treeItemEditFolder" type="TreeItem">
+      <id>class:TreeItem;name:NewFolder</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeItemEditingFolder" type="MenuItem">
+      <id>class:MenuItem;name:Edit 'NewFolder'...</id>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="winEditFolder" type="Window">
+      <id>class:Window;name:Edit Folder</id>
+      <PageTitle> </PageTitle>
+    </Element>
+   </FeatureSet>
+
+    <FeatureSet name="CreatingReceipts">
+	<Element name="menuItemNewRecipt" type="MenuItem">
+      <id>class:MenuItem;name:New Receipt</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menuItemReceipt" type="MenuItem">
+      <id>class:MenuItem;name:Receipts (0)</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menuReceipt" type="Menu">
+      <id>class:Menu;id:ToolsMenu</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="menuTypeFilter" type="Menu">
+      <id>class:Menu;id:ItemTypeFilterMenu</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeItemReceiptFolder" type="TreeItem">
+      <id>class:TreeItem;name:NewFolder</id>
+      <PageTitle> </PageTitle>
+    </Element>
+   </FeatureSet>
+   <FeatureSet name="DeleteFolder">
+	<Element name="menuItemDeleteFolder" type="MenuItem">
+      <id>class:MenuItem;name:Delete 'NewFolder1'</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeItemDeleteFolder" type="TreeItem">
+      <id>class:TreeItem;name:NewFolder1</id>
+      <PageTitle> </PageTitle>
+    </Element>	
+   </FeatureSet>
+    <FeatureSet name="Clean">
+	<Element name="btnCleanFolderOK" type="Button">
+      <id>class:Button;name:Yes</id>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeItemCleanFolder" type="TreeItem">
+      <id>class:TreeItem;name:Trash</id>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="winCleanFolder" type="Window">
+      <id>class:Window;name:Confirm Folder Deletion</id>
+      <PageTitle> </PageTitle>
+    </Element>	
+   </FeatureSet> 
+   <FeatureSet name="UpdateWindow">
+   <Element name="btnClose" type="Button">
+      <id>class:Button;name:Close</id>
+      <PageTitle> </PageTitle>
+    </Element>
+   <Element name="winUpdateAvailable" type="Window">
+      <id>class:Window;name:Recommended Update Available!</id>
+      <PageTitle> </PageTitle>
+    </Element>   
+  </FeatureSet>
+</ObjectRepository>

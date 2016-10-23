@@ -1,0 +1,2006 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository>
+<FeatureSet name="Login">
+   
+	<Element name="txtUserName" type="Textbox">
+     <xpath>//input[@id='j_username']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtPassword" type="Textbox">
+     <xpath>//input[@id='j_password']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLogin" type="Button">
+     <xpath>//input[@value='Login']</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblInvalidLogin" type="Label">
+     <xpath>//p[contains(text(),'Your login attempt was unsuccessful, please try again')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLogout" type="Button">
+     <xpath>//a[contains(@href,'/mra/servlet/Logout?logout=true')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHome" type="Link">
+     <xpath>//td[id('menubarRight')]/span/a[contains(text(),'Home')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblMessage" type="Lable">
+     <xpath>//p[contains(text(),'Welcome to Metrology Request Automation')]/..</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblLogedUser" type="Label">
+     <xpath>//td[@id="menubarLeft"]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	
+</FeatureSet>
+  
+<FeatureSet name="CDSEM Requests">
+
+   <Element name="lblCDSEMRequests" type="Label">
+	 <xpath>//div[@id='nav']/div[contains(text(),'CDSEM Requests')]</xpath>
+	 <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblCDSEMRequestsPage" type="Label">
+	 <xpath>//td[@id='contentRight']/p[contains(text(),'Find Metrology Request')]/following-sibling::p</xpath>
+	 <PageTitle> </PageTitle>
+    </Element>
+    <!--<Element name="lnkMetrologyRequests1" type="Link">
+     <xpath>//div[contains(text(),'CDSEM Requests')]/following-sibling::ul/li//a[contains(text(),'Metrology Requests')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+	-->
+	<Element name="lnkMetrologyRequests" type="Link">
+     <xpath>//div[@id='nav']/ul/li//a[contains(text(),'Metrology Requests')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+    <Element name="lnkFindMRs" type="Link">
+     <xpath>//div[contains(text(),'CDSEM Requests')]/following-sibling::ul/li/a[contains(text(),'Find MRs')]</xpath>
+     <PageTitle> </PageTitle>
+    </Element>
+    <Element name="lnkStartWizardCDSEM" type="Link">
+	  <xpath>//li/a[contains(text(),'Find MRs')]/../following-sibling::li/a[contains(text(),'Start Wizard')]</xpath>
+	  <PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboFltrOptnsDevice" type="Combobox">
+		<id>productID</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFindReticleCDSEM" type="Button">
+		<xpath>//input[@name='RetSelBntFind']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboDeviceIdOptn" type="Combobox">
+		<xpath>//label[@for='productID']/following-sibling::select[@id='productID']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMetrolgyReqstPage" type="Label">
+		<xpath>//td[@id='contentRight']/p[contains(text(),'View Existing Production Recipes')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtFltrOptnLayerID" type="Textbox">
+		<xpath>//input[@id='layerID']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnRefresh" type="button">
+		<xpath>//input[@name='Refresh']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkNew" type="Link">
+		<xpath>//th[contains(text(),'Hitachi')]/../following-sibling::tr/td[contains(text(),'FICD')]/following-sibling::td[2]/a[contains(text(),'New')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRnumber" type="Textbox">
+		<xpath>//input[@id='MRnumber']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboMRType" type="Combobox">
+		<xpath>//select[@id='MRType']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboStatus" type="Combobox">
+		<xpath>//select[@id='findStatus']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboStatusOptn1" type="Combobox">
+		<xpath>//select[@id='findStatus']/option[</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboStatusOptn2" type="Combobox">
+		<xpath>]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboStatusOptn" type="Combobox">
+		<xpath>//select[@id='findStatus']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRInfPhtoLayer" type="Textbox">
+		<xpath>//input[@id='photoLayerID']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRInfRtclID" type="Textbox">
+		<xpath>//input[@id='reticleID']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRInfoRqstOwnr" type="Textbox">
+		<xpath>//input[@id='findFabOwner']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboMRInfToolVendor" type="Combobox">
+		<xpath>//select[@id='findVendor']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRInfComment" type="Textbox">
+		<xpath>//input[@id='comment']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnMRInfFindMR" type="Button">
+		<xpath>//input[@value='Find MR']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnMRInfFndSteDetails" type="Button">
+		<xpath>//input[@value='Find Site Details']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtDevInfPhotoLayer" type="Textbox">
+		<id>photoLayer</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtDevInfReticleID" type="Textbox">
+		<id>reticleID</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDevInfFindReticle" type="Button">
+		<xpath>//input[@value='Find Reticle ->']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkViewMR" type="Link">
+		<xpath>//a[contains(text(),'View MR')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMRNumberTable" type="Label">
+		<xpath>//a[contains(text(),'View MR')]/..</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMrNumWrngInpt" type="Label">
+		<xpath>//p[contains(text(),'An error occurred:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCDSEMStartWzrdPage" type="Label">
+		<xpath>//p[contains(text(),'Create Production MR: Select Device/Reticle')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblDICD" type="Label">
+		<xpath>//table[@class='listtable1']//th[contains(text(),'DICD')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnVerity4i" type="Button">
+		<xpath>//input[@name='ReticleSelection:7130AL0RXB1:0RX:DICD:Verity4i']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnVerity4iCDSEM" type="Button">
+		<xpath>//input[@name='ReticleSelection:4710BL0RXB1:0RX:DICD:Verity4i']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFICDVerity4i" type="Button">
+		<xpath>//input[@name='ReticleSelection:7130AL0RXB1:0RX:FICD:Verity4i']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDENCPVerity4i" type="Button">
+		<xpath>//td/input[@name='ReticleSelection:DENCPI10RXAZLAM1:0RX:DICD:Verity4i']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDICDHitachi" type="Button">
+		<xpath>//input[@name='ReticleSelection:7130AL0RXB1:0RX:DICD:Hitachi']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnHitachi" type="Button">
+		<xpath>//input[@name='ReticleSelection:7130AL0RXB1:0RX:DICD:Hitachi']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFICDHitachi" type="Button">
+		<name>ReticleSelection:7130AL0RXB1:0RX:FICD:Hitachi</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnCG5000" type="Button">
+		<name>ReticleSelection:7130AL0RXB1:0RX:DICD:CG5000</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFICDCG5000" type="Button">
+		<name>ReticleSelection:7130AL0RXB1:0RX:FICD:CG5000</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFICD" type="Button">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFICD1" type="Button">
+		<xpath>//td/input[@name='ReticleSelection:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFICD2" type="Button">
+		<xpath>:0RX:FICD:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFICD3" type="Button">
+		<xpath>']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDICD" type="Button">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDICD1" type="Button">
+		<xpath>//td/input[@name='ReticleSelection:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDICD2" type="Button">
+		<xpath>:0RX:DICD:</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDICD3" type="Button">
+		<xpath>']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="cbxLineSCDSE" type="Checkbox">
+		<xpath>//th[text()='Metrology Structure']/../../tr/td[contains(text(),'Line SC-DSE')]/input</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cbxLineSCINV" type="Checkbox">
+		<xpath>//th[text()='Metrology Structure']/../../tr/td[contains(text(),' Line SC-INV')]/input</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboProductGroup" type="Combobox">
+		<xpath>//select[@id="productGroup"]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtGALayer" type="Textbox">
+		<xpath>//input[@id='gaLayer']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSelectReticle" type="Label">
+		<xpath>//p[contains(text(),'Please select one of the following:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblListtable1" type="WebTable">
+		<xpath>//table[@class='listtable']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMetrlgyRqstInfo" type="Label">
+		<xpath>//caption[contains(text(),'Metrology Request Info:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboMetrology" type="Combobox">
+		<xpath>//select[@name='SamplPlanSelct:1']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboLocRuleSelct" type="Combobox">
+		<xpath>//select[@id='LocRuleSelct:1']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSpecAddReticle" type="Button">
+		<xpath>//input[@id='addreticle']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnAddReticle" type="Button">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnAddReticle1" type="Button">
+		<xpath>//table[@class='listtable']/tbody/tr/td[contains(text(),'</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnAddReticle2" type="Button">
+		<xpath>')]/../td/input[@value='Add Reticle']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnPreFill" type="Button">
+		<xpath>//input[@name='prefill']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="radLogicalOR" type="Radiobutton">
+		<xpath>//input[@id='or']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnMergeReticle" type="Button">
+		<xpath>//input[@id='mergereticle']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMergedReticle" type="Label">
+		<xpath>//th[contains(text(),'Merged reticle:')]/../following-sibling::tr/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMergeOperation" type="Label">
+		<xpath>//th[contains(text(),'Merge operation:')]/../following-sibling::tr/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnViewLog" type="Button">
+		<xpath>//input[@name='ProdViewLogBtn']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblLogMessage" type="Label">
+		<xpath>//p[contains(text(),'DI logfile for')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblChooseReticle" type="Label">
+		<xpath>//p[contains(text(),'Choose reticle to add')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnBackToViewMR" type="Button">
+		<xpath>//form[@name='prodLogViewRequestForm']/input</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnRetrieveMR" type="Button">
+		<xpath>//input[@name='Retrieve MR']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnUploadSites" type="Button">
+		<xpath>//input[@id='uploadsites']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMtrlgySprdSheet" type="Label">
+		<xpath>//p[contains(text(),'Create MR: Upload Metrology Spreadsheets')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnBrwsMtrlSprdSht" type="Button">
+		<xpath>//input[@name='mrSpreadsheetGF_DTI_chiplet_llc']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnCDSEMNext" type="Button">
+		<xpath>//input[@name='next']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnCDSEMBack" type="Button">
+		<xpath>//input[@name='back']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSiteList" type="Label">
+		<xpath>//div[contains(text(),'Site List')]/../div/ul/li</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblDoGet" type="Label">
+		<xpath>//p[contains(text(),'doGet not implemented')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnEditBatchFile" type="Button">
+		<id>editbatchfile</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMoreSiteUpload" type="Textbox">
+		<xpath>//input[@name='mrSpreadsheetRET']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCDSEMDeviceID" type="Text">
+		<xpath>//table[@class='listtable1']/tbody/tr[2]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCDSEMReticleID" type="Text">
+		<xpath>//table[@class='listtable1']/tbody/tr[2]/td[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSiteDetails" type="Label">
+		<xpath>//caption[contains(text(),'Details Selected Sites')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCDSEMMRnumber" type="Label">
+		<xpath>//label[@for='MRnumber']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCDSEMMRType" type="Label">
+		<xpath>//label[@for='MRType']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCDSEMStatus" type="Label">
+		<xpath>//label[@for='findStatus']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCDSEMproductID" type="Label">
+		<xpath>//label[@for='productID']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblphotoLayerID" type="Label">
+		<xpath>//label[@for='photoLayerID']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblreticleID" type="Label">
+		<xpath>//label[@for='reticleID']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblfindFabOwner" type="Label">
+		<xpath>//label[@for='findFabOwner']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblfindVendor" type="Label">
+		<xpath>//label[@for='findVendor']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblcomment" type="Label">
+		<xpath>//label[@for='comment']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtDeviceID" type="Text">
+		<xpath>//th[contains(text(),'Device ID')]/../following-sibling::tr/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtPhotoLayer" type="Text">
+		<xpath>//th[contains(text(),'Photo Layer')]/../following-sibling::tr/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtReticleID" type="Text">
+		<xpath>//th[contains(text(),'Reticle ID')]/../following-sibling::tr/td[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtDICD" type="Text">
+		<xpath>//th[contains(text(),'DICD')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtFICD" type="Text">
+		<xpath>//th[contains(text(),'FICD')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkHitachiMRnum" type="Link">
+		<xpath>//td[text()='0RX']/../td[5]/a/span[@style='color:red']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblErrorMsg" type="Label">
+		<xpath>//table[@summary='Metrology Comment']/following-sibling::p</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCSDEMPhtoLyr" type="Label">
+		<xpath>//p/label[contains(text(),'Photo Layer')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCSDEMReticleID" type="Label">
+		<xpath>//p/label[contains(text(),'Reticle ID')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCDSMDeviceID" type="Text">
+		<xpath>//th[contains(text(),'Device ID')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCDSMReticleID" type="Text">
+		<xpath>//th[contains(text(),'Reticle ID')]/following-sibling::td</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCDSMPhotoLayer" type="Text">
+		<xpath>//th[contains(text(),'Photo Layer')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCDSMRequestor" type="Text">
+		<xpath>//th[contains(text(),'Requestor')]/following-sibling::td</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCDSMType" type="Text">
+		<xpath>//th[contains(text(),'Type')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCDSMToolName" type="Text">
+		<xpath>//th[contains(text(),'Tool Name')]/following-sibling::td</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblOptions" type="Label">
+		<xpath>//fieldset/legend[text()='Options:']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRemoteMode" type="Label">
+		<xpath>//fieldset/legend[text()='Options:']/following-sibling::table/tbody/tr/th[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblUseSyntheticGA" type="Label">
+		<xpath>//fieldset/legend[text()='Options:']/following-sibling::table/tbody/tr/th[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblGALayer" type="Label">
+		<xpath>//fieldset/legend[text()='Options:']/following-sibling::table/tbody/tr/th[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSmplngPerSite" type="Label">
+		<xpath>//fieldset/legend[text()='Options:']/following-sibling::table/tbody/tr/th[5]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblVisibleReticle" type="Label">
+		<xpath>//legend[contains(text(),'Visible Reticle (Optional):')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblVisibleReticleMSG" type="Label">
+		<xpath>//legend[contains(text(),'Visible Reticle (Optional):')]/following-sibling::h1/label</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecialEngineering" type="Label">
+		<xpath>//legend[contains(text(),'Special Engineering:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSPEngType" type="Label">
+		<xpath>//legend[contains(text(),'Special Engineering:')]/following-sibling::table/tbody/tr[1]/th[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSPEngClipdLyrs" type="Label">
+		<xpath>//legend[contains(text(),'Special Engineering:')]/following-sibling::table/tbody/tr[1]/th[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSPEngPrservLyrs" type="Label">
+		<xpath>//legend[contains(text(),'Special Engineering:')]/following-sibling::table/tbody/tr[1]/th[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSPEngMesurLyrs" type="Label">
+		<xpath>//legend[contains(text(),'Special Engineering:')]/following-sibling::table/tbody/tr[1]/th[4]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSPEngDrawn" type="Label">
+		<xpath>//legend[contains(text(),'Special Engineering:')]/following-sibling::table/tbody/tr[2]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSPEngTarget" type="Label">
+		<xpath>//legend[contains(text(),'Special Engineering:')]/following-sibling::table/tbody/tr[3]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSPEngMask" type="Label">
+		<xpath>//legend[contains(text(),'Special Engineering:')]/following-sibling::table/tbody/tr[4]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCommentOptnl" type="Label">
+		<xpath>//label[contains(text(),'Comment (Optional):')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCommentOptional" type="Textbox">
+		<xpath>//label[contains(text(),'Comment (Optional):')]/following-sibling::textarea</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtNoMatchingDevices" type="Text">
+		<xpath>//p[contains(text(),'No matching devices found')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtDrawnPreserveLayers" type="Textbox">
+		<xpath>//input[@id='drawnPreserveLayers']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtTargetPreserveLayers" type="Textbox">
+		<xpath>//input[@id='targetPreserveLayers']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMaskPreserveLayers" type="Textbox">
+		<xpath>//input[@id='maskPreserveLayers']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtDrawnMeasLayers" type="Textbox">
+		<xpath>//input[@id='drawnMeasLayers']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMaskMeasLayers" type="Textbox">
+		<xpath>//input[@id='maskMeasLayers']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtPathOfRecpeFile" type="Text">
+		<xpath>//td[@id='contentRight']/p</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMacroCD" type="TextBox">
+		<xpath>//input[@name='MacroCDTxt:1']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkLocRule" type="Link">
+		<xpath>//a[@id='lnk1']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="frmLocRule" type="Frame">
+		<xpath>//div[@id='reticleDiv1']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblReticleInfo" type="Table">
+		<xpath>//table[@summary='Reticle Info']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblSiteInfo" type="Table">
+		<xpath>//table[@summary='Site List Info']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblWaferInfo" type="Table">
+		<xpath>//table[@summary='Selected wafer Info']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblMRInfo" type="Table">
+		<xpath>//table[@summary='Metrology Request Info']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMRReview" type="Label">
+	<xpath>//p[contains(text(),'Create MR: Review and submit MR')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblSelectedSites" type="Table">
+		<xpath>//caption[contains(text(),'Details Selected Sites')]/..</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblUploadedSites" type="Table">
+		<xpath>//caption[contains(text(),'Details Uploaded Sites')]/..</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblSampPlanOnReticle" type="Table">
+		<xpath>//table[@summary='Sampling plan on reticle']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblSampPlanOnWafer" type="Table">
+		<xpath>//table[@summary='Sampling plan on wafer']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnGenerateRecipe" type="Button">
+		<xpath>//input[@name='generaterecipe']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+</FeatureSet>
+ 
+<FeatureSet name="Overlay/OCD/THK Requests">
+    
+	<Element name="lblOverlayRequests" type="Label">
+		<xpath>//div[@id='nav']/div[contains(text(),'Overlay/OCD/THK Requests')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRecipeInfo" type="Label">
+		<xpath>//legend[contains(text(),'Recipe Information')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkDbOverlay" type="Link">
+		<xpath>//div[contains(text(),'Overlay/OCD/THK Requests')]/following-sibling::ul/li/a[contains(text(),'DB Overlay')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkFindOR" type="Link">
+		<xpath>//div[contains(text(),'Overlay/OCD/THK Requests')]/following-sibling::ul/li/a[contains(text(),'Find ORs')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkStartWizardOverlay" type="Link">
+		<xpath>//li/a[contains(text(),'Find ORs')]/../following-sibling::li/a[contains(text(),'Start Wizard')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnOvrlyFileBrowse" type="Button">
+		<id>inputFile</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="ckbUseWfrMapFrmInptFile" type="Checkbox">
+		<id>useWaferMapFromInputFile</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtDgnBsdOverlayDevice" type="Textbox">
+		<id>deviceTextField</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDgnBsdOverlayLookup" type="Button">
+		<xpath>//input[@value='Lookup']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboDsnBsdOverlayDevRev" type="Combobox">
+		<xpath>//div[@id='device']/select</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDsnBsdOverlayOK" type="Button">
+		<xpath>//input[@value='OK']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboRecipeType" type="Combobox">
+		<id>overlayRecipeType</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboMrlblDevice" type="Combobox">
+		<id>reticleID</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMrlblDevice" type="Label">
+		<xpath>//label[@for='reticleID']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboMrlblDevSlct" type="Combobox">
+		<xpath>//select[@id='reticleID']/option</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblOvlReqLst" type="Label">
+		<xpath>//table/caption[contains(text(),'Overlay Request List:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblTHKRcpCrtn" type="Label">
+		<xpath>//p[contains(text(),'Overlay/OCD/THK Recipe Creation')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboOverlayRecipeType" type="Combobox">
+		<xpath>//select[@id='overlayRecipeType']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboPrdctDevice" type="Combobox">
+		<xpath>//select[@id='product']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboToolType" type="Combobox">
+		<xpath>//select[@id='toolType']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboToolTypeOption" type="Combobox">
+		<xpath>//select[@id='toolType']/option</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnNext" type="Button">
+		<xpath>//input[@id='next']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblDgnBsedOvrly" type="Label">
+		<xpath>//p[contains(text(),'Design Based Overlay')]/../table/caption[text()=' ']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cbxAllChkBox" type="Checkbox">
+		<xpath>//input[@id='selectAll']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cbxCheckboxEvnt1" type="Checkbox">
+		<xpath>//input[@id='FeatureSelection'][@value='</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cbxCheckboxEvnt2" type="Checkbox">
+		<xpath>']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cbxCheckboxEvnt" type="Checkbox">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblAlerisRecipie" type="Label">
+		<xpath>//p[contains(text(),'THK-Aleris Recipe Generation ')]</xpath> 
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnOverlayPrefill" type="Button">
+		<id>overlayPrefill</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblPhotoLayer" type="Label">
+		<xpath>//th[contains(text(),'Photo Layer')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboLocatnSelct" type="Combobox">
+		<id>LocRuleSelct:1</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMaterialStack" type="Textbox">
+		<xpath>//select[@id='LocRuleSelct:1']/../following-sibling::td/input[@id='materialStack']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblStructure" type="Label">
+		<xpath>//th[contains(text(),'Structure')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSamplePlan" type="Label">
+		<xpath>//th[contains(text(),'Wafer Sampling Plan')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblLoctnSelctRule" type="Label">
+		<xpath>//th[contains(text(),'Location Selection Rule')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMaterialStack" type="Label">
+		<xpath>//th[contains(text(),'Material Stack')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblOCDmessage" type="Label">
+		<xpath>//p[contains(text(),'Design Based')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="chkFirstChkBox" type="Checkbox">
+		<xpath>//select[@id='SamplPlanSelct:1']/../../td/input</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblTHKReqstInfo" type="Label">
+		<xpath>//caption[contains(text(),'THK Request Info:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblORNumber" type="Label">
+		<xpath>//th[contains(text(),'OR Number')]/../td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblDevice" type="Label">
+		<xpath>//th[contains(text(),'Device')]/../td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>	<Element name="lblThkType" type="Label">
+		<xpath>//th[contains(text(),'Type')]/../td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCreatedBy" type="Label">
+		<xpath>//th[contains(text(),'Created By')]/../td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblStatus" type="Label">
+		<xpath>//th[contains(text(),'Status')]/../td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblTechnology" type="Label">
+		<xpath>//th[contains(text(),'Technology')]/../td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblFailedReason" type="Label">
+		<xpath>//th[contains(text(),'Failed Reason')]/../td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblToolName" type="Label">
+		<xpath>//th[contains(text(),'Tool Name')]/../td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCreateDate" type="Label">
+		<xpath>//th[contains(text(),'Create Date')]/../td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnEditBatchFile" type="Button">
+		<xpath>//input[@name='editbatchfile']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnRetrieveOR" type="Button">
+		<xpath>//input[@name='Retrieve OR']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkRcpLocation" type="Link">
+		<xpath>//a[contains(text(),'\\Vdrsfgrp1\drs_gs$\MRA_Recipes\dev\')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRcpLocation" type="Label">
+		<xpath>//p[contains(text(),'Recipe File Location')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkOptiprobeZipLoctn" type="Link">
+		<xpath>//a[contains(text(),'THK-Optiprobe.zip')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkAleriesZipLoctn" type="Link">
+		<xpath>//a[contains(text(),'THK-Aleris.zip')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblOptiprobeRecipie" type="Label">
+		<xpath>//p[contains(text(),'THK-Optiprobe Recipe Generation ')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnOverlayPreFill" type="Button">
+		<id>overlayPrefill</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblOverlayRecipeType" type="Label">
+		<xpath>//p/label[contains(text(),'Recipe Type:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblOverlayProduct" type="Label">
+		<xpath>//p/label[contains(text(),'Product:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblOverlayToolName" type="Label">
+		<xpath>//p/label[contains(text(),'Tool Name:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtFailedReason" type="Text">
+		<xpath>//th[contains(text(),'Failed Reason')]/following-sibling::td</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="" type="">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMetrologyFeatures" type="Text">
+		<xpath>//caption[contains(text(),'Available Metrology Features on Device')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSaveGenerateRecipe" type="Button">
+		<xpath>//input[@name='editsavegeneraterecipe']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnMRGenerateRecipe" type="Button">
+		<name>generaterecipe</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnGenerateRecipe" type="Button">
+		<id>generaterecipe</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnCancel" type="Button">
+		<xpath>//input[@name='cancel']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboOverlayTarget" type="ComboBox">
+		<xpath>//select[@name='overlayTarget']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboFab7TempTarget" type="ComboBox">
+		<xpath>//input[@name='fab7Style']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkSpecBack" type="Link">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblPhotoLayer" type="Label">
+		<xpath>//th[contains(text(),'Photo Layer')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRefLayer" type="Label">
+		<id>referenceLayerLable</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtPhotoLayer" type="TextBox">
+		<id>photoLayer</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtRefLayer" type="TextBox">
+		<id>referenceLayer</id>
+		<PageTitle> </PageTitle>
+	</Element>
+</FeatureSet>
+   
+<FeatureSet name="Scanner Requests">
+   
+   <Element name="lblScnrRqst" type="Label">
+		<xpath>//div[text()='Scanner Requests']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboScnrDevice" type="Combobox">
+		<xpath>//p/select[@id='DeviceSearchStr']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnCrteScnrRecpi" type="Button">
+		<xpath>//input[@id='createScannerRecipe']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkASMLScanner" type="Link">
+		<xpath>//div[contains(text(),'Scanner Requests')]/following-sibling::ul/li//a[contains(text(),'ASML Scanner')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkStrctrMapng" type="Link">
+		<xpath>//div[contains(text(),'Scanner Requests')]/following-sibling::ul/li//a[contains(text(),'Structure Mapping')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblStrctrMapng" type="Label">
+		<xpath>//legend[contains(text(),' Structure Mapping ')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDownload" type="Button">
+		<xpath>//input[@name='download']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnUpload" type="Button">
+		<xpath>//input[@name='upload']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtASMLScnrUpld" type="Textbox">
+		<xpath>//input[@id='scannerMapFile']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblScannerMaps" type="Label">
+		<xpath>//p[contains(text(),'Scanner Maps')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtimageDiesX" type="Textbox">
+		<xpath>//input[@id='imageDiesX']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtimageDiesY" type="Textbox">
+		<xpath>//input[@id='imageDiesY']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblDeviceSearchStr" type="Label">
+		<xpath>//p/label[@for='DeviceSearchStr']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRoundEdgeClearance" type="Label">
+		<xpath>//p/label[@for='roundEdgeClearance']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblFlatEdgeClearance" type="Label">
+		<xpath>//p/label[@for='flatEdgeClearance']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblFocusEdgeClearance" type="Label">
+		<xpath>//p/label[@for='focusEdgeClearance']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMatrixShiftX" type="Label">
+		<xpath>//p/label[@for='matrixShiftX']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMatrixShiftY" type="Label">
+		<xpath>//p/label[@for='matrixShiftY']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblImageDiesX" type="Label">
+		<xpath>//p/label[@for='imageDiesX']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblImageDiesY" type="Label">
+		<xpath>//p/label[@for='imageDiesY']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtStructureID" type="Text">
+		<xpath>//th[contains(text(),'Structure ID')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtVariantID" type="Text">
+		<xpath>//th[contains(text(),'Variant ID')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+</FeatureSet>
+   
+<FeatureSet name="Defect">
+   <Element name="lblDefect" type="Label">
+		<xpath>//div[text()='Defect']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkRudolphF30" type="Link">
+		<xpath>//div[contains(text(),'Defect')]/following-sibling::ul/li/a[contains(text(),'Rudolph F30')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboDevice" type="Combobox">
+		<xpath>//select[@id='device']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRdlfRcpCrtn" type="Label">
+		<xpath>//p[contains(text(),'Rudolph F30 Recipe Creation')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="radNormalChip" type="Button">
+		<xpath>//td[contains(text(),'Normal')]/input</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="radTestChip" type="Button">
+		<xpath>//td[contains(text(),'Test')]/input</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="imgMoveSlctdLeft" type="Link">
+		<xpath>//span[@id='moveSelectedLeft']/img</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="imgMoveAllLeft" type="Link">
+		<xpath>//span[@id='moveAllLeft']/img[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="imgMoveSlctdRight" type="Link">
+		<xpath>//span[@id='moveSelectedRight']/img</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="imgMoveAllRight" type="Link">
+		<xpath>//span[@id='moveAllRight']/img[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboAvailableLayers" type="Combobox">
+		<xpath>//select[@id='availableLayers']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnGenerateRecipie" type="Button">
+		<css>#generaterecipe</css>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSelectedLayers" type="Label">
+		<xpath>//select[@id='LayerSelection']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblConfrmMessage" type="Label">
+		<xpath>//p[@id="messageDiv"]/..</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+
+</FeatureSet>
+   
+<FeatureSet name="Specbook">
+   
+   <Element name="lblSpecbook" type="Label">
+		<xpath>//div[text()='Specbook']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblFiltrCriteria" type="Label">
+		<xpath>//p[contains(text(),'Please select filtering criteria and apply')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkFindSpecbookJob" type="Link">
+		<xpath>//div[contains(text(),'Specbook')]/following-sibling::ul/li/a[contains(text(),'Find Specbook Job')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpacBkSrch" type="Label">
+		<xpath>//p[contains(text(),'complete Specbook search.')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkSpcBkStrtWzrd" type="Link">
+		<xpath>//div[text()='Specbook']/following-sibling::ul[1]/li/a[text()='Start Wizard']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblWildCard" type="Label">
+		<xpath>//p[contains(text(),'Please use')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpcBkInfo" type="Label">
+		<xpath>//legend[contains(text(),'Specbook Information')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpcBkInfoText" type="Label">
+		<xpath>//p[contains(text(),'Please enter information')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+   <Element name="btnFindSpcbkJob" type="Button">
+		<xpath>//input[@value='Find Specbook Job']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkViewSpecBook1" type="Link">
+		<xpath>//table[@class='listtable']/tbody/tr[</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkViewSpecBook2" type="Link">
+		<xpath>]/td[1]/a[contains(text(),'View SpecBook')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkViewSpecBook" type="Link">
+		<xpath>//table[@class='listtable']/tbody/tr[1]/td[1]/a[contains(text(),'View SpecBook')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpcBkJobNumbr" type="Label">
+		<xpath>//th[contains(text(),'Specbook Job Number')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblDevice" type="Label">
+		<xpath>//th[contains(text(),'Device')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblBarcodeText" type="Label">
+		<xpath>//th[contains(text(),'Barcode Text')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblLayer" type="Label">
+		<xpath>//th[contains(text(),'Layer')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblTechnology" type="Label">
+		<xpath>//th[contains(text(),'Technology')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblFab" type="Label">
+		<xpath>//th[contains(text(),'Fab')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblChangeType" type="Label">
+		<xpath>//th[contains(text(),'Change Type')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpcBkRevNum" type="Label">
+		<xpath>//th[contains(text(),'Specbook Revision Number')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblOwner" type="Label">
+		<xpath>//th[contains(text(),'Owner')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblStatus" type="Label">
+		<xpath>//th[contains(text(),'Status')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblReqstDate" type="Label">
+		<xpath>//th[contains(text(),'Requested Date')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblProcess" type="Label">
+		<xpath>//th[contains(text(),'Process')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMultiLyrFlg" type="Label">
+		<xpath>//th[contains(text(),'Multi-layer Flag')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnBacktoSpecbookJob" type="Button">
+		<name>backtoSpecbookJob</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblNoResults" type="Label">
+		<xpath>//td[contains(text(),'No Results Found')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecbookSettings" type="Label">
+		<xpath>//p[contains(text(),'Specbook Settings')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblFilterOptions" type="Label">
+		<xpath>//legend[contains(text(),'Filter Options')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboRecpiApplctn" type="Combobox">
+		<id>recipe</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboTechnology" type="Combobox">
+		<id>technology</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtLayer" type="Textbox">
+		<id>layer</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnApplyFilter" type="Button">
+		<xpath>//input[@name='applyFilter']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtstructure" type="Textbox">
+		<id>structure</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblSpecSetting" type="WebTable">
+		<xpath>//div[@id='settingsDiv']/..</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDwnlodSpcbk" type="Button">
+		<xpath>//input[@name='downloadSPECBOOK']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnGenerateSpecbook" type="Button">
+		<xpath>//input[@name='generateSPECBOOK']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblWrongFormtUpld" type="Label">
+		<xpath>//p[contains(text(),'An error occurred on the previous page:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtWrngFrmatExcptn" type="Textbox">
+		<xpath>//div[contains(text(),'org.apache.poi.openxml4j.exceptions.InvalidFormatException')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnBack" type="Link">
+		<xpath>//a[@href='javascript:history.back()' and contains(text(),'Back')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRecipeApplication" type="Label">
+		<xpath>//th[contains(text(),'Recipe Application')]/../../../tbody/tr/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecTechnology" type="Label">
+		<xpath>//th[contains(text(),'Technology')]/../../../tbody/tr/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecLayer" type="Label">
+		<xpath>//th[contains(text(),'Layer')]/../../../tbody/tr/td[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecStructure" type="Label">
+		<xpath>//th[contains(text(),'Structure')]/../../../tbody/tr/td[4]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecDevice" type="Label">
+		<xpath>//th[contains(text(),'Device')]/../../../tbody/tr/td[5]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecProductGroup" type="Label">
+		<xpath>//th[contains(text(),'Product Group')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecUniqueNumber" type="Label">
+		<xpath>//th[contains(text(),'Unique Number')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecComment" type="Label">
+		<xpath>//th[contains(text(),'Comment')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecDataColctnTag" type="Label">
+		<xpath>//th[contains(text(),'Data Collection Tag')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecDispo" type="Label">
+		<xpath>//th[contains(text(),'Dispo')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecFeatureType" type="Label">
+		<xpath>//th[contains(text(),'Feature Type')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecIncludeImages" type="Label">
+		<xpath>//th[contains(text(),'Include Images')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecMetroOwner" type="Label">
+		<xpath>//th[contains(text(),'Metro Owner')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecNumOfSites" type="Label">
+		<xpath>//th[contains(text(),'Number of Sites')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecOrder" type="Label">
+		<xpath>//th[contains(text(),'Order')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecProcessOwner" type="Label">
+		<xpath>//th[contains(text(),'Process Owner')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecRcpiToolTyp" type="Label">
+		<xpath>//th[contains(text(),'Recipe Tool Type')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecTagName" type="Label">
+		<xpath>//th[contains(text(),'Tag Name')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecVisibleLayers" type="Label">
+		<xpath>//th[contains(text(),'Visible Layers')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecWfrSmplngPlan" type="Label">
+		<xpath>//th[contains(text(),'Wafer Sampling Plan')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecRtclSlctn" type="Label">
+		<xpath>//th[contains(text(),'Within Reticle Selection')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecLayrData" type="Label">
+	 <xpath>//tr[@class=' rowodd']/td[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecStrctrData" type="Label">
+	 <xpath>//tr[@class=' rowodd']/td[4]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtSpecBrowse" type="Textbox">
+		<id>settingsSPECBOOKFile</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnUploadSpcbk" type="Button">
+		<xpath>//html/body/table/tbody/tr/td/div/form/div/table/tbody/tr/td/input[@name='uploadSPECBOOK']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtWrngXLFormt" type="Textbox">
+		<xpath>//div[contains(text(),'The first seven columns must be Recipe Application')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkSpecBack" type="Link">
+		<xpath>//a[@href='javascript:history.back()'] Or //a[contains(text(),'Back')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblUpldCnfrm" type="Label">
+		<xpath>//p[contains(text(),'Upload confirmation')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnGenerateSpcbk" type="Button">
+		<xpath>//input[@name='saveSpecbook']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMatchedLayers" type="Label">
+		<xpath>//tr/td[contains(text(),'* Layers in red have no matching features in settings')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecbookCreation" type="Label">
+		<xpath>//p[contains(text(),'Specbook Creation')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSpecRecipie" type="Button">
+	<xpath>//table[@border='0']/tbody/tr[2]/td/input[contains(@id,'generaterecipe') and(@style='width: 160px')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRequestCount" type="Label">
+	<xpath>count(//table[@class='listtable']/tbody/tr/td[2])</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblProductCount" type="Label">
+	<xpath>//select[@id='productID']/option</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtFabOwner" type="Text">
+	<xpath>//table[@class='listtable']/tbody/tr[2]/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnCancelSpecbook" type="Button">
+	<xpath>//input[@name='cancelSpecbookUpload']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecbookUploadConf" type="Label">
+	<xpath>//p[contains(text(),'Specbook Settings - Upload confirmation')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSpecbookUploadSummary" type="Label">
+	<xpath>//legend[contains(text(),'Uploaded Settings Summary')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadColumn" type="Label">
+	<xpath>//tr/th[contains(text(),'Column')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadNDV" type="Label">
+	<xpath>//tr/th[contains(text(),'Num Distinct Values')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadOverwrtKey" type="Label">
+	<xpath>//tr/th[contains(text(),'Use as Key for Overwrite')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadRcpApp" type="Label">
+	<xpath>//tr/td[contains(text(),'Recipe Application')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadTech" type="Label">
+	<xpath>//tr/td[contains(text(),'Technology')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadLayer" type="Label">
+	<xpath>//tr/td[contains(text(),'Layer')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadStructure" type="Label">
+	<xpath>//tr/td[contains(text(),'Structure')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadDevice" type="Label">
+	<xpath>//tr/td[contains(text(),'Device')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadPrdGrp" type="Label">
+	<xpath>//tr/td[contains(text(),'Product Group')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSBUploadUnqNm" type="Label">
+	<xpath>//tr/td[contains(text(),'Unique Number')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+	
+</FeatureSet>
+   
+<FeatureSet name="Supporting Data">
+   <Element name="lblSuprtngData" type="">
+		<xpath>//div[text()='Supporting Data']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkAvlblRtcls" type="Link">
+		<xpath>//div[contains(text(),'Supporting Data')]/following-sibling::ul/li/a[contains(text(),'Available Reticles')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblAvlblRtcls" type="Label">
+		<xpath>//p[contains(text(),'Available Reticles:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblEnterReticleID" type="Label">
+		<xpath>//p[contains(text(),'Available Reticles:')]/../p[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFindReticle" type="Button">
+		<xpath>//input[@name='Find reticle']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblDisrdRtcl" type="Label">
+		<xpath>//caption[contains(text(),'Please select desired reticle for more info:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkSelect" type="Link">
+		<xpath>//a[text()='Select']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkAvailableWaferLayouts" type="Link">
+		<xpath>//div[contains(text(),'Supporting Data')]/following-sibling::ul/li/a[contains(text(),'Available Wafer Layouts')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblLstAvlblWfrLout" type="Label">
+		<xpath>//caption[contains(text(),'List of Available Wafer Layouts:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblProductGroup" type="Label">
+		<xpath>//th[contains(text(),'Product Group')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblPrdctGrpData1" type="Label">
+		<xpath>//form[@name="waferSearch0"]/../following-sibling::td[</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblPrdctGrpData2" type="Label">
+		<xpath>]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblPrdctGrpData" type="Label">
+		<xpath></xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkSelectWafer" type="Link">
+		<xpath>//form[@name="waferSearch0"]/a</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblAvlablRetcleData" type="Label">
+		<xpath>//div[@id='ajaxRefresh']/table/tbody/tr/th[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnlSelectWaferLayouts" type="Link">
+		<xpath>//form[@name='waferSearch96']/a[text()='Select']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblWaferLayoutID" type="Label">
+		<xpath>//th[contains(text(),'Wafer Layout ID')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSprtngDataBrcodTxt" type="Label">
+		<xpath>//a[@href='javascript:document.forms.recticleSearch0.submit()']/..</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblWaferLayout" type="Label">
+		<xpath>//caption[contains(text(),'Wafer Layout:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+</FeatureSet>
+   
+<FeatureSet name="Documentation">
+   <Element name="lblDocumentation" type="Label">
+		<xpath>//div[text()='Documentation']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+</FeatureSet>
+   
+<FeatureSet name="Others">
+   <Element name="lblOthers" type="Label">
+		<xpath>//div[text()='Others']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkGenerateReport" type="Link">
+		<xpath>//a[contains(text(),'Generate Reports')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnUsageReport" type="Button">
+		<xpath>//tr/td[contains(text(),'Usage Report')]/../td/button[text()='Generate']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblGenerateReport" type="Label">
+		<xpath>//legend[contains(text(),'Generate Reports')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnCopy" type="Button">
+		<xpath>//input[@id='COPY_MRA_LOG']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkReportIssues" type="Link">
+		<xpath>//div[contains(text(),'Others')]/following-sibling::ul/li/a[contains(text(),'Report Issues')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+   <Element name="lblCmplteLinksVrfy" type="Label">
+		<xpath>//div[text()='Others']/following-sibling::ul</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkBthJobStatus" type="Link">
+		<xpath>//div[contains(text(),'Others')]/following-sibling::ul/li/a[contains(text(),'Batch Job Status')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblFindBthJobRqust" type="Label">
+		<xpath>//p[contains(text(),'Find Batch Job Request')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblBtchJobSrch" type="Label">
+		<xpath>//p[contains(text(),'complete batch job search')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFindBatchJob" type="Button">
+		<name>findBtn</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkViewSubjobs1" type="Link">
+		<xpath>//a[contains(text(),'View Subjobs')]/../../../tr[2]/td[1]/a</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblBatchJobNumber" type="Label">
+		<xpath>//th[contains(text(),'Batch Job Number')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblProductID" type="Label">
+		<xpath>//th[contains(text(),'Product ID')]/following-sibling::td</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblPrdctOwnrOthr" type="Label">
+		<xpath>//th[contains(text(),'Owner')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblNoOfSubjobs" type="Label">
+		<xpath>//th[contains(text(),'No of Subjobs')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblMRNumberOthr" type="Label">
+		<xpath>//th[contains(text(),'MR Number')]/../../tr/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblTypeOthr" type="Label">
+		<xpath>//th[contains(text(),'Type')]/../../tr/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblStatusOthr" type="Label">
+		<xpath>//th[contains(text(),'Status')]/../../tr/td[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblOwnerOthr" type="Label">
+		<xpath>//th[contains(text(),'Owner')]/../../tr/td[4]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblReticleIDOthr" type="Label">
+		<xpath>//th[contains(text(),'ReticleID')]/../../tr/td[5]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblToolVendorOthr" type="Label">
+		<xpath>//th[contains(text(),'Tool Vendor')]/../../tr/td[6]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblPhotoLayerOthr" type="Label">
+		<xpath>//th[contains(text(),'Photo Layer')]/../../tr/td[7]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRequestDateOthr" type="Label">
+		<xpath>//th[contains(text(),'Request Date')]/../../tr/td[8]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnBackToBatchJob" type="Link">
+		<xpath>//input[@name='Back to Batch Job']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkBatchMode" type="Link">
+		<xpath>//div[contains(text(),'Others')]/following-sibling::ul/li/a[contains(text(),'Batch Mode')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblBatchRecpiCrtn" type="Label">
+		<xpath>//div[@id='message']/following-sibling::p[contains(text(),'Batch Recipe Creation')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkSettings" type="Link">
+		<xpath>//div[contains(text(),'Others')]/following-sibling::ul/li/a[contains(text(),'Settings')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblTemplteSetngs" type="Label">
+		<xpath>//p[contains(text(),'Template Settings')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDownloadVerity4i" type="Button">
+		<xpath>//input[@name='downloadVerity4i']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnUploadVerity4i" type="Button">
+		<xpath>//input[@name='uploadVerity4i']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtVerity4iFile" type="Textbox">
+		<xpath>//input[@id='settingsVerity4iFile']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnuploadScanner" type="Button">
+		<xpath>//input[@name='uploadScanner']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnuploadScannerMap" type="Button">
+		<xpath>//input[@name='upload' and @value='Upload Scanner Map']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRecipiApplctn" type="Label">
+		<xpath>//th[contains(text(),'Recipe Application')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblUpldSuccessWindw" type="Label">
+		<xpath>//p[contains(text(),'Uploading settings in progress')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboVendor" type="Combobox">
+		<css>#toolType</css>
+		<!--<xpath>//*/option[normalize-space()='CDSEM-Verity4i']</xpath>-->
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboRecpeAppOthr" type="Combobox">
+		<css>#recipe</css>
+		<!--<xpath>//*/option[normalize-space()='FICD']</xpath>-->
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboTcchnologyOthr" type="Combobox">
+		<css>#technology</css>
+<!--		<xpath>//*/option[normalize-space()='28BK']</xpath>-->
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtScanrUpload" type="Textbox">
+		<xpath>//input[@id='settingsScannerFile']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtScanrMapUpload" type="Textbox">
+		<xpath>//input[@id='scannerMapFile']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnScanrUpload" type="Button">
+		<xpath>//input[@value='Upload Scanner Map' and @name='upload']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtProductCount" type="Text">
+		<xpath>//a[contains(text(),'Product Id')]/../../following-sibling::tr/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSiteOptions" type="Label">
+		<xpath>//legend[text()='Site Options:']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblCentering" type="Label">
+		<xpath>//legend[text()='Site Options:']/../table/tbody/tr/th[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblClustering" type="Label">
+		<xpath>//legend[text()='Site Options:']/../table/tbody/tr/th[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblGrouping" type="Label">
+		<xpath>//legend[text()='Site Options:']/../table/tbody/tr/th[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblAutofocus" type="Label">
+		<xpath>//legend[text()='Site Options:']/../table/tbody/tr/th[4]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtOthrMRNumber" type="Text">
+		<xpath>//th[contains(text(),'MR Number')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRStatus" type="Text">
+		<xpath>//th[contains(text(),'Status')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRPhotoLayer" type="Text">
+		<xpath>//th[contains(text(),'Photo Layer')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRDevice" type="Text">
+		<xpath>//th[contains(text(),'Device')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRReticleID" type="Text">
+		<xpath>//th[contains(text(),'Reticle ID')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCreateDate" type="Text">
+		<xpath>//th[contains(text(),'Create Date')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtFab" type="Text">
+		<xpath>//th[contains(text(),'Fab')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtCreatedBy" type="Text">
+		<xpath>//th[contains(text(),'Created By')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtWaferLaout" type="Text">
+		<xpath>//th[contains(text(),'Wafer Layout')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtToolName" type="Text">
+		<xpath>//th[contains(text(),'Tool Name')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtType" type="Text">
+		<xpath>//th[contains(text(),'Type')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtTechnology" type="Text">
+		<xpath>//th[contains(text(),'Technology')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtComment" type="Text">
+		<xpath>//th[contains(text(),'Comment')]/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtSiteDetails" type="Text">
+		<xpath>//caption[contains(text(),'Details Selected Sites')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMetrlgyStrctr" type="Text">
+		<xpath>//th[contains(text(),'Metrology Structure')]/../../tr[2]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtSamplingPlan" type="Text">
+		<xpath>//th[contains(text(),'Sampling Plan')]/../../tr[2]/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtSelectionRule" type="Text">
+		<xpath>//th[contains(text(),'Selection Rule')]/../../tr[2]/td[3]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtAlgorithm" type="Text">
+		<xpath>//th[contains(text(),'Algorithm')]/../../tr[2]/td[4]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtOrientation" type="Text">
+		<xpath>//th[contains(text(),'Orientation')]/../../tr[2]/td[5]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtTone" type="Text">
+		<xpath>//th[contains(text(),'Tone')]/../../tr[2]/td[6]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtTargetWidth" type="Text">
+		<xpath>//th[contains(text(),'Measured Target Width')]/../../tr[2]/td[7]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtTargetHeight" type="Text">
+		<xpath>//th[contains(text(),'Measured Target Height')]/../../tr[2]/td[8]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="imgMRImage1" type="Image">
+		<xpath>//th[contains(text(),'Images')]/../../tr[2]/td[9]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="imgMRImage2" type="Image">
+		<xpath>//th[contains(text(),'Images')]/../../tr[2]/td[10]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRecpeFilLoctn" type="Label">
+		<xpath>//p[contains(text(),'Recipe File Location')]/following-sibling::a</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lnkClickHere" type="Link">
+		<xpath>//td[contains(text(),'Click')]/a[text()='here']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+</FeatureSet>
+
+
+<FeatureSet name="New">
+   <Element name="tblPhotoLayerValue" type="Table">
+		<xpath>//a[contains(text(),'Photo Layer')]/../../following-sibling::tr/td[8]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblRecticle" type="Table">
+		<xpath>//a[contains(text(),'Photo Layer')]/../../following-sibling::tr/td[6]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblMRType" type="Table">
+		<xpath>//a[contains(text(),'Photo Layer')]/../../following-sibling::tr/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboMRTypeNew" type="Combobox">
+		<id>MRType</id>
+		<!--<xpath>//td[@id='contentRight']/form/table/tbody/tr/td/fieldset/p[2]/select</xpath>-->
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblListtableOld" type="WebTable">
+		<xpath>//table[@class='listtable']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblListtableNew" type="WebTable">
+		<xpath>//table[@class='listtable1']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboStatusNew" type="Combobox">
+		<id>findStatus</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboMRDeviceNew" type="Combobox">
+		<id>productID</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRPhtoLayerNew" type="Textbox">
+		<id>photoLayerID</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRRectiBarCode" type="Textbox">
+		<id>reticleID</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMRRequestOwner" type="Textbox">
+		<id>findFabOwner</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblReciLocaForRodolph" type="Label">
+		<xpath>//p[(@id="messageDiv") and (starts-with(text(),"Recipe has been written to"))]/a[contains(text(),".xml")]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="lblReciLocaForASML" type="Label">
+		<xpath>//p[(@id="messageDiv") and (starts-with(text(),"Recipe has been written to"))]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="MasterMaskSetName" type="Label">
+		<xpath>//MasterMaskSet/MasterMaskName</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+	<!--<Element name="chkdoSiteCentering" type="Checkbox">
+		<xpath>//div[@id='siteOptionsDiv']/fieldset/table/tbody/tr/td/input</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="chkdoSiteClustering" type="Checkbox">
+		<xpath>//input[@name='doSiteClustering']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="chkdoSiteGrouping" type="Checkbox">
+		<xpath>//input[@name='doSiteGrouping']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="chkremoteMode" type="Checkbox">
+		<xpath>//input[@name='remoteMode']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="chksyntheticGA" type="Checkbox">
+		<xpath>//input[@name='syntheticGA']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="chkddoPatternRecognition" type="Checkbox">
+		<xpath>//input[@name='doPatternRecognition']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>	-->
+	<Element name="txtMRAComment" type="Textbox">
+		<id>mraComment</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblEditBatchFile" type="Label">
+		<xpath>//p[contains(text(),'Submit MR:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtEditBatchFile" type="TextArea">
+		<xpath>//textarea[@id='editBatchFile']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSaveGenerateReci" type="Button">
+		<xpath>//input[@name='editsavegeneraterecipe']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="winRandom" type="Window">
+		  <xpath>//body</xpath>
+		  <PageTitle> </PageTitle>
+		</Element>
+	<Element name="lblUploadMetrology" type="Label">
+		<xpath>//table[@class='datatable']/caption[contains(text(),'Upload Metrology Spreadsheet for Patterns on Reticle:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+
+	<Element name="btnBrowseUpload" type="Button">
+		<xpath>//input[@name='mrSpreadsheetGF_DTI_chiplet_llc']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSelectedReticleInfoPage" type="Label">
+		<xpath>//table[@class='datatable']/caption[contains(text(),'Selected Reticle Info:')]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblPatternNameInRecticle" type="Table">
+		<xpath>//table[@class='datatable']/caption[contains(text(),'Selected Reticle Info:')]/../tbody/tr[2]/td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblPatternNameInUpload" type="Table">
+		<xpath>//table[@class='datatable']/caption[contains(text(),'Uploaded Site List Info:')]/../tbody/tr[2]/td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>	
+	
+	<Element name="btnSelectAll" type="Button">
+		<xpath>//form/input[@name='sall']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboWaferMap" type="Combobox">
+		<id>SamplPlanSelctList</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboEngineering" type="Combobox">
+		<id>engineeringOptions</id>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblWaferDiv" type="Table">
+		<xpath>//div[@id='waferDiv']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblDeviceIDFromMRInfo" type="Table">		
+		<css>#deviceID</css>
+		<PageTitle> </PageTitle>
+	</Element>	
+	<Element name="tblPhotoLayerFromMRInfo" type="Table">
+		<xpath>//table/caption[contains(text(),'Metrology Request Info:')]/../tbody/tr/td[@id='layerID']</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblTypeFromMRInfo" type="Table">
+		<xpath>//table/caption[contains(text(),'Metrology Request Info:')]/../tbody/tr/th[contains(text(),'Type')]/../td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblRectFromMRInfo" type="Table">
+		<xpath>//table/caption[contains(text(),'Metrology Request Info:')]/../tbody/tr/th[contains(text(),'Reticle ID')]/../td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblToolNameFromMRInfo" type="Table">
+		<xpath>//table/caption[contains(text(),'Metrology Request Info:')]/../tbody/tr/th[contains(text(),'Type')]/../td[2]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblMRNumUploadMoreSites" type="Table">
+		<xpath>//th[text()='MR Number']/following-sibling::td[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblViewLogFile" type="Table">
+		<xpath>//td[@id='contentRight']/div[1]</xpath>
+		<PageTitle> </PageTitle>
+	</Element>
+	
+</FeatureSet>
+</ObjectRepository>

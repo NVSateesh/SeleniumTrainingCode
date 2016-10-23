@@ -1,0 +1,10 @@
+results[description=There must be 2 actions defined for the same Queue Time trigger/target combination. One of the actions must be "DispatchPrecede".].data[flowId=SL-EAGLEECMAUTO-DUP-VALUES-QT1.01]
+Expected: a JSON object
+     but none found
+ ; results[description=There must be 2 actions defined for the same Queue Time trigger/target combination. One of the actions must be "DispatchPrecede".].data[flowId=SL-EAGLEECMAUTO-2ACTIONS-SQ-QT1.01]
+Unexpected: a JSON object
+ ; results[description=The following queue time operations are in violation:].data[flowId=SL-EAGLEECMAUTO-DUP-VALUES-QT1.01]
+Expected: a JSON object
+     but none found
+ ; results[description=The following queue time operations are in violation:].data[flowId=SL-EAGLEECMAUTO-2ACTIONS-SQ-QT1.01]
+Unexpected: a JSON object

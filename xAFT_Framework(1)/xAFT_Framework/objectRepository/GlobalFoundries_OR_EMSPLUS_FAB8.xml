@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository> 
+  <FeatureSet name="FABGUI Login Window">
+	
+	<Element name="winFABGUIPortalLogin" type="Window">
+      <name>FabGUI Portal</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="txtUserName" type="Textbox">
+      <name>TextField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnNo" type="Button">
+	  <name>No</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtPassword" type="Textbox">
+      <name>PasswordField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLogin" type="Button">
+      <name>Login</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+  <Element name="lblEMS" type="Label">
+      <name>Experiment Management System</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnFilter" type="Button">
+      <name>.Filter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnBackToList" type="Button">
+	  <name>.BacktoList</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnOtherRequestor" type="Button">
+      <name>.Otherrequestor</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblCtAdder" type="Table">
+	  <name>.CTTable_-#8</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnNewAdder" type="Button">
+	  <name>.NewAdder</name> 
+	  <PageTitle /> 
+	</Element>
+	<Element name="txtCTADDER1" type="Textbox">
+      <name>Table.editor</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnCalculate" type="Button">
+      <name>.Calculate</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblCalculateCycleTime" type="Label">
+      <name>2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtPerExtraWetTest" type="Textbox">
+      <name>Table.editor</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtShippingRecComment" type="Textbox">
+      <name>JTextField_-#2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRelativeWeeks" type="Textbox">
+      <name>.ReleaseDate.JTextField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgContinue" type="Dialog">
+      <name>Continue</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnContinueYes" type="Button">
+      <name>Yes</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgResult" type="Dialog">
+      <name>Result</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnResultOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>
+  <FeatureSet name="EMS Filter">
+    <Element name="dlgMyTasksFilter" type="Dialog">
+      <name>My Tasks Filter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblGroup" type="Label">
+      <name>Group</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblERFOwner" type="Label">
+      <name>ERF Owner</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblERFReq" type="Label">
+      <name>ERF Requestor</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lbltaskOp" type="Label">
+      <name>Task Operator</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblDateFrom" type="Label">
+      <name>Submit Date From</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblDateTo" type="Label">
+      <name>Submit Date To</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProduct" type="Label">
+      <name>Product</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblMainRoute" type="Label">
+      <name>Main-Route</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblReqLots" type="Label">
+      <name>Requested Lots</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblERFState" type="Label">
+      <name>ERF State</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProgramId" type="Label">
+      <name>Program Id</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblERFName" type="Label">
+      <name>ERF Name/ERF Id</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblNameDesc" type="Label">
+      <name>Name/Description</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblShowDrafts" type="Label">
+      <name>Show Drafts</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblShowTerminate" type="Label">
+      <name>Show Terminated</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblShowAllERFRev" type="Label">
+      <name>Show all Eff Revisions</name>
+      <PageTitle> </PageTitle>
+    </Element>
+    <Element name="txtMyTasksGroup" type="Textbox">
+      <name>JTextField_8</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyTasksERFOwner" type="Textbox">
+		<name>JTextField_3</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMyTasksERFReq" type="Textbox">
+		<name>JTextField_4</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMyTasksTaskOper" type="Textbox">
+		<name>JTextField_5</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMyTasksProduct" type="Textbox">
+		<name>JTextField_6</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMyTasksRoute" type="Textbox">
+		<name>JTextField_7</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMyTasksReqLots" type="Textbox">
+      <name>JTextField_9</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnMyTasksDateFrm" type="Button">
+      <name>JDateChooserIcon</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnMyTasksDateTo" type="Button">
+      <name>JDateChooserIcon</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyTasksDateFrm" type="Textbox">
+      <name>JTextFieldDateEditor_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyTasksDateFrmVal" type="Textbox">
+      <name>4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyTasksDateTo" type="Textbox">
+      <name>JTextFieldDateEditor_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgERFFilter" type="Dialog">
+      <name>My ERFs Filter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyERFsState" type="Textbox">
+		<name>JTextField_3</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMyERFsOwner" type="Textbox">
+		<name>JTextField_4</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMyERFsReq" type="Textbox">
+		<name>JTextField_5</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMyERFsProduct" type="Textbox">
+		<name>JTextField_6</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtMyERFsRoute" type="Textbox">
+		<name>JTextField_7</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnMyERFsDateFrm" type="Button">
+      <name>JDateChooserIcon</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnMyERFsDateFrmVal" type="Button">
+      <name>4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnMyERFsDateTo" type="Button">
+      <name>JDateChooserIcon</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyERFsDateFrom" type="Textbox">
+      <name>JTextFieldDateEditor_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyERFsDateTo" type="Textbox">
+      <name>JTextFieldDateEditor_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyERFsReqLots" type="Textbox">
+      <name>JTextField_8</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyERFsPrgmId" type="Textbox">
+      <name>JTextField_9</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyERFsName" type="Textbox">
+      <name>JTextField_10</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtMyERFsDesc" type="Textbox">
+      <name>JTextField_11</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkMyERFShowDrafts" type="Checkbox">
+      <name>1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkMyERFShowTerminate" type="Checkbox">
+      <name>2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkMyERFShowERFRev" type="Checkbox">
+      <name>3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+    <Element name="dlgAllERFsFilter" type="Dialog">
+      <name>All ERFs Filter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnFilterCancel" type="Button">
+      <name>Cancel</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnFilterReset" type="Button">
+      <name>Reset</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnFilterOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnFilterApply" type="Button">
+      <name>Apply</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtAllERFState" type="Textbox">
+	  <name>ERF State</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txAllERFName" type="Textbox">
+	  <name>JTextField_10</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtProgramId" type="Textbox">
+      <name>Program Id</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtAllERFDesc" type="Textbox">
+      <name>JTextField_11</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkShowDrafts" type="Checkbox">
+      <name>Show Drafts</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkShowTerminate" type="Checkbox">
+      <name>1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkShowAllERFRev" type="Checkbox">
+      <name>Show all Eff Revisions</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtAllERFsOwner" type="Textbox">
+		<name>JTextField_4</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtAllERFsReq" type="Textbox">
+		<name>JTextField_5</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtAllERFsProduct" type="Textbox">
+		<name>JTextField_6</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtAllERFsRoute" type="Textbox">
+		<name>JTextField_7</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtAllERFsDateFrom" type="Textbox">
+      <name>JTextFieldDateEditor_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtAllERFsDateTo" type="Textbox">
+      <name>JTextFieldDateEditor_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblAllERFTree" type="Table">
+      <name>.ErfListTreeTable_8</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblMyERFTree" type="Table">
+      <name>.ErfListTreeTable_6</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblMyTaskTree" type="Table">
+      <name>.ErfListTreeTable_4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>
+
+<FeatureSet name="EMS General Page">
+	<Element name="btnPreview" type="Button">
+      <name>.Preview</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="winFABGUI" type="Window">
+      <name>FabGUI Portal</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHome" type="Button">
+      <name>Home</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHelp" type="Link">
+      <name>Help</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSearchSpec" type="Textbox">
+      <name>.JTextField_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEMSPlus" type="Button">
+      <name>EMS</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRefresh" type="Button">
+      <name>.Refresh</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSearch" type="Button">
+      <name>.Search</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEditDetails" type="Button">
+      <name>.Edit/Details</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtFac" type="Textbox">      
+	  <name>.JTextField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSpecName" type="Textbox">      
+	<name>.JTextField_-#2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSpecVersion" type="Textbox">
+	  <name>JTextField_-#3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRequestorName" type="Textbox">
+      <name>.JTextField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtReqName" type="Textbox">
+      <name>.JSafeTextField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtRequestorExtension" type="Textbox">
+      <name>.JSafeTextField_-#2</name>
+      <PageTitle> </PageTitle>
+    </Element> 	
+	<Element name="txtRequestorEmail" type="Textbox">
+      <name>.JSafeTextField_-#3</name>
+      <PageTitle> </PageTitle>
+    </Element> 
+	<Element name="txtRequestorID" type="Textbox">
+      <name>.JTextField_-#4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtAltContact" type="Textbox">     
+		<name>.JTextField_20</name>  
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtSummary" type="Textbox">
+      <name>.JTextField_30</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboModule" type="Combobox">
+	  <name>.PanelGeneralInfo$AddComboBox_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboProduct" type="Combobox">
+		<name>.PanelGeneralInfo$AddComboBox_4</name> 
+		<PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboSubLotType" type="Combobox">
+		<name>.PanelGeneralInfo$AddComboBox_-#4</name>
+      <PageTitle> </PageTitle>
+	</Element> 
+	<Element name="cboLotType" type="Combobox">
+		<name>.PanelGeneralInfo$AddIDComboBox_-#6</name>
+      <PageTitle> </PageTitle>
+    </Element> 
+	<Element name="cboType" type="Combobox">
+	 <name>.PanelGeneralInfo$AddComboBox_-#8</name>
+		  <PageTitle> </PageTitle>
+	</Element> ​
+	<Element name="btnReject" type="Button">
+	  <name>Disapprove</name> 
+	  <PageTitle /> 
+	</Element>
+	<Element name="btnNewSpec" type="Button">
+      <name>.NewSpec</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkLimitsOff" type="Checkbox">
+      <name>LimitsOff</name>
+      <PageTitle></PageTitle>
+    </Element>
+	
+	<Element name="chkPCRB" type="Checkbox">
+      <name>PCRB(PPCD):</name>
+      <PageTitle></PageTitle>
+    </Element>
+	<Element name="chkPRF" type="Checkbox">
+      <name>PRF(Customer):</name>
+      <PageTitle></PageTitle>
+    </Element>
+	<Element name="chkMRB:" type="Checkbox">
+      <name>MRB:</name>
+      <PageTitle></PageTitle>
+    </Element>
+	<Element name="radPORProcessing" type="Radiobutton">
+		<name>.PORProcessing</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="radNonPORProcessing" type="Radiobutton">
+		<name>.NonPORProcessing</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtExpDate" type="Textbox">
+      <name>.JTextFieldDateEditor_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgNoMoreErf" type="Dialog">
+      <name>Continue</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+</FeatureSet>
+
+
+	
+<FeatureSet name="EMS Splitting">
+	
+	<Element name="tabSplitting" type="Tab">
+      <name>.JTabbedPane_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboPriority" type="Combobox">
+	  <name>.JComboBox_11</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgAddErfArea" type="Dialog">
+	  <name>Selecting Route and Operation ID</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtAddErfArea" type="TextArea">
+	  <name>Add Erf-Area</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="addErfAreaMenu" type="Menu">
+	  <name>Add Erf-Area</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblAddErfArea" type="Table">
+	  <name>JXTreeTable_1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="treeDialogPDList" type="Tree">
+	  <name>DialogPDList$PDListTree_1</name>
+      <PageTitle> </PageTitle>
+	</Element>	
+	<Element name="dlgChooseSplitMethod" type="Dialog">
+	  <name>Choose Split Method</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgSpecSave" type="Dialog">
+	  <name>Check for saving</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSpecSaveNO" type="Button">
+      <name>No</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEven" type="Button">
+      <name>Even</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgSelectingRoute" type="Dialog">
+	  <name>Selecting Route and Operation ID</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgAddPDsfromMainflow" type="Dialog">
+	  <name>Add PDs from main flow</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboPanelShippingWaferList" type="Combobox">
+	  <name>.PanelShipping$WaferList_3</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnValidateERFSpec" type="Button">
+      <name>.ValidateERFSpec</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRevalidateERFSpec" type="Button">
+      <name>.RevalidateERFSpec</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblJTableValidationItems" type="Table">
+	  <name>.JTableValidationItems_-#1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="txtJTextArea" type="Textbox">
+	  <name>.JTextArea_2</name>
+      <PageTitle> </PageTitle>
+	</Element>
+		
+	<Element name="rightClickPanel" type="Panel">
+	  <name>0</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnOk" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+	
+	<Element name="treeNodes" type="Tree">
+      <name>0</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="jGraph" type="JGraph">
+      <name>.JTabbedPane_1;3,0,0,0,0,0</name>
+      <PageTitle> </PageTitle>
+    </Element>
+
+</FeatureSet>	
+
+<FeatureSet name="EMS DBConfig">
+    <Element name="btnDBConfig" type="Button">
+      <name>DBConfig</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tabDBConfig" type="Tab">
+      <name>.JTabbedPane_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblERFFacility" type="Table">
+	  <name>.StatusTable_7</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnERFFacilitySave" type="Button">
+      <name>.Save</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtERFFacilitySortNum" type="Textbox">
+      <name>.EditColumnString$StringTableCellEditor_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>
+	
+<FeatureSet name="EMS AffeAreaContacts">
+	<Element name="chkRemoveContact" type="Checkbox">
+      <name>.JCheckBox_-#1</name>
+      <PageTitle></PageTitle>
+    </Element>	
+	<Element name="btnAddContact" type="Button">
+      <name>.AddContact</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtContactName" type="Textbox">
+      <name>.JTextField_#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSubmit" type="Button">
+      <name>.Submit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgPendingValidationComments" type="Dialog">
+	  <name>Pending validation comments</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="dlgERFSave" type="Dialog">
+	  <name>ERF Save</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="cboERFModuleName" type="Combobox">
+	  <name>.JComboBox_-#1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtERFContactName" type="Textbox">
+	  <name>.JTextField_-#1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="chkERFContactName" type="Checkbox">
+	  <!--name>.JCheckBox_-#1</name-->
+	  <name>1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnRemoveContact" type="Button">
+      <name>.RemoveContact</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgDeleteContact" type="Dialog">
+	  <name>Delete Contact Confirmation</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDelete" type="Button">
+      <name>Delete</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkContact" type="Checkbox">
+      <name>Selection</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	</FeatureSet>	
+
+	<FeatureSet name="Task Window">
+	<Element name="txtReSubnitComment" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnYes" type="Button">
+	 <name>Yes</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnTerminateERF" type="Button">
+	<name>.Terminate</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgTerminateErf" type="Dialog">
+	<name>Terminate a Erf</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtPRF" type="Textbox">
+      <name>.JTextFieldLimit_26</name>
+      <PageTitle></PageTitle>
+    </Element>
+	<Element name="dlgCancelAErf" type="Dialog">
+	<name>Cancel a Erf</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnCancelERF" type="Button">
+	<name>.Cancel</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgMMErrorReport" type="Dialog">
+	<name>'Compare with MM' Error Report</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnRefreshTasks" type="Button">
+      <name>.RefreshTasks</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSavenew" type="Button">
+      <name>.Savenew</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="btnERFSave" type="Button">
+      <name>.Save</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="tblApproved" type="Table">
+	  <name>.JTable_-#1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnClaim" type="Button">
+      <name>.Claim</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+	
+	<Element name="tblMultiLineTable" type="Table">
+	  <name>.MultiLineTable_-#1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="btnERFSaveOk" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+	<Element name="dlgERFSubmit" type="Dialog">
+	  <name>ERF Submit</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgERFSubmitOK" type="Button">
+	  <name>OK</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgPendingValidation" type="Dialog">
+	  <name>Pending validation comments</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnPendingValidation" type="Button">
+	  <name>OK</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnExecute" type="Button">
+	  <name>.Execute</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnDisapprove" type="Button">
+	  <name>Disapprove</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="dlgError" type="Dialog">
+	  <name>Error</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtRejectComment" type="Textbox">
+      <name>JTextArea_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	 <Element name="btnApprove" type="Button">
+	  <name>Approve</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="dlgRESUBMIT" type="Dialog">
+	  <name>Add comment for RESUBMIT</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtReSubmitComment" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRESUBMIT" type="Button">
+	  <name>OK</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgLithoCheck" type="Dialog">
+	  <name>Litho Check</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblJTableLotAttachValItems" type="Table">
+	  <name>JTableLotAttachmentValidationItems_-#1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnLithoCheckOK" type="Button">
+	  <name>OK</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgCompareSVMMData" type="Dialog">
+	  <name>Compare EMS/SV-MM Data</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgCompareSVMMData1" type="Dialog">
+	  <name>Compare EMS/SV-MM Data</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnCompareSVMMDataOK" type="Button">
+	  <name>OK</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnLoadMMSetUp" type="Button">
+	  <name>.LoadMMSetup</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSetup" type="Button">
+	  <name>.Setup</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSetupDone" type="Button">
+	  <name>.SetupDone</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgCheckPSMdata" type="Dialog">
+	  <name>Check PSM-data</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSetupView" type="Button">
+	  <name>.View</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgRecipeCheckErrorReport" type="Dialog">
+	  <name>RecipeCheck Error Report</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgFinished" type="Dialog">
+	<name>Finished</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblSetUP" type="Table">
+	  <name>.RecipeTablePDList_-#1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtRecipeCheckErrorReport" type="Textbox">
+      <name>JTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnCOMPLETEwithErrors" type="Button">
+	  <name>No,COMPLETEwithErrors!</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	
+	<Element name="dlgReSubmitERF" type="Dialog">
+		<name>RESUBMIT Erf</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnReSubmitERF" type="Button">
+		<name>RESUBMIT</name>
+		<PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtPCRB" type="Textbox">
+      <name>.BasicComboBoxEditor$BorderlessTextField_11</name>
+      <PageTitle></PageTitle>
+    </Element>
+	<Element name="btnComment" type="Button">
+      <name>.Comment</name>
+      <PageTitle></PageTitle>
+    </Element>
+	<Element name="dlgComment" type="Dialog">
+		<name>Input</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtComment" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle></PageTitle>
+    </Element>
+	<Element name="btnSaveRev" type="Button">
+      <name>.SaveRev</name>
+      <PageTitle></PageTitle>
+    </Element>
+	<Element name="btnCommentOK" type="Button">
+	  <name>OK</name>
+      <PageTitle> </PageTitle>
+	</Element>	
+	<Element name="btnSubmitRepair" type="Button">
+	  <name>.Submitrepair</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgSUBMITREPAIRErf" type="Dialog">
+	  <name>SUBMITREPAIR Erf</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSUBMITREPAIRErf" type="Button">
+	  <name>SUBMITREPAIR</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgCommentSUBMITREPAIR" type="Dialog">
+	  <name>Add comment for SUBMITREPAIR</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtSubmitRepairComment" type="Textbox">
+      <name>OptionPane.textField</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSUBMITRepairOK" type="Button">
+	  <name>OK</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgSubmitErfError" type="Dialog">
+	  <name>SubmitErf Error</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="txtSubmitErfError" type="Textbox">
+	  <name>1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblSubmitErfError" type="Label">
+	  <name>An error during RESUBMIT of spec occured:The erf spec does not contain a requestor user.</name>
+      <PageTitle> </PageTitle>
+	</Element>	
+	<Element name="btnRMSCheck" type="Button">
+      <name>.RMSCheck</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+	<Element name="dlgRMSCheck" type="Dialog">
+	  <name>EMS RMS Check</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="lblRMSCheck" type="Label">
+	  <name>This ERF contains no PDs that can be checked against RMS.</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblRMSCheck" type="Table">
+	  <name>JXTreeTable_1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+</FeatureSet>
+	
+<FeatureSet name="Details Window">
+	<Element name="txtDescriptionOfERF" type="Textbox">
+      <name>.JTextArea_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtReasonForERF" type="Textbox">
+      <name>.JTextArea_-#2</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+</FeatureSet> 
+
+<FeatureSet name="Request Tab">
+	<Element name="txtLotCount" type="Textbox">
+	  <name>.JTextField_9</name>
+	  <PageTitle> </PageTitle>
+	</Element>	
+</FeatureSet> 
+
+
+<FeatureSet name="Siview setup Generator Dialog">
+	<Element name="btnGenerateSetup" type="Button">
+	 <name>.GenerateSetup</name>
+	<PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="dlgSiViewSetupGenerator" type="Dialog">
+		<name>SiView setup generator</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnClose" type="Button">
+      <name>Close</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgCloseAndSaveToErf" type="Dialog">
+      <name>Close and save to Erf?</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnYesSaveBye" type="Button">
+      <name>YES,Save,Bye</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnNext" type="Button">
+	<name>Next</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="tblReworkTableHeader" type="Table">
+      <name>.ReworkSetupTable_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnImporttoSiViewwithoutCSV" type="Button">
+	<name>.ImporttoSiViewwithoutCSV</name>
+	<PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgSiViewSMSetupCreation" type="Dialog">
+	<name>SiView SM setup creation dialog</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnStaticBranch" type="Button">
+	<name>.StaticBranch</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="txtLotID" type="Textbox">
+      <name>.JTextField_4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLotAttachPreparation" type="Button">
+      <name>.LotAttachPreparation</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtLotIDList" type="Textbox">
+      <name>.JTextField_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnAttachlots" type="Button">
+	<name>.AttachLots</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnProceedandignorewarnings" type="Button">
+      <name>Proceedandignorewarnings</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgLotAttachError" type="Dialog">
+      <name>ERROR: Perform Lot-Attachments</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgValidationResult" type="Dialog">
+      <name>Validation result for lot attachment</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblRequesterLotNames" type="Table">
+      <name>.PanelRequest$TableRequesterLotNames_4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblLotAttachment" type="Table">
+      <name>.PanelSpecLotAttachment$MyTable_5</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgWarningLotAttachments" type="Dialog">
+      <name>WARNING: Perform Lot-Attachments</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgCheckErfBranches" type="Dialog">
+      <name>Check ErfBranches for overlapping of other Erfs@Lot</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="tblLotAttachmentValidation" type="Table">
+      <name>JTableLotAttachmentValidationItems_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblLotAttachmentValidationmsg" type="Table">
+      <name>JTableLotAttachmentValidationItems_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="btnAbortLotattachment" type="Button">
+      <name>Abortlotattachment</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	
+	<Element name="dlgPD" type="Dialog">
+	<name>PD</name>
+      <PageTitle> </PageTitle>
+	</Element>	
+	<Element name="txtPD" type="Textbox">
+	<name>1</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="btnDynamicBranch" type="Button">
+	<name>.DynamicBranch</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnImporttoSiViewProceed" type="Button">
+	<name>Proceed</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnImporttoSiViewYes" type="Button">
+	<name>Yes</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnImporttoSiViewClose" type="Button">
+	<name>Close</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnFinished" type="Button">
+	<name>Finish</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	
+	<Element name="btnGenerateSMRecipeSetup" type="Button">
+	<name>.GenerateSMRecipeSetup</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgSiViewRecipeSetupGen" type="Dialog">
+	<name>SiView recipe setup generator</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgRecipeCheck" type="Dialog">
+	<name>Recipe Check</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="btnSaveAll" type="Button">
+      <name>.SaveAll</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgFilesSaved" type="Dialog">
+      <name>FilesSaved</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tabSetupCC" type="Tab">
+      <name>.AutoSetupMasterDataTabbedPane_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+   <Element name="tblSetupCC" type="Table">
+	  <name>.JTable_5</name>
+      <PageTitle> </PageTitle>
+	</Element>
+	<Element name="dlgLotFamily" type="Dialog">
+      <name>Lot Family</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+	<Element name="dlgLotAttachValidation" type="Dialog">
+      <name>LotAttach validation results</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+	<Element name="chkCommentProceed" type="CheckBox">
+      <name>Commentandproceed</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+	<Element name="btnProceedWithLot" type="Button">
+      <name>Proceedwithlotswithoutwarningsandselectedlots</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+	<Element name="dlgCmtDecision" type="Dialog">
+      <name>Please comment your decisions</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+	<Element name="txtCmtDecision" type="TextBox">
+      <name>OptionPane.textField</name>
+      <PageTitle> </PageTitle>	  
+    </Element>
+<Element name="tblRequesterLotList" type="Table">
+     <!-- <name>.PanelRequest$TableRequesterLotNames_24</name>-->
+	 <name>.PanelRequest$TableRequesterLotNames_25</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+</FeatureSet>	
+</ObjectRepository>

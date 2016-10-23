@@ -1,0 +1,2568 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository> 
+  <FeatureSet name="FABGUI Login Window">
+	<Element name="winFABGUIPortalLogin" type="Window">
+      <name>FabGUI Portal</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="jGraph" type="JGraph">
+      <name>JTabbedPane_1;3,0,0,0,0,0</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	
+	<!--<Element name="txtUserName" type="Textbox">
+      <name>TextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="txtUserName" type="Textbox">
+      <name>TextField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="txtPassword" type="Textbox">
+      <name>PasswordField_2</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="txtPassword" type="Textbox">
+      <name>PasswordField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLogin" type="Button">
+      <name>Login</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+  </FeatureSet>
+  
+  <FeatureSet name="FABGUI Home Window Links">
+	<Element name="winFABGUI" type="Window">
+      <name>FabGUI Portal</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHome" type="Button">
+      <name>Home</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHelp" type="Link">
+      <name>Help</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="lnkSiViewControl" type="Button">
+      <name>SiViewControl</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="btnSiViewControl" type="Button">
+      <name>SiViewControl</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnControlCenter" type="Button">
+      <name>ControlCenter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnShipping" type="Button">
+      <name>Shipping</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnReticle" type="Button">
+      <name>Reticle</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lnkHelp1" type="Link">
+      <name>Help</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="SiViewControl Buttons">
+	<Element name="lnkSampling" type="Button">
+      <name>Sampling</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnInhibit" type="Button">
+      <name>Inhibit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnScriptParameters" type="Button">
+      <name>ScriptParameter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnInterFabMove" type="Button">
+      <name>InterFab-Move</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnApprovedLocate" type="Button">
+      <name>ApprovedLocate</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnMultiHold" type="Button">
+      <name>MultiHold</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLotInfoChange" type="Button">
+      <name>LotInfoChange</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnLotInfoChange1" type="Button">
+      <name>LotInfoChange</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnChangeLotInfoClose" type="Button">
+      <name>Close</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnExtPrio" type="Button">
+      <name>ExtPrio</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="frmSecuredLotHoldError" type="Frame">
+      <name>Error</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="Inhibit Buttons">
+	<Element name="btnInhibitList" type="Button">
+      <name>InhibitList</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRecipeMatrix" type="Button">
+      <name>RecipeMatrix</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnInhibitHistory" type="Button">
+      <name>InhibitHistory</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="MultiHold Link Buttons">
+	<Element name="btnLotHoldRelease" type="Button">
+      <name>Lot Hold Release</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnProcessHold" type="Button">
+      <name>Process Hold</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnMultiHoldFutureHold" type="Button">
+      <name></name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnFutureHoldCancel" type="Button">
+      <name></name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="Reticle Link Buttons">
+	<Element name="btnReticleMoveGUI" type="Button">
+      <name>Reticle Move GUI</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnReticleBRSSupport" type="Button">
+      <name></name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="FABGUI Sampling Window">
+	<Element name="lblWafterSelection" type="Label">
+      <name>Wafer Selection</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="txtLotID" type="Textbox">
+      <name>WaferSelection.TextField_6</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="txtLotID" type="Textbox">
+      <name>WaferSelection.TextField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtCarrier" type="Textbox">
+      <name>WaferSelection.TextField_4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSearch" type="Button">
+      <name>WaferSelection.Search</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblNoLotIDFound" type="Label">
+      <name>LotID not found</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="tblWaferSelection" type="Table">
+      <name>WaferSelection.Table_3</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="tblWaferSelection" type="Table">
+      <name>WaferSelection.Table_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblWaferMarkSelection" type="Table">
+      <name>WaferSelection.Table_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboWaferMarkSelection" type="Combobox">
+	  <name>com.globalfoundries.fabgui.webgui.gui.style.ComboBox$InternalComboBoxUI-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtProcessDefinationID" type="Textbox">
+      <name>WaferSelection.BasicComboBoxEditor$BorderlessTextField_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProcessDefination" type="Label">
+      <name></name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProcessLayer" type="Label">
+      <name></name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblProcessType" type="Label">
+      <name></name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblGUIUser" type="Table">
+      <name>WaferSelection.Table_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboWaferSelection" type="Combobox">
+      <name>WaferSelection.ComboBox_-#6</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboWaferMultiSele" type="Combobox">
+      <!--<name>WaferSelection.ComboBox_-#1</name>-->
+	  <name>MultiEdit:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnWaferSeleCliamOk" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSave" type="Button">
+      <name>WaferSelection.Save</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSubmit" type="Button">
+      <name>WaferSelection.Submit</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRadProcessDefID" type="Radiobutton">
+      <name>WaferSelection.com.globalfoundries.fabgui.webgui.gui.style.RadioButton$RadioButtonIcon-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRadProcessLayer" type="Radiobutton">
+      <name>WaferSelection.com.globalfoundries.fabgui.webgui.gui.style.RadioButton$RadioButtonIcon-#2</name>	  
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtProcessLayer" type="Textbox">
+      <name>WaferSelection.BasicComboBoxEditor$BorderlessTextField_4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtUserComment" type="Textbox">
+      <name>WaferSelection.TextArea_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtProcessType" type="Textbox">
+      <name>WaferSelection.BasicComboBoxEditor$BorderlessTextField_5</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboModuleFilter" type="Combobox">
+      <name>WaferSelection.ComboBox_4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgError" type="Dialog">
+      <name> Error</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnDlgErrorOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkAPCUSER" type="Checkbox">
+      <name>APCUSER</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="chkGUIUSER" type="Checkbox">
+      <name>GUIUSER</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="chkActiveSelection" type="Checkbox">
+      <name>ActiveSelection</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+	<Element name="chkAll" type="Checkbox">
+      <name>All</name>
+      <PageTitle>Save</PageTitle>
+    </Element>
+  </FeatureSet>
+ 
+ <FeatureSet name="FABGUI Inhibit Window">
+	<Element name="lblInhibitList" type="Label">
+      <name>Inhibit List</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitEquipment" type="Textbox">
+      <name>INHLIST_TFEquipment-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitMachineRecipe1" type="Textbox">
+      <name>INHLIST_TFUser-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitMachineRecipe" type="Textbox">
+      <name>INHLIST_TFRecipe</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitChamber" type="Textbox">
+      <name>Chamber</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboInhibitWorkArea" type="Combobox">
+      <name>WorkArea</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="txtInhibitPDId" type="Textbox">
+      <name>INHLIST_TFProcessDef</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitOPENO" type="Textbox">
+      <!--<name>PD Id / OPE No</name>-->
+	  <name>INHLIST_TFChamber-#2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitReticle" type="Textbox">
+      <name>Reticle</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitRegisterUser" type="Textbox">
+      <name>Register User</name>
+      <PageTitle> </PageTitle>
+    </Element>
+<!--	<Element name="txtInhibitMachineRecipe" type="Textbox">
+      <name>Machine Recipe</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	
+	<Element name="cboInhibitReasonCode" type="Combobox">
+      <name>Reason Code</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSearchInhibits" type="Button">
+      <name>INHLIST_SearchButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnCancelInhibits" type="Button">
+      <name>INHLIST_CancelButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableInhibitsList" type="Table">
+      <name>InhibitList</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="frmInhibitListCancelInhibit" type="Frame">
+      <name> List of Inhibits selected for cancellation</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnInblistCancelInhibitFrameOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+ </FeatureSet>
+ 
+ <FeatureSet name="FABGUI Inhibit Recipe Matrix Window">
+	<Element name="lblRecipeFilter" type="Label">
+      <name>Recipe Filter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtStartDate" type="Textbox">
+      <name>CreateInhibits.JFormattedTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtEndDate" type="Textbox">
+      <name>CreateInhibits.JFormattedTextField_4</name>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="btnSearchRecipeMatrixInhibits" type="Button">
+      <name>MATRIX_SearchButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboRecipeMatrixWorkArea" type="Combobox">
+      <name>MATRIX_CBOLocation</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!-- Objeects for Cancel Recipe Inhibit  Start -->
+	<Element name="btnRecipeMatrixCancelInhibit" type="Button">
+      <name>MATRIX_CancelButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="frmRecipeMatrixCancelInhibit" type="Frame">
+      <name> List of Inhibits selected for cancellation</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRMCancelInhibitFrameOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRMCancelInhibitFrameCancel" type="Button">
+      <name>Cancel</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="frmProgressInhibitCancel" type="Frame">
+      <name> Progress Inhibit Cancel</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="frmProgressInhibitCreate" type="Frame">
+      <name> Progress Inhibit Create</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInhibitCancelClaimMemo" type="Textbox">
+      <name>CodeTextArea_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblRMSubLot" type="Table">
+      <name>SubLotTable</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboRMReasonCode" type="Combobox">
+      <name>CreateInhibits.ComboBox_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRMCreateInhibit" type="Button">
+      <name>MATRIX_CreateButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlbRMInputDialog" type="Dialog">
+      <name> Input Dialog</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRMClaimMemo" type="Textbox">
+      <name>MemoTextArea</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRMInputDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlbRMConfirmDialog" type="Dialog">
+      <name> Confirm</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRMConfirmDialogYes" type="Button">
+      <name>Yes</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRMConfirmDialogYes1" type="Button">
+      <name>Yes</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRMEndDate" type="Textbox">
+      <name>CreateInhibits.JFormattedTextField_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRMEndTime" type="Textbox">
+      <name>CreateInhibits.Spinner_1.CreateInhibits.Spinner_1.CreateInhibits.JFormattedTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!-- Objeects for Cancel Recipe Inhibit  End -->
+	<Element name="txtRecipeMatrixEquipment" type="Textbox">
+      <name>MATRIX_TFEquipment</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRecipeMatrixMachineRecipe" type="Textbox">
+      <name>MATRIX_TFRecipe</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgRecipeMatrixConfirmSearch" type="Dialog">
+      <name>Confirm</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRecipeMatrixConfirmYes" type="Button">
+      <name>Yes</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableRecipeInhibitsNew" type="Table">
+      <name>RecipeLockedTable</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableRecipeInhibits" type="Table">
+      <name>RecipeScrollTable</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboRecipeMatrixRecipeFilter" type="Combobox">
+      <name>MATRIX_CBORecipeFilter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableRSubLotInReceiptMatrix" type="Table">
+      <name>SubLotTable</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboRecipeMatrixReasonCode" type="Combobox">
+      <name>CreateInhibits.ComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRecipeMatrixEndTime" type="Textbox">
+      <name>CreateInhibits.Spinner_1.CreateInhibits.Spinner_1.CreateInhibits.JFormattedTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRecipeMatrixCreateInhibit" type="Button">
+      <name>MATRIX_CreateButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgRecipeMatrixInput" type="Dialog">
+      <name>Input Dialog</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtRecipeMatrixClaimMemo" type="Textbox">
+      <name>MemoTextArea</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnRecipeMatrixInputDialogOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>	
+
+<FeatureSet name="FABGUI Inhibit History Window">
+	<Element name="lblHistoryDays" type="Label">
+      <name>History Days</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtINBHEquipment" type="Textbox">
+      <name>INHHIST_TFEquipment-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtINBHChamber" type="Textbox">
+      <name>INHHIST_TFChamber</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboINBHWorkArea" type="Combobox">
+      <name>INHHIST_CBOFacility</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtINBHOPENo" type="Textbox">
+      <name>INHHIST_TFProcessDef</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtINBHReticle" type="Textbox">
+      <name>INHHIST_TFReticle</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtINBHMachineRecipe" type="Textbox">
+      <name>INHHIST_TFRecipe</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtINBHRegisterUser" type="Textbox">
+      <name>INHHIST_TFUser</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboINBHReasonCode" type="Combobox">
+      <name>INHHIST_CBOReasonCode</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnSearchInhibitsHistory" type="Button">
+      <name>INHHIST_SearchButton</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableINBHistory" type="Table">
+      <name>HistoryTable</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgINBHConfirm" type="Dialog">
+      <name>Confirm</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnINBHConfirmYes" type="Button">
+      <name>Yes</name>
+      <PageTitle> </PageTitle>
+    </Element>
+</FeatureSet>	
+
+  <FeatureSet name="Control Center Buttons">
+	<Element name="btnEIConfig" type="Button">
+      <name>EI-Config</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEIStatus" type="Button">
+      <name>EI-Status</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnVamosConfig" type="Button">
+      <name>VamosConfig</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnToolEvents" type="Button">
+      <name>Tool-Events</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnVamosDispatch" type="Button">
+      <name>VamosDispatch</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="EI-Config Window">
+	<Element name="lblEIC" type="Label">
+      <name>Equipment Interface Configuration</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tableEIConfig" type="Table">
+      <name>EquipmentInterfaceConfiguration.Table-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtEntity" type="Textbox">
+      <name>EquipmentInterfaceConfiguration.TextField_6</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtEntity_test" type="Textbox">
+      <name>Table#EquipmentInterfaceConfiguration.Table_4#EquipmentInterfaceConfiguration.TextField_6</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtClaimTime" type="Textbox">
+      <name>EquipmentInterfaceConfiguration.TextField_21</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtClaimUser" type="Textbox">
+      <name>EquipmentInterfaceConfiguration.TextField_22</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtModule" type="Textbox">
+      <name>EquipmentInterfaceConfiguration.BasicComboBoxEditor$BorderlessTextField_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtModule_old" type="Textbox">
+      <name>EquipmentInterfaceConfiguration.BasicComboBoxEditor$BorderlessTextField_4</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnApplyChanges" type="Button">
+      <name>EquipmentInterfaceConfiguration.ApplyChanges</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEIConfigNew" type="Button">
+      <name>EquipmentInterfaceConfiguration.New</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEIConfigRefresh" type="Button">
+      <name>EquipmentInterfaceConfiguration.Refresh</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgEIConfigDataChanged" type="Dialog">
+      <name>EI Config Data Changed</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEIConfigDataChangedOK" type="Button">
+      <name>EquipmentInterfaceConfiguration.OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEIConfigDataChangedCancel" type="Button">
+      <name>EquipmentInterfaceConfiguration.Cancel</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnNewByTemplate" type="Button">
+      <name>EquipmentInterfaceConfiguration.NewbyTemplate</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEIConfigDelete" type="Button">
+      <name>EquipmentInterfaceConfiguration.Delete</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  <FeatureSet name="Script Parameter Window">
+	<Element name="lblScriptParameter" type="Label">
+      <name>Script Parameter</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblScriptParameterName" type="Label">
+      <name>Name:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboScriptParameterType" type="Combobox">
+      <name>Type:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+<!--	<Element name="cboScriptParameterType" type="Combobox">
+      <name>ComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="cboScriptParamName" type="Combobox">
+      <name>Name:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtScriptParamValue" type="Textbox">
+      <name>BasicComboBoxEditor$BorderlessTextField_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtScriptParamLotID" type="Textbox">
+      <name>LotID/CarrierID:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtScriptParamEquipmentID" type="Textbox">
+      <name>EqpID:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="txtScriptParamCarrierID" type="Textbox">
+      <name>TextField_4</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="txtScriptParamCarrierID" type="Textbox">
+      <name>LotID/CarrierID:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtScriptParamRoute" type="Textbox">
+      <name>RouteID:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnScriptParamShow" type="Button">
+      <name>Show</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="tableScriptParam" type="Table">
+      <name>Table_7</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+	<Element name="tableScriptParam" type="Table">
+      <name>Table_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtScriptParamProduct" type="Textbox">
+      <name>ProductID:</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnScriptParamSave" type="Button">
+      <name>Save</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgScriptParamSave" type="Dialog">
+      <name>Save?</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnScriptParamSaveOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="chkScriptParamDelete" type="Checkbox">
+      <name>Delete</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnScriptParamUpload" type="Button">
+      <name>Upload</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="dlgScriptParamOpen" type="Dialog">
+      <name>Open</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtScriptParamOpenDlgFileName" type="Textbox">
+      <name>WindowsFileChooserUI-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnScriptParamOpenDlgOpen" type="Button">
+      <name>Open</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="frmScriptParamInfo" type="Frame">
+      <name>Info</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnScriptParamInfoFrameOK" type="Button">
+      <name>OK</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+  
+  
+  <FeatureSet name="EI-Status Window">
+	<Element name="lblEIStatusEntity" type="Label">
+      <name>Entity</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeEIStatusMainTree" type="Tree">
+      <name>Tree_3</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEIStatusShowTool" type="Button">
+      <name>Show</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEIStatusAddToolToFavorites" type="Button">
+      <name>Add</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnEIStatusRemoveFromFavoritesList" type="Button">
+      <name>Add</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tabEIStatusStatusTab" type="Tab">
+      <name>TabbedPane_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="treeEIStatusFavoritesTree" type="Tree">
+      <name>Tree_2</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="EIStatusFavoritesTree" type="Tree">
+      <name></name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtEIStatusToolEntry" type="Textbox">
+      <name>Entity</name>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>	
+
+
+  <FeatureSet name="InterFab Move Window">
+	<Element name="lblInterFabMove" type="Label">
+      <name>InterFab-Move</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="lblIFMReadStatusData" type="Label">
+      <name>Read status data ...</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInterFabLotOrCarrier" type="Textbox">
+      <name>Lot/Carrier</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnInterFabAddLotOrCarrier" type="Button">
+      <name>AddLot/Carrier</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="tblInterFabDataTable" type="Table">
+      <name>Table_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnInterFabRemoveCarrier" type="Button">
+      <name>RemoveCarrier</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnInterFabRefresh" type="Button">
+      <name>Refresh</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="cboInterFabToFacility" type="Combobox">
+      <name>ComboBox_1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="btnInterFabWriteToSiView" type="Button">
+      <name>WriteToSiView</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="txtInterFabClaimMemo" type="Textbox">
+      <name>CodeTextArea_-#1</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<!--<Element name="txtInterFabClaimMemo" type="Textbox">
+      <name>Claim Memo</name>
+      <PageTitle> </PageTitle>
+    </Element>-->
+  </FeatureSet>
+  
+	<FeatureSet name="ApprovedLocate Window">
+		<Element name="lblApprovedWindow" type="Label">
+		  <name>Locate Request</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblApprovedLocateWindow" type="Label">
+		  <name>New Locate Request</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="txtApprovedLocateLotID" type="Textbox">
+		  <name>NewLocateRequest.TextField_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="txtApprovedLocateClaimMemo" type="Textbox">
+			<name>TextArea_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboCancelLocateReqReasonCode" type="Combobox">
+			<name>ComboBox_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtApprovedLocateLotID" type="Textbox">
+		  <name>ApprovedLocate.NewLocateRequest.TextField_-#2</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtApprovedLocateLCarrierID" type="Textbox">
+		  <name>ApprovedLocate.NewLocateRequest.TextField_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+		<Element name="btnApprovedLocateLocateBackward" type="Button">
+		  <name>ApprovedLocate.NewLocateRequest.LocateBackward</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnApprovedLocateLocateForward" type="Button">
+		  <name>ApprovedLocate.NewLocateRequest.LocateForward</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboApprovedLocateLocateOperID" type="Combobox">
+		  <name>ApprovedLocate.NewLocateRequest.ComboBox_-#2</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboNewLocateRequestReasonCode" type="Combobox">
+		  <name>ComboBox_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="chkApprovedLocateLocateOperationsOnly" type="Checkbox">
+		  <name>+/- 10 Operations only</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="chkApprovedLocateLocateOperationsOnly" type="Checkbox">
+		  <name>+/- {0} Operations only</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<!-- Added below objects as on 10-July-2013  -->
+		<Element name="btnLocateRequestFilter" type="Button">
+		  <name>Filter</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLocateRequestRefresh" type="Button">
+		  <name>ApprovedLocate.Locaterequestswaitingforbuddycheck.Refresh</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblApprovedLocateWarningMsg" type="Label">
+		  <name>It is not allowed to use this Locate GUI to bypass ERF system or to repair ERFs!</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLocateRequestLotID" type="Textbox">
+		  <name>Lot Id</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLocateRequestClaimUser" type="Textbox">
+		  <name>Claim User</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLocateRequestClaimMemo" type="Textbox">
+		  <name>Claim Memo</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLocateRequestClaimMemo1" type="Textbox">
+		  <name>Claim Memo</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnConfirmLocateRequest" type="Button">
+		  <name></name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnApprovedLocateOverview" type="Button">
+		  <name>Overview</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+		<!-- Newly added objects by Raju-->
+		
+		<Element name="btnApprovedLocateNewLocateRequest" type="Button">
+			<name>ApprovedLocate.NewLocateRequest.NewLocateRequest</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblApprovedLocateTableHeader" type="Table">
+			<name>Locaterequestswaitingforbuddycheck.TableHeader_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="tblApprovedDataTable" type="Table">
+			<name>ApprovedLocate.Locaterequestswaitingforbuddycheck.Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="tblApprovedDataTable" type="Table">
+		<name>ApprovedLocate.Locaterequestswaitingforbuddycheck.Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtApprovedLocateClaimMemo" type="Textbox">
+			<name>TextArea_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tabNewLocateRequestFrame" type="Tab">
+			<name>TabbedPane_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmNewLocateRequest" type="Frame">
+			<name>New Locate Request</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmNewLocateRequestTop" type="Frame">
+			<name>Top</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblNewLocateRequest" type="Label">
+			<name>Locate operation will skip over:</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblARExistence" type="Label">
+			<name>An approval request for Lot</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblARExistenceEnd" type="Label">
+			<name>already exists.</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblARExistenceVerification" type="Button">
+			<name></name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblCurrentOperationIDOftheLot" type="Label">
+			<name>Current Operation ID of the Lot</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblCurrentOperRouteID" type="Label">
+			<name>Route ID-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblCurrentOperOperID" type="Label">
+			<name>Oper ID-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblCurrentOperOperNo" type="Label">
+			<name>Oper No-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblCurrentOperOperName" type="Label">
+			<name>Oper Name-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblCurrentOperMaskLevel" type="Label">
+			<name>Mask Level-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblTargetOperationIDForTheLocateRequest" type="Label">
+			<name>Target Operation ID for the locate request</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblTargetOperRouteID" type="Label">
+			<name>Route ID-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblTargetOperOperID" type="Label">
+			<name>Oper ID-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblTargetOperOperNo" type="Label">
+			<name>Oper No-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblTargetOperOperName" type="Label">
+			<name>Oper Name-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblTargetOperMaskLevel" type="Label">
+			<name>Mask Level-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblClaimUser" type="Label">
+			<name>Claim User</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblClaimTime" type="Label">
+			<name>Claim Time</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblTargetHoldReasonCode" type="Label">
+			<name>Target Hold Reason Code</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblReasonCodeDescription" type="Label">
+			<name>Reason Code Description</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblEnableTargetHold" type="Label">
+			<name>Enable Target Hold</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblClaimMemo" type="Label">
+			<name>Claim Memo</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblOperationListForVerification" type="Label">
+			<name>Operation list for verification</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblOperationListForVerification" type="Table">
+			<name>Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNewLocateRequestAbort" type="Button">
+			<name>Abort</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNewLocateRequestExecute" type="Button">
+			<name>Execute</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnApprovedLocateConfirmExecute" type="Button">
+		  <name>ApprovedLocate.Locaterequestswaitingforbuddycheck.Confirm&amp;ExecuteLocate</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnApprovedLacateExecute" type="Button">
+		  <name>Execute</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNewLacateRequest" type="Button">
+		  <name>NewLocateRequest</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnConfirmLocateRequestAbort" type="Button">
+			<name>Abort</name>
+			<PageTitle> </PageTitle>
+         </Element>
+		<Element name="frmCancelLocateRequestTop" type="Frame">
+			<name>Top</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnApprovedLacateConfirmExecute" type="Button">
+		  <name></name>
+		  <PageTitle> </PageTitle>
+		</Element>		 
+		<Element name="btnCancelLocateRequest" type="Button">
+			<name>ApprovedLocate.Locaterequestswaitingforbuddycheck.CancelLocateRequest</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnCancelLocateReq" type="Button">
+			<name>CancelLocateRequest</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmCancelLocateRequest" type="Frame">
+			<name> Cancel Locate Request</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnCancelLocateRequestAbort" type="Button">
+			<name>Abort</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnCancelLocateRequestExecute" type="Button">
+			<name>Execute</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtCancelLocateRequestLotID" type="Textbox">
+			<name>Lot Id</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		
+	</FeatureSet>
+
+	<FeatureSet name="MultiHold Window">
+		<!--<Element name="lblMultiHoldWindow" type="Label">
+		  <name>Lot Hold Release</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="lblMultiHoldWindow" type="Label">
+		  <name>Release all Lots</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblProcesHoldTableRow1" type="Label">
+		  <name>A-AP-MAINPD.01</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblProcesHoldTableRow2" type="Label">
+		  <name>A-AP-MAINPD.02</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+		<Element name="txtMultiHoldUserID" type="Textbox">
+		  <name>User ID</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtMultiHoldReasonDescription" type="Textbox">
+		  <name>Reason Description</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtMultiHoldValue" type="Textbox">
+		  <name>Value</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboMultiHoldType" type="Combobox">
+		  <name>ComboBox_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboMultiHoldIDOrRecipe" type="Combobox">
+		  <name>ComboBox_-#2</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboMultiHoldHoldReasonCode" type="Combobox">
+		  <name>ComboBox_-#3</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnMultiHoldSearchLots" type="Button">
+		  <name>SearchLots</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnMultiHoldSearch" type="Button">
+		  <name>Search</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblModifyHoldsDataTable" type="Table">
+		  <name>Table_-#3</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+		<Element name="dlgMultiHoldInfo" type="Dialog">
+		  <name> Info</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnMultiHoldInfoOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblMultiHoldDataTable" type="Table">
+		  <name>LotReleasePanel$1-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtMultiHoldClaimMemo" type="Textbox">
+		  <name>TextArea-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnMultiHoldReleaseLots" type="Button">
+		  <name>ReleaseLots</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmMultiHoldProgress Dialog Lots Release" type="Frame">
+		  <name>Progress Dialog Lots Release</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblMultiHoldTextAfterRowIsDeleted" type="Label">
+		  <name>No lots for this carrier available. Please check the entered data! </name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="chkMultiHoldReleaseAllLots" type="Checkbox">
+		  <name>ReleaseallLots</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+	</FeatureSet>
+	
+	<FeatureSet name="LotInfoChange Window">
+		<Element name="lblLotInfoChangeWindow" type="Label">
+		  <name>Lot	Selection</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblLotInfoChangeTransferingData" type="Label">
+		  <name>Transfering Data...</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboLotInfoChangeSearchType" type="Combobox">
+		  <name>LICOverviewPanel:CB:LotID</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotInfoChangeLotID" type="Textbox">
+		  <name>LICOverviewPanel:TF:LotID</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeSearch" type="Button">
+		  <name>LotSelection.Search</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+		<Element name="btnLotInfoChangeWorkflowTasks" type="Button">
+		  <name>Workflow Tasks</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblLotInfoChangeWorkflowTasks" type="Label">
+		  <name>Workflow Tasks</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeChangeLotPriority" type="Button">
+		  <name>Change Lot Priority</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeChangeLotInformation" type="Button">
+		  <name>Change Lot Information</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeLotRequeue" type="Button">
+		  <name>LotSelection.LotRequeue</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotRequeueLotSelection" type="Button">
+		  <name>LotReQueue.LotSelection</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeLotSelection" type="Button">
+		  <name>LotPriorityChange.LotSelection</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLICLotSelection" type="Button">
+		  <name>LotInformationChange.LotSelection</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+		<Element name="btnLotInfoChangeActiveChildsFoundNO" type="Button">
+		  <name>No</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblLotPriorityChange" type="Label">
+		  <name>Lot Priority Change</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboLotInfoChangeLotPriority" type="Combobox">
+		  <name>Priority</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboLotInfoChangeCustomerPriority" type="Combobox">
+		  <name>Customer Priority</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotInfoChangeLotPurpose" type="Textbox">
+		  <name>Lot Purpose</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboLotInfoChangeTSTPriority" type="Combobox">
+		  <name>TST Priority</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboLICSubLotType" type="Combobox">
+		  <name>SublotType</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotSelection" type="Button">
+		  <name>Lot Selection</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblLotSelection" type="Label">
+		  <name>Lot Selection</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+		<Element name="frmLotInfoChangeClaimMemo" type="Frame">
+		  <name> Claim memo</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		
+		<Element name="frmWouldYoulikttoAdd" type="Frame">
+		  <name> Would you like to add these lots to the list?</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblLIWouldYoulikOpeSelect" type="Table">
+		  <name>LICOperationChooser:TBL:OperationList</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLIWouldYoulikOpeSelectOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmLotInfoChange" type="Frame">
+		  <name>Would you like to add these lots to the list?</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotInfoChangeERPITem" type="Textbox">
+		  <name>ERPItem</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLICExecute" type="Button">
+		  <name>LICDetailPanel:BTN:Execute</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblLotInfoChangePriorityDataTable" type="Table">
+		  <name>LICDetailPanel:TBL:Detail</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblLotInfoSelectionDataTable" type="Table">
+		  <name>LICOverviewPanel:TBL:OVERVIEW</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblLotInfoChangeDataTable" type="Table">
+		  <name>LICOverviewPanel:TBL:OVERVIEW</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblLotRequeueDataTable" type="Table">
+		  <name>LICDetailPanel:TBL:Detail</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblLotRequeueWindowTitle" type="Label">
+		  <name>Lot Requeue</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotRequeueExecute" type="Button">
+		  <name>LotReQueue.Execute</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeExecute" type="Button">
+		  <name>LPCDetailPanel:BTN:Execute</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotInfoChangeProductID" type="Textbox">
+		<name>LotInformationChange.BasicComboBoxEditor$BorderlessTextField_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotInfoChangeProductIDNew" type="combobox">
+		<name>Product ID-#1</name>
+		 <!-- <name>LotInformationChange.BasicComboBoxEditor$BorderlessTextField_-#1</name> -->
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotInfoChangeSubLotType" type="Textbox">
+		  <name>LotInformationChange.BasicComboBoxEditor$BorderlessTextField_-#4</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeWarningWindowOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeClaimMemoWindowOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeClaimMemoWindowCancel" type="Button">
+		  <name>Cancel</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInfoChangeWouldYouLikeWindowCancel" type="Button">
+		  <name>Cancel</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnWouldYouLikeWindowOk" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotInformationChangeExecute" type="Button">
+		  <name>LICDetailPanel:BTN:Execute</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotInfoChangeClaimMemoWindowText" type="Textbox">
+		  <name>CodeTextArea_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmChangeLotInformation" type="Frame">
+		  <name>Change Lot Information</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnRequeueSelectedLotsClose" type="Button">
+		  <name>ProgressPanel:BTN:CancelClose</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmChangeLotLoInformation" type="Frame">
+		  <name>Change Lot Information</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmActiveChildsfound" type="Frame">
+		  <name>Active Childs found</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnActiveChildsfoundYes" type="Button">
+		  <name>Yes</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnActiveChildsfoundOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblReleaseSelectedXLICLotHoldsTable" type="Table">
+		  <name>CGroupTable_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnReleaseSelectedXLICLotHolds" type="Button">
+		  <name>ReleaseselectedXLICLotHolds</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnChangeLotInformationClose" type="Button">
+		  <name>Close</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmNoLotsFound" type="Frame">
+		  <name> No lots found!</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNoLotsFoundFrameOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnWorkflowTasksRefresh" type="Button">
+		  <name>WorkflowTasks.Refresh</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnWorkflowTasksExecute" type="Button">
+		  <name>WorkflowTasks.Execute</name>
+		  <PageTitle> </PageTitle>
+		</Element>		
+		<Element name="btnWorkflowTasksApprove" type="Button">
+		  <name>WorkflowTasks.Approve</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnWorkflowTasksDisapprove" type="Button">
+		  <name>WorkflowTasks.Disapprove</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnWorkflowTasksCancelRequest" type="Button">
+		  <name>WorkflowTasks.CancelRequest</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmWorkflowTasksClaimMemo" type="Frame">
+		  <name> Claim memo</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtWorkflowTasksClaimMemo" type="Textbox">
+		  <name>CodeTextArea_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboLICTarget" type="Combobox"> 
+			<name>Target</name> 
+			<PageTitle> </PageTitle> 
+ 		</Element>
+		<Element name="cboLotInfoChangeTurnkeyType" type="Combobox">
+		    <name>TurnkeyType</name>
+			<PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+	
+	<FeatureSet name="VamosConfig Window">
+		<Element name="lblVamosConfigWindow" type="Label">
+		  <name>Vamos-Control</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblVamosConfigNewDisplay" type="Label">
+		  <name>New Display</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtVamosConfigDisplay" type="Textbox">
+		  <name>Display</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtVamosConfigEquipment" type="Textbox">
+		  <name>Equipment</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtVamosConfigNewDisplay" type="Textbox">
+		  <name>New Display</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigFilter" type="Button">
+		  <name>Filter</name>
+		  <PageTitle> </PageTitle>
+		</Element>	
+		<Element name="btnVamosConfigAdd" type="Button">
+		  <name>Add</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="tblVamosConfigDataTable" type="Table">
+		  <name>Table_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="tblVamosConfigDataTable" type="Table">
+		  <name>Table_-#4</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="dlgVamosConfigInformation" type="Dialog">
+		  <name> Information</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmVamosConfigInformation" type="Frame">
+		  <name>Information</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigInformationDlgOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigSave" type="Button">
+		  <name>Save</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtVamosConfigClaimMemo" type="Textbox">
+		  <name>Claim Memo</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigInformationFrameOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigDelete" type="Button">
+		  <name>Delete</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboVamosConfigLayout" type="Combobox">
+		  <name>ComboBox_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboVamosConfigLogLevel" type="Combobox">
+		  <name>ComboBox_-#3</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamosConfigNewByTemplate" type="Button">
+		  <name>NewByTemplate</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblVamosConfigDataTableRowCount" type="Label">
+		  <name></name>
+		  <PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet> 		
+
+	<FeatureSet name="FABGUI MultiHold ProcessHold Window">
+		<Element name="lblProcessHoldWindow" type="Label">
+			<name>Set Holds</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnRadSetHolds" type="Radiobutton">
+			<name>SetHolds</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnRadModifyHolds" type="Radiobutton">
+			<name>ModifyHolds</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboProcessHoldRouteType" type="Combobox">
+			<name>Route Type</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboProcessHoldTechnology" type="Combobox">
+			<name>Technology</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboProcessHoldProductGroup" type="Combobox">
+			<name>Product Group</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboProcessHoldHoldReasonCode" type="Combobox">
+			<name>Hold Reason Code</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboProcessHoldMainPD" type="Combobox">
+			<name>MainPD</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboProcessHoldProductID" type="Combobox">
+			<name>Product ID</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtProcessHoldClaimMemo" type="Textbox">
+			<name>Claim Memo</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtProcessHoldUserID" type="Textbox">
+			<name>User ID</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtMainPD" type="Textbox">
+			<name>MainPD</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboMainPD" type="Combobox">
+			<name>MainPD</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtOperationID" type="Textbox">
+			<name>Operation ID</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboOperationID" type="Combobox">
+			<name>Operation ID</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldSearch" type="Button">
+			<name>Search</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="chkProcessHoldExecuteHold" type="Checkbox">
+			<name>Execute Hold for WIP Lots on selected operation-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="chkProcessHoldExecuteNotHold" type="Checkbox">
+			<name>Execute Hold for WIP Lots on selected operation-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblProcessHoldFirstDataTable" type="Table">
+			<name>Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblProcessHoldSecondDataTable" type="Table">
+			<name>Table_-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblModifyHoldDataTable3" type="Table">
+		  <name>Table_-#6</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldRemove" type="Button">
+		  <name>Remove</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldAddRouteSpecificPH" type="Button">
+			<name>AddRoutespecificPH</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldAddProductspecificPH" type="Button">
+			<name>AddProductspecificPH</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnAddRoutespecificPH" type="Button">
+		  <name>AddRoutespecificPH</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnAddProductsspecificPH" type="Button">
+		  <name>AddProductsspecificPH</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmProcessHoldChooseProducts" type="Frame">
+			<name> Choose Products</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblChooseProductsDataTable" type="Table">
+			<name>Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="chkChooseProductsFlag" type="Checkbox">
+			<name>Flag</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnChooseProductsOK" type="Button">
+			<name>OK</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSetProcessHold" type="Button">
+			<name>SetProcessHold</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmSetReasonsCode" type="Frame">
+			<name>Set Reason Codes</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmSetReasonCodes" type="Frame">
+		  <name>Set Reason Codes</name>
+		  <PageTitle> </PageTitle>
+		 </Element>
+		<Element name="cboSetReasonsCode" type="Combobox">
+			<name>ComboBox_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboSetHoldReasonCode" type="Combobox">
+			<name>ComboBox_-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtSetReasonsCodeClaimMemo" type="Textbox">
+			<name>TextArea_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSetReasonsCodeOK" type="Button">
+			<name>OK</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSetReasonCodesOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSetReasonCodesCancel" type="Button">
+		  <name>Cancel</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboSetReasonCodes" type="Combobox">
+		  <name>ComboBox_-#19</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtProcessHoldRelease" type="Textbox">
+		  <name>TextArea_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmProcessHoldRelease" type="Frame">
+		  <name>Process Hold Release</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtSetReasonCodes" type="Textbox">
+		  <name>TextArea_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboSetReleaseReasonCode" type="Combobox">
+		  <name>ComboBox_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSetReasonsCodeOrClaimMemo" type="Button">
+			<name>SetReasonCode/ClaimMemo</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmSetReasonsCodeOrClaimMemo" type="Frame">
+			<name>Process Hold Set</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldSetStart" type="Button">
+			<name>Start</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldSetClose" type="Button">
+			<name>Close</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnReleaseProcessHold" type="Button">
+		  <name>ReleaseProcessHold</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldChangePD" type="Button"><!--ChangePD-->
+			<name>ChangePD</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmProcessHoldChangeOperation" type="Frame">
+			<name> Change Operation</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmProcessHoldChange" type="Frame">
+		  <name>Process Hold Change</name>
+		  <PageTitle> </PageTitle>
+		 </Element>
+		 <Element name="btnProcessHoldChangeClose" type="Button">
+		  <name>Close</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldChangeStart" type="Button">
+		  <name>Start</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblProcessHoldRemaining" type="Label">
+		  <name>Remaining: calculating...</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		 <Element name="chkExecuteHoldforWIPLotsonnewoperation" type="Checkbox">
+		  <name>ExecuteHoldforWIPLotsonnewoperation</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="chkExecuteHoldReleaseforheldLotsoncurrentoperation" type="Checkbox">
+		  <name>ExecuteHoldReleaseforheldLotsoncurrentoperation</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmChangeOperation" type="Frame">
+		  <name>Change Operation</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldCancel" type="Button">
+		  <name>Cancel</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblProcessHoldChangeOperation" type="Label">
+		  <name>Please change Operation ID:</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblProcessHoldChangeOperationDataTable" type="Table">
+			<name>DETAIL_PROGRESSBAR_TABLE</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblProcessHoldDetailTable" type="Table">
+		  <name>DETAIL_PROGRESSBAR_TABLE</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblProcessHoldDetailTableHeader" type="Table">
+		  <name>TableHeader_-#5</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnChangeProcessHold" type="Button">
+          <name>ChangeProcessHold</name>
+          <PageTitle> </PageTitle>                                  
+        </Element> 
+		<Element name="frmProcessHoldProblem" type="Frame">
+		  <name>Problem</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblProcessHoldProblemError" type="Label">
+		  <name>There are rows selected without changes !</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldProblemOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboChangeOperationNewOperationID" type="Combobox">
+			<name>ComboBox_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnProcessHoldChangeOperationOK" type="Button">
+			<name>OK</name>
+			<PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+	
+	<FeatureSet name="FABGUI Lot Start Window">
+		<Element name="lblLotStartWindow" type="Label">
+			<name>Product Request List</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="chkLotStartReleaseDate" type="Checkbox">
+			<name>OverviewFilterPanel:ReleaseDate:CHECKBOX</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotStartReleaseTimeStamp" type="Textbox">
+			<name>Release Time Stamp</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotStartLotID" type="Textbox">
+			<name>Lot ID</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotStartOrderNO" type="Textbox">
+			<name>Order No / MFG</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotStartStartBank" type="Textbox">
+			<name>Start Bank</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotStartSMainPD" type="Textbox">
+			<name>Main PD</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotStartProductID" type="Textbox">
+			<name>Product ID</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotStartSubLotType" type="Textbox">
+			<name>Sub Lot Type</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtLotStartTechnology" type="Textbox">
+			<name>Technology</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblLotStartTableHeader" type="Table">
+			<name>ProductRequestList.TableHeader_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblLotStartRefresh" type="Button">
+			<name>Refresh</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblLotStartSelectToSTB" type="Button">
+			<name>Select to STB</name>
+			<PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+	
+	<FeatureSet name="FABGUI Reticle Move GUI Window">
+		<Element name="lblReticleMoveGUIWindow" type="Label">
+			<name>Reticle Movement GUI</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtReticleID" type="Textbox">
+			<name>ReticleMovementGUI.TextField_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="txtReticleID" type="Textbox">
+			<name>Reticle/POD ID</name>
+			<PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="btnAddReticle" type="Button">
+			<name>ReticleMovementGUI.AddReticle/POD</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblReticleDataTable" type="Table">
+			<name>ReticleMovementGUI.Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnReticleRemove" type="Button">
+			<name>ReticleMovementGUI.RemoveReticle</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnReticleRefresh" type="Button">
+			<name>Refresh</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnReticleWriteToSiView" type="Button">
+			<name>ReticleMovementGUI.WriteToSiView</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboReticleTargetLocation" type="Combobox">
+			<name>ReticleMovementGUI.ComboBox_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+	
+	<FeatureSet name="Vamous Dispatch Window">
+		<Element name="treeVamousDispatchTree" type="Tree">
+			<name>Tree_3</name>
+			<PageTitle> </PageTitle>
+		</Element>	
+		<Element name="treeVDFavoritesTree" type="Tree">
+			<name>Tree_2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="treeVDFavorites" type="Tree">
+			<name>Tree_2</name>
+			<PageTitle> </PageTitle>
+		</Element>			
+		<Element name="txtVamousDispatchEntity" type="Textbox">
+			<name>TextField_3</name>
+			<PageTitle> </PageTitle>
+		</Element>	
+		<Element name="lblVDFavoritesWindow" type="Label">
+			<name>Dispatch setup favorites</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblVDMachineWindow" type="Label">
+			<name>Dispatch-Setup Machine</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchAdd" type="Button">
+			<name>Add</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchRemove" type="Button">
+			<name>Remove</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchShow" type="Button">
+			<name>Show</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchRefresh" type="Button">
+			<name>Refresh</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVamousDispatchSave" type="Button">
+			<name>Save</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVDPushP1" type="Button">
+			<name>Pull-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnVDPullP1" type="Button">
+			<name>Push-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>	
+		<Element name="tblVDDataTable" type="Table">
+			<name>Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblVDFavorites" type="Table">
+			<!--<name>Table_-#1</name>-->
+			<name>1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblToolVisible" type="Label">
+			<name>Tool: </name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblToolNameVerify" type="Label">
+			<name></name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblVDToolTable" type="Table">
+			<name>1</name>
+			 <PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+	
+	<FeatureSet name="ToolEvents Window">
+		<Element name="btnToolEventsShow" type="Button">
+			<name>Show</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnToolEventsAdd" type="Button">
+			<name>Add</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblToolEventsWindow" type="Label">
+			<name>Timespan</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtToolEventsEntity" type="Textbox">
+			<name>TextField_3</name>
+			<PageTitle> </PageTitle>
+		</Element>	
+		<Element name="treeToolEventsFavoritesTree" type="Tree">
+			<name>Tree_2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="treeToolEventsTree" type="Tree">
+			<name>Tree_3</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnToolEventsRemove" type="Button">
+			<name>Remove</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboTETimeSpan" type="Combobox">
+			<name>Timespan.ComboBox_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnTEQuery" type="Button">
+			<name>Timespan.Query</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnTEApplyFilter" type="Button">
+			<name>Limitdisplayto.Applyfilter</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnTERevokefilter" type="Button">
+			<name>Limitdisplayto.Revokefilter</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboTELimitedDispaly" type="Combobox">
+			<name>Limitdisplayto.ComboBox_-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblTEDataTable" type="Table">
+			<name>LinkTable_-#4</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="menuSetMarker" type="Menu">
+			<name>Set marker></name>
+			<PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+	
+	<FeatureSet name="FABGUI External Priority Window">
+		<Element name="lblExtLotPriority" type="Label">
+			<name>External Lot Priority</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnExtPrioNew" type="Button">
+			<name>ExternalLotPriority.New</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnExtPrioNewByTemplate" type="Button">
+			<name>ExternalLotPriority.NewbyTemplate</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnExtPrioUpdateRanges" type="Button">
+			<name>ExternalLotPriority.UpdateRanges</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnExtPrioRemoveContext" type="Button">
+			<name>ExternalLotPriority.RemoveContext</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnExtPrioWriteChanges" type="Button">
+			<name>ExternalLotPriority.WriteChanges</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblExtPrioDataTable" type="Table">
+			<name>ExternalLotPriority.Table_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtExtPrioDClaimMemo" type="Textbox">
+			<name>ExternalLotPriority.CodeTextArea_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+	</FeatureSet>
+	
+	<FeatureSet name="FABGUI Shipping">
+		<Element name="btnStandardShipment" type="Button">
+		  <name>Standard Shipment</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSSShowLots" type="Button">
+		  <name>Show Lots</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnShippingRefresh" type="Button">
+		  <name>StandardShipmentOrderOverview.Refresh</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmShippingInfo" type="Frame">
+      <name> Info</name>
+      <PageTitle> </PageTitle>
+    </Element>
+	<Element name="frmShippingInfoNO" type="Button">
+      <name>No</name>
+      <PageTitle> </PageTitle>
+    </Element>
+		<!--<Element name="btnShippingShowLots" type="Button">
+		  <name>StandardShipmentOrderOverview.ShowLots</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="btnShippingShowLots" type="Button">
+		  <name>Show Lots</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblSSLineStatus" type="Label">
+			  <name>Line Status</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblStandardShipmentOrderOverview" type="Label">
+			  <name>Standard Shipment Order Overview</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblStandardShipmentOrderDetails" type="Label">
+			  <name>Standard Shipment Order Details</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="btnSetMultipleLotNotes" type="Button">
+		  <name>StandardShipmentOrderDetails.SetMultipleLotNotes</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="btnSetMultipleLotNotes" type="Button">
+		  <name>Set Multiple LotNotes</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmSetMultipleLotNotes" type="Frame">
+			<name> Set Multiple LotNotes</name>
+			<PageTitle> </PageTitle>
+		</Element>	
+		<Element name="tblShippingDataTable" type="Table"><!--Removed index here-->
+			  <name>OrderOverviewPanel:TABLE:Locked</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblShippingOrderLotsPanel" type="Table">
+			  <name>OrderLotsPanel:TABLE:Locked-#1</name>
+			  <PageTitle> </PageTitle>
+		</Element>		
+		<Element name="chkOrdersWithoutShippableWIP" type="Checkbox">
+			  <name>OrderFilter:OrdersWithoutShippableWIP</name>
+			  <PageTitle> </PageTitle>
+		</Element>		
+		<Element name="cboShipableTitle" type="Combobox">
+			  <name>ComboBox_-#2</name>
+			  <PageTitle> </PageTitle>
+		</Element>	
+<!--	<Element name="txtDescription" type="Textbox">
+		  <name>Description</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="txtDescription" type="Textbox">
+			  <name>1</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtSSERPItem" type="Textbox">
+			  <name>ERPItem</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblSetMultipleLotNotesTitle" type="Table">
+			  <name>Table_-#1</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblSetMultipleLotNotesIndex" type="Table">
+			  <name>Table_-#2</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSetMultipleLotNotesAdd" type="Button">
+		  <name>Add</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSetMultipleLotNotesChange" type="Button">
+		  <name>Change</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSetMultipleLotNotesRemove" type="Button">
+		  <name>Remove</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSetMultipleLotNotesOk" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmSaveLotData" type="Frame">
+			<name> Save Lot Data</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnApplyScriptparameters" type="Button">
+		  <name>StandardShipmentOrderDetails.ApplyScriptparameters</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmScriptParameters" type="Frame">
+			<name> Script Parameters</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtScriptParametersValue" type="Textbox">
+			  <name>2</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtERPName" type="Textbox">
+			  <name>StandardShipmentOrderOverview.FilterOptions.BasicComboBoxEditor$BorderlessTextField_-#1</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboScriptParametersName" type="Combobox">
+			  <name>1</name>
+			  <PageTitle> </PageTitle>
+		</Element>	
+		<Element name="btnScriptParametersOk" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnScriptParametersCancel" type="Button">
+		  <name>Cancel</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSSMoveToXYHoldBank" type="Button">
+		  <name>StandardShipmentOrderDetails.MoveToXY-HoldBank</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmSSNonProBankIn" type="Frame">
+			<name> NonProBankIn</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtSSNonProBankID" type="Textbox">
+			  <name>BasicComboBoxEditor$BorderlessTextField_-#3</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtSSNonProClaimMemo" type="Textbox">
+			  <name>TextField_-#1</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSSNonProBankInOk" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotDetails" type="Button">
+		  <name>Lot Details (eDR, ERF, LotNotes)</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmLotDetails" type="Frame">
+			<name> Lot Details (eDR, ERF, LotNotes)</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnLotDetailsOk" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSSClose" type="Button">
+		  <name>Close</name>
+		  <PageTitle> </PageTitle>		
+		</Element>
+		<Element name="btnStandardShipmentClose" type="Button">
+		  <name>StandardShipmentOrderDetails.Close</name>
+		  <PageTitle> </PageTitle>		
+		</Element>
+		<Element name="btnSSNonProBankOut" type="Button">
+		  <name>StandardShipmentOrderDetails.NonProBankOut</name>
+		  <PageTitle> </PageTitle>		
+		</Element>
+		<Element name="frmSSNonProBankOut" type="Frame">
+		  <name> NonProBankOut</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtSSNonProBankOutClaimMemo" type="Textbox">
+			  <name>TextField_-#1</name>
+			  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSSNonProBankOutOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>		
+		</Element>
+		
+	</FeatureSet>
+	
+	<FeatureSet name="FABGUI NonStandard Shipping">
+		<Element name="btnNonStanadardShipment" type="Button">
+		  <name>Shipment</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="lblNSS" type="Label">
+		  <name>Click for details...</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboNSSType" type="Combobox">
+		  <name>CB:SearchType</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtNSSValue" type="Textbox">
+		  <name>ShippingOverview.BasicComboBoxEditor$BorderlessTextField_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="cboNSSLotState" type="Combobox">
+		  <name>OverView:TF:LotStateFilter</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSAddLots" type="Button">
+		  <name>BTN:AddLots</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSClear" type="Button">
+		  <name>Clear</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSBacktoShipping" type="Button">
+		  <name>Back to Shipping</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSChangeSubLotType" type="Button">
+		  <name>Change Sublottype</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblNSSOverviewTable" type="Table">
+		  <name>TBL:OverView:Locked</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="btnNSSMovetoXYHoldBank" type="Button">
+		  <name>ShippingOverview.MoveToXY-HoldBank</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="btnNSSMovetoXYHoldBank" type="Button">
+		  <name>Move To XY-Hold Bank</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="btnNSSNonProBankOut" type="Button">
+		  <name>ShippingOverview.NonProBankOut</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="btnNSSNonProBankOut" type="Button">
+		  <name>NonProBank Out</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="btnNSSLotInfo" type="Button">
+		  <name>OverView:BTN:ShowLotInfo</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="btnNSSLotInfo" type="Button">
+		  <name>Lot Info</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmNonProBankIn" type="Frame">
+		  <name> NonProBankIn</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtNonProBankID" type="Textbox">
+			<name>BasicComboBoxEditor$BorderlessTextField_-#3</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtNonProClaimMemo" type="Textbox">
+			<name>TextField_-#2</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNonProBankInOk" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="tblNonProBankInTable" type="Table">
+		  <name>Table_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmNSSSaveLotData" type="Frame">
+		  <name> Save Lot Data</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSSaveLotDataCancel" type="Button">
+		  <name>Cancel</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSSaveLotDataClose" type="Button">
+		  <name>Close</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmNonProBankOut" type="Frame">
+		  <name> NonProBankOut</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmNSSActiveChildsFound" type="Frame">
+		  <name> Active Childs found</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSSActiveChildsFoundNo" type="Button">
+		  <name>No</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="txtNonProBankOutClaimMemo" type="Textbox">
+			<name>TextField_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="txtNonProBankOutClaimMemo" type="Textbox">
+			<name>TextField_-#1</name>
+			<PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNonProBankOutOk" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="chkNSSERPTransmission" type="Checkbox">
+		  <name>ERPtransmission</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="txtNSSERPItem" type="Textbox">
+		  <name>etailPanel:TF:MaterialNumber</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="txtNSSERPItem" type="Textbox">
+		  <name>ERPItem</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtNSSShipLabelNote" type="Textbox">
+		  <name>DetailPanel:TF:ShipLabelNote</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtNSSShipPaidBy" type="Textbox">
+		  <name>DetailPanel:TF:ShipPaidBy</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSApply" type="Button">
+		  <name></name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="btnNSSTab" type="Tab">
+		  <name>LotActions.TabbedPane_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="btnNSSTab" type="Tab">
+		  <name>LotActions.TabbedPane_-#1</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNShippingTab" type="Tab">
+		  <name></name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="chkERPtransMission" type="Checkbox">
+		  <name>ERPtransmission</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtShipToFrom" type="Textbox">
+		  <name></name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="cboShipToFirm" type="Combobox">
+		   <name>DetailPanel:CB:Ship To Firm</name>
+		  <PageTitle></PageTitle>
+		</Element>-->
+		<Element name="cboShipToFirm" type="Combobox">
+		   <name>1</name>
+		  <PageTitle></PageTitle>
+		</Element>
+		<Element name="cboNSSNonProbBankIn" type="Combobox">
+		   <name>1</name>
+		  <PageTitle></PageTitle>
+		</Element>
+		
+		<Element name="cboNSSPerformaBankToBankMove" type="Combobox">
+		   <name>2</name>
+		  <PageTitle></PageTitle>
+		</Element>
+		<Element name="cboShipPaidBy" type="Combobox">
+		   <name>DetailPanel:CB:ShipPaidBy</name>
+		  <PageTitle></PageTitle>
+		</Element>
+		<Element name="cboNSSLotState1" type="Combobox">
+		   <name>Lot State</name>
+		  <PageTitle></PageTitle>
+		</Element>
+		<Element name="lblNSSShipLabelNote" type="Label">
+		  <name>ShipLabelNote</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="frmWaring" type="Frame">
+		  <name> Warning</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnWarningOK" type="Button">
+		  <name>OK</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSWarningYes" type="Button">
+		  <name>Yes</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnSiViewShipLotNote" type="Button">
+		  <name>SiView Ship/ Lot Note</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<!--<Element name="btnNSSClose" type="Button">
+		  <name>Close</name>
+		  <PageTitle> </PageTitle>
+		</Element>-->
+		<Element name="btnNSSClose" type="Button">
+		  <name>DetailPanel:BTN:CloseDetailView</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="radLotWillComeBack" type="radiobutton">
+		  <name></name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="radLotWillnotComeBack" type="radiobutton">
+		  <name></name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtPerformNonProBank" type="Textbox">
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="txtClaimMemo" type="Textbox">
+		  <name>Claim Memo-#2</name>
+		  <PageTitle> </PageTitle>
+		</Element>
+		<Element name="btnNSSRefresh" type="Button">
+			<name>ShippingOverview.Refresh</name> 
+			<PageTitle /> 
+		</Element>
+
+	</FeatureSet>
+</ObjectRepository>

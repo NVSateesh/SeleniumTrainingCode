@@ -1,0 +1,1426 @@
+2016/05/26 19:41:55.57; INFO;(Driver.java:107);-----------------------------------------------------------------------------------------------------------------------
+2016/05/26 19:41:55.57; WARN;(Version.java:66);build_info.properties file not available
+2016/05/26 19:41:55.73; INFO;(Driver.java:108);Started Automated Functional Tester (AFT) version [] at [2016-05-26 19:41:54]
+2016/05/26 19:41:55.73; INFO;(Driver.java:111);-----------------------------------------------------------------------------------------------------------------------
+2016/05/26 19:41:55.73;DEBUG;(ReportGenerator.java:67);Creating new ReportGenerator object for reporting
+2016/05/26 19:41:55.73;DEBUG;(TCMReportGenerator.java:44);Creating new TCMReportGenerator object for reporting
+2016/05/26 19:41:55.73;DEBUG;(Variable.java:295);Value [05-26-2016] has been stored in variable [AFT_TESTSTARTDATE]
+2016/05/26 19:41:55.73;DEBUG;(Helper.java:463);Action value string [#AFT_TESTSTARTDATE#] after substituting for variables/test data is [05-26-2016]
+2016/05/26 19:41:55.73;DEBUG;(Variable.java:295);Value [9:41:54] has been stored in variable [AFT_TESTSTARTTIME]
+2016/05/26 19:41:55.73;DEBUG;(Helper.java:463);Action value string [#AFT_TESTSTARTTIME#] after substituting for variables/test data is [9:41:54]
+2016/05/26 19:41:55.73;DEBUG;(Helper.java:463);Action value string [#AFT_BROWSERVERSION#] after substituting for variables/test data is []
+2016/05/26 19:41:55.73;DEBUG;(Variable.java:295);Value [Windows 7] has been stored in variable [AFT_OSVERSION]
+2016/05/26 19:41:55.73;DEBUG;(Helper.java:463);Action value string [#AFT_OSVERSION#] after substituting for variables/test data is [Windows 7]
+2016/05/26 19:41:55.73;DEBUG;(TestBatchRunner.java:861);Value for system variable [AFT_OSVersion] set to [Windows 7]
+2016/05/26 19:41:55.73;DEBUG;(Variable.java:295);Value [./configuration/] has been stored in variable [AFT_TESTBATCHPATH]
+2016/05/26 19:41:55.73;DEBUG;(Helper.java:463);Action value string [#AFT_TESTBATCHPATH#] after substituting for variables/test data is [./configuration/]
+2016/05/26 19:41:55.73;DEBUG;(Variable.java:295);Value [AFTTestBatch.xml] has been stored in variable [AFT_TESTBATCHFILENAME]
+2016/05/26 19:41:55.88;DEBUG;(Helper.java:463);Action value string [#AFT_TESTBATCHFILENAME#] after substituting for variables/test data is [AFTTestBatch.xml]
+2016/05/26 19:41:55.88;DEBUG;(Variable.java:295);Value [0] has been stored in variable [AFT_TOTALTESTSCENARIOS]
+2016/05/26 19:41:55.88;DEBUG;(Variable.java:295);Value [0] has been stored in variable [AFT_TOTALTESTCASES]
+2016/05/26 19:41:55.88; INFO;(Driver.java:145);Checking report file retention policy...
+2016/05/26 19:41:55.88; INFO;(FileUtil.java:174);LogFileRetentionPeriod [30], ServiceRequestsRetentionPeriod [30], ScreenShotsRetentionPeriod [30], ReportFileRetentionPeriod [30]
+2016/05/26 19:41:55.88; INFO;(FileUtil.java:181);0 files found to delete older than the retention period.
+2016/05/26 19:41:55.88; INFO;(TestBatchRunner.java:122);Starting execution of test batch...
+2016/05/26 19:41:55.88; INFO;(TestBatchRunner.java:163);Reading test batch set file [./configuration/AFTTestBatch.xml]
+2016/05/26 19:41:55.88;DEBUG;(XMLParser.java:846);XML file found
+2016/05/26 19:41:55.88;DEBUG;(XMLParser.java:939);Reading the XML file [.\configuration\AFTTestBatch.xml]
+2016/05/26 19:41:55.88;DEBUG;(XMLParser.java:948);Creating XML Document Object
+2016/05/26 19:41:55.88;DEBUG;(XMLParser.java:951);Parsing the XML file [.\configuration\AFTTestBatch.xml]
+2016/05/26 19:41:55.135; INFO;(XMLParser.java:966);Completed reading the XML file [.\configuration\AFTTestBatch.xml]
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:770);Converting XML Document object to String
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:175);Fetching the Attribute list for the node [TestSet]
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:184);Total Nodes found [1]
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:196);Total attributes count for node [TestSet] is [1]
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:210);Total child nodes count for node [TestSet] is [47]
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [TestSet] and its child nodes
+2016/05/26 19:41:55.135; INFO;(XMLParser.java:497);Fetching the attribute value for attribute [Name] in node [TestSet]
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:506);Total Nodes found [1]
+2016/05/26 19:41:55.135; INFO;(TestBatchRunner.java:173);Starting execution of test batch...
+2016/05/26 19:41:55.135; INFO;(TestBatchRunner.java:193);Total test batch sets read from testbatch file are [1]
+2016/05/26 19:41:55.135; INFO;(TestBatchRunner.java:559);Read test batch set: test set name [ECM], BrowserType[], ApplicationUrl[], ApplicationName[ECM], TestSuitePath[.\testScripts\GlobalFoundries_TestSuite_ECM.xls], ScenariosSheetName[Functional_Scenarios], TestStepsSheetName[Test_Steps], ObjectRepositoryPath[], TestDataTablePath[.\testData\GlobalFoundries_TestData_ECM.xls], ReusableTestSuitePath[.\testScripts\GlobalFoundries_Reusable_ECM.xls], ReusableScenariosSheetName[Reusable_Scenarios], ReusableTestStepsSheetName[Reusable_Steps], AppConfigFilePath[null], AppExecutionConfiguration[ECM], TCMIntegrationConfigFilePath[], Category[ECM], ExecutionEngine[Core], ScenarioInitializationIDs[], ScenarioCleanupIDs[], TestSetInitializationIDs[RS_LoadProperties], TestSetCleanupIDs[RS_CloseConnection], CustomDictionaryPath[], SpellCheckLanguage[American_English], SpellCheckSuggestion[No]
+2016/05/26 19:41:55.135;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_APPLICATIONURL]
+2016/05/26 19:41:55.135;DEBUG;(Helper.java:463);Action value string [#AFT_APPLICATIONURL#] after substituting for variables/test data is []
+2016/05/26 19:41:55.135;DEBUG;(TestBatchRunner.java:628);Starting execution of AFT test suite [.\testScripts\GlobalFoundries_TestSuite_ECM.xls] for application [ECM] on url [
+2016/05/26 19:41:55.135; INFO;(TestBatchRunner.java:636);User has specified the Configuration [ECM]
+2016/05/26 19:41:55.135; INFO;(TestBatchRunner.java:639);Loading App Config file [./configuration/AppConfig.xml], execution configuration [ECM]
+2016/05/26 19:41:55.135; INFO;(AppConfigProperties.java:86);Loading App Config file [./configuration/AppConfig.xml]
+2016/05/26 19:41:55.135;DEBUG;(AppConfigProperties.java:90);Creating file stream object to load app configuration properties file [./configuration/AppConfig.xml]
+2016/05/26 19:41:55.135; INFO;(AppConfigProperties.java:92);Reading app config file [./configuration/AppConfig.xml]
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:846);XML file found
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:939);Reading the XML file [E:\xAFTFramework\xAFT_Framework\.\configuration\AppConfig.xml]
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:948);Creating XML Document Object
+2016/05/26 19:41:55.135;DEBUG;(XMLParser.java:951);Parsing the XML file [E:\xAFTFramework\xAFT_Framework\.\configuration\AppConfig.xml]
+2016/05/26 19:41:55.151; INFO;(XMLParser.java:966);Completed reading the XML file [E:\xAFTFramework\xAFT_Framework\.\configuration\AppConfig.xml]
+2016/05/26 19:41:55.151;DEBUG;(XMLParser.java:770);Converting XML Document object to String
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:175);Fetching the Attribute list for the node [Configuration]
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:184);Total Nodes found [31]
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [9]
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [9]
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [9]
+2016/05/26 19:41:55.166;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [47]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [47]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [13]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [67]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [69]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [63]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [5]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [103]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [15]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [149]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [135]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [83]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [39]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [77]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [85]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [41]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [39]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [33]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [27]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [33]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [35]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [27]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [29]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [31]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [35]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:196);Total attributes count for node [Configuration] is [1]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:210);Total child nodes count for node [Configuration] is [39]
+2016/05/26 19:41:55.182;DEBUG;(XMLParser.java:230);Successfully built attribute list for the for the specified node [Configuration] and its child nodes
+2016/05/26 19:41:55.182;DEBUG;(AppConfigProperties.java:101);Reading execution configuration [ECM] from app config file [./configuration/AppConfig.xml]
+2016/05/26 19:41:55.182;DEBUG;(Helper.java:463);Action value string [#AFT_BROWSERVERSION#] after substituting for variables/test data is []
+2016/05/26 19:41:55.182;DEBUG;(ReportGenerator.java:235);Adding a new testSuite [ECM] for reporting
+2016/05/26 19:41:55.182;DEBUG;(Helper.java:463);Action value string [#AFT_BROWSERVERSION#] after substituting for variables/test data is []
+2016/05/26 19:41:55.182;DEBUG;(TCMReportGenerator.java:94);Adding a new testSuite [ECM] for reporting
+2016/05/26 19:41:55.182; INFO;(TestBatchRunner.java:394);Create & Init Test Suite Object
+2016/05/26 19:41:55.182;DEBUG;(Variable.java:295);Value [.\testScripts\] has been stored in variable [AFT_TESTSUITEPATH]
+2016/05/26 19:41:55.182;DEBUG;(Helper.java:463);Action value string [#AFT_TESTSUITEPATH#] after substituting for variables/test data is [.\testScripts]
+2016/05/26 19:41:55.182;DEBUG;(Variable.java:295);Value [GlobalFoundries_TestSuite_ECM.xls] has been stored in variable [AFT_TESTSUITEFILENAME]
+2016/05/26 19:41:55.182;DEBUG;(Helper.java:463);Action value string [#AFT_TESTSUITEFILENAME#] after substituting for variables/test data is [GlobalFoundries_TestSuite_ECM.xls]
+2016/05/26 19:41:55.182;DEBUG;(Variable.java:295);Value [.\testData\GlobalFoundries_TestData_ECM.xls] has been stored in variable [AFT_TESTDATAFILEPATH]
+2016/05/26 19:41:55.182;DEBUG;(Variable.java:295);Value [-1] has been stored in variable [AFT_TESTDATASHEETCOUNT]
+2016/05/26 19:41:55.182;DEBUG;(Variable.java:295);Value [true] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:55.182;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTSCENARIO]
+2016/05/26 19:41:55.182;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTSUITE]
+2016/05/26 19:41:55.182;DEBUG;(Variable.java:295);Value [E:\xAFTFramework\xAFT_Framework] has been stored in variable [AFT_ROOTPATH]
+2016/05/26 19:41:55.197;DEBUG;(Helper.java:463);Action value string [#AFT_ROOTPATH#] after substituting for variables/test data is [E:\xAFTFramework\xAFT_Framework]
+2016/05/26 19:41:55.197;DEBUG;(TestSuiteRunner.java:1645);Value for system variable [AFT_RootPath] set to [E:\xAFTFramework\xAFT_Framework]
+2016/05/26 19:41:55.260;DEBUG;(TestSuiteRunner.java:345);initializing scenarioIDs and testSteps list objects
+2016/05/26 19:41:55.447;DEBUG;(ExcelRead.java:134);[Step_Values_Delimiter_Character] property value is [~]
+2016/05/26 19:41:55.447;DEBUG;(TestSuiteRunner.java:356);Reading business scenarios...
+2016/05/26 19:41:55.447;DEBUG;(ExcelRead.java:158);Reading tests from sheet [Functional_Scenarios]
+2016/05/26 19:41:55.620;DEBUG;(ExcelRead.java:298);Finished loading of tests from sheet [Functional_Scenarios]. Total rows read #19
+2016/05/26 19:41:55.620;DEBUG;(TestSuiteRunner.java:393);initializing scenarioIDs and testSteps list objects for reusable test suite file [.\testScripts\GlobalFoundries_Reusable_ECM.xls]
+2016/05/26 19:41:55.651;DEBUG;(ExcelRead.java:134);[Step_Values_Delimiter_Character] property value is [~]
+2016/05/26 19:41:55.651;DEBUG;(TestSuiteRunner.java:405);Reading business scenarios...
+2016/05/26 19:41:55.651;DEBUG;(ExcelRead.java:158);Reading tests from sheet [Reusable_Scenarios]
+2016/05/26 19:41:55.854;DEBUG;(ExcelRead.java:298);Finished loading of tests from sheet [Reusable_Scenarios]. Total rows read #134
+2016/05/26 19:41:55.854; INFO;(TestSuiteRunner.java:2106);Test Set Initialization [RS_LoadProperties] is a valid reusable scenario.
+2016/05/26 19:41:55.854; INFO;(TestSuiteRunner.java:2106);Test Set Clean up [RS_CloseConnection] is a valid reusable scenario.
+2016/05/26 19:41:55.854;DEBUG;(TestSuiteRunner.java:447);Initializing Test Data file [.\testData\GlobalFoundries_TestData_ECM.xls]
+2016/05/26 19:41:56.41;DEBUG;(ExcelRead.java:134);[Step_Values_Delimiter_Character] property value is [~]
+2016/05/26 19:41:56.41;DEBUG;(Variable.java:295);Value [9] has been stored in variable [AFT_TESTDATASHEETCOUNT]
+2016/05/26 19:41:56.41;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:56.41; INFO;(TestSuiteRunner.java:1082);Starting execution of functional business scenarios and test steps in test suite
+2016/05/26 19:41:56.41; INFO;(TestSuiteRunner.java:1227);executing business scenario #TS_Login
+2016/05/26 19:41:56.41; INFO;(TestSuiteRunner.java:2142);Starting execution of Test Set level Initialization reusable scenario [RS_LoadProperties]
+2016/05/26 19:41:56.41;DEBUG;(TestSuiteRunner.java:749);Starting execution of a scenario [RS_LoadProperties] in resuable test suite. Pushing [RS_LoadProperties] to [executingResuableTestScenario] stack.
+2016/05/26 19:41:56.41; INFO;(TestSuiteRunner.java:801);Starting execution of business scenario id [RS_LoadProperties] and associated test steps in test suite file [.\testScripts\GlobalFoundries_Reusable_ECM.xls]
+2016/05/26 19:41:56.41; INFO;(TestSuiteRunner.java:827);Executing test steps. Execution flag for business scenario id [RS_LoadProperties], description [Load the required properties] is [Y]
+2016/05/26 19:41:56.41;DEBUG;(Variable.java:295);Value [RS_LoadProperties] has been stored in variable [AFT_CURRESBUSINESSSCENARIOID]
+2016/05/26 19:41:56.41;DEBUG;(Variable.java:295);Value [Load the required properties] has been stored in variable [AFT_CURRESBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:56.41;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTSCENARIOS#] after substituting for variables/test data is [0]
+2016/05/26 19:41:56.41;DEBUG;(Variable.java:295);Value [1] has been stored in variable [AFT_TOTALTESTSCENARIOS]
+2016/05/26 19:41:56.41;DEBUG;(Variable.java:295);Value [RS_LoadProperties_1] has been stored in variable [AFT_CURTESTCASEID]
+2016/05/26 19:41:56.41;DEBUG;(Variable.java:295);Value [Load the required properties] has been stored in variable [AFT_CURTESTCASEDESCRIPTION]
+2016/05/26 19:41:56.41;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTCASES#] after substituting for variables/test data is [0]
+2016/05/26 19:41:56.41;DEBUG;(Variable.java:295);Value [1] has been stored in variable [AFT_TOTALTESTCASES]
+2016/05/26 19:41:56.41;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTCASE]
+2016/05/26 19:41:56.41; INFO;(TestStepRunner.java:564);Starting execution of Pre-steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.41;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.41;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.41;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.368;DEBUG;(TestStepRunner.java:860);Calling action [createScriptInstance], Element Name [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper], Element value [#Helper#]
+2016/05/26 19:41:56.368;DEBUG;(Helper.java:463);Action value string [#Helper#] after substituting for variables/test data is []
+2016/05/26 19:41:56.368;DEBUG;(Helper.java:463);Action value string [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper] after substituting for variables/test data is [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.368;DEBUG;(Parser.java:159);Calling actionValue [createScriptInstance], element Name [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper], original value [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper], parsed value []
+2016/05/26 19:41:56.368; INFO;(ScriptRunner.java:110);User specified script [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.368;DEBUG;(ScriptRunner.java:1146);Jar file specified is [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.368;DEBUG;(Helper.java:463);Action value string [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper] after substituting for variables/test data is [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.368;DEBUG;(DynamicClassLoader.java:91);Loading the jarfile [.\library\GlobalFoundries\gf_xAFT.jar] in Runtime
+2016/05/26 19:41:56.368;DEBUG;(DynamicClassLoader.java:93);Completed loading the jarfile [.\library\GlobalFoundries\gf_xAFT.jar] in Runtime
+2016/05/26 19:41:56.368;DEBUG;(DynamicClassLoader.java:96);Loading the class [com.ags.util.Helper]
+2016/05/26 19:41:56.368;DEBUG;(DynamicClassLoader.java:98);Completed loading the class [com.ags.util.Helper]
+2016/05/26 19:41:56.384;DEBUG;(ScriptRunner.java:149);Successfully created instance of [com.ags.util.Helper] class
+2016/05/26 19:41:56.384;DEBUG;(ScriptInstance.java:71);Script Instance object created for script file [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.util.Helper]!
+2016/05/26 19:41:56.384;DEBUG;(ScriptInstanceManager.java:71);Creating a unique script instance identifier
+2016/05/26 19:41:56.384; INFO;(ScriptInstanceManager.java:81);Generated unique script instance identifier [scriptInstance201605261941563841]
+2016/05/26 19:41:56.384; INFO;(ScriptInstanceManager.java:99);Added a new script instance identifier [scriptInstance201605261941563841]
+2016/05/26 19:41:56.384; INFO;(ScriptRunner.java:219);Storing script instance [scriptInstance201605261941563841] in user variable [#Helper#]
+2016/05/26 19:41:56.384; INFO;(Helper.java:621);Parsing the parameters [#Helper#]
+2016/05/26 19:41:56.384;DEBUG;(Variable.java:295);Value [scriptInstance201605261941563841] has been stored in variable [Helper]
+2016/05/26 19:41:56.384; INFO;(ScriptRunner.java:229);Storing script instance [scriptInstance201605261941563841] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:56.384;DEBUG;(Variable.java:295);Value [scriptInstance201605261941563841] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:56.384;DEBUG;(ScriptRunner.java:257);Script identifier [scriptInstance201605261941563841] created for external script [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.384;DEBUG;(Variable.java:295);Value [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.384;DEBUG;(Variable.java:295);Value [scriptInstance201605261941563841] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.384;DEBUG;(Variable.java:295);Value [createScriptInstance] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.384;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is [scriptInstance201605261941563841]
+2016/05/26 19:41:56.384; INFO;(TestStepRunner.java:1594);Assigning result [scriptInstance201605261941563841] to Variable [#Helper#]
+2016/05/26 19:41:56.384; INFO;(Helper.java:621);Parsing the parameters [#Helper#]
+2016/05/26 19:41:56.384;DEBUG;(Variable.java:295);Value [scriptInstance201605261941563841] has been stored in variable [Helper]
+2016/05/26 19:41:56.384;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.384;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.384;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.400;DEBUG;(TestStepRunner.java:860);Calling action [createScriptInstance], Element Name [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM], Element value [#ECM#]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#ECM#] after substituting for variables/test data is []
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM] after substituting for variables/test data is [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.400;DEBUG;(Parser.java:159);Calling actionValue [createScriptInstance], element Name [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM], original value [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM], parsed value []
+2016/05/26 19:41:56.400; INFO;(ScriptRunner.java:110);User specified script [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.400;DEBUG;(ScriptRunner.java:1146);Jar file specified is [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM] after substituting for variables/test data is [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.400;DEBUG;(DynamicClassLoader.java:91);Loading the jarfile [.\library\GlobalFoundries\gf_xAFT.jar] in Runtime
+2016/05/26 19:41:56.400;DEBUG;(DynamicClassLoader.java:93);Completed loading the jarfile [.\library\GlobalFoundries\gf_xAFT.jar] in Runtime
+2016/05/26 19:41:56.400;DEBUG;(DynamicClassLoader.java:96);Loading the class [com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.400;DEBUG;(DynamicClassLoader.java:98);Completed loading the class [com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.400;DEBUG;(ScriptRunner.java:149);Successfully created instance of [com.ags.gf.mtqa.app.ECM] class
+2016/05/26 19:41:56.400;DEBUG;(ScriptInstance.java:71);Script Instance object created for script file [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]!
+2016/05/26 19:41:56.400;DEBUG;(ScriptInstanceManager.java:71);Creating a unique script instance identifier
+2016/05/26 19:41:56.400; INFO;(ScriptInstanceManager.java:81);Generated unique script instance identifier [scriptInstance201605261941564002]
+2016/05/26 19:41:56.400; INFO;(ScriptInstanceManager.java:99);Added a new script instance identifier [scriptInstance201605261941564002]
+2016/05/26 19:41:56.400; INFO;(ScriptRunner.java:219);Storing script instance [scriptInstance201605261941564002] in user variable [#ECM#]
+2016/05/26 19:41:56.400; INFO;(Helper.java:621);Parsing the parameters [#ECM#]
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564002] has been stored in variable [ECM]
+2016/05/26 19:41:56.400; INFO;(ScriptRunner.java:229);Storing script instance [scriptInstance201605261941564002] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564002] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:56.400;DEBUG;(ScriptRunner.java:257);Script identifier [scriptInstance201605261941564002] created for external script [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:295);Value [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564002] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:295);Value [createScriptInstance] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is [scriptInstance201605261941564002]
+2016/05/26 19:41:56.400; INFO;(TestStepRunner.java:1594);Assigning result [scriptInstance201605261941564002] to Variable [#ECM#]
+2016/05/26 19:41:56.400; INFO;(Helper.java:621);Parsing the parameters [#ECM#]
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564002] has been stored in variable [ECM]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.400;DEBUG;(TestStepRunner.java:845);Calling action [@useScriptInstance=#Helper#]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#Helper#] after substituting for variables/test data is [scriptInstance201605261941563841]
+2016/05/26 19:41:56.400;DEBUG;(TestStepRunner.java:1225);Execute the Annotation [@useScriptInstance], with the value [scriptInstance201605261941563841]
+2016/05/26 19:41:56.400; INFO;(Parser.java:1585);Storing script instance [scriptInstance201605261941563841] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:56.400; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941563841]
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:295);Value [scriptInstance201605261941563841] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_IsEndOfTestData#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.400; INFO;(TestStepRunner.java:588);Completed execution of Pre-steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.400; INFO;(TestStepRunner.java:564);Starting execution of Steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.400;DEBUG;(TestStepRunner.java:860);Calling action [##loadProperties], Element Name [novalue], Element value [#AFT_AppConfig.ECMProperties#]
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:179);Found a AppConfig property [ECMProperties]
+2016/05/26 19:41:56.400;DEBUG;(Variable.java:182);AppConfig property [ECMProperties], value [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_AppConfig.ECMProperties#] after substituting for variables/test data is [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.400;DEBUG;(Parser.java:159);Calling actionValue [##loadProperties], element Name [novalue], original value [novalue], parsed value [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.400;DEBUG;(ScriptRunner.java:373);No script identifier specified. Using [AFT_LastScriptInstance]
+2016/05/26 19:41:56.400;DEBUG;(ScriptRunner.java:377);Method to be invoked is [loadProperties]
+2016/05/26 19:41:56.400;DEBUG;(ScriptRunner.java:381);Variable to store value returned by method is [novalue]
+2016/05/26 19:41:56.400;DEBUG;(Helper.java:463);Action value string [#AFT_CURRENTSCRIPTINSTANCE#] after substituting for variables/test data is [scriptInstance201605261941563841]
+2016/05/26 19:41:56.400; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941563841]
+2016/05/26 19:41:56.400; INFO;(Helper.java:621);Parsing the parameters [#AFT_AppConfig.ECMProperties#]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:179);Found a AppConfig property [ECMProperties]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:182);AppConfig property [ECMProperties], value [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_AppConfig.ECMProperties#] after substituting for variables/test data is [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.415; INFO;(ScriptRunner.java:615);Invoking function [loadProperties] with 1 parameter [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.415; INFO;(JCLLoggerAdapter.java:262);Loading properties from ./resource/GlobalFoundries/gf.properties...
+2016/05/26 19:41:56.415; INFO;(JCLLoggerAdapter.java:262);Properties are loaded successfully
+2016/05/26 19:41:56.415; INFO;(JCLLoggerAdapter.java:262);Loading properties from ./resource/GlobalFoundries/ecm.properties...
+2016/05/26 19:41:56.415; INFO;(JCLLoggerAdapter.java:262);Properties are loaded successfully
+2016/05/26 19:41:56.415; INFO;(Helper.java:621);Parsing the parameters [novalue]
+2016/05/26 19:41:56.415;ERROR;(Variable.java:298);Variable name [novalue] specified looks invalid. Please check the syntax in test suite.
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_EXTERNALSCRIPTRETURNVALUE]
+2016/05/26 19:41:56.415;DEBUG;(ScriptRunner.java:501);Returning value [] after executing method [loadProperties] for script identifier [scriptInstance201605261941563841]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [##loadProperties] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:56.415; INFO;(TestStepRunner.java:588);Completed execution of Steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.415; INFO;(TestStepRunner.java:564);Starting execution of Post-steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.415; INFO;(TestStepRunner.java:588);Completed execution of Post-steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.415; INFO;(TestSuiteRunner.java:887);Completed execution of Single functional business scenarios and test steps for #RS_LoadProperties
+2016/05/26 19:41:56.415;DEBUG;(TestSuiteRunner.java:770);Completed execution of a scenario [RS_LoadProperties]. Poped out [RS_LoadProperties] from [executingResuableTestScenario] stack.
+2016/05/26 19:41:56.415;DEBUG;(TestSuiteRunner.java:743);Starting execution of a scenario [TS_Login] in primary test suite. Pushing '' to [executingResuableTestScenario] stack.
+2016/05/26 19:41:56.415; INFO;(TestSuiteRunner.java:801);Starting execution of business scenario id [TS_Login] and associated test steps in test suite file [.\testScripts\GlobalFoundries_TestSuite_ECM.xls]
+2016/05/26 19:41:56.415; INFO;(TestSuiteRunner.java:827);Executing test steps. Execution flag for business scenario id [TS_Login], description [Login into the ECM using REST services] is [Y]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [TS_Login] has been stored in variable [AFT_CURBUSINESSSCENARIOID]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [Login into the ECM using REST services] has been stored in variable [AFT_CURBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTSCENARIOS#] after substituting for variables/test data is [1]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [2] has been stored in variable [AFT_TOTALTESTSCENARIOS]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [TS_Login_1] has been stored in variable [AFT_CURTESTCASEID]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [Login into the ECM using REST services] has been stored in variable [AFT_CURTESTCASEDESCRIPTION]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTCASES#] after substituting for variables/test data is [1]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [2] has been stored in variable [AFT_TOTALTESTCASES]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTCASE]
+2016/05/26 19:41:56.415; INFO;(TestStepRunner.java:564);Starting execution of Pre-steps for test case #TS_Login_1
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.415;DEBUG;(TestStepRunner.java:860);Calling action [getTestDataRowNumber], Element Name [#RowID#], Element value [#AFT_appconfig.SheetName#,[[Automation_ID]],#AFT_CurBusinessScenarioId#]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:179);Found a AppConfig property [SheetName]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:182);AppConfig property [SheetName], value [ECM_Request]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_appconfig.SheetName#,[[Automation_ID]],#AFT_CurBusinessScenarioId#] after substituting for variables/test data is [ECM_Request,Automation_ID,TS_Login]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#RowID#] after substituting for variables/test data is []
+2016/05/26 19:41:56.415;DEBUG;(Parser.java:159);Calling actionValue [getTestDataRowNumber], element Name [#RowID#], original value [#RowID#], parsed value [ECM_Request,Automation_ID,TS_Login]
+2016/05/26 19:41:56.415; INFO;(Helper.java:621);Parsing the parameters [#AFT_appconfig.SheetName#,[[Automation_ID]],#AFT_CurBusinessScenarioId#]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:179);Found a AppConfig property [SheetName]
+2016/05/26 19:41:56.415;DEBUG;(Variable.java:182);AppConfig property [SheetName], value [ECM_Request]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_appconfig.SheetName#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:56.415;DEBUG;(Helper.java:463);Action value string [#AFT_CurBusinessScenarioId#] after substituting for variables/test data is [TS_Login]
+2016/05/26 19:41:56.415; INFO;(CommandFixtures.java:1462);Executing action [getTestDataRowNumber] for sheet [#AFT_appconfig.SheetName#,[[Automation_ID]],#AFT_CurBusinessScenarioId#]
+2016/05/26 19:41:56.415;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:56.431;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [#RowID#] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [1] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [getTestDataRowNumber] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is [1]
+2016/05/26 19:41:56.431; INFO;(TestStepRunner.java:1540);Assigning result [1] to Variable [#RowID#]
+2016/05/26 19:41:56.431; INFO;(Helper.java:621);Parsing the parameters [#RowID#]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [1] has been stored in variable [RowID]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(TestStepRunner.java:845);Calling action [@setTestDataRow=#AFT_appconfig.SheetName#,#RowID#]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:179);Found a AppConfig property [SheetName]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:182);AppConfig property [SheetName], value [ECM_Request]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_appconfig.SheetName#,#RowID#] after substituting for variables/test data is [ECM_Request,1]
+2016/05/26 19:41:56.431;DEBUG;(TestStepRunner.java:1225);Execute the Annotation [@setTestDataRow], with the value [ECM_Request,1]
+2016/05/26 19:41:56.431; INFO;(Parser.java:1247);Executing [@setTestDataRow] annotation with value [ECM_Request,1]
+2016/05/26 19:41:56.431; INFO;(Parser.java:1260);Set test data rowid [1] for sheet [ecm_request]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_IsEndOfTestData#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(TestStepRunner.java:860);Calling action [copydata], Element Name [novalue], Element value [#AFT_appconfig.SheetName#,#sheetname#]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:179);Found a AppConfig property [SheetName]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:182);AppConfig property [SheetName], value [ECM_Request]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_appconfig.SheetName#,#sheetname#] after substituting for variables/test data is [ECM_Request,]
+2016/05/26 19:41:56.431;DEBUG;(Parser.java:159);Calling actionValue [copydata], element Name [novalue], original value [novalue], parsed value [ECM_Request,]
+2016/05/26 19:41:56.431;DEBUG;(CommandFixtures.java:753);Executing [copyData] with value [#AFT_appconfig.SheetName#,#sheetname#]
+2016/05/26 19:41:56.431; INFO;(Helper.java:621);Parsing the parameters [#AFT_appconfig.SheetName#,#sheetname#]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:179);Found a AppConfig property [SheetName]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:182);AppConfig property [SheetName], value [ECM_Request]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_appconfig.SheetName#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:56.431;DEBUG;(CommandFixtures.java:797);Source value [#AFT_appconfig.SheetName#] is a variable or test data identifier. Actual value is [ECM_Request]
+2016/05/26 19:41:56.431; INFO;(Helper.java:621);Parsing the parameters [#sheetname#]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [ECM_Request] has been stored in variable [sheetname]
+2016/05/26 19:41:56.431; INFO;(CommandFixtures.java:820);Copied value [ECM_Request] to dynamic variable [#sheetname#]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [copydata] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:56.431; INFO;(TestStepRunner.java:588);Completed execution of Pre-steps for test case #TS_Login_1
+2016/05/26 19:41:56.431; INFO;(TestStepRunner.java:564);Starting execution of Steps for test case #TS_Login_1
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(TestStepRunner.java:860);Calling action [executeReusableTestScenario], Element Name [novalue], Element value [RS_Connection]
+2016/05/26 19:41:56.431;DEBUG;(Parser.java:159);Calling actionValue [executeReusableTestScenario], element Name [novalue], original value [novalue], parsed value [RS_Connection]
+2016/05/26 19:41:56.431; INFO;(CommandFixtures.java:1307);Executing action [executeReusableTestScenario] for test scenario [RS_Connection]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_CURBUSINESSSCENARIOID#] after substituting for variables/test data is [TS_Login]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_CURRESBUSINESSSCENARIODESCRIPTION#] after substituting for variables/test data is [Load the required properties]
+2016/05/26 19:41:56.431; INFO;(CommandFixtures.java:1336);Starting execution of business scenario id [RS_Connection] and associated test steps in test suite file [.\testScripts\GlobalFoundries_Reusable_ECM.xls]
+2016/05/26 19:41:56.431;DEBUG;(TestSuiteRunner.java:749);Starting execution of a scenario [RS_Connection] in resuable test suite. Pushing [RS_Connection] to [executingResuableTestScenario] stack.
+2016/05/26 19:41:56.431; INFO;(TestSuiteRunner.java:801);Starting execution of business scenario id [RS_Connection] and associated test steps in test suite file [.\testScripts\GlobalFoundries_Reusable_ECM.xls]
+2016/05/26 19:41:56.431; INFO;(TestSuiteRunner.java:827);Executing test steps. Execution flag for business scenario id [RS_Connection], description [Login for ECM REST API] is [Y]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [RS_Connection] has been stored in variable [AFT_CURRESBUSINESSSCENARIOID]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [Login for ECM REST API] has been stored in variable [AFT_CURRESBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTSCENARIOS#] after substituting for variables/test data is [2]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [3] has been stored in variable [AFT_TOTALTESTSCENARIOS]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [RS_Connection_1] has been stored in variable [AFT_CURTESTCASEID]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [Login into the ECM application] has been stored in variable [AFT_CURTESTCASEDESCRIPTION]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTCASES#] after substituting for variables/test data is [2]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [3] has been stored in variable [AFT_TOTALTESTCASES]
+2016/05/26 19:41:56.431;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTCASE]
+2016/05/26 19:41:56.431; INFO;(TestStepRunner.java:564);Starting execution of Pre-steps for test case #RS_Connection_1
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.431;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(TestStepRunner.java:845);Calling action [@useScriptInstance=#ECM#]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#ECM#] after substituting for variables/test data is [scriptInstance201605261941564002]
+2016/05/26 19:41:56.446;DEBUG;(TestStepRunner.java:1225);Execute the Annotation [@useScriptInstance], with the value [scriptInstance201605261941564002]
+2016/05/26 19:41:56.446; INFO;(Parser.java:1585);Storing script instance [scriptInstance201605261941564002] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:56.446; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564002]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564002] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_IsEndOfTestData#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(TestStepRunner.java:860);Calling action [##closeConnection], Element Name [novalue], Element value [novalue]
+2016/05/26 19:41:56.446;DEBUG;(Parser.java:159);Calling actionValue [##closeConnection], element Name [novalue], original value [novalue], parsed value []
+2016/05/26 19:41:56.446;DEBUG;(ScriptRunner.java:373);No script identifier specified. Using [AFT_LastScriptInstance]
+2016/05/26 19:41:56.446;DEBUG;(ScriptRunner.java:377);Method to be invoked is [closeConnection]
+2016/05/26 19:41:56.446;DEBUG;(ScriptRunner.java:381);Variable to store value returned by method is [novalue]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_CURRENTSCRIPTINSTANCE#] after substituting for variables/test data is [scriptInstance201605261941564002]
+2016/05/26 19:41:56.446; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564002]
+2016/05/26 19:41:56.446; INFO;(ScriptRunner.java:595);Invoking function [closeConnection] with no parameters.
+2016/05/26 19:41:56.446; INFO;(Helper.java:621);Parsing the parameters [novalue]
+2016/05/26 19:41:56.446;ERROR;(Variable.java:298);Variable name [novalue] specified looks invalid. Please check the syntax in test suite.
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_EXTERNALSCRIPTRETURNVALUE]
+2016/05/26 19:41:56.446;DEBUG;(ScriptRunner.java:501);Returning value [] after executing method [closeConnection] for script identifier [scriptInstance201605261941564002]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [##closeConnection] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(TestStepRunner.java:860);Calling action [executeReusableTestScenario], Element Name [novalue], Element value [RS_LoadProperties]
+2016/05/26 19:41:56.446;DEBUG;(Parser.java:159);Calling actionValue [executeReusableTestScenario], element Name [novalue], original value [novalue], parsed value [RS_LoadProperties]
+2016/05/26 19:41:56.446; INFO;(CommandFixtures.java:1307);Executing action [executeReusableTestScenario] for test scenario [RS_LoadProperties]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_CURBUSINESSSCENARIOID#] after substituting for variables/test data is [TS_Login]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_CURRESBUSINESSSCENARIODESCRIPTION#] after substituting for variables/test data is [Login for ECM REST API]
+2016/05/26 19:41:56.446; INFO;(CommandFixtures.java:1336);Starting execution of business scenario id [RS_LoadProperties] and associated test steps in test suite file [.\testScripts\GlobalFoundries_Reusable_ECM.xls]
+2016/05/26 19:41:56.446;DEBUG;(TestSuiteRunner.java:749);Starting execution of a scenario [RS_LoadProperties] in resuable test suite. Pushing [RS_LoadProperties] to [executingResuableTestScenario] stack.
+2016/05/26 19:41:56.446; INFO;(TestSuiteRunner.java:801);Starting execution of business scenario id [RS_LoadProperties] and associated test steps in test suite file [.\testScripts\GlobalFoundries_Reusable_ECM.xls]
+2016/05/26 19:41:56.446; INFO;(TestSuiteRunner.java:827);Executing test steps. Execution flag for business scenario id [RS_LoadProperties], description [Load the required properties] is [Y]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [RS_LoadProperties] has been stored in variable [AFT_CURRESBUSINESSSCENARIOID]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [Load the required properties] has been stored in variable [AFT_CURRESBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTSCENARIOS#] after substituting for variables/test data is [3]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [4] has been stored in variable [AFT_TOTALTESTSCENARIOS]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [RS_LoadProperties_1] has been stored in variable [AFT_CURTESTCASEID]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [Load the required properties] has been stored in variable [AFT_CURTESTCASEDESCRIPTION]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTCASES#] after substituting for variables/test data is [3]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [4] has been stored in variable [AFT_TOTALTESTCASES]
+2016/05/26 19:41:56.446;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTCASE]
+2016/05/26 19:41:56.446; INFO;(TestStepRunner.java:564);Starting execution of Pre-steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.446;DEBUG;(TestStepRunner.java:860);Calling action [createScriptInstance], Element Name [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper], Element value [#Helper#]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [#Helper#] after substituting for variables/test data is [scriptInstance201605261941563841]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper] after substituting for variables/test data is [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.446;DEBUG;(Parser.java:159);Calling actionValue [createScriptInstance], element Name [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper], original value [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper], parsed value [scriptInstance201605261941563841]
+2016/05/26 19:41:56.446; INFO;(ScriptRunner.java:110);User specified script [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.446;DEBUG;(ScriptRunner.java:1146);Jar file specified is [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.446;DEBUG;(Helper.java:463);Action value string [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper] after substituting for variables/test data is [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.446;DEBUG;(DynamicClassLoader.java:91);Loading the jarfile [.\library\GlobalFoundries\gf_xAFT.jar] in Runtime
+2016/05/26 19:41:56.462;DEBUG;(DynamicClassLoader.java:93);Completed loading the jarfile [.\library\GlobalFoundries\gf_xAFT.jar] in Runtime
+2016/05/26 19:41:56.462;DEBUG;(DynamicClassLoader.java:96);Loading the class [com.ags.util.Helper]
+2016/05/26 19:41:56.462;DEBUG;(DynamicClassLoader.java:98);Completed loading the class [com.ags.util.Helper]
+2016/05/26 19:41:56.462;DEBUG;(ScriptRunner.java:149);Successfully created instance of [com.ags.util.Helper] class
+2016/05/26 19:41:56.462;DEBUG;(ScriptInstance.java:71);Script Instance object created for script file [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.util.Helper]!
+2016/05/26 19:41:56.462;DEBUG;(ScriptInstanceManager.java:71);Creating a unique script instance identifier
+2016/05/26 19:41:56.462; INFO;(ScriptInstanceManager.java:81);Generated unique script instance identifier [scriptInstance201605261941564623]
+2016/05/26 19:41:56.462; INFO;(ScriptInstanceManager.java:99);Added a new script instance identifier [scriptInstance201605261941564623]
+2016/05/26 19:41:56.462; INFO;(ScriptRunner.java:219);Storing script instance [scriptInstance201605261941564623] in user variable [#Helper#]
+2016/05/26 19:41:56.462; INFO;(Helper.java:621);Parsing the parameters [#Helper#]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564623] has been stored in variable [Helper]
+2016/05/26 19:41:56.462; INFO;(ScriptRunner.java:229);Storing script instance [scriptInstance201605261941564623] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564623] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:56.462;DEBUG;(ScriptRunner.java:257);Script identifier [scriptInstance201605261941564623] created for external script [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.util.Helper]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.util.Helper] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564623] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [createScriptInstance] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is [scriptInstance201605261941564623]
+2016/05/26 19:41:56.462; INFO;(TestStepRunner.java:1594);Assigning result [scriptInstance201605261941564623] to Variable [#Helper#]
+2016/05/26 19:41:56.462; INFO;(Helper.java:621);Parsing the parameters [#Helper#]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564623] has been stored in variable [Helper]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.462;DEBUG;(TestStepRunner.java:860);Calling action [createScriptInstance], Element Name [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM], Element value [#ECM#]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#ECM#] after substituting for variables/test data is [scriptInstance201605261941564002]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM] after substituting for variables/test data is [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.462;DEBUG;(Parser.java:159);Calling actionValue [createScriptInstance], element Name [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM], original value [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM], parsed value [scriptInstance201605261941564002]
+2016/05/26 19:41:56.462; INFO;(ScriptRunner.java:110);User specified script [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.462;DEBUG;(ScriptRunner.java:1146);Jar file specified is [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM] after substituting for variables/test data is [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.462;DEBUG;(DynamicClassLoader.java:91);Loading the jarfile [.\library\GlobalFoundries\gf_xAFT.jar] in Runtime
+2016/05/26 19:41:56.462;DEBUG;(DynamicClassLoader.java:93);Completed loading the jarfile [.\library\GlobalFoundries\gf_xAFT.jar] in Runtime
+2016/05/26 19:41:56.462;DEBUG;(DynamicClassLoader.java:96);Loading the class [com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.462;DEBUG;(DynamicClassLoader.java:98);Completed loading the class [com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.462;DEBUG;(ScriptRunner.java:149);Successfully created instance of [com.ags.gf.mtqa.app.ECM] class
+2016/05/26 19:41:56.462;DEBUG;(ScriptInstance.java:71);Script Instance object created for script file [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]!
+2016/05/26 19:41:56.462;DEBUG;(ScriptInstanceManager.java:71);Creating a unique script instance identifier
+2016/05/26 19:41:56.462; INFO;(ScriptInstanceManager.java:81);Generated unique script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:56.462; INFO;(ScriptInstanceManager.java:99);Added a new script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:56.462; INFO;(ScriptRunner.java:219);Storing script instance [scriptInstance201605261941564624] in user variable [#ECM#]
+2016/05/26 19:41:56.462; INFO;(Helper.java:621);Parsing the parameters [#ECM#]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564624] has been stored in variable [ECM]
+2016/05/26 19:41:56.462; INFO;(ScriptRunner.java:229);Storing script instance [scriptInstance201605261941564624] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564624] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:56.462;DEBUG;(ScriptRunner.java:257);Script identifier [scriptInstance201605261941564624] created for external script [.\library\GlobalFoundries\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [.\\library\\GlobalFoundries\\gf_xAFT.jar,com.ags.gf.mtqa.app.ECM] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564624] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [createScriptInstance] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is [scriptInstance201605261941564624]
+2016/05/26 19:41:56.462; INFO;(TestStepRunner.java:1594);Assigning result [scriptInstance201605261941564624] to Variable [#ECM#]
+2016/05/26 19:41:56.462; INFO;(Helper.java:621);Parsing the parameters [#ECM#]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564624] has been stored in variable [ECM]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.462;DEBUG;(TestStepRunner.java:845);Calling action [@useScriptInstance=#Helper#]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#Helper#] after substituting for variables/test data is [scriptInstance201605261941564623]
+2016/05/26 19:41:56.462;DEBUG;(TestStepRunner.java:1225);Execute the Annotation [@useScriptInstance], with the value [scriptInstance201605261941564623]
+2016/05/26 19:41:56.462; INFO;(Parser.java:1585);Storing script instance [scriptInstance201605261941564623] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:56.462; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564623]
+2016/05/26 19:41:56.462;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564623] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_IsEndOfTestData#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.462; INFO;(TestStepRunner.java:588);Completed execution of Pre-steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.462; INFO;(TestStepRunner.java:564);Starting execution of Steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.462;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(TestStepRunner.java:860);Calling action [##loadProperties], Element Name [novalue], Element value [#AFT_AppConfig.ECMProperties#]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:179);Found a AppConfig property [ECMProperties]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:182);AppConfig property [ECMProperties], value [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_AppConfig.ECMProperties#] after substituting for variables/test data is [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.478;DEBUG;(Parser.java:159);Calling actionValue [##loadProperties], element Name [novalue], original value [novalue], parsed value [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.478;DEBUG;(ScriptRunner.java:373);No script identifier specified. Using [AFT_LastScriptInstance]
+2016/05/26 19:41:56.478;DEBUG;(ScriptRunner.java:377);Method to be invoked is [loadProperties]
+2016/05/26 19:41:56.478;DEBUG;(ScriptRunner.java:381);Variable to store value returned by method is [novalue]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_CURRENTSCRIPTINSTANCE#] after substituting for variables/test data is [scriptInstance201605261941564623]
+2016/05/26 19:41:56.478; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564623]
+2016/05/26 19:41:56.478; INFO;(Helper.java:621);Parsing the parameters [#AFT_AppConfig.ECMProperties#]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:179);Found a AppConfig property [ECMProperties]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:182);AppConfig property [ECMProperties], value [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_AppConfig.ECMProperties#] after substituting for variables/test data is [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.478; INFO;(ScriptRunner.java:615);Invoking function [loadProperties] with 1 parameter [./resource/GlobalFoundries/ecm.properties]
+2016/05/26 19:41:56.478; INFO;(JCLLoggerAdapter.java:262);Loading properties from ./resource/GlobalFoundries/ecm.properties...
+2016/05/26 19:41:56.478; INFO;(JCLLoggerAdapter.java:262);Properties are loaded successfully
+2016/05/26 19:41:56.478; INFO;(Helper.java:621);Parsing the parameters [novalue]
+2016/05/26 19:41:56.478;ERROR;(Variable.java:298);Variable name [novalue] specified looks invalid. Please check the syntax in test suite.
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_EXTERNALSCRIPTRETURNVALUE]
+2016/05/26 19:41:56.478;DEBUG;(ScriptRunner.java:501);Returning value [] after executing method [loadProperties] for script identifier [scriptInstance201605261941564623]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [##loadProperties] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:56.478; INFO;(TestStepRunner.java:588);Completed execution of Steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.478; INFO;(TestStepRunner.java:564);Starting execution of Post-steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.478; INFO;(TestStepRunner.java:588);Completed execution of Post-steps for test case #RS_LoadProperties_1
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478; INFO;(TestSuiteRunner.java:887);Completed execution of Single functional business scenarios and test steps for #RS_LoadProperties
+2016/05/26 19:41:56.478;DEBUG;(TestSuiteRunner.java:770);Completed execution of a scenario [RS_LoadProperties]. Poped out [RS_LoadProperties] from [executingResuableTestScenario] stack.
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [TS_Login] has been stored in variable [AFT_CURRESBUSINESSSCENARIOID]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [Login for ECM REST API] has been stored in variable [AFT_CURRESBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [executeReusableTestScenario] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(TestStepRunner.java:845);Calling action [@useScriptInstance=#ECM#]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#ECM#] after substituting for variables/test data is [scriptInstance201605261941564624]
+2016/05/26 19:41:56.478;DEBUG;(TestStepRunner.java:1225);Execute the Annotation [@useScriptInstance], with the value [scriptInstance201605261941564624]
+2016/05/26 19:41:56.478; INFO;(Parser.java:1585);Storing script instance [scriptInstance201605261941564624] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:56.478; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564624] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_IsEndOfTestData#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478; INFO;(TestStepRunner.java:588);Completed execution of Pre-steps for test case #RS_Connection_1
+2016/05/26 19:41:56.478; INFO;(TestStepRunner.java:564);Starting execution of Steps for test case #RS_Connection_1
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(TestStepRunner.java:860);Calling action [##setAuthenticationURL], Element Name [novalue], Element value [${#sheetname#.URL}$]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:264);Found a valid Test data header [#sheetname#.URL]. Getting the test data and substituting in the action value string.
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#sheetname#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:312);Test Data RowId is [1]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:336);Table name is [ecm_request] and column name is [URL]
+2016/05/26 19:41:56.478;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:56.478;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:346);Value retrieved from sheet [ecm_request], column [URL], row number [1] is [/api/auth/login]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [${#sheetname#.URL}$] after substituting for variables/test data is [/api/auth/login]
+2016/05/26 19:41:56.478;DEBUG;(Parser.java:159);Calling actionValue [##setAuthenticationURL], element Name [novalue], original value [novalue], parsed value [/api/auth/login]
+2016/05/26 19:41:56.478;DEBUG;(ScriptRunner.java:373);No script identifier specified. Using [AFT_LastScriptInstance]
+2016/05/26 19:41:56.478;DEBUG;(ScriptRunner.java:377);Method to be invoked is [setAuthenticationURL]
+2016/05/26 19:41:56.478;DEBUG;(ScriptRunner.java:381);Variable to store value returned by method is [novalue]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_CURRENTSCRIPTINSTANCE#] after substituting for variables/test data is [scriptInstance201605261941564624]
+2016/05/26 19:41:56.478; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:56.478; INFO;(Helper.java:621);Parsing the parameters [${#sheetname#.URL}$]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:264);Found a valid Test data header [#sheetname#.URL]. Getting the test data and substituting in the action value string.
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#sheetname#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:312);Test Data RowId is [1]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:336);Table name is [ecm_request] and column name is [URL]
+2016/05/26 19:41:56.478;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:56.478;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:346);Value retrieved from sheet [ecm_request], column [URL], row number [1] is [/api/auth/login]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [${#sheetname#.URL}$] after substituting for variables/test data is [/api/auth/login]
+2016/05/26 19:41:56.478; INFO;(ScriptRunner.java:615);Invoking function [setAuthenticationURL] with 1 parameter [/api/auth/login]
+2016/05/26 19:41:56.478; INFO;(Helper.java:621);Parsing the parameters [novalue]
+2016/05/26 19:41:56.478;ERROR;(Variable.java:298);Variable name [novalue] specified looks invalid. Please check the syntax in test suite.
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_EXTERNALSCRIPTRETURNVALUE]
+2016/05/26 19:41:56.478;DEBUG;(ScriptRunner.java:501);Returning value [] after executing method [setAuthenticationURL] for script identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.478;DEBUG;(Variable.java:295);Value [##setAuthenticationURL] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.478;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.493;DEBUG;(TestStepRunner.java:860);Calling action [##setCredentials], Element Name [novalue], Element value [${#sheetname#.RequestBody}$]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:264);Found a valid Test data header [#sheetname#.RequestBody]. Getting the test data and substituting in the action value string.
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#sheetname#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:312);Test Data RowId is [1]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:336);Table name is [ecm_request] and column name is [RequestBody]
+2016/05/26 19:41:56.493;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:56.493;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:56.493;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:346);Value retrieved from sheet [ecm_request], column [RequestBody], row number [1] is [user1
+password1]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [${#sheetname#.RequestBody}$] after substituting for variables/test data is [user1
+password1]
+2016/05/26 19:41:56.493;DEBUG;(Parser.java:159);Calling actionValue [##setCredentials], element Name [novalue], original value [novalue], parsed value [user1
+password1]
+2016/05/26 19:41:56.493;DEBUG;(ScriptRunner.java:373);No script identifier specified. Using [AFT_LastScriptInstance]
+2016/05/26 19:41:56.493;DEBUG;(ScriptRunner.java:377);Method to be invoked is [setCredentials]
+2016/05/26 19:41:56.493;DEBUG;(ScriptRunner.java:381);Variable to store value returned by method is [novalue]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#AFT_CURRENTSCRIPTINSTANCE#] after substituting for variables/test data is [scriptInstance201605261941564624]
+2016/05/26 19:41:56.493; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:56.493; INFO;(Helper.java:621);Parsing the parameters [${#sheetname#.RequestBody}$]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:264);Found a valid Test data header [#sheetname#.RequestBody]. Getting the test data and substituting in the action value string.
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#sheetname#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:312);Test Data RowId is [1]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:336);Table name is [ecm_request] and column name is [RequestBody]
+2016/05/26 19:41:56.493;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:56.493;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:56.493;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:346);Value retrieved from sheet [ecm_request], column [RequestBody], row number [1] is [user1
+password1]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [${#sheetname#.RequestBody}$] after substituting for variables/test data is [user1
+password1]
+2016/05/26 19:41:56.493; INFO;(ScriptRunner.java:615);Invoking function [setCredentials] with 1 parameter [user1
+password1]
+2016/05/26 19:41:56.493; INFO;(Helper.java:621);Parsing the parameters [novalue]
+2016/05/26 19:41:56.493;ERROR;(Variable.java:298);Variable name [novalue] specified looks invalid. Please check the syntax in test suite.
+2016/05/26 19:41:56.493;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_EXTERNALSCRIPTRETURNVALUE]
+2016/05/26 19:41:56.493;DEBUG;(ScriptRunner.java:501);Returning value [] after executing method [setCredentials] for script identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:56.493;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:56.493;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:56.493;DEBUG;(Variable.java:295);Value [##setCredentials] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:56.493;DEBUG;(TestStepRunner.java:860);Calling action [##getConnection], Element Name [novalue], Element value [${#sheetname#.Headers}$]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:264);Found a valid Test data header [#sheetname#.Headers]. Getting the test data and substituting in the action value string.
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#sheetname#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:312);Test Data RowId is [1]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:336);Table name is [ecm_request] and column name is [Headers]
+2016/05/26 19:41:56.493;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:56.493;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:56.493;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:346);Value retrieved from sheet [ecm_request], column [Headers], row number [1] is [Authorization: Basic YWJvZ2dhdmE6R2xvYmFsMTIzJDU=
+Content-Type: application/json;charset=UTF-8]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [${#sheetname#.Headers}$] after substituting for variables/test data is [Authorization: Basic YWJvZ2dhdmE6R2xvYmFsMTIzJDU=
+Content-Type: application/json;charset=UTF-8]
+2016/05/26 19:41:56.493;DEBUG;(Parser.java:159);Calling actionValue [##getConnection], element Name [novalue], original value [novalue], parsed value [Authorization: Basic YWJvZ2dhdmE6R2xvYmFsMTIzJDU=
+Content-Type: application/json;charset=UTF-8]
+2016/05/26 19:41:56.493;DEBUG;(ScriptRunner.java:373);No script identifier specified. Using [AFT_LastScriptInstance]
+2016/05/26 19:41:56.493;DEBUG;(ScriptRunner.java:377);Method to be invoked is [getConnection]
+2016/05/26 19:41:56.493;DEBUG;(ScriptRunner.java:381);Variable to store value returned by method is [novalue]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#AFT_CURRENTSCRIPTINSTANCE#] after substituting for variables/test data is [scriptInstance201605261941564624]
+2016/05/26 19:41:56.493; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:56.493; INFO;(Helper.java:621);Parsing the parameters [${#sheetname#.Headers}$]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:264);Found a valid Test data header [#sheetname#.Headers]. Getting the test data and substituting in the action value string.
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [#sheetname#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:312);Test Data RowId is [1]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:336);Table name is [ecm_request] and column name is [Headers]
+2016/05/26 19:41:56.493;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:56.493;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:56.493;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:346);Value retrieved from sheet [ecm_request], column [Headers], row number [1] is [Authorization: Basic YWJvZ2dhdmE6R2xvYmFsMTIzJDU=
+Content-Type: application/json;charset=UTF-8]
+2016/05/26 19:41:56.493;DEBUG;(Helper.java:463);Action value string [${#sheetname#.Headers}$] after substituting for variables/test data is [Authorization: Basic YWJvZ2dhdmE6R2xvYmFsMTIzJDU=
+Content-Type: application/json;charset=UTF-8]
+2016/05/26 19:41:56.493; INFO;(ScriptRunner.java:615);Invoking function [getConnection] with 1 parameter [Authorization: Basic YWJvZ2dhdmE6R2xvYmFsMTIzJDU=
+Content-Type: application/json;charset=UTF-8]
+2016/05/26 19:41:56.493; INFO;(JCLLoggerAdapter.java:262);Executing getConnection()true
+2016/05/26 19:41:56.493; INFO;(JCLLoggerAdapter.java:262);Getting the property hostname from loaded property file
+2016/05/26 19:41:56.493; INFO;(JCLLoggerAdapter.java:262);Getting the property port from loaded property file
+2016/05/26 19:41:56.493; INFO;(JCLLoggerAdapter.java:262);Getting the property userKey from loaded property file
+2016/05/26 19:41:56.493; INFO;(JCLLoggerAdapter.java:262);Getting the property passwordKey from loaded property file
+2016/05/26 19:41:56.493; INFO;(JCLLoggerAdapter.java:262);Getting the property user1 from loaded property file
+2016/05/26 19:41:56.493; INFO;(JCLLoggerAdapter.java:262);Getting the property password1 from loaded property file
+2016/05/26 19:41:56.493; INFO;(JCLLoggerAdapter.java:262);fc8ecmtv==>==>username==>password==>mnampall==>Global5678
+2016/05/26 19:41:56.493; INFO;(JCLLoggerAdapter.java:262);Creating the object to the http client wiht the connection url:http://fc8ecmtv:/api/auth/login
+2016/05/26 19:41:56.649; INFO;(JCLLoggerAdapter.java:262);Executing getHttpClient() with parameters: http://fc8ecmtv:/api/auth/login
+2016/05/26 19:41:57.897; INFO;(JCLLoggerAdapter.java:262);Date: Thu, 26 May 2016 14:11:57 GMT
+2016/05/26 19:41:57.897; INFO;(JCLLoggerAdapter.java:262);Authorization: ab320f83-dad5-4e05-91bc-dcccc2d0d992
+2016/05/26 19:41:57.897; INFO;(JCLLoggerAdapter.java:262);Content-type: application/json
+2016/05/26 19:41:57.897; INFO;(JCLLoggerAdapter.java:262);Content-length: 876
+2016/05/26 19:41:57.897; INFO;(JCLLoggerAdapter.java:262);Post request created succesfully.
+2016/05/26 19:41:57.897; INFO;(JCLLoggerAdapter.java:262);The response status is:HTTP/1.1 200 OK
+2016/05/26 19:41:57.897; INFO;(JCLLoggerAdapter.java:262);Successfully got the http connection
+2016/05/26 19:41:57.897; INFO;(Helper.java:621);Parsing the parameters [novalue]
+2016/05/26 19:41:57.897;ERROR;(Variable.java:298);Variable name [novalue] specified looks invalid. Please check the syntax in test suite.
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [org.apache.http.impl.client.InternalHttpClient@59e07b40] has been stored in variable [AFT_EXTERNALSCRIPTRETURNVALUE]
+2016/05/26 19:41:57.897;DEBUG;(ScriptRunner.java:501);Returning value [org.apache.http.impl.client.InternalHttpClient@59e07b40] after executing method [getConnection] for script identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [org.apache.http.impl.client.InternalHttpClient@59e07b40] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [##getConnection] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is [org.apache.http.impl.client.InternalHttpClient@59e07b40]
+2016/05/26 19:41:57.897; INFO;(TestStepRunner.java:588);Completed execution of Steps for test case #RS_Connection_1
+2016/05/26 19:41:57.897; INFO;(TestStepRunner.java:564);Starting execution of Post-steps for test case #RS_Connection_1
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:57.897;DEBUG;(TestStepRunner.java:860);Calling action [ifthenelse], Element Name [novalue], Element value [(#AFT_AppConfig.Results#=[])?@continue:@raiseException=Get ERA response is not matched as expected]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:179);Found a AppConfig property [Results]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:182);AppConfig property [Results], value [[]]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [(#AFT_AppConfig.Results#=[])?@continue:@raiseException=Get ERA response is not matched as expected] after substituting for variables/test data is [([]=[])?@continue:@raiseException=Get ERA response is not matched as expected]
+2016/05/26 19:41:57.897;DEBUG;(Parser.java:159);Calling actionValue [ifthenelse], element Name [novalue], original value [novalue], parsed value [([]=[])?@continue:@raiseException=Get ERA response is not matched as expected]
+2016/05/26 19:41:57.897;DEBUG;(CommandFixtures.java:138);Executing [ifThenElse] with value [([]=[])?@continue:@raiseException=Get ERA response is not matched as expected]
+2016/05/26 19:41:57.897;DEBUG;(CommandFixtures.java:376);Executing [ifThenElseEvaluation] with value [[]=[]]
+2016/05/26 19:41:57.897;DEBUG;(CommandFixtures.java:223);Expression [true] evaluates to TRUE. Processing annotation [@continue]
+2016/05/26 19:41:57.897;DEBUG;(CommandFixtures.java:269);Calling Annotation [@continue], original parameter value [null], parsed parameter value [null]
+2016/05/26 19:41:57.897; INFO;(Parser.java:1446);Executing Annotation [@continue]
+2016/05/26 19:41:57.897;DEBUG;(Parser.java:1447);Continue with execution of test suite
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [ifthenelse] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:57.897; INFO;(TestStepRunner.java:588);Completed execution of Post-steps for test case #RS_Connection_1
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:57.897; INFO;(TestSuiteRunner.java:887);Completed execution of Single functional business scenarios and test steps for #RS_Connection
+2016/05/26 19:41:57.897;DEBUG;(TestSuiteRunner.java:770);Completed execution of a scenario [RS_Connection]. Poped out [RS_Connection] from [executingResuableTestScenario] stack.
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [TS_Login] has been stored in variable [AFT_CURRESBUSINESSSCENARIOID]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [Load the required properties] has been stored in variable [AFT_CURRESBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [executeReusableTestScenario] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:57.897; INFO;(TestStepRunner.java:588);Completed execution of Steps for test case #TS_Login_1
+2016/05/26 19:41:57.897; INFO;(TestStepRunner.java:564);Starting execution of Post-steps for test case #TS_Login_1
+2016/05/26 19:41:57.897; INFO;(TestStepRunner.java:588);Completed execution of Post-steps for test case #TS_Login_1
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:57.897;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:57.897; INFO;(TestSuiteRunner.java:887);Completed execution of Single functional business scenarios and test steps for #TS_Login
+2016/05/26 19:41:57.897;DEBUG;(TestSuiteRunner.java:770);Completed execution of a scenario [TS_Login]. Poped out [] from [executingResuableTestScenario] stack.
+2016/05/26 19:41:57.897;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTSCENARIO]
+2016/05/26 19:41:57.897; INFO;(TestSuiteRunner.java:1373);--------------------------Test Steps Executed [16]--------------------------
+2016/05/26 19:41:57.897; INFO;(TestSuite.java:228);--------------------------Executed [1], Passed [1], Failed [0]--------------------------
+2016/05/26 19:41:57.897;DEBUG;(ReportGenerator.java:173);Generating test result xml file
+2016/05/26 19:41:57.913;DEBUG;(Writer.java:511);Created test result xml file [./testReports/xml/hyd-vnukala_20160526_194154901.xml] successfully
+2016/05/26 19:41:58.84;DEBUG;(ReportGenerator.java:193);Successfully generated test result xml file for this run
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.84;DEBUG;(TestSuiteRunner.java:1327);Business scenario [TS_CreateAndGetScope] is marked as 'N' for execution. This business scenario will be skipped.
+2016/05/26 19:41:58.84;DEBUG;(TestSuiteRunner.java:1327);Business scenario [TS_ChangeScope] is marked as 'N' for execution. This business scenario will be skipped.
+2016/05/26 19:41:58.84;DEBUG;(TestSuiteRunner.java:1327);Business scenario [TS_ValidateERA] is marked as 'N' for execution. This business scenario will be skipped.
+2016/05/26 19:41:58.84;DEBUG;(TestSuiteRunner.java:1327);Business scenario [TS_Validate_PasteERA] is marked as 'N' for execution. This business scenario will be skipped.
+2016/05/26 19:41:58.84;DEBUG;(TestSuiteRunner.java:1327);Business scenario [TS_Validate_AssociatedERA] is marked as 'N' for execution. This business scenario will be skipped.
+2016/05/26 19:41:58.84; INFO;(TestSuiteRunner.java:1227);executing business scenario #TS_ImpactAssessment
+2016/05/26 19:41:58.84;DEBUG;(TestSuiteRunner.java:743);Starting execution of a scenario [TS_ImpactAssessment] in primary test suite. Pushing '' to [executingResuableTestScenario] stack.
+2016/05/26 19:41:58.84; INFO;(TestSuiteRunner.java:801);Starting execution of business scenario id [TS_ImpactAssessment] and associated test steps in test suite file [.\testScripts\GlobalFoundries_TestSuite_ECM.xls]
+2016/05/26 19:41:58.84; INFO;(TestSuiteRunner.java:827);Executing test steps. Execution flag for business scenario id [TS_ImpactAssessment], description [Validate ERA,Get ERA,Add Tool,Get ERA,Associated ERA,ImpactAssement] is [Y]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [TS_ImpactAssessment] has been stored in variable [AFT_CURBUSINESSSCENARIOID]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [Validate ERA,Get ERA,Add Tool,Get ERA,Associated ERA,ImpactAssement] has been stored in variable [AFT_CURBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTSCENARIOS#] after substituting for variables/test data is [4]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [5] has been stored in variable [AFT_TOTALTESTSCENARIOS]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [TS_ImpactAssessment_01] has been stored in variable [AFT_CURTESTCASEID]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [Create the ERA] has been stored in variable [AFT_CURTESTCASEDESCRIPTION]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTCASES#] after substituting for variables/test data is [4]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [5] has been stored in variable [AFT_TOTALTESTCASES]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTCASE]
+2016/05/26 19:41:58.84; INFO;(TestStepRunner.java:564);Starting execution of Pre-steps for test case #TS_ImpactAssessment_01
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.84;DEBUG;(TestStepRunner.java:860);Calling action [getTestDataRowNumber], Element Name [#RowID#], Element value [#AFT_appconfig.SheetName#,[[Automation_ID]],#AFT_CurBusinessScenarioId#]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:179);Found a AppConfig property [SheetName]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:182);AppConfig property [SheetName], value [ECM_Request]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_appconfig.SheetName#,[[Automation_ID]],#AFT_CurBusinessScenarioId#] after substituting for variables/test data is [ECM_Request,Automation_ID,TS_ImpactAssessment]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#RowID#] after substituting for variables/test data is [1]
+2016/05/26 19:41:58.84;DEBUG;(Parser.java:159);Calling actionValue [getTestDataRowNumber], element Name [#RowID#], original value [#RowID#], parsed value [ECM_Request,Automation_ID,TS_ImpactAssessment]
+2016/05/26 19:41:58.84; INFO;(Helper.java:621);Parsing the parameters [#AFT_appconfig.SheetName#,[[Automation_ID]],#AFT_CurBusinessScenarioId#]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:179);Found a AppConfig property [SheetName]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:182);AppConfig property [SheetName], value [ECM_Request]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_appconfig.SheetName#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:58.84;DEBUG;(Helper.java:463);Action value string [#AFT_CurBusinessScenarioId#] after substituting for variables/test data is [TS_ImpactAssessment]
+2016/05/26 19:41:58.84; INFO;(CommandFixtures.java:1462);Executing action [getTestDataRowNumber] for sheet [#AFT_appconfig.SheetName#,[[Automation_ID]],#AFT_CurBusinessScenarioId#]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.84;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [#RowID#] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [32] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [getTestDataRowNumber] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is [32]
+2016/05/26 19:41:58.100; INFO;(TestStepRunner.java:1540);Assigning result [32] to Variable [#RowID#]
+2016/05/26 19:41:58.100; INFO;(Helper.java:621);Parsing the parameters [#RowID#]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [32] has been stored in variable [RowID]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(TestStepRunner.java:845);Calling action [@setTestDataRow=#AFT_appconfig.SheetName#,#RowID#]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:163);Looks like user has specified a AppConfig property. Let us retrieve the variable and verify it.
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:179);Found a AppConfig property [SheetName]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:182);AppConfig property [SheetName], value [ECM_Request]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_appconfig.SheetName#,#RowID#] after substituting for variables/test data is [ECM_Request,32]
+2016/05/26 19:41:58.100;DEBUG;(TestStepRunner.java:1225);Execute the Annotation [@setTestDataRow], with the value [ECM_Request,32]
+2016/05/26 19:41:58.100; INFO;(Parser.java:1247);Executing [@setTestDataRow] annotation with value [ECM_Request,32]
+2016/05/26 19:41:58.100; INFO;(Parser.java:1260);Set test data rowid [32] for sheet [ecm_request]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_IsEndOfTestData#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100; INFO;(TestStepRunner.java:588);Completed execution of Pre-steps for test case #TS_ImpactAssessment_01
+2016/05/26 19:41:58.100; INFO;(TestStepRunner.java:564);Starting execution of Steps for test case #TS_ImpactAssessment_01
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(TestStepRunner.java:860);Calling action [executeReusableTestScenario], Element Name [novalue], Element value [RS_CreateERA]
+2016/05/26 19:41:58.100;DEBUG;(Parser.java:159);Calling actionValue [executeReusableTestScenario], element Name [novalue], original value [novalue], parsed value [RS_CreateERA]
+2016/05/26 19:41:58.100; INFO;(CommandFixtures.java:1307);Executing action [executeReusableTestScenario] for test scenario [RS_CreateERA]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_CURBUSINESSSCENARIOID#] after substituting for variables/test data is [TS_ImpactAssessment]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_CURRESBUSINESSSCENARIODESCRIPTION#] after substituting for variables/test data is [Load the required properties]
+2016/05/26 19:41:58.100; INFO;(CommandFixtures.java:1336);Starting execution of business scenario id [RS_CreateERA] and associated test steps in test suite file [.\testScripts\GlobalFoundries_Reusable_ECM.xls]
+2016/05/26 19:41:58.100;DEBUG;(TestSuiteRunner.java:749);Starting execution of a scenario [RS_CreateERA] in resuable test suite. Pushing [RS_CreateERA] to [executingResuableTestScenario] stack.
+2016/05/26 19:41:58.100; INFO;(TestSuiteRunner.java:801);Starting execution of business scenario id [RS_CreateERA] and associated test steps in test suite file [.\testScripts\GlobalFoundries_Reusable_ECM.xls]
+2016/05/26 19:41:58.100; INFO;(TestSuiteRunner.java:827);Executing test steps. Execution flag for business scenario id [RS_CreateERA], description [RS_CreateERA] is [Y]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [RS_CreateERA] has been stored in variable [AFT_CURRESBUSINESSSCENARIOID]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [RS_CreateERA] has been stored in variable [AFT_CURRESBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTSCENARIOS#] after substituting for variables/test data is [5]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [6] has been stored in variable [AFT_TOTALTESTSCENARIOS]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [RS_CreateERA_1] has been stored in variable [AFT_CURTESTCASEID]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [CreateERA] has been stored in variable [AFT_CURTESTCASEDESCRIPTION]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTCASES#] after substituting for variables/test data is [5]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [6] has been stored in variable [AFT_TOTALTESTCASES]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTCASE]
+2016/05/26 19:41:58.100; INFO;(TestStepRunner.java:564);Starting execution of Pre-steps for test case #RS_CreateERA_1
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(TestStepRunner.java:845);Calling action [@useScriptInstance=#ECM#]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#ECM#] after substituting for variables/test data is [scriptInstance201605261941564624]
+2016/05/26 19:41:58.100;DEBUG;(TestStepRunner.java:1225);Execute the Annotation [@useScriptInstance], with the value [scriptInstance201605261941564624]
+2016/05/26 19:41:58.100; INFO;(Parser.java:1585);Storing script instance [scriptInstance201605261941564624] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:58.100; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:58.100;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564624] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_IsEndOfTestData#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.100;DEBUG;(TestStepRunner.java:860);Calling action [copydata], Element Name [novalue], Element value [[[<scopeid>==>#scopeId#]],#requiredScopeID#]
+2016/05/26 19:41:58.100;DEBUG;(Helper.java:463);Action value string [[[<scopeid>==>#scopeId#]],#requiredScopeID#] after substituting for variables/test data is [<scopeid>==>,]
+2016/05/26 19:41:58.100;DEBUG;(Parser.java:159);Calling actionValue [copydata], element Name [novalue], original value [novalue], parsed value [<scopeid>==>,]
+2016/05/26 19:41:58.116;DEBUG;(CommandFixtures.java:753);Executing [copyData] with value [[[<scopeid>==>#scopeId#]],#requiredScopeID#]
+2016/05/26 19:41:58.116; INFO;(Helper.java:621);Parsing the parameters [[[<scopeid>==>#scopeId#]],#requiredScopeID#]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [<scopeid>==>#scopeId#] after substituting for variables/test data is [<scopeid>==>]
+2016/05/26 19:41:58.116;DEBUG;(CommandFixtures.java:809);Source value [[<scopeid>==>#scopeId#]] is a static value. Extracted value is [<scopeid>==>]
+2016/05/26 19:41:58.116; INFO;(Helper.java:621);Parsing the parameters [#requiredScopeID#]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [<scopeid>==>] has been stored in variable [requiredScopeID]
+2016/05/26 19:41:58.116; INFO;(CommandFixtures.java:820);Copied value [<scopeid>==>] to dynamic variable [#requiredScopeID#]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [copydata] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:58.116; INFO;(TestStepRunner.java:588);Completed execution of Pre-steps for test case #RS_CreateERA_1
+2016/05/26 19:41:58.116; INFO;(TestStepRunner.java:564);Starting execution of Steps for test case #RS_CreateERA_1
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.116;DEBUG;(TestStepRunner.java:860);Calling action [##replacePatterns], Element Name [#eraBody#], Element value [${#sheetname#.RequestBody}$,#requiredScopeID#]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:264);Found a valid Test data header [#sheetname#.RequestBody]. Getting the test data and substituting in the action value string.
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#sheetname#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:312);Test Data RowId is [32]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:336);Table name is [ecm_request] and column name is [RequestBody]
+2016/05/26 19:41:58.116;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.116;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:346);Value retrieved from sheet [ecm_request], column [RequestBody], row number [32] is [{
+  "entities": [
+    {
+      "entity": "eqp",
+      "filter": "ECMAUTO3"
+    },
+    {
+      "entity": "rcp",
+      "filter": "A-P-ECMAUTO3.RANDOMIZE-ECMAUTO3-TOHK.01"
+    }
+  ]
+}]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [${#sheetname#.RequestBody}$,#requiredScopeID#] after substituting for variables/test data is [{
+  "entities": [
+    {
+      "entity": "eqp",
+      "filter": "ECMAUTO3"
+    },
+    {
+      "entity": "rcp",
+      "filter": "A-P-ECMAUTO3.RANDOMIZE-ECMAUTO3-TOHK.01"
+    }
+  ]
+},<scopeid>==>]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#eraBody#] after substituting for variables/test data is []
+2016/05/26 19:41:58.116;DEBUG;(Parser.java:159);Calling actionValue [##replacePatterns], element Name [#eraBody#], original value [#eraBody#], parsed value [{
+  "entities": [
+    {
+      "entity": "eqp",
+      "filter": "ECMAUTO3"
+    },
+    {
+      "entity": "rcp",
+      "filter": "A-P-ECMAUTO3.RANDOMIZE-ECMAUTO3-TOHK.01"
+    }
+  ]
+},<scopeid>==>]
+2016/05/26 19:41:58.116;DEBUG;(ScriptRunner.java:373);No script identifier specified. Using [AFT_LastScriptInstance]
+2016/05/26 19:41:58.116;DEBUG;(ScriptRunner.java:377);Method to be invoked is [replacePatterns]
+2016/05/26 19:41:58.116;DEBUG;(ScriptRunner.java:381);Variable to store value returned by method is [#eraBody#]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_CURRENTSCRIPTINSTANCE#] after substituting for variables/test data is [scriptInstance201605261941564624]
+2016/05/26 19:41:58.116; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:58.116; INFO;(Helper.java:621);Parsing the parameters [${#sheetname#.RequestBody}$,#requiredScopeID#]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:264);Found a valid Test data header [#sheetname#.RequestBody]. Getting the test data and substituting in the action value string.
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#sheetname#] after substituting for variables/test data is [ECM_Request]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:312);Test Data RowId is [32]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:336);Table name is [ecm_request] and column name is [RequestBody]
+2016/05/26 19:41:58.116;DEBUG;(ExcelRead.java:448);Reading test data from sheet [ecm_request]
+2016/05/26 19:41:58.116;DEBUG;(ExcelRead.java:1012);Trying to read test data sheet [ecm_request]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_ISENDOFTESTDATA]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:346);Value retrieved from sheet [ecm_request], column [RequestBody], row number [32] is [{
+  "entities": [
+    {
+      "entity": "eqp",
+      "filter": "ECMAUTO3"
+    },
+    {
+      "entity": "rcp",
+      "filter": "A-P-ECMAUTO3.RANDOMIZE-ECMAUTO3-TOHK.01"
+    }
+  ]
+}]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [${#sheetname#.RequestBody}$] after substituting for variables/test data is [{
+  "entities": [
+    {
+      "entity": "eqp",
+      "filter": "ECMAUTO3"
+    },
+    {
+      "entity": "rcp",
+      "filter": "A-P-ECMAUTO3.RANDOMIZE-ECMAUTO3-TOHK.01"
+    }
+  ]
+}]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#requiredScopeID#] after substituting for variables/test data is [<scopeid>==>]
+2016/05/26 19:41:58.116; INFO;(ScriptRunner.java:818);Invoking function [replacePatterns] with 2 parameters [{
+  "entities": [
+    {
+      "entity": "eqp",
+      "filter": "ECMAUTO3"
+    },
+    {
+      "entity": "rcp",
+      "filter": "A-P-ECMAUTO3.RANDOMIZE-ECMAUTO3-TOHK.01"
+    }
+  ]
+},<scopeid>==>]
+2016/05/26 19:41:58.116;ERROR;(ScriptRunner.java:482);Exception:: java.lang.ArrayIndexOutOfBoundsException: 1
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.ags.aft.fixtures.externalScript.ScriptRunner.runMethodWithinClassWithMultiParams(ScriptRunner.java:839)
+	at com.ags.aft.fixtures.externalScript.ScriptRunner.executeScript(ScriptRunner.java:440)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:345)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.fixtures.common.CommandFixtures.executeReusableTestScenario(CommandFixtures.java:1345)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:292)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.ags.gf.mtqa.app.ECM.replacePatterns(Unknown Source)
+	... 33 more
+2016/05/26 19:41:58.116;ERROR;(Parser.java:560);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.fixtures.externalScript.ScriptRunner.executeScript(ScriptRunner.java:483)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:345)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.fixtures.common.CommandFixtures.executeReusableTestScenario(CommandFixtures.java:1345)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:292)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [#eraBody#] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [##replacePatterns] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.116;ERROR;(TestSuiteRunner.java:595);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:561)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.fixtures.common.CommandFixtures.executeReusableTestScenario(CommandFixtures.java:1345)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:292)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.116;ERROR;(TestSuiteRunner.java:890);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:596)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.fixtures.common.CommandFixtures.executeReusableTestScenario(CommandFixtures.java:1345)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:292)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.116;ERROR;(TestSuiteRunner.java:760);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:891)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.fixtures.common.CommandFixtures.executeReusableTestScenario(CommandFixtures.java:1345)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:292)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.116;DEBUG;(TestSuiteRunner.java:770);Completed execution of a scenario [RS_CreateERA]. Poped out [RS_CreateERA] from [executingResuableTestScenario] stack.
+2016/05/26 19:41:58.116;ERROR;(CommandFixtures.java:1353);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:761)
+	at com.ags.aft.fixtures.common.CommandFixtures.executeReusableTestScenario(CommandFixtures.java:1345)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:292)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [TS_ImpactAssessment] has been stored in variable [AFT_CURRESBUSINESSSCENARIOID]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [Load the required properties] has been stored in variable [AFT_CURRESBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:58.116;ERROR;(Parser.java:560);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.fixtures.common.CommandFixtures.executeReusableTestScenario(CommandFixtures.java:1354)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:292)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:58.116;DEBUG;(Variable.java:295);Value [executeReusableTestScenario] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.116;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.116;ERROR;(TestSuiteRunner.java:595);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.main.Parser.callToAction(Parser.java:561)
+	at com.ags.aft.runners.TestStepRunner.executeAction(TestStepRunner.java:933)
+	at com.ags.aft.runners.TestStepRunner.executeTestSteps(TestStepRunner.java:661)
+	at com.ags.aft.runners.TestStepRunner.executeStep(TestStepRunner.java:572)
+	at com.ags.aft.runners.TestStepRunner.executeSteps(TestStepRunner.java:232)
+	at com.ags.aft.runners.TestStepRunner.executeAllSteps(TestStepRunner.java:171)
+	at com.ags.aft.runners.TestStepRunner.execute(TestStepRunner.java:129)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:543)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.116;ERROR;(TestSuiteRunner.java:890);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestCases(TestSuiteRunner.java:596)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:867)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.116;ERROR;(TestSuiteRunner.java:760);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.runners.TestSuiteRunner.executeScenario(TestSuiteRunner.java:891)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:758)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.116;DEBUG;(TestSuiteRunner.java:770);Completed execution of a scenario [TS_ImpactAssessment]. Poped out [] from [executingResuableTestScenario] stack.
+2016/05/26 19:41:58.131;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTSCENARIO]
+2016/05/26 19:41:58.131; INFO;(TestSuiteRunner.java:1373);--------------------------Test Steps Executed [6]--------------------------
+2016/05/26 19:41:58.131; INFO;(TestSuite.java:228);--------------------------Executed [2], Passed [2], Failed [0]--------------------------
+2016/05/26 19:41:58.131;DEBUG;(ReportGenerator.java:173);Generating test result xml file
+2016/05/26 19:41:58.131;DEBUG;(Writer.java:511);Created test result xml file [./testReports/xml/hyd-vnukala_20160526_194154901.xml] successfully
+2016/05/26 19:41:58.162;DEBUG;(ReportGenerator.java:193);Successfully generated test result xml file for this run
+2016/05/26 19:41:58.162;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.162;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.162;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.162; INFO;(TestSuiteRunner.java:2142);Starting execution of Test Set level cleanup reusable scenario [RS_CloseConnection]
+2016/05/26 19:41:58.162;DEBUG;(TestSuiteRunner.java:749);Starting execution of a scenario [RS_CloseConnection] in resuable test suite. Pushing [RS_CloseConnection] to [executingResuableTestScenario] stack.
+2016/05/26 19:41:58.162; INFO;(TestSuiteRunner.java:801);Starting execution of business scenario id [RS_CloseConnection] and associated test steps in test suite file [.\testScripts\GlobalFoundries_Reusable_ECM.xls]
+2016/05/26 19:41:58.162; INFO;(TestSuiteRunner.java:827);Executing test steps. Execution flag for business scenario id [RS_CloseConnection], description [Close the ECM REST Connection] is [Y]
+2016/05/26 19:41:58.162;DEBUG;(Variable.java:295);Value [RS_CloseConnection] has been stored in variable [AFT_CURRESBUSINESSSCENARIOID]
+2016/05/26 19:41:58.162;DEBUG;(Variable.java:295);Value [Close the ECM REST Connection] has been stored in variable [AFT_CURRESBUSINESSSCENARIODESCRIPTION]
+2016/05/26 19:41:58.162;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTSCENARIOS#] after substituting for variables/test data is [6]
+2016/05/26 19:41:58.162;DEBUG;(Variable.java:295);Value [7] has been stored in variable [AFT_TOTALTESTSCENARIOS]
+2016/05/26 19:41:58.162;DEBUG;(Variable.java:295);Value [RS_CloseConnection_1] has been stored in variable [AFT_CURTESTCASEID]
+2016/05/26 19:41:58.162;DEBUG;(Variable.java:295);Value [Close the ECM rest connection] has been stored in variable [AFT_CURTESTCASEDESCRIPTION]
+2016/05/26 19:41:58.162;DEBUG;(Helper.java:463);Action value string [#AFT_TOTALTESTCASES#] after substituting for variables/test data is [6]
+2016/05/26 19:41:58.162;DEBUG;(Variable.java:295);Value [7] has been stored in variable [AFT_TOTALTESTCASES]
+2016/05/26 19:41:58.162;DEBUG;(Variable.java:295);Value [false] has been stored in variable [AFT_TERMINATECURRENTTESTCASE]
+2016/05/26 19:41:58.162; INFO;(TestStepRunner.java:564);Starting execution of Pre-steps for test case #RS_CloseConnection_1
+2016/05/26 19:41:58.162;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.162;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.162;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.178;DEBUG;(TestStepRunner.java:845);Calling action [@useScriptInstance=#ECM#]
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#ECM#] after substituting for variables/test data is [scriptInstance201605261941564624]
+2016/05/26 19:41:58.178;DEBUG;(TestStepRunner.java:1225);Execute the Annotation [@useScriptInstance], with the value [scriptInstance201605261941564624]
+2016/05/26 19:41:58.178; INFO;(Parser.java:1585);Storing script instance [scriptInstance201605261941564624] in system variable [AFT_CURRENTSCRIPTINSTANCE] by default
+2016/05/26 19:41:58.178; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:58.178;DEBUG;(Variable.java:295);Value [scriptInstance201605261941564624] has been stored in variable [AFT_CURRENTSCRIPTINSTANCE]
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#AFT_IsEndOfTestData#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.178; INFO;(TestStepRunner.java:588);Completed execution of Pre-steps for test case #RS_CloseConnection_1
+2016/05/26 19:41:58.178; INFO;(TestStepRunner.java:564);Starting execution of Steps for test case #RS_CloseConnection_1
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.178;DEBUG;(TestStepRunner.java:860);Calling action [##closeConnection], Element Name [novalue], Element value [novalue]
+2016/05/26 19:41:58.178;DEBUG;(Parser.java:159);Calling actionValue [##closeConnection], element Name [novalue], original value [novalue], parsed value []
+2016/05/26 19:41:58.178;DEBUG;(ScriptRunner.java:373);No script identifier specified. Using [AFT_LastScriptInstance]
+2016/05/26 19:41:58.178;DEBUG;(ScriptRunner.java:377);Method to be invoked is [closeConnection]
+2016/05/26 19:41:58.178;DEBUG;(ScriptRunner.java:381);Variable to store value returned by method is [novalue]
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#AFT_CURRENTSCRIPTINSTANCE#] after substituting for variables/test data is [scriptInstance201605261941564624]
+2016/05/26 19:41:58.178; INFO;(ScriptInstanceManager.java:129);Trying to fetch stored script instance identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:58.178; INFO;(ScriptRunner.java:595);Invoking function [closeConnection] with no parameters.
+2016/05/26 19:41:58.178; INFO;(JCLLoggerAdapter.java:262);Executign closeConnection()
+2016/05/26 19:41:58.178; INFO;(Helper.java:621);Parsing the parameters [novalue]
+2016/05/26 19:41:58.178;ERROR;(Variable.java:298);Variable name [novalue] specified looks invalid. Please check the syntax in test suite.
+2016/05/26 19:41:58.178;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_EXTERNALSCRIPTRETURNVALUE]
+2016/05/26 19:41:58.178;DEBUG;(ScriptRunner.java:501);Returning value [] after executing method [closeConnection] for script identifier [scriptInstance201605261941564624]
+2016/05/26 19:41:58.178;DEBUG;(Variable.java:295);Value [novalue] has been stored in variable [AFT_LASTOPERATEDCONTROL]
+2016/05/26 19:41:58.178;DEBUG;(Variable.java:295);Value [] has been stored in variable [AFT_LASTACTIONRESPONSE]
+2016/05/26 19:41:58.178;DEBUG;(Variable.java:295);Value [##closeConnection] has been stored in variable [AFT_LASTACTION]
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#AFT_LASTACTIONRESPONSE#] after substituting for variables/test data is []
+2016/05/26 19:41:58.178; INFO;(TestStepRunner.java:588);Completed execution of Steps for test case #RS_CloseConnection_1
+2016/05/26 19:41:58.178; INFO;(TestStepRunner.java:564);Starting execution of Post-steps for test case #RS_CloseConnection_1
+2016/05/26 19:41:58.178; INFO;(TestStepRunner.java:588);Completed execution of Post-steps for test case #RS_CloseConnection_1
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSUITE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTSCENARIO#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.178;DEBUG;(Helper.java:463);Action value string [#AFT_TERMINATECURRENTTESTCASE#] after substituting for variables/test data is [false]
+2016/05/26 19:41:58.178; INFO;(TestSuiteRunner.java:887);Completed execution of Single functional business scenarios and test steps for #RS_CloseConnection
+2016/05/26 19:41:58.178;DEBUG;(TestSuiteRunner.java:770);Completed execution of a scenario [RS_CloseConnection]. Poped out [RS_CloseConnection] from [executingResuableTestScenario] stack.
+2016/05/26 19:41:58.178;ERROR;(TestBatchRunner.java:404);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.runners.TestSuiteRunner.executeSingleBusinessScenario(TestSuiteRunner.java:761)
+	at com.ags.aft.runners.TestSuiteRunner.executeTestScenarios(TestSuiteRunner.java:1108)
+	at com.ags.aft.runners.TestSuiteRunner.execute(TestSuiteRunner.java:1024)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:401)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:58.178; INFO;(TestBatchRunner.java:974);----------------------------------------------------------------------------------
+2016/05/26 19:41:58.178; INFO;(TestBatchRunner.java:975);Test Set Name=[ECM], Test Suite Path=[.\testScripts\GlobalFoundries_TestSuite_ECM.xls]
+2016/05/26 19:41:58.178; INFO;(ReportGenerator.java:279);
+2016/05/26 19:41:58.178; INFO;(ReportGenerator.java:280);--------------Total Executed [2], Total Passed [2], Total Failed [0]--------------
+2016/05/26 19:41:58.178; INFO;(TestBatchRunner.java:979);----------------------------------------------------------------------------------
+2016/05/26 19:41:58.178; INFO;(TestBatchRunner.java:982);calling teardown for execution engine
+2016/05/26 19:41:59.178;ERROR;(Driver.java:158);Exception::
+java.lang.NullPointerException
+	at com.ags.aft.exception.AFTException.<init>(AFTException.java:90)
+	at com.ags.aft.runners.TestBatchRunner.executeTestBatch(TestBatchRunner.java:405)
+	at com.ags.aft.runners.TestBatchRunner.executeFileSystemTestBatch(TestBatchRunner.java:242)
+	at com.ags.aft.runners.TestBatchRunner.execute(TestBatchRunner.java:124)
+	at com.ags.aft.main.Driver.main(Driver.java:149)
+2016/05/26 19:41:59.178; INFO;(Driver.java:181);------------------------------------------------------------------------------------------
+2016/05/26 19:41:59.178; INFO;(Driver.java:182);Completed execution of Automated Functional Tester (AFT) of test run at : 2016-05-26 19:41:59
+2016/05/26 19:41:59.178; INFO;(Driver.java:184);Total execution time for this test run was : 0:0:4:8277
+2016/05/26 19:41:59.178; INFO;(Driver.java:186);------------------------------------------------------------------------------------------

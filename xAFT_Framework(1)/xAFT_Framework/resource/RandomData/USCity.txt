@@ -1,0 +1,245 @@
+Abilene
+AIbuquerque
+AIexandria
+AIIentown
+Akron
+Amarillo
+Anaheim
+Anchorage
+Ann Arbor
+Antioch
+Arlington
+Arlington CDP
+Arvada
+Athens-CIarke County
+Atlanta
+Augusta-Richmond County
+Aurora
+Aurora
+Austin
+Bakersfield
+Baltimore
+Baton Rouge
+Beaumont
+Bellevue
+Berkeley
+Birmingham
+Boise City
+Boston
+Bridgeport
+Brownsville
+Buffalo
+Burbank
+Cambridge
+Cape Coral
+Carrollton
+Cary
+Cedar Rapids
+Chandler
+Charleston
+Charlotte
+Chattanooga
+Chesapeake
+Chicago
+Chula Vista
+CIarksville
+CIearwater
+CIeveland
+Cincinnati
+Colorado Springs
+Columbia
+Columbus
+Concord
+CoraI Springs
+Corona
+Corpus Christi
+Costa Mesa
+Dallas
+Daly City
+Dayton
+Denton
+Denver
+Des Moines
+Detroit
+Downey
+Durham
+EI Monte
+EI Paso
+EIizabeth
+EIk Grove
+Erie
+Escondido
+Eugene
+Evansville
+Fairfield
+Fayetteville
+FIint
+Fontana
+Fort Collins
+Fort Lauderdale
+Fort Wayne
+Fort Worth
+Fremont
+Fresno
+Fullerton
+Gainesville
+Garden Grove
+Garland
+GIendale
+GIendale
+Gilbert town
+Grand Prairie
+Grand Rapids
+Greensboro
+Hampton
+Hartford
+Hayward
+Henderson
+Hialeah
+Hollywood
+Houston
+Huntington Beach
+Huntsville
+Independence
+Indianapolis
+Inglewood
+Irvine
+Irving
+Jackson
+Jacksonville
+Jersey City
+Joliet
+Kansas City
+Killeen
+Knoxville
+Lafayette
+Lakewood
+Lancaster
+Lansing
+Laredo
+Las Vegas
+Lexington-Fayette
+Lincoln
+Little Rock
+Long Beach
+Los Angeles
+Louisville-Jefferson County                                                           
+Lowell
+Lubbock
+Madison
+Manchester
+McAIIen
+Memphis
+Mesa
+Mesquite
+Miami
+Milwaukee
+Minneapolis
+Miramar
+Mobile
+Modesto
+Montgomery
+Moreno Valley
+Naperville
+Nashville-Davidson
+New Haven
+New Orleans
+New York
+Newark
+Newport News
+Norfolk
+Norman
+North Las Vegas
+Norwalk
+Oakland
+Oceanside
+OIathe
+Oklahoma City
+Omaha
+Ontario
+Orange
+Orlando
+Overland Park
+Oxnard
+Palmdale
+Pasadena
+Paterson
+Pembroke Pines
+Peoria
+Philadelphia
+Phoenix
+PIano
+Pittsburgh
+Pomona
+Pompano Beach
+Port St. Lucie
+Portland
+Portsmouth
+Providence
+Pueblo
+Raleigh
+Rancho Cucamonga
+Reno
+Richmond
+Riverside
+Rochester
+Rockford
+Roseville
+Sacramento
+Salem
+Salinas
+Salt Lake City
+San Antonio
+San Bernardino
+San Buenaventura (Ventura)
+San Diego
+San Francisco
+San Jose
+Santa Ana
+Santa CIara
+Santa CIarita
+Santa Rosa
+Savannah
+Scottsdale
+Seattle
+Shreveport
+Simi Valley
+Sioux Falls
+South Bend
+Spokane
+Springfield
+St. Louis
+St. Paul
+St. Petersburg
+Stamford
+Sterling Heights
+Stockton
+Sunnyvale
+Syracuse
+Tacoma
+Tallahassee
+Tampa
+Tempe
+Thornton
+Thousand Oaks
+Toledo
+Topeka
+Torrance
+Tucson
+Tulsa
+Vallejo
+VancouverGreen Bay
+Virginia Beach
+Visalia
+Waco
+Warren
+Washinqton
+Waterbury
+West Covina
+West Valley City
+Westminster
+Wichita
+Winston-Salem
+Worcester
+Yonkers
+

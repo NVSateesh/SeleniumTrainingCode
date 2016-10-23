@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository>
+  <FeatureSet name="MainPage">
+    <Element name="ContextMenuItem" type="image">
+      <Value>F://pro/objectRepository/images/NewEquipment.png</Value>
+      <PageTitle> </PageTitle>
+    </Element>
+  </FeatureSet>
+</ObjectRepository>

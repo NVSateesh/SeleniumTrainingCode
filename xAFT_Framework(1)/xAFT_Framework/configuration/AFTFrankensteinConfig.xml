@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<WebDriverConfig>
+	<TestEnvironment Name="default">
+		<ElementWaitTime_ms value="30000" />
+		<ElementPollTime_s value="10" />
+		<FrankensteinDriverCommandSwitch
+			value="true" />
+	</TestEnvironment>
+</WebDriverConfig>

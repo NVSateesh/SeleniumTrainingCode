@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ObjectRepository>
+  
+<FeatureSet name="Login">
+    <Element name="txtUname" type="Textbox">
+      <xpath>//td/div[contains(text(),'Username')]/../following-sibling::td/input</xpath>
+    </Element>
+	<Element name="txtPassword" type="Textbox">
+      <xpath>//td/div[contains(text(),'Password')]/../following-sibling::td/input</xpath>
+    </Element>
+	<Element name="btnLogin" type="Button">
+      <xpath>//button[contains(text(),'Login')]</xpath>
+    </Element>
+</FeatureSet>
+ 
+<FeatureSet name="Logout">
+  <Element name="btnLogout" type="Button">
+      <xpath>//button[contains(text(),'Logout')]</xpath>
+    </Element>
+</FeatureSet>
+
+<FeatureSet name="Fetch Spec List">	
+   <Element name="chkEnableUdata" type="Checkbox">
+      <xpath>//span[contains(@title,'Enabling this checkbox will include UDATA for BeforeEffective validation')]/input</xpath>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="btnFetchSpecList" type="Button">
+      <xpath>//button[contains(text(),'Fetch Spec List')]</xpath>
+    </Element>
+	<Element name="btnReload" type="Button">
+      <xpath>//button[contains(text(),'Reload from p-drive')]</xpath>
+    </Element>
+	<Element name="btnValResults" type="Button">
+      <xpath>//button[contains(text(),'Validation Results')]</xpath>
+    </Element>
+	<Element name="txtSpecID" type="Textbox">
+      <xpath>//input[contains(@class,'gwt-TextBox filterInput specificationId')]</xpath>
+    </Element>
+	<Element name="txtVerID" type="Textbox">
+      <xpath>//input[contains(@class,'gwt-TextBox filterInput version')]</xpath>
+    </Element>		
+    <Element name="tblSpecList" type="WebTable">
+      <xpath>//table/tbody/tr</xpath>
+    </Element>	
+    <Element name="tblSpecListColumn" type="WebTable">
+      <xpath>//table/tbody/tr[1]/td</xpath>
+    </Element>
+    <Element name="tblSpecListRow" type="WebTable">
+      <xpath>//table/tbody/tr[1]</xpath>
+    </Element>	
+   <Element name="chkSpec" type="Checkbox">
+      <xpath>//table/tbody/tr[1]/td[1]/div/input</xpath>
+      <PageTitle> </PageTitle>
+    </Element>	
+	<Element name="btnValBS" type="Button">
+      <xpath></xpath>
+    </Element>	
+	<Element name="btnValBS1" type="Button">
+      <xpath>//button[contains(text(),'Validate Before Spec "</xpath>
+    </Element>	
+	<Element name="btnValBS2" type="Button">
+      <xpath>"')]</xpath>
+    </Element>
+</FeatureSet>
+
+<FeatureSet name="Validation Results">
+	<Element name="lnkResult" type="Link">
+      <xpath></xpath>
+    </Element>	
+	<Element name="lnkResult1" type="Link">
+      <xpath>//table/tbody/tr[1]/.//a[contains(text(),'Before</xpath>
+    </Element>		
+	<Element name="lnkResult2" type="Link">
+      <xpath>')]</xpath>
+    </Element>		
+	<Element name="lnkCloseTSLC" type="Link">
+      <xpath>//div[contains(@title,'close tab Spec List from Cache')]</xpath>
+    </Element>		
+	<Element name="lnkCloseTVR" type="Link">
+      <xpath>//div[contains(@title,'close tab Validation Results')]</xpath>
+    </Element>	
+	<Element name="lblEndTimeOld" type="Label">
+      <xpath>//table/tbody/tr[1]/td[2]/div</xpath>
+    </Element>	
+	<Element name="lblEndTime" type="Label">
+      <xpath>//div[3]/div/div[4]/div/div[3]/div/div[2]/div/div/table/tbody/tr[1]/td[2]/div</xpath>
+    </Element>		
+	<Element name="lblSpecListOld" type="Label">
+      <xpath>//table/tbody/tr[1]/td[4]/div</xpath>
+    </Element>
+	<Element name="lblSpecList" type="Label">
+      <xpath>//div[3]/div/div[4]/div/div[3]/div/div[2]/div/div/table/tbody/tr[1]/td[4]/div</xpath>
+    </Element>
+</FeatureSet>
+
+</ObjectRepository>

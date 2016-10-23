@@ -1,0 +1,5 @@
+results[description=At least one Queue Time definition has actions with different criticality values.  The following triggering operations violate this rule: ].data[flowId=SL-EAGLEECMAUTO-CRITICALVALUES-QT1.01]
+Expected: a JSON object
+     but none found
+ ; results[description=At least one Queue Time definition has actions with different criticality values.  The following triggering operations violate this rule: ].data[flowId=SL-EAGLEECMAUTO-DUP-VALUES-QT1.01]
+Unexpected: a JSON object

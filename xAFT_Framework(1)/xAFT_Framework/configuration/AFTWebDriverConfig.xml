@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<WebDriverConfig>
+	<TestEnvironment Name="default">
+		<PageLoadTimeout_ms value="60000" />
+		<ElementWaitTime_ms value="30000" />
+		<ElementPollTime_s value="10" />
+		<SSLEnabled value="Yes" />
+		<ChromeDriverExecutablePath value="../../xaft7/library/chromedriver.exe" />
+		<IEDriverExecutablePath value="../../xaft7/library/IEDriverServer32Bit.exe" />
+		<FirefoxCustomProfilePath value="" />
+		<FirefoxAssumeUntrustedCertificateIssuer
+			value="Yes" />
+		<WebDriverCommandSwitch
+			value="webdriver_enable_native_events,--start-maximized,--ignore-certificate-errors,--disable-extensions" />
+		<HighlightObject value="No" />
+		<AndroidDevicePort value="8080" />
+		<IphoneDevicePort value="3001" />
+		<BrowserTimeout_ms value="600000" />
+		<BrowserTimeout_Key value="Esc" />
+		<MonitorBrowserTimeout value="No" />
+		<ReType value="No" />
+	</TestEnvironment>
+</WebDriverConfig>

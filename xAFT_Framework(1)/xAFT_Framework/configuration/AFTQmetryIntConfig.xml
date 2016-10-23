@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Qmetry>
+	<Config name="default">
+		<QMetryWSDL value="QMetry wsdl path" />
+		<UserName value="uname" />
+		<Password value="1234" />
+		<ProjectName value="Test Proj" />
+		<ReleaseName value="v1.0" />
+		<BuildName value="build 21" />
+		<folderName value="Proj_r1" />
+		<Platform value="Mozilla Firefox" />
+		<testSuiteName value="QmetryTestSuiteName" />
+	</Config>
+</Qmetry>

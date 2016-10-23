@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<server port="$port" log-level="INFO">
+	<servlet context="/" class="Twin.TwinRC" assembly="twin-rc.dll">
+		<param name='$neatworksname'>$appName</param>
+		<param name='$neatworkspath'>$appPath</param>
+	</servlet>	
+</server>

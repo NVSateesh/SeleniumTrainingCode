@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppiumConfig>
+	<TestEnvironment Name="default">
+		<!-- Currently appium needs to be run manually once appium server is integrated 
+			with code, the server the some of the below configurations are not considered -->
+		<RunonDevice value="yes" /> <!-- Do not modify until appium server launch is integrated with XAFT Code -->
+		<applicationPath value="/Users/kiran/Documents/GlobalSafetyTouch.app" />
+		<Server value="http://127.0.0.1" /><!-- Do not modify until appium 
+			server launch is integrated with XAFT Code -->
+		<port value="4723" /><!-- Do not modify until appium server launch 
+			is integrated with XAFT Code -->
+		<deviceUDID value="a39937e0ea4b2b2f66c200d25ca9667b0456d153" /><!-- 
+			Do not modify until appium server launch is integrated with XAFT Code -->
+		<devicebundleid value="48LKHEZQLN" /><!-- Do not modify 
+			until appium server launch is integrated with XAFT Code -->
+		<ElementWaitTime_ms value="3000" />
+	</TestEnvironment>
+</AppiumConfig>

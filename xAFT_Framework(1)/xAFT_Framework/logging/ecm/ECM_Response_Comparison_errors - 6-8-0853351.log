@@ -1,0 +1,5 @@
+mainpds[]
+Expected: SL-EAGLEECMAUTO-DUP-VALUES-QT1.02
+     but none found
+ ; mainpds[]
+Unexpected: SL-EAGLEECMAUTO-DUP-VALUES-QT1.01

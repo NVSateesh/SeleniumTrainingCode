@@ -1,0 +1,25 @@
+ Volume in drive D has no label.
+ Volume Serial Number is 087A-9623
+
+ Directory of D:\0.9.6.0-WIP\library\GlobalFoundries\SPACE
+
+21/12/12  06:56 PM    <DIR>          .
+21/12/12  06:56 PM    <DIR>          ..
+21/12/12  06:56 PM                 0 1.txt
+17/12/12  10:49 AM            91,706 action_fw020101.jar
+17/12/12  10:49 AM           302,411 camchart040004.jar
+17/12/12  10:49 AM            71,657 caps020010.jar
+17/12/12  10:49 AM           184,324 input060004.jar
+17/12/12  10:49 AM           578,421 jfc.utility100010.jar
+17/12/12  10:49 AM           346,004 navigator060008.jar
+17/12/12  10:49 AM           148,150 nrlib020001.jar
+17/12/12  10:49 AM            19,647 rsdV1_0_0.jar
+17/12/12  10:49 AM           767,120 server.space_jacorbV6_1_0b7.jar
+17/12/12  10:49 AM            23,107 server.ua_api_jacorb_V_2_5_1.jar
+17/12/12  10:49 AM         5,548,079 spaceV6_1_0b8p5.jar
+17/12/12  10:49 AM           176,979 stat_calcV6_1_0b7.jar
+17/12/12  10:49 AM            82,700 ua.api_V_2_5_1_b3.jar
+17/12/12  10:49 AM           254,248 utility060006.jar
+17/12/12  10:49 AM            31,639 version040001.jar
+              16 File(s)      8,626,192 bytes
+               2 Dir(s)  47,852,101,632 bytes free

@@ -1,0 +1,111 @@
+# DISFilter application properties
+#
+
+#Sorting NC jobs on tag or attribute
+filter.lot.nc.timestamp=LotSTTI
+
+#Frequency of input listener scans
+# Minimum=10 seconds, maximum=600 seconds
+DIS.inputListener.interval.secs=30
+
+# trace levels:
+#   TRC_NONE    =  0;
+#   TRC_BASIC   =  1;
+#   TRC_MEDIUM  =  2;
+#   TRC_VERBOSE =  3;
+#   TRC_DEBUG   =  4;
+DIS.trace.level=4
+
+#Set to true for if you want to trigger filtering based on number of limit file parms
+DIS.Use.limit.file=false
+
+#Create slim limit/data files When number of limit files exceeds this number. 0 means always filter
+DIS.limit.filter_if_parm_count_exceeds=0
+
+#SIL DB properties - note, DISMain will securely prompt for pw at startup if pw not specified below
+DIS.sil.db.enabled=true
+DIS.sil.db.drivername=oracle.jdbc.driver.OracleDriver
+
+DIS.sil.db.url=jdbc:oracle:thin:@ausora01.gfoundries.com:1521:spaceid1
+DIS.sil.db.schema=sil_user14
+DIS.sil.db.userid=sil_user14
+DIS.sil.db.pw=sil1
+
+#DIS.sil.db.url=jdbc:oracle:thin:@ausora02.gfoundries.com:1521:spaqa1
+#DIS.sil.db.schema=mt_admin
+#DIS.sil.db.userid=mt_user
+#DIS.sil.db.pw=mt_user
+
+DIS.sil.db.filter_on_active=true
+DIS.sil.db.filter_on_criticality=true
+DIS.sil.db.filter_on_prodgroup=true
+DIS.sil.db.filter_on_product=true
+DIS.sil.db.filter_on_pd=true
+
+#Copying errors and unfiltered files to ETParser
+#Set to true to copy error nc files to etparser, to trigger CA Fail msgs and NFM emails
+DIS.copy_rejects_to_etparser=true
+
+#MSR740542
+DIS.archive_files=false
+
+#Set to true if you are supplying any parameter names via an ECP file
+# ECP file properties
+DIS.Use.ECP.file=false
+DIS.ECP.directory=C:\\ETEST\\ETL_SPACE_INPUT\\ECP     
+DIS.ECP.file.name=ECP_32SOI_IBM_OBAN.csv
+DIS.ECP.headerlines=7
+DIS.ECP.parameterNameIndex=7
+##DIS.Use.ECP.file=false
+##DIS.ECP.directory=C:\\ETEST\\Fab8_filter\\ETL_INPUT_DATA\\ECP     
+##DIS.ECP.file.name=OBAN_ECP_mar5.csv
+##DIS.ECP.headerlines=2
+##DIS.ECP.parameterNameIndex=5
+
+
+# Adapter cmd_prompts
+#True means DISMain will prompt user for runtime commands, e.g. start, stop, graceful shutdown
+#False means DISMain will run silently, without prompting user  for run commands
+DIS.adapter.cmd_prompts=true
+
+# Adapter autoStart
+#True means automatically start the adapter and start listening when program starts
+#False means DISMain will start and then wait for user input to start processing
+DIS.adapter.autoStart=true
+
+DIS.CUR_DIR=.
+DIS.SEP=\\
+
+#MSR681347 - Pre-filter output location
+DIS.base.directory.input=C:\\ETEST\\ACCEPTED_SPACE_INPUT     
+# DIS.base.directory.input=C:\\ETEST\\ETL_SPACE_INPUT     
+DIS.base.directory.staging=C:\\ETEST\\DISFILTER_DATA\\DIS_staging  
+DIS.base.directory.processing=C:\\ETEST\\DISFILTER_DATA\\DIS_processing
+DIS.base.directory.archived=C:\\ETEST\\DISFILTER_DATA\\DIS_archived 
+DIS.base.directory.rejected=C:\\ETEST\\DISFILTER_DATA\\DIS_rejected 
+DIS.base.directory.published=C:\\ETEST\\DISFILTER_DATA\\DIS_published
+
+
+DIS.file.extension.nc=nc
+DIS.file.extension.data=data.dis
+DIS.file.extension.limit=limit.dis
+DIS.file.extension.slim.limit=limit.dis
+DIS.file.extension.slim.data=data.dis
+
+
+#Worker thread pool - should not need to change
+#  Recommend setting min pool size == max pool size, to avoid memory growth
+#  If minimum pool size not specified, it will default to be same as max (recommended)
+#  Min allowed pool size=1 Max allowed pool size=20
+DIS.minimum.pool.size=10
+DIS.maximum.pool.size=10
+
+#  Min allowed job queue size=20 Max allowed queue size=500
+DIS.maximum.queue.size=250
+
+#
+nc.allowed.types=LOT
+mnc.allowed.types=JOB,MASTER
+
+
+

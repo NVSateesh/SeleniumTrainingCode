@@ -1,0 +1,8 @@
+<CustomerSettings>
+	<CustomerSetting>
+		<IQREnabled> true </IQREnabled>
+		<IQRConstantZ> 3.5 </IQRConstantZ>
+		<IQRMeanY> 5 </IQRMeanY>
+		<IQRMinSample> 15 </IQRMinSample>
+	</CustomerSetting>
+</CustomerSettings>
